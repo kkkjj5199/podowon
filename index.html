@@ -7,7 +7,7 @@
 
 <meta property="og:site_name" content="babyparty" />
 <meta property="og:title" content="포도원교회 " />
-<meta property="og:description" content="포도원교회 추석" />
+<meta property="og:description" content="2022 추석인사" />
 <meta property="og:image" content="http://www.podowonchurch.org/data/file/zadm_100100/thumb-1935644117_4pHLMuIX_KakaoTalk_20211112_174650133_3_1400x415.jpg" />
 
 <meta property="og:type" content="website" />
@@ -42,6 +42,14 @@ body {
 	max-width: 100%;
 	width: auto !important;
 	width: 100%;
+	display: block;
+}
+
+.img101 {
+	max-width: 100%;
+	width: auto !important;
+	width: 100%;
+	display: block;
 }
 
 #autoplay, .slide_wrap {
@@ -139,7 +147,7 @@ body {
 }
 
 .map_wrap {
-	margin: 0 15px;
+	margin: 0 10px;
 	height: 200px;
 	background-color: #ddd;
 	text-align: center;
@@ -147,7 +155,7 @@ body {
 }
 
 .tras_wrap {
-	margin: 0 15px;
+	margin: 0 15px0
 	font-size: 14px;
 	padding-bottom: 20px;
 }
@@ -158,13 +166,47 @@ body {
 
 .tras_wrap div.what {
 	color: #888;
+	text-align: left;
+}
+
+.tras_wrap div.click_icon {
+	color: #888;
+	text-align: left;
+}
+
+.tras_wrap div.where{
+	color: #888;
+	text-align: left;
 }
 
 .tras_wrap div.is {
 	color: #8d968c;
-	font-weight: bold;
 	margin: 0 20px;
+	text-align: left;
+
 }
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration-line: none;
+	text-decoration-color: #888;
+}
+
+
+
+.tras_wrap div.telNo {
+	color: #8d968c;
+	margin: 0 20px;
+	text-align: left;
+	text-decoration-color: #888;
+	text-decoration-line: none;
+}
+
+
+
+
+
 
 .tras_wrap img {
 	height: 14px;
@@ -222,6 +264,7 @@ body {
 
 .goto_homepage{
     text-align: center;
+	padding-top: 10px;
 }
 
 .centered {
@@ -241,39 +284,37 @@ body {
 		<div class="slide_wrap">
 			<div id="titleImage" >
 				<!-- //이미지 추가 -->
-				<img src="asset/image/background.jpg" class="img100" />
-                <div class="centered">풍성한<br>  <p></p><p>한가위<br></p>
-                
-                </div>
-           
-				<!-- <img src="https://cloud.githubusercontent.com/assets/16554116/12774535/375cf090-ca89-11e5-8589-c69d0f62defb.jpg" class="img100" />
-				<img src="https://cloud.githubusercontent.com/assets/16554116/12774534/375c0694-ca89-11e5-8af1-88a7179c3ec1.jpg" class="img100" /> -->
+				<img src="asset/image/main.jpg" class="img100" />
+				<img src="asset/image/content.jpg" class="img101" />
+               
 			</div>
+			<div class="goto_homepage">
+				<a href="http://podowonchurch.org/main.php" title="홈페이지 바로가기">
+				<button class="button-24" role="button" >포도원 교회 홈페이지</button></a>
+			</div>
+					
 		</div>
+	
 		<div class="content_wrap">
 			<h1><img src="asset/image/logo.png" /></h1>
-            당신이 예수를 믿으면, 하나님이 당신 안에 계셔서 당신을 지켜보시고,<br />
-             당신과 늘 함께하십니다. <br />
-             당신이 힘겨운 인생길을 홀로 걸어가지 않도록 구원의 길을 준비하시고 <br />
-             그 길을 열어주시며 당신과 동행하십니다. <br />
-             우리가 주님을 떠나지 않는 한 주님은 우리를 떠나지 않고 함께 하십니다.<br />
-             그 하나님을 느껴보세요!<br />
-             하나님께서 주시는 은혜와 기쁨으로 당신은 만족한 삶을 살게 될 것입니다.<br />
-            </div>
             <div class="tras_wrap">
                 <div>
-                    <div class="what"><img src="https://cdn4.iconfinder.com/data/icons/miu/24/house-home-real_estate-property-glyph-128.png" alt="metro" />오시는 길</div>
-                    <div class="is">경기도 의왕시 모락로 105-8 </div>
+                    <div class="what"><img src="https://cdn-icons-png.flaticon.com/512/4283/4283368.png" alt="metro" />
+						주소</div>
+                    <div class="is">
+						<a class="isa" href="https://place.map.kakao.com/9533122" style="color: #888;">
+						경기도 의왕시 모락로 105-8 
+						<img src="https://cdn-icons-png.flaticon.com/512/8109/8109164.png"/>
+					</a>
+					</div>
+					<div class="where"><img src="https://cdn-icons-png.flaticon.com/512/455/455907.png" alt="metro"/>전화번호</div>
+					<div class="telNo"><a href='tel:031-456-9994' style="color: #888;">031-456-9994</a> </div>
                 </div>
             </div>
-			<div id="map" style="width: 500px;height: 400px;"></div>
+			<div id="map" style="width: 472px;height: 400px;"></div>
 			<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bcb5777161b2bdc709a97c931910b27c"></script>
             <br><br>
-            <div class="goto_homepage">
-                <a href="http://podowonchurch.org/main.php" title="홈페이지 바로가기">
-                    <button class="button-24" role="button" >포도원 교회 홈페이지</button>
-                </a>
-            </div>
+        
             <div class="copy">
                 © Copyright 2022, 포도원 교회 추석카드
   
@@ -281,6 +322,8 @@ body {
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+
+	
  
 	<script>
 		var container = document.getElementById('map');
@@ -300,7 +343,7 @@ body {
 		marker.setDraggable(true); 
 
 // 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
+		marker.setMap(map);
 
 	</script>
 
