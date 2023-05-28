@@ -1,6 +1,8 @@
 
     /* CSS for the custom button */
     .custom-button {
+      -webkit-border-radius:0;
+      -webkit-appearance: none;
       display: inline-block;
       padding: 12px 24px;
       font-size: 5px;
@@ -24,6 +26,8 @@
 
     /* CSS */
 .button-55 {
+  -webkit-border-radius:0;
+  -webkit-appearance: none;
   align-self: center;
   background-color: #fff;
   background-image: none;
