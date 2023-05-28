@@ -1,22 +1,25 @@
 <!-- <!DOCTYPE html> -->
 <html>
 <head>
-<title>사랑의 편지(포도원교회)</title>
+<title>제2회 행복한동행(포도원교회)</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,
  initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
 
 <meta property="og:site_name" content="babyparty" />
-<meta property="og:title" content="행복한 동행에 초대합니다." />
-<!--<meta property="og:description" content="행복한 동행 " /> -->
+<meta property="og:title" content="포도원교회 " />
+<meta property="og:description" content="행복한 동행 " />
 <!-- <meta property="og:image" content="http://www.podowonchurch.org/data/file/zadm_100100/thumb-1935644117_4pHLMuIX_KakaoTalk_20211112_174650133_3_1400x415.jpg" /> -->
 <meta property="og:image" content="asset/image/행복한동행.jpg" />
 
 <meta property="og:type" content="website" />
 <meta property="og:url" content="rmsidtest.github.io" />
-
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+<link rel="stylesheet" type="text/css" href="C:\교회\css\button.css"/>
 <style>
+ 
 * {
 	margin: 0;
 	padding: 0;
@@ -41,11 +44,11 @@ body {
 }
 
 .v1{
-    max-width: 100%;
+    	max-width: 100%;
 	width: auto ;
 	width: 100%;
-	height: 300px;
 	display: block;
+    height: 300px;
 }
 
 .img100 {
@@ -256,8 +259,8 @@ a:-webkit-any-link {
 }
 
 .button-24 {
-  background: 	#28288C;
-  border: 1px solid 	#28288C;
+  background: 	#FFA07A;
+  border: 1px solid 		#FFA07A;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
@@ -284,7 +287,7 @@ a:-webkit-any-link {
 .button-24:active {
   background-color: initial;
   background-position: 0 0;
-  color: 	#28288C;
+  color: 	#2f302c;
 }
 
 .button-24:active {
@@ -319,31 +322,38 @@ a:-webkit-any-link {
 <body>
 	<div id="wrap">
 		<div class="slide_wrap">
+            <div id="titleImage" >
+			
+				<img src="asset/image/행복한동행.jpg.png" class="img100" />
+		
+			</div>
 		
 			<div  >
 				<iframe class="v1" src="https://www.youtube.com/embed/VU7XRmasTwk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			</div>
-			<div id="titleImage" >
-			
-				<img src="asset/image/행복한동행.jpg" class="img100" />
-		
-			</div>
 
 			<div class="content_wrap">
-				<h1><img src="asset/image/logo.png" /></h1>
-			 <br>
-					<div class="goto_homepage">
-				<a href="http://podowonchurch.org/main.php" title="홈페이지 바로가기">
-				<button class="button-24" role="button" >포도원 교회 홈페이지</button></a>
-				<br>
-			</div>
-				<div class="tras_wrap">
+				
+			 
+				 <div class="goto_homepage">
+				 <a href="http://kko.to/7aLClhRqAb" title="홈페이지 바로가기"> 
+				<button class="button-55" role="button" >
+                    포도원 마을 <p>
+                         경기도 이천시 장호원읍 풍계리 645-7
+                    </p>
+                    <p>도로명 주소 : 경기도 이천시 장호원읍 이풍로359번길 98-27 </p>
+                </button></a>
+			    </div> 
+
+              
+
+				<!-- <div class="tras_wrap">
 	
 						<div class="is">
-							<a class="isa" href="https://place.map.kakao.com/9533122" style="color: #888; 
+							<a class="isa" href="http://kko.to/7aLClhRqAb" style="color: #888; 
 							font-size: 15px; font-family:jjj130;  ">
-							16044 경기도 의왕시 모락로 105-8 </a><p>
+							포도원 마을 주소  경기도 이천시 장호원읍 풍계리 645-7 </a><p>
 						    <a href='tel:031-456-9994' style="color: #888;font-size: 15px; font-family:jjj130;">TEL. 031) 456-9994~6</a><p>
 								PODOWON VILLAGE MISSION HOUSE
 
@@ -353,18 +363,20 @@ a:-webkit-any-link {
 				
 					
 				
-				</div>
+				</div> -->
 			</div>
 
 		
 					
 		</div>
 	
+        <br>
 
 			<div id="map" style="height: 400px;"></div>
 			<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bcb5777161b2bdc709a97c931910b27c"></script>
-            <br><br>
+            <br>
 			<div class="copy">
+                <h1><img src="asset/image/logo.png" /></h1>  <br>
 				Copyright © 포도원교회 ALL RIGHTS RESERVED
 			</div>
         
@@ -380,12 +392,12 @@ a:-webkit-any-link {
 	<script>
 		var container = document.getElementById('map');
 		var options = {
-			center: new kakao.maps.LatLng(37.3676804, 126.9659361),
+			center: new kakao.maps.LatLng(37.1604, 127.6102),
 			level: 2
 		};
 		var map = new kakao.maps.Map(container,options);
 		// 마커가 표시될 위치입니다 
-		var markerPosition  = new kakao.maps.LatLng(37.3676804, 126.9659361); 
+		var markerPosition  = new kakao.maps.LatLng(37.1604, 127.6102); 
 
 		// 마커를 생성합니다
 		var marker = new kakao.maps.Marker({
