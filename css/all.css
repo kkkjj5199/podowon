@@ -54,8 +54,34 @@ body {
 
 }
 
+.img300 a {
+	display: block;
+}
+
+.navimg{
+  max-width: 100%;
+   width: 160px;
+   display: block;
+   align-content: center;
+  }
+
+  #navimgId{
+	  text-align: center;
+	  margin: auto;
+	  max-width: 100%;
+	  height: auto;
+	  display: flex;
+	  justify-content: center;
+	  position: relative;
+	  bottom: 83px;
+  }
+  
+
+
+
 #titleImage3{
-	height: 296px;
+	height: auto;
+	align-content: center;
 }
 
 .video {
@@ -83,6 +109,9 @@ body {
 }
 
 .content_wrap {
+	max-width: 1024px;
+	width: 90%;
+	margin: 0 auto;
 	font-size: 14px;
 	text-align: center;
 	padding-top: 15px;
