@@ -20,14 +20,16 @@
     }
 
     .custom-button:hover {
+  
       background: linear-gradient(to bottom, #3aaf85, #4fc08d);
       transform: scale(1.05);
     }
 
     /* CSS */
 .button-55 {
-  -webkit-border-radius:0;
-  -webkit-appearance: none;
+    -webkit-border-radius:0;
+    -webkit-appearance: none;
+  position: absolute;  
   align-self: center;
   background-color: #fff;
   background-image: none;
@@ -59,10 +61,20 @@
 }
 
 .button-55:hover {
+  
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
 
 .button-55:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.navimg{
+ 
+ width: 198px;
+ position: relative;
+ bottom: 110px;
+ left: 150px;
+ vertical-align: bottom;
 }
