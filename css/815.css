@@ -1,33 +1,48 @@
+       @media only screen and (
+        max-width : 320px
+        
+        ) {
+
+       }
+
+
+
+.sa.show {
+    opacity: 1;
+    transform: none;
+}
 
 .imgtext {
 		max-width: 100%;
 			width: auto;
 			width: 40%;
-		    opacity: 0;
+		    /* opacity: 0; */
             
 		
 }
 
-.titleImage3 {
+
+
+
+/* .titleImage3 {
     height: auto;
-}
+    position: relative;
+} */
+
+
 
 #navimgId_815 {
-
     text-align: center;
-    margin: auto;
-    /* position: relative; */
-    /* bottom: 170px; */
-    /* position: absolute; */
-    /* margin-left: 80px; */
-    /* max-width: 1500px;
-      height: 2px;
-      display: flex;
-      justify-content: center;
-      position: relative;
-      */
+    background-color: #73382a;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    font-size: 1rem;
+    color: #f8efe1;
+    box-shadow: 7px 6px 28px 1px rgba(177, 173, 173, 0.24);
+    
 }
-
 
 
 .customoverlay {
