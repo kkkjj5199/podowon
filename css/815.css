@@ -52,15 +52,20 @@
 }
 
   #navimgId_815 {
+    
       text-align: center;
       margin: auto;
-      max-width: 1500px;
+      position: relative;
+      bottom: 170px;
+      /* position: absolute; */
+      /* margin-left: 80px; */
+      /* max-width: 1500px;
       height: 2px;
       display: flex;
       justify-content: center;
       position: relative;
-      bottom: 1500px;
+      */
   }
-
+ 
 
 
