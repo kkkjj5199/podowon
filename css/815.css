@@ -1,3 +1,7 @@
+
+
+
+
 .customoverlay {
     position: relative;
     bottom: 85px;
@@ -35,6 +39,7 @@
     font-weight: bold;
 }
 
+
 .customoverlay:after {
     content: '';
     position: absolute;
@@ -45,3 +50,17 @@
     height: 12px;
     background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
 }
+
+  #navimgId_815 {
+      text-align: center;
+      margin: auto;
+      max-width: 1500px;
+      height: 2px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      bottom: 1500px;
+  }
+
+
+
