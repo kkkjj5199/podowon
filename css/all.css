@@ -45,6 +45,8 @@ body {
 	display: block;
 }
 
+
+
 .img300 {
 
 	max-width: 100%;
@@ -79,8 +81,11 @@ body {
 
 
 
+ 
+
 #titleImage3{
-	height: auto;
+	height:750px;
+
 	align-content: center;
 }
 
