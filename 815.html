@@ -23,59 +23,69 @@
     <link rel="stylesheet" type="text/css" href="css/815.css" />
     <style>
         @media only screen and (max-width : 320px) {}
-          
-.customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
-.customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
-.customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
-.customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;}
-.customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+       
+        .sa.show {
+            opacity: 1;
+            transform: none;
+        }
 
+
+     
     </style>
 
 </head>
 
 <body>
-    <iframe src="asset/audio/-Amazing Grace (My Chains Are Gone).mp3?autoplay=1&mute=1"
-    style="display: none;"
-    allow="autoplay"
-
-    ></iframe>
+    <iframe src="asset/audio/-Amazing Grace (My Chains Are Gone).mp3?autoplay=1&mute=1" style="display: none;"
+        allow="autoplay"></iframe>
 
     <div id="wrap">
-        
-        <div class="slide_wrap">
-            <div id="titleImage">
-                <img src="asset/image/815_main.jpg" class="img100" />
-            </div>
 
-            <div id="titleImage2" style="height: 580px;">
-                <img src="asset/image/815_1.jpg" class="img200" />
-                    <div id="navimgId_815">
+        <div class="slide_wrap">
+        
+                        <div id="titleImage">
+                            <img src="asset/image/815_main.jpg" class="img100" />
+                            <div style="position: absolute; top: 300px; left: 130px;">
+                            <img src="asset/image/815문구.png" class="imgtext" />
+                            </div>
+                
+                        </div>
+                    <!-- <div id="815text">
+                        
+                    </div>
+         -->
+
+            <div id="titleImage2">
+                <img src="asset/image/815_2.jpg" class="img300" />
+            
+            </div>
+            <div id="titleImage3">
+                <img src="asset/image/815_1.jpg" class="img300" />
                         <button type="button" class="815_button" style="background-color: #73382a;
                                         border-radius: 20px;
                                         width: 200px;
                                         height: 30px;
                                         border: none;
                                         font-size: 1rem;
+                                        position: relative;
+                                        bottom: 220px;
+                                        left: 142px;
                                         font-size: 1rem;
                                         color: #f8efe1;
-                                        margin: auto;
-                                    
-                                       
                                         
                                      " onclick="location.href='http://kko.to/p7CFiiYM0L'">
-                            네비게이션 열기</button>
-                    
-                    </div>
-           
+                            네비게이션 열기
+                        </button>
+            
             </div>
-        
+<!-- 
             <div id="titleImage2">
-                <img src="asset/image/815_2.jpg" class="img300" />
-             
-            </div>
+                <img src="asset/image/815_1.jpg" class="img200" />
+     
+            </div> -->
+           
 
-        
+
 
             <!-- <div id="navimgId_815">
                 <a href="http://kko.to/7aLClhRqAb">
@@ -128,24 +138,24 @@
 
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
-       
+
 
         var content = '<div class="customoverlay">' +
-                '  <a href="http://kko.to/p7CFiiYM0L" target="_blank">' +
-                '    <span class="title">815 성회 장소</span>' +
-                '  </a>' +
-                '</div>';
+            '  <a href="http://kko.to/p7CFiiYM0L" target="_blank">' +
+            '    <span class="title">815 성회 장소</span>' +
+            '  </a>' +
+            '</div>';
 
-                var position = markerPosition
-                var customOverlay = new kakao.maps.CustomOverlay({
-                        map: map,
-                        position: position,
-                        content: content,
-                        yAnchor: 1
-                    });
-    
-    
-       kakao.maps.event.addListener(marker, 'click', function () {
+        var position = markerPosition
+        var customOverlay = new kakao.maps.CustomOverlay({
+            map: map,
+            position: position,
+            content: content,
+            yAnchor: 1
+        });
+
+
+        kakao.maps.event.addListener(marker, 'click', function () {
             // 마커 위에 인포윈도우를 표시합니다
             window.open('http://kko.to/p7CFiiYM0L');
         });
@@ -178,6 +188,23 @@
                 $(".slide_wrap").height(tmpHeight);
             });
         });
+
+    </script>
+    <script>
+    $(document).ready(function () {
+        /* 1 */
+        $(window).scroll(function () {
+            /* 2 */
+            $('.imgtext').each(function (i) {
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                /* 3 */
+                if (bottom_of_window > bottom_of_object / 2) {
+                    $(this).animate({ 'opacity': '1' }, 500);
+                }
+            });
+        });
+    });
 
     </script>
 </body>
