@@ -14,25 +14,29 @@
     <meta property="og:image" content="asset/image/815_main.jpg" style="width: 500px; height: 500px; />
 
 <meta property=" og:type" content="website" />
+<!-- css -->
     <meta property="og:url" content="rmsidtest.github.io" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/button.css" />
     <link rel="stylesheet" type="text/css" href="css/all.css" />
     <link rel="stylesheet" type="text/css" href="css/815.css" />
-    <style>
-        @media only screen and (max-width : 320px) {}
 
-        .sa.show {
-            opacity: 1;
-            transform: none;
-        }
-    </style>
+
+
+<!-- <script type="text/javascript" src="js/a.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+</script>
 
 </head>
 
 <body>
+   
     <iframe src="asset/audio/-Amazing Grace (My Chains Are Gone).mp3?autoplay=1&mute=1" style="display: none;"
         allow="autoplay"></iframe>
 
@@ -42,15 +46,13 @@
 
             <div id="titleImage">
                 <img src="asset/image/815_main.jpg" class="img100" />
-                <div style="position: absolute; top: 235px; left: 135px;">
-                    <img src="asset/image/815문구.png" class="imgtext" />
-                </div>
+                    <div  data-aos="fade-right" 
+                    style="position: absolute; top:11%; 
+                    left:19%; width: 100%;">
+                        <img src="asset/image/815문구.png" class="imgtext" />
+                    </div>
 
             </div>
-            <!-- <div id="815text">
-                        
-                    </div>
-         -->
 
             <div id="titleImage2">
                 <img src="asset/image/815_2.jpg" class="img300" />
@@ -58,29 +60,21 @@
             </div>
             <div id="titleImage3">
                 <img src="asset/image/815_1.jpg" class="img300" />
-                <button type="button" class="815_button" style="background-color: #73382a;
-                                        border-radius: 20px;
-                                        width: 200px;
-                                        height: 30px;
-                                        border: none;
-                                        font-size: 1rem;
-                                        position: relative;
-                                        bottom: 220px;
-                                        left: 142px;
-                                        font-size: 1rem;
-                                        color: #f8efe1;
-                                        
-                                     " onclick="location.href='http://kko.to/p7CFiiYM0L'">
-                    네비게이션 열기
-                </button>
+                    <div style="position: absolute; 
+                        left: 8%;
+                     
+                    
+                   " >
+                        <!-- <button id="navimgId_815" type="button" onclick="location.href='http://kko.to/p7CFiiYM0L'">
+                            네비게이션 열기
+                        </button> -->
+
+                    </div>
+
+                
 
             </div>
-            <!-- 
-            <div id="titleImage2">
-                <img src="asset/image/815_1.jpg" class="img200" />
-     
-            </div> -->
-
+            
 
 
 
@@ -94,8 +88,11 @@
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
 										encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div> -->
+    
+
 
             <div id="map" style="height: 400px;"></div>
+
             <script type="text/javascript"
                 src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bcb5777161b2bdc709a97c931910b27c"></script>
 
@@ -108,101 +105,14 @@
         </div>
 
 
-
-
-
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-    <script>
-        var container = document.getElementById('map');
-        var options = {
-            center: new kakao.maps.LatLng(37.35547765554722, 127.04095012037425),
-            level: 2
-        };
-        var map = new kakao.maps.Map(container, options);
-        // 마커가 표시될 위치입니다 
-        var markerPosition = new kakao.maps.LatLng(37.35547765554722, 127.04095012037425);
-
-        // 마커를 생성합니다
-        var marker = new kakao.maps.Marker({
-            position: markerPosition,
-        });
-
-        marker.setDraggable(true);
-
-
-        // 마커가 지도 위에 표시되도록 설정합니다
-        marker.setMap(map);
-
-
-        var content = '<div class="customoverlay">' +
-            '  <a href="http://kko.to/p7CFiiYM0L" target="_blank">' +
-            '    <span class="title">815 성회 장소</span>' +
-            '  </a>' +
-            '</div>';
-
-        var position = markerPosition
-        var customOverlay = new kakao.maps.CustomOverlay({
-            map: map,
-            position: position,
-            content: content,
-            yAnchor: 1
-        });
-
-
-        kakao.maps.event.addListener(marker, 'click', function () {
-            // 마커 위에 인포윈도우를 표시합니다
-            window.open('http://kko.to/p7CFiiYM0L');
-        });
-
-    </script>
-    <script> // 이미지 스크롤
-        $(function (e) {
-
-
-            var targetEle = $("#autoplay");
-            targetEle.find("img").css("cssText", "width:" + targetEle.width() + "px !important;");
-            targetEle.slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                dots: false,
-                infinite: true,
-                variableWidth: true
-            });
-            targetEle.css({ "display": "block" });
-            var tmpHeight = 0;
-            targetEle.find("img").first().load(function (e) {
-                targetEle.find("img").each(function (k, v) {
-                    var _this = $(this);
-                    if (tmpHeight == 0 || tmpHeight > _this.height()) {
-                        tmpHeight = _this.height();
-                    }
-                });
-                $(".slide_wrap").height(tmpHeight);
-            });
-        });
-
-    </script>
-    <script>
-        $(document).ready(function () {
-            /* 1 */
-            $(window).scroll(function () {
-                /* 2 */
-                $('.imgtext').each(function (i) {
-                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                    var bottom_of_window = $(window).scrollTop() + $(window).height();
-                    /* 3 */
-                    if (bottom_of_window > bottom_of_object / 2) {
-                        $(this).animate({ 'opacity': '1' }, 500);
-                    }
-                });
-            });
-        });
-
-    </script>
 </body>
 <!-- </html> -->
+
+<!-- js -->
+<script type="text/javascript" src="js/815.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
