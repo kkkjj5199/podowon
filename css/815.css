@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 .imgtext {
@@ -153,3 +154,160 @@
 
 
 >>>>>>> c0b429edb00ef522006b228590c0c2659f164bae
+=======
+
+
+.imgtext {
+		max-width: 100%;
+			width: auto;
+			width: 50%;
+		    opacity: 0;
+            
+		
+}
+
+
+
+.customoverlay {
+    position: relative;
+    bottom: 85px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #ddd;
+    float: left;
+}
+
+.customoverlay:nth-of-type(n) {
+    border: 0;
+    box-shadow: 0px 1px 2px #888;
+}
+
+.customoverlay a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    background: #696de7;
+    background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;
+}
+
+.customoverlay .title {
+    display: block;
+    text-align: center;
+    background: #fff;
+    margin-right: 35px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.customoverlay:after {
+    content: '';
+    position: absolute;
+    margin-left: -12px;
+    left: 50%;
+    bottom: -12px;
+    width: 22px;
+    height: 12px;
+    background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+}
+
+.titleImage3{
+    height: auto;
+}
+
+  #navimgId_815 {
+    
+      text-align: center;
+      margin: auto;
+      /* position: relative; */
+      /* bottom: 170px; */
+      /* position: absolute; */
+      /* margin-left: 80px; */
+      /* max-width: 1500px;
+      height: 2px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      */
+  }
+ 
+
+
+
+
+
+.customoverlay {
+    position: relative;
+    bottom: 85px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #ddd;
+    float: left;
+}
+
+.customoverlay:nth-of-type(n) {
+    border: 0;
+    box-shadow: 0px 1px 2px #888;
+}
+
+.customoverlay a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    background: #696de7;
+    background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;
+}
+
+.customoverlay .title {
+    display: block;
+    text-align: center;
+    background: #fff;
+    margin-right: 35px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.customoverlay:after {
+    content: '';
+    position: absolute;
+    margin-left: -12px;
+    left: 50%;
+    bottom: -12px;
+    width: 22px;
+    height: 12px;
+    background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+}
+
+  #navimgId_815 {
+    
+      text-align: center;
+      margin: auto;
+      position: relative;
+      bottom: 170px;
+      /* position: absolute; */
+      /* margin-left: 80px; */
+      /* max-width: 1500px;
+      height: 2px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      */
+  }
+ 
+
+
+>>>>>>> c0b429edb00ef522006b228590c0c2659f164bae
+>>>>>>> 3ae97fbc2d5bd507570612a19d1e6aed02334aa3
