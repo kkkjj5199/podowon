@@ -10,9 +10,6 @@ html,body {
 	height: 100%;
 }
 
-body {
-	background-color: #eee;
-}
 
 #wrap {
 	max-width: 500px;
@@ -82,12 +79,10 @@ body {
 
 
  
-
-#titleImage3{
-	height:750px;
-
+ #titleImage3{
+	
 	align-content: center;
-}
+} 
 
 .video {
 	max-width: 100%;
