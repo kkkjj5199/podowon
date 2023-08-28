@@ -6,12 +6,12 @@
 /* Google map*/
         var container = document.getElementById('map');
         var options = {
-            center: new kakao.maps.LatLng(37.368056, 126.966326),
+            center: new kakao.maps.LatLng(37.367729, 126.965929),
             level: 2
         };
         var map = new kakao.maps.Map(container, options);
         // 마커가 표시될 위치입니다 
-        var markerPosition = new kakao.maps.LatLng(37.368056, 126.966326);
+        var markerPosition = new kakao.maps.LatLng(37.367729, 126.965929);
 
         // 마커를 생성합니다
         var marker = new kakao.maps.Marker({
