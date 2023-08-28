@@ -11002,7 +11002,7 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
 }
 
@@ -11015,7 +11015,7 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
 }
 
@@ -11028,7 +11028,7 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
 }
 
@@ -11041,7 +11041,7 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
 }
 
@@ -11054,7 +11054,7 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+    background-size:contain;
     height: 100%;
 }
 
@@ -11067,7 +11067,7 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
 }
 
@@ -11080,7 +11080,7 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+    background-size:contain;
     height: 100%;
 }
 
@@ -11093,7 +11093,7 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
 }
 
@@ -11183,7 +11183,7 @@ header.masthead {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
     
 }
