@@ -10989,9 +10989,9 @@ hr.light {
     border-radius: 10rem;
 }
 
-.page-section {
+/* .page-section {
     padding: 8rem 0;
-}
+} */
 
 .page-section-theme {
     padding: 8rem 0;
@@ -11002,9 +11002,12 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: contain;
-    height: 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
+
+
 
 .page-section-title {
     padding: 8rem 0;
@@ -11015,8 +11018,9 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: contain;
-    height: 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
 .page-section-sequence {
@@ -11028,8 +11032,9 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: contain;
-    height: 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
 .page-section-info {
@@ -11041,8 +11046,9 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: contain;
-    height: 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
 .page-section-activity {
@@ -11054,8 +11060,9 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size:contain;
-    height: 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
 .page-section-our {
@@ -11067,8 +11074,9 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: contain;
-    height: 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
 .page-section-our2 {
@@ -11080,8 +11088,9 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size:contain;
-    height: 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
 .page-section-our3 {
@@ -11093,8 +11102,9 @@ hr.light {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: contain;
-    height: 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
 #mainNav {
@@ -11183,8 +11193,9 @@ header.masthead {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: contain;
-    height: 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
     
 }
 
