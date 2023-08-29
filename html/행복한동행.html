@@ -1,0 +1,127 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+<title>제2회 행복한동행(포도원교회)</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,
+ initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+
+<meta property="og:site_name" content="babyparty" />
+<meta property="og:title" content="행복한 동행에 초대합니다 " />
+<meta property="og:description" content=" " />
+<!-- <meta property="og:image" content="http://www.podowonchurch.org/data/file/zadm_100100/thumb-1935644117_4pHLMuIX_KakaoTalk_20211112_174650133_3_1400x415.jpg" /> -->
+<meta property="og:image" content="asset/image/행복한동행.jpg.png" style="width: 500px; height: 500px; />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="rmsidtest.github.io" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/button.css"/>
+ <link rel="stylesheet" type="text/css" href="css/all.css"/>
+<style>
+ @media only screen and (max-width : 320px){
+
+ }
+</style>
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="slide_wrap">
+            <div id="titleImage">	
+				<img src="asset/image/main.jpg" class="img100"/>
+			</div>
+
+			<div id="titleImage2">
+				<img src="asset/image/ㄴㅇ.jpg" class="img200"/>
+			</div>
+
+				<div id="titleImage3">
+				<img src="asset/image/오시는길.jpg" class="img300"/>
+					
+			</div>
+
+			<div id="navimgId">
+				<a href="http://kko.to/7aLClhRqAb">
+					<img src="asset/image/navi.png" class="navimg" />
+				</a>
+			</div>
+			<div>
+				<iframe class="v1" src="https://www.youtube.com/embed/VU7XRmasTwk" title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; 
+										encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			
+			<div id="map" style="height: 400px;"></div>
+			<script type="text/javascript"
+				src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bcb5777161b2bdc709a97c931910b27c"></script>
+			
+			
+			<div class="copy">
+				<h1><img src="asset/image/logo.png" /></h1> <br>
+				Copyright © 포도원교회 ALL RIGHTS RESERVED
+			</div>
+		
+		</div>
+	
+
+        
+          
+  
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.1604, 127.6102),
+			level: 2
+		};
+		var map = new kakao.maps.Map(container,options);
+		// 마커가 표시될 위치입니다 
+		var markerPosition  = new kakao.maps.LatLng(37.1604, 127.6102); 
+
+		// 마커를 생성합니다
+		var marker = new kakao.maps.Marker({
+			position: markerPosition
+		});
+
+		marker.setDraggable(true); 
+
+// 마커가 지도 위에 표시되도록 설정합니다
+		marker.setMap(map);
+
+	</script>
+	<script> // 이미지 스크롤
+	$(function(e) {
+	
+		
+		var targetEle = $("#autoplay");
+		targetEle.find("img").css("cssText" , "width:" + targetEle.width() + "px !important;");
+		targetEle.slick({
+			slidesToShow : 1,
+			slidesToScroll : 1,
+			autoplay : true,
+			autoplaySpeed : 2000,
+			dots: false,
+		  	infinite: true,
+		  	variableWidth: true
+		});
+		targetEle.css({"display" : "block"});
+		var tmpHeight = 0;
+		targetEle.find("img").first().load(function(e) {
+			targetEle.find("img").each(function(k, v) {
+				var _this = $(this);
+				if( tmpHeight == 0 || tmpHeight > _this.height() ) {
+					tmpHeight = _this.height();
+				}
+			});
+			$(".slide_wrap").height(tmpHeight);
+		});
+	});
+	
+	</script>
+</body>
+<!-- </html> -->
