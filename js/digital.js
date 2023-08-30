@@ -1,8 +1,4 @@
 
-
-
-
-
 /* Google map*/
         var container = document.getElementById('map');
         var options = {
