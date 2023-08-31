@@ -127,10 +127,10 @@
 [data-uk-cover],
 [uk-covers] {
     /* max-width:none; */
-    
+    width: 100%;
     position: absolute;
     left: 50%;
-    top: 52.9%;
+    top: 51%;
     --uk-position-translate-x: -50%;
     --uk-position-translate-y: -50%;
     transform: translate(var(--uk-position-translate-x), var(--uk-position-translate-y))
@@ -138,7 +138,7 @@
 
 [uk-coverss] {
     /* max-width:none; */
-   
+    width: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
