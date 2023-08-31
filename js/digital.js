@@ -41,16 +41,60 @@
             window.open('http://kko.to/pNYElrMIGU');
         });
 
-        function show(){
-
-           window.open();
 
 
+
+
+
+
+
+
+
+     
+      
+        const btnPrev = document.querySelector('.carousel-control-prev');
+        const btnNext = document.querySelector('.carousel-control-next');
+        let slides = document.querySelectorAll('.carousel-item');
+        let slideCount = slides.length;
+        let currentIdx = 0;
+
+       
+        
+        function c1(){
+            goToSlide(currentIdx -1 );
         }
 
-      
- 
+         function c2(){
+            goToSlide(currentIdx + 1);
+        }
 
+        function goToSlide(currentIdx) {
+            updateNav(currentIdx);
+        }
+
+        goToSlide(0);
+
+        function updateNav(currentIdx) {
+            if(currentIdx ==0 ){
+                btnPrev.classList.add('disabled');
+                console.log(currentIdx);
+            }else {
+                btnPrev.classList.remove('disabled');
+            }
+
+            if(currentIdx == slideCount-1 ){
+                btnNext.classList.add('disabled');
+            }else {
+                btnNext.classList.remove('disabled');
+                console.log(currentIdx);
+            }
+        }
+        
+
+
+    
+
+        
 
         /*슬라이드*/ 
 //  $(function (e) {
