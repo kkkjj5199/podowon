@@ -152,3 +152,18 @@
 }
 
 
+
+.carousel-control-next.disabled,
+.carousel-control-prev.disabled {
+        display: none;
+}
+
+
+
+
+
+
+
+
+
+
