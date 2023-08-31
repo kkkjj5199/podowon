@@ -127,7 +127,7 @@
 [data-uk-cover],
 [uk-covers] {
     /* max-width:none; */
-    height: 1270px;
+    
     position: absolute;
     left: 50%;
     top: 52.9%;
@@ -138,7 +138,7 @@
 
 [uk-coverss] {
     /* max-width:none; */
-    height: 1270px;
+   
     position: absolute;
     left: 50%;
     top: 50%;
