@@ -124,4 +124,28 @@
     background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
 }
 
+[data-uk-cover],
+[uk-covers] {
+    /* max-width:none; */
+    height: 1270px;
+    position: absolute;
+    left: 50%;
+    top: 52.9%;
+    --uk-position-translate-x: -50%;
+    --uk-position-translate-y: -50%;
+    transform: translate(var(--uk-position-translate-x), var(--uk-position-translate-y))
+}
+
+[uk-coverss] {
+    /* max-width:none; */
+    height: 1270px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    --uk-position-translate-x: -50%;
+    --uk-position-translate-y: -50%;
+    transform: translate(var(--uk-position-translate-x), var(--uk-position-translate-y))
+}
+
+
 
