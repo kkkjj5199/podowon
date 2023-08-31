@@ -127,6 +127,7 @@
 [data-uk-cover],
 [uk-covers] {
     /* max-width:none; */
+    height: auto;
     width: 100%;
     position: absolute;
     left: 50%;
