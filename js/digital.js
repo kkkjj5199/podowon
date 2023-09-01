@@ -54,11 +54,8 @@
       
         const btnPrev = document.querySelector('.carousel-control-prev');
         const btnNext = document.querySelector('.carousel-control-next');
+       
         let slides = document.querySelectorAll('.carousel-item');
-        let slideCount = slides.length;
-        
-        slides.direction = "left";
-        
         let currentIdx = 0;
 
        

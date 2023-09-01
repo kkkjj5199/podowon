@@ -151,7 +151,7 @@
     touch-action: pinch-zoom;
 }
 
-.carousel-control-next.disabled,
+/* .carousel-control-next.disabled, */
 .carousel-control-prev.disabled {
         display: none;
 }
