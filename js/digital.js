@@ -95,59 +95,8 @@
             //     console.log(currentIdx);
             // }
         }
-        
 
-
+    let sound = document.querySelector('audio');
+    sound.currentTime=6;
     
-
-        
-
-        /*슬라이드*/ 
-//  $(function (e) {
-
-
-//             var targetEle = $("#autoplay");
-//             targetEle.find("img").css("cssText", "width:" + targetEle.width() + "px !important;");
-//             targetEle.slick({
-//                 slidesToShow: 1,
-//                 slidesToScroll: 1,
-//                 autoplay: true,
-//                 autoplaySpeed: 2000,
-//                 dots: false,
-//                 infinite: true,
-//                 variableWidth: true
-//             });
-//             targetEle.css({ "display": "block" });
-//             var tmpHeight = 0;
-//             targetEle.find("img").first().load(function (e) {
-//                 targetEle.find("img").each(function (k, v) {
-//                     var _this = $(this);
-//                     if (tmpHeight == 0 || tmpHeight > _this.height()) {
-//                         tmpHeight = _this.height();
-//                     }
-//                 });
-//                 $(".slide_wrap").height(tmpHeight);
-//             });
-//         });
-
-
-
-
-// $(document).ready(function () {
-//     /* 1 */
-//     $(window).scroll(function () {
-//         /* 2 */
-//         $('.imgtext').each(function (i) {
-//             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-//             var bottom_of_window = $(window).scrollTop() + $(window).height();
-//             /* 3 */
-//             if (bottom_of_window > bottom_of_object / 2) {
-//                 $(this).animate({ 'opacity': '1' }, 500);
-//             }
-//         });
-//     })
-// });
-
-let sound = document.querySelector('audio');
-sound.currentTime=6;
 
