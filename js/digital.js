@@ -56,6 +56,9 @@
         const btnNext = document.querySelector('.carousel-control-next');
         let slides = document.querySelectorAll('.carousel-item');
         let slideCount = slides.length;
+        
+        slides.direction = "left";
+        
         let currentIdx = 0;
 
        
@@ -75,19 +78,25 @@
         goToSlide(0);
 
         function updateNav(currentIdx) {
-            if(currentIdx ==0 ){
-                btnPrev.classList.add('disabled');
-                console.log(currentIdx);
-            }else {
-                btnPrev.classList.remove('disabled');
-            }
+            btnPrev.classList.add('disabled');
+            // if(slides[0] || currentIdx == 0){
+            //     btnPrev.classList.add('disabled');
+            // }else{
+            //     btnPrev.classList.remove('disabled');
+            // }
+            // if(currentIdx ==0 ){
+            //     btnPrev.classList.add('disabled');
+            //     console.log(currentIdx);
+            // }else {
+            //     btnPrev.classList.remove('disabled');
+            // }
 
-            if(currentIdx == slideCount-1 ){
-                btnNext.classList.add('disabled');
-            }else {
-                btnNext.classList.remove('disabled');
-                console.log(currentIdx);
-            }
+            // if(currentIdx == slideCount-1 ){
+            //     btnNext.classList.add('disabled');
+            // }else {
+            //     btnNext.classList.remove('disabled');
+            //     console.log(currentIdx);
+            // }
         }
         
 
@@ -141,4 +150,7 @@
 //         });
 //     })
 // });
+
+let sound = document.querySelector('audio');
+sound.currentTime=6;
 
