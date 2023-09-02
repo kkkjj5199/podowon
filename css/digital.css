@@ -156,9 +156,6 @@
         display: none;
 }
 
-.carousel-item {
-    touch-action: pinch-zoom;
-}
 
 
 
