@@ -107,6 +107,7 @@
 
     //플레이어 변수 설정
     var player;
+    var myaudio = document.getElementById('myaudio');
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
             videoId: 'Jy_5b8v7MA8',
@@ -124,7 +125,7 @@
 
     var done = false;
     function onPlayerStateChange(event) {
-        const myaudio = document.getElementById('myaudio');
+       // const myaudio = document.getElementById('myaudio');
         myaudio.pause();
         console.log('잠시멈춤 성공');
         if (event.data == YT.PlayerState.PLAYING && !done) {
@@ -133,6 +134,16 @@
             myaudio.play();
         }
     }
+
+   
+
+    function instaOn(event) {
+        myaudio.pause();
+        console.log('instaON');
+         
+    }
+
+    
 
 
     
