@@ -95,7 +95,7 @@
             //     console.log(currentIdx);
             // }
         }
-
+    //노래 시작 시간
     let sound = document.querySelector('audio');
     sound.currentTime=5;
 
