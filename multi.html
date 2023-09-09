@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>멀티미디어와 관련된 태그</title>
+</head>
+
+<body>
+    <!--image-->
+    <img src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82" alt="루피 사진"
+        width="30%" height="30%">
+
+    <div id="player"></div>
+
+    <!--youtube-->
+    <!-- <iframe id="yy" width="500" height="255" src="https://www.youtube.com/embed/b6nCWvzVbH0" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        onclick="onPlayerStateChange()"">
+    </iframe> -->
+
+    <!--audio-->
+    <audio id="ss" controls src="../podowon/asset/audio/-Amazing Grace (My Chains Are Gone).mp3" autoplay >
+        브라우저가 audio 태그를 지원하지 않을 때 표시되는 문장
+    </audio>
+</body>
+
+
+<script>
+
+    //youtube API 불러오는 부분
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    //플레이어 변수 설정
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            //width&height를 설정할 수 있으나, 따로 css영역으로 뺐다.
+            videoId: 'b6nCWvzVbH0',
+           // playerVars: {
+           //	'rel': 0,    //연관동영상 표시여부(0:표시안함)
+          //  'controls': 0,    //플레이어 컨트롤러 표시여부(0:표시안함)
+            //'autoplay': 1,   //자동재생 여부(1:자동재생 함, mute와 함께 설정)
+            //'mute': 1,   //음소거여부(1:음소거 함)
+          //  'loop': 1,    //반복재생여부(1:반복재생 함)
+           // 'playsinline': 1,    //iOS환경에서 전체화면으로 재생하지 않게
+          //  'playlist': 'b6nCWvzVbH0'   //재생할 영상 리스트
+           
+           // },
+            events: {
+    
+                'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
+                'onStateChange': onPlayerStateChange//플레이어 상태 변화 시 이벤트를 실행한다.
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        const ss = document.getElementById('ss');
+      
+        //로딩된 후에 실행될 동작을 작성한다(소리 크기,동영상 속도를 미리 지정하는 것등등...)
+        ss.pause();
+          console.log('잠시멈춤 성공');
+        event.target.playVideo();//자동재생
+
+
+    }
+
+    var done = false;
+
+
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+            done = true;
+    
+        }
+    }
+
+</script>
+
+</html>

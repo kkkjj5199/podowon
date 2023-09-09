@@ -97,6 +97,10 @@
         }
 
     let sound = document.querySelector('audio');
-    sound.currentTime=6;
+    sound.currentTime=5;
+
+
     
 
+
+    
