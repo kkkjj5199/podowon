@@ -110,7 +110,7 @@
     var myaudio = document.getElementById('myaudio');
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-            videoId: 'Jy_5b8v7MA8',
+            videoId: 'PWxGSNSQhOE',
             events: {
                 'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
                 'onStateChange': onPlayerStateChange//플레이어 상태 변화 시 이벤트를 실행한다.
