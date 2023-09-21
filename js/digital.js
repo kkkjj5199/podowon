@@ -1,4 +1,5 @@
-
+    let sound = document.querySelector('audio');
+    sound.currentTime= 13;
 /* Google map*/
         var container = document.getElementById('map');
         var options = {
@@ -96,8 +97,7 @@
             // }
         }
     //노래 시작 시간
-    let sound = document.querySelector('audio');
-    sound.currentTime=5;
+
 
     //youtube API 불러오는 부분
     var tag = document.createElement('script');
