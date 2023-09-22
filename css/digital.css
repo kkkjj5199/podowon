@@ -156,7 +156,12 @@
         display: none;
 }
 
-#player #player2{
+#player{
+    width: 100%;
+    height: 315;
+}
+
+#player2 {
     width: 100%;
     height: 315;
 }
