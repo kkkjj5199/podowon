@@ -1,1 +1,180 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Serif+KR&display=swap'); */
+@media only screen and (max-width : 320px) {}
+
+
+
+.sa.show {
+    opacity: 1;
+    transform: none;
+}
+
+.imgtext {
+    max-width: 100%;
+    width: auto;
+    width: 40%;
+    /* opacity: 0; */
+
+
+}
+
+.h3_style {
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: bold;
+
+}
+
+.jb-wrap {
+    position: relative;
+}
+
+.jb-wrap img {
+    vertical-align: middle;
+}
+
+.jb-text {
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jb-image2 {
+    width: 200px;
+    transform: translate(-50%, -50%);
+    top: 45%;
+}
+
+
+
+
+
+/* .titleImage3 {
+    height: auto;
+    position: relative;
+} */
+
+
+
+#navimgId_815 {
+    text-align: center;
+    background-color: #73382a;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    font-size: 1rem;
+    color: #f8efe1;
+    box-shadow: 7px 6px 28px 1px rgba(177, 173, 173, 0.24);
+
+}
+
+
+.customoverlay {
+    position: relative;
+    bottom: 85px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #ddd;
+    float: left;
+}
+
+.customoverlay:nth-of-type(n) {
+    border: 0;
+    box-shadow: 0px 1px 2px #888;
+}
+
+.customoverlay a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    background: #696de7;
+    background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;
+}
+
+.customoverlay .title {
+    display: block;
+    text-align: center;
+    background: #fff;
+    margin-right: 35px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.customoverlay:after {
+    content: '';
+    position: absolute;
+    margin-left: -12px;
+    left: 50%;
+    bottom: -12px;
+    width: 22px;
+    height: 12px;
+    background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+}
+
+[data-uk-cover],
+[uk-covers] {
+    /* max-width:none; */
+    height: auto;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 51%;
+    --uk-position-translate-x: -50%;
+    --uk-position-translate-y: -50%;
+    transform: translate(var(--uk-position-translate-x), var(--uk-position-translate-y));
+    touch-action: pinch-zoom;
+    
+}
+
+[uk-coverss] {
+    /* max-width:none; */
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    --uk-position-translate-x: -50%;
+    --uk-position-translate-y: -50%;
+    transform: translate(var(--uk-position-translate-x), var(--uk-position-translate-y));
+    touch-action: pinch-zoom;
+}
+
+/* .carousel-control-next.disabled, */
+.carousel-control-prev.disabled {
+        display: none;
+}
+
+#player {
+    width: 100%;
+    height: 315;
+}
+
+#player2 {
+    width: 100%;
+    height: 315;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
