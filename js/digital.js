@@ -43,58 +43,24 @@
         });
 
 
-
-
-
-
-
-
-
-
-     
-      
         const btnPrev = document.querySelector('.carousel-control-prev');
         const btnNext = document.querySelector('.carousel-control-next');
+        const btnPrev2 = document.querySelector('.carousel-control-prev2');
+        const btnNext2 = document.querySelector('.carousel-control-next2');
        
         let slides = document.querySelectorAll('.carousel-item');
         let currentIdx = 0;
 
-       
-        
-        function c1(){
-            goToSlide(currentIdx -1 );
-        }
 
-         function c2(){
-            goToSlide(currentIdx + 1);
-        }
-
-        function goToSlide(currentIdx) {
-            updateNav(currentIdx);
+        function goToSlide() {
+            updateNav();
         }
 
         goToSlide(0);
 
-        function updateNav(currentIdx) {
+        function updateNav() {
             btnPrev.classList.add('disabled');
-            // if(slides[0] || currentIdx == 0){
-            //     btnPrev.classList.add('disabled');
-            // }else{
-            //     btnPrev.classList.remove('disabled');
-            // }
-            // if(currentIdx ==0 ){
-            //     btnPrev.classList.add('disabled');
-            //     console.log(currentIdx);
-            // }else {
-            //     btnPrev.classList.remove('disabled');
-            // }
-
-            // if(currentIdx == slideCount-1 ){
-            //     btnNext.classList.add('disabled');
-            // }else {
-            //     btnNext.classList.remove('disabled');
-            //     console.log(currentIdx);
-            // }
+            btnPrev2.classList.add('disabled');
         }
     //노래 시작 시간
 
@@ -111,7 +77,7 @@
     var myaudio = document.getElementById('myaudio');
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-            videoId: 'zlLQMyuz9YE',
+            videoId: 'WYqu23ysNZg',
             events: {
                 'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
                 'onStateChange': onPlayerStateChange//플레이어 상태 변화 시 이벤트를 실행한다.
@@ -119,7 +85,7 @@
             }
         });
         player2 = new YT.Player('player2', {
-            videoId: '1UJZnimXK-U',
+            videoId: '',
             events: {
                 'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
                 'onStateChange': onPlayerStateChange//플레이어 상태 변화 시 이벤트를 실행한다.
