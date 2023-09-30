@@ -74,6 +74,7 @@
     var player;
     var player2;
     var player3;
+    var player4;
     var myaudio = document.getElementById('myaudio');
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
@@ -94,6 +95,14 @@
         });
            player3 = new YT.Player('player3', {
             videoId: 'mY8t9Jbeyvc',
+            events: {
+                'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
+                'onStateChange': onPlayerStateChange//플레이어 상태 변화 시 이벤트를 실행한다.
+
+            }
+        });
+          player4 = new YT.Player('player4', {
+            videoId: 'CB5gUfDXC8o',
             events: {
                 'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
                 'onStateChange': onPlayerStateChange//플레이어 상태 변화 시 이벤트를 실행한다.
