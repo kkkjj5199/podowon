@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>멀티미디어와 관련된 태그</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <!--image-->
-    <img src="https://item.kakaocdn.net/do/a1866850b14ae47d0a2fd61f409dfc057154249a3890514a43687a85e6b6cc82" alt="루피 사진"
-        width="30%" height="30%">
 
-    <div id="player"></div>
+
+    <div class="youtube"  data-url="b6nCWvzVbH0"></div>
+    <div class="youtube" data-url="CB5gUfDXC8o"></div>
 
     <!--youtube-->
     <!-- <iframe id="yy" width="500" height="255" src="https://www.youtube.com/embed/b6nCWvzVbH0" title="YouTube video player"
@@ -36,36 +36,71 @@
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     //플레이어 변수 설정
-    var player;
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-            //width&height를 설정할 수 있으나, 따로 css영역으로 뺐다.
-            videoId: 'b6nCWvzVbH0',
-           // playerVars: {
-           //	'rel': 0,    //연관동영상 표시여부(0:표시안함)
-          //  'controls': 0,    //플레이어 컨트롤러 표시여부(0:표시안함)
-            //'autoplay': 1,   //자동재생 여부(1:자동재생 함, mute와 함께 설정)
-            //'mute': 1,   //음소거여부(1:음소거 함)
-          //  'loop': 1,    //반복재생여부(1:반복재생 함)
-           // 'playsinline': 1,    //iOS환경에서 전체화면으로 재생하지 않게
-          //  'playlist': 'b6nCWvzVbH0'   //재생할 영상 리스트
+
+    var idAry = [] , objAry=[]; urlAry = [];
+
+    $(".youtube").each(function (i) {
+        $(this).attr("id", "player" + i); // 아이디 값 추가
+        idAry.push("player" + i); // 아이디 값 배열에 넣기
+        urlAry.push($(this).data("url")); // 동영상 url 배열에 넣기
+    });
+
+    function onYouTubeIframeAPIReady() { // 이 함수가 동영상 iframe을 만들어주는 함수이다.
+            for (var i = 0; i < $(".youtube").length; i++) { // 동영상을 원하는만큼 만들어주기 위해.
+                var player;
+                var playerId = idAry[i];
+                player = new YT.Player(playerId, {
+                    videoId: urlAry[i],
+                    playerVars: {
+                        rel: 0
+                    },
+                    events: {
+                    'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
+                    'onStateChange': onPlayerStateChange,//플레이어 상태 변화 시 이벤트를 실행한다.
+                   
+
+                }
+                });
+                objAry.push(player);
            
-           // },
-            events: {
-    
-                'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
-                'onStateChange': onPlayerStateChange//플레이어 상태 변화 시 이벤트를 실행한다.
+                // 가장 중요한 대목! 변수 player에 각 동영상 마다 만들어진 객체를 objAry 배열에 넣어준다.
+                // 그래야 후에 원하는 동영상 제어를 할 수 있다.
             }
-        });
-    }
+        }
+
+   
+    // function onYouTubeIframeAPIReady() {
+    //     player = new YT.Player('player', {
+    //         //width&height를 설정할 수 있으나, 따로 css영역으로 뺐다.
+    //         videoId: 'b6nCWvzVbH0',
+    //        playerVars: {
+    //         	'rel': 0,    //연관동영상 표시여부(0:표시안함)
+    //        },
+    //         events: {
+    
+    //             'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
+    //             'onStateChange': onPlayerStateChange//플레이어 상태 변화 시 이벤트를 실행한다.
+    //         }
+    //     });
+    //     objAry.push(player);
+
+    //     player2 = new YT.Player('player2', {
+    //         //width&height를 설정할 수 있으나, 따로 css영역으로 뺐다.
+    //         videoId: 'CB5gUfDXC8o',
+
+    //         events: {
+
+    //             'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
+    //             'onStateChange': onPlayerStateChange//플레이어 상태 변화 시 이벤트를 실행한다.
+    //         }
+    //     });
+    // }
 
     function onPlayerReady(event) {
         const ss = document.getElementById('ss');
-      
         //로딩된 후에 실행될 동작을 작성한다(소리 크기,동영상 속도를 미리 지정하는 것등등...)
         ss.pause();
-          console.log('잠시멈춤 성공');
-        event.target.playVideo();//자동재생
+     
 
 
     }
@@ -74,11 +109,21 @@
 
 
     function onPlayerStateChange(event) {
+   
+      
+  
         if (event.data == YT.PlayerState.PLAYING && !done) {
             done = true;
-    
+            
+            
+          
+
         }
+
+       
+         
     }
+
 
 </script>
 

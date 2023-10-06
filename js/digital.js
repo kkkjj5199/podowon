@@ -70,46 +70,38 @@
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    //플레이어 변수 설정
-    var player;
-    var player2;
-    var player3;
-    var player4;
-    var myaudio = document.getElementById('myaudio');
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-            videoId: 'WYqu23ysNZg',
-            events: {
-                'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
-                'onStateChange': onPlayerStateChange//플레이어 상태 변화 시 이벤트를 실행한다.
+    var idAry = [] , objAry=[]; urlAry = [];
 
-            }
-        });
-        player2 = new YT.Player('player2', {
-            videoId: 'KVxAo7I_bl0',
-            events: {
-                'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
-                'onStateChange': onPlayerStateChange//플레이어 상태 변화 시 이벤트를 실행한다.
+    $(".youtube").each(function (i) {
+        $(this).attr("id", "player" + i); // 아이디 값 추가
+        idAry.push("player" + i); // 아이디 값 배열에 넣기
+        urlAry.push($(this).data("url")); // 동영상 url 배열에 넣기
+    });
 
-            }
-        });
-           player3 = new YT.Player('player3', {
-            videoId: 'mY8t9Jbeyvc',
-            events: {
-                'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
-                'onStateChange': onPlayerStateChange//플레이어 상태 변화 시 이벤트를 실행한다.
+    function onYouTubeIframeAPIReady() { // 이 함수가 동영상 iframe을 만들어주는 함수이다.
+            for (var i = 0; i < $(".youtube").length; i++) { // 동영상을 원하는만큼 만들어주기 위해.
+                var player;
+                var playerId = idAry[i];
+                player = new YT.Player(playerId, {
+                    videoId: urlAry[i],
+                    playerVars: {
+                        rel: 0
+                    },
+                    events: {
+                    'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
+                    'onStateChange': onPlayerStateChange,//플레이어 상태 변화 시 이벤트를 실행한다.
+                   
 
+                }
+                });
+                objAry.push(player);
+           
+                // 가장 중요한 대목! 변수 player에 각 동영상 마다 만들어진 객체를 objAry 배열에 넣어준다.
+                // 그래야 후에 원하는 동영상 제어를 할 수 있다.
             }
-        });
-          player4 = new YT.Player('player4', {
-            videoId: 'CB5gUfDXC8o',
-            events: {
-                'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
-                'onStateChange': onPlayerStateChange//플레이어 상태 변화 시 이벤트를 실행한다.
+        }
 
-            }
-        });
-    }
+    
 
     function onPlayerReady(event) {
         //event.target.playVideo();//자동재생
@@ -119,12 +111,17 @@
     function onPlayerStateChange(event) {
        // const myaudio = document.getElementById('myaudio');
         myaudio.pause();
-        console.log('잠시멈춤 성공');
+        console.log('오디오 잠시멈춤 성공');
+        
+       
         if (event.data == YT.PlayerState.PLAYING && !done) {
+            
             done = true;
-        } else if( event.data ===0 ){
-            myaudio.play();
+        } 
+        else if( event.data ===0 ){
+        myaudio.play();
         }
+     
     }
 
    
