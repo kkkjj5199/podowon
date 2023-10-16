@@ -175,6 +175,20 @@
     width: 100%;
 }
 
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #f8f8f800;
+}
+
+.uk-navbar-container {
+    height: 0px;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+}
 
 
 
