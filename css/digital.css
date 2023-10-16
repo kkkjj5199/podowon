@@ -152,10 +152,13 @@
 }
 
 /* .carousel-control-next.disabled, */
-.carousel-control-prev.disabled {
+/* .carousel-control-prev.disabled {
+        display: none;
+} */
+
+.carousel-control-prev.able {
         display: none;
 }
-
 
 #player {
     width: 100%;
