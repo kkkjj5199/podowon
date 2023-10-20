@@ -136,7 +136,7 @@
 
     // <div>태그 반복문
         var dd = document.createElement("div");
-        for (var i = 1; i < 29; i++) {
+        for (var i = 1; i < 42; i++) {
             var img_src = 'asset/image/digital/감사/감사-' + i + '.png';
               $("#images").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
