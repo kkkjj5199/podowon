@@ -12,6 +12,11 @@
 
     <div class="youtube"  data-url="b6nCWvzVbH0"></div>
     <div class="youtube" data-url="CB5gUfDXC8o"></div>
+<!--  -->
+
+    <div class="pkg">
+       
+    </div>
 
     <!--youtube-->
     <!-- <iframe id="yy" width="500" height="255" src="https://www.youtube.com/embed/b6nCWvzVbH0" title="YouTube video player"
@@ -24,10 +29,26 @@
     <audio id="ss" controls src="../podowon/asset/audio/-Amazing Grace (My Chains Are Gone).mp3" autoplay >
         브라우저가 audio 태그를 지원하지 않을 때 표시되는 문장
     </audio>
+
+
+
 </body>
 
 
-<script>
+<script language="javascript">
+
+
+      for (var i = 0; i < 11; i++) {
+            var dd = document.createElement("div");
+            for (var i = 1; i <= 10; i++) {
+                var img_src = 'asset/image/digital/감사/감사-' + i + '.png';
+                 $(".pkg").append('<img src=' + img_src + '>');
+            }
+           
+            console.log(dd);
+        }
+
+
 
     //youtube API 불러오는 부분
     var tag = document.createElement('script');
