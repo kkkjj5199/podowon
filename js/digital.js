@@ -61,7 +61,7 @@
             btnPrev.classList.add('disabled');
           
         }
-    //노래 시작 시간
+   
 
 
     //youtube API 불러오는 부분
@@ -107,6 +107,8 @@
         //event.target.playVideo();//자동재생
     }
 
+    
+
     var done = false;
     function onPlayerStateChange(event) {
        // const myaudio = document.getElementById('myaudio');
@@ -125,7 +127,7 @@
     }
 
    
-
+    //인스타로 들어갔을때 배경음악 잠시 멈춤.
     function instaOn(event) {
         myaudio.pause();
         console.log('instaON');
