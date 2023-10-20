@@ -6724,7 +6724,7 @@ a.close.disabled {
 }
 
 .carousel.pointer-event {
-    touch-action: pan-y;
+    touch-action: auto;
 }
 
 .carousel-inner {
