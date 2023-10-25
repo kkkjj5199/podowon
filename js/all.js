@@ -1,5 +1,5 @@
     let sound = document.querySelector('audio');
-    sound.currentTime= 6;
+    sound.currentTime= 18;
 /* Google map*/
         var container = document.getElementById('map');
         var options = {
