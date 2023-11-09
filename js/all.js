@@ -141,3 +141,11 @@
               $("#thanks").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
+              var dd = document.createElement("div");
+        for (var i = 1; i <=16; i++) {
+            var img_src = 'asset/image/all/again/again-' + i + '.webp';
+              $("#again").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        }
+
+  
+
