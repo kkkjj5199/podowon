@@ -139,12 +139,18 @@
         // for (var i = 0; i <=6; i++) {
         //     var img_src = 'asset/image/all/매일드리는감사-' + i + '.webp';
         //       $("#thanks").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        // }
+        // }pres
 
-        var dd = document.createElement("div");
-        for (var i = 0; i <=27; i++) {
-            var img_src = 'asset/image/all/매일드리는감사-' + i + '.webp';
-              $("#thanks").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+         var pre = document.createElement("div");
+        for (var i = 1; i <=6; i++) {
+            var img_src = 'asset/image/digital_pre/pre_' + i + '.webp';
+              $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
+
+        // var dd = document.createElement("div");
+        // for (var i = 0; i <=27; i++) {
+        //     var img_src = 'asset/image/all/매일드리는감사-' + i + '.webp';
+        //       $("#thanks").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        // }
 
 
