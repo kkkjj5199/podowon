@@ -147,10 +147,10 @@
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
-        // var dd = document.createElement("div");
-        // for (var i = 0; i <=27; i++) {
-        //     var img_src = 'asset/image/all/매일드리는감사-' + i + '.webp';
-        //       $("#thanks").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        // }
+      var dd = document.createElement("div");
+        for (var i = 1; i <=28; i++) {
+            var img_src = 'asset/image/all/감사-' + i + '.webp';
+              $("#tt").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        }
 
 
