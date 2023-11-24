@@ -51,16 +51,16 @@
         let currentIdx = 0;
 
 
-        function goToSlide() {
-            updateNav();
-        }
+        // function goToSlide() {
+        //     updateNav();
+        // }
 
-        goToSlide(0);
+        // goToSlide(0);
 
-        function updateNav() {
-            btnPrev.classList.add('disabled');
+        // function updateNav() {
+        //     btnPrev.classList.add('disabled');
           
-        }
+        // }
    
 
 
