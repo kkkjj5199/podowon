@@ -148,17 +148,10 @@
         }
 
       var dd = document.createElement("div");
-        for (var i = 1; i <=8; i++) {
+        for (var i = 1; i <=10; i++) {
             var img_src = 'asset/image/digital_pre/미얀마-' + i + '.webp';
               $("#M1").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
-
-            
-        for (var i = 1; i <=8; i++) {
-            var img_src = 'asset/image/digital_pre/묵상집-' + i + '.webp';
-              $("#M2").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
-
 
 
     
