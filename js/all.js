@@ -135,17 +135,26 @@
     }
 
     // <div>태그 반복문
-        var dd = document.createElement("div");
-        for (var i = 1; i <=28; i++) {
-            var img_src = 'asset/image/all/감사-' + i + '.webp';
-              $("#tt").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        // var dd = document.createElement("div");
+        // for (var i = 1; i <=28; i++) {
+        //     var img_src = 'asset/image/all/감사-' + i + '.webp';
+        //       $("#tt").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        // }
+
+        //       var dd = document.createElement("div");
+        // for (var i = 1; i <=16; i++) {
+        //     var img_src = 'asset/image/all/again/again-' + i + '.webp';
+        //       $("#again").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        // }
+
+                    
+        for (var i = 2; i <=26; i++) {
+            var img_src = 'asset/image/all/묵상집/' + i + '.webp';
+              $("#M2").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
-              var dd = document.createElement("div");
-        for (var i = 1; i <=16; i++) {
-            var img_src = 'asset/image/all/again/again-' + i + '.webp';
-              $("#again").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
+
+
 
   
 

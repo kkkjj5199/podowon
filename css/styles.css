@@ -6851,11 +6851,11 @@ a.close.disabled {
 }
 
 .carousel-control-prev-icon {
-    background-image: url("../asset/image/pre-icon.png");
+    background-image: url("../asset/image/back-arrow.png");
 }
 
 .carousel-control-next-icon {
-    background-image: url("../asset/image/next-icon.png");
+    background-image: url("../asset/image/arrow.png");
    
 }
 
