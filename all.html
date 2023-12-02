@@ -26,15 +26,16 @@
         rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
 
-        <style>
-            .carousel-control-prev-icon {
-                background-image: url("../asset/image/back-arrow.png");
-            }
-            .carousel-control-next-icon {
-                background-image: url("../asset/image/arrow.png");
-        
-            }
-        </style>
+    <style>
+        .carousel-control-prev-icon {
+            background-image: url("../asset/image/back-arrow.png");
+        }
+
+        .carousel-control-next-icon {
+            background-image: url("../asset/image/arrow.png");
+
+        }
+    </style>
 
     <!-- Third party plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
@@ -49,9 +50,11 @@
 
 
 
-        <!-- My Css   -->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/digital.css">
+    <!-- My Css   -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/digital.css">
+
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
 
 
 
@@ -64,41 +67,52 @@
     <audio src="asset/audio/Hillsong Worship-14-Silent Night.mp3" autoplay id="audio"></audio>
 
     <section class="page-section bg-primary" id="thanks">
+
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
+               
+                    <!-- <button type="button" class="btn btn-outline-warning" onclick="test()">오늘 날짜 묵상집 보기</button> -->
+                  
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper" id="MM">
+                            <div src="asset/image/all/묵상집/0.webp" class="swiper-wrapper">
+                            <button type="button" class="btn btn-outline-warning" id="today" onclick="test()">오늘의 묵상집 보기</button>
 
-                    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-wrap="false" data-interval="false" data-ride="carousel">
-                    
-                        <div class="carousel-inner" id="M2">
-                            <div class="carousel-item active">
-                                <img id="M2" class="d-block w-100" src="asset/image/all/묵상집/1.webp" alt="First slide">
+                                <!-- <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 8</div> -->
                             </div>
-                            <!-- 다수 장 js로 대체 -->
+
+                            <div class="swiper-button-next">
+                                <img src="asset/image/arrow.png" class="mainImage">
+                            </div>
+                            <div class="swiper-button-prev">
+                                <img src="asset/image/back-arrow.png" class="mainImage">
+                            </div>
+                            <!-- <div class="swiper-pagination"></div> -->
                         </div>
-                        <a  class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"
-                            >
-                            <span class="carousel-control-prev-icon" aria-hidden="true""></span>
-                                                                                        <span class=" sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true" "></span>
-                                                                    <span class=" sr-only">Next</span>
-                        </a>
+
+
+
+
+
+                        <div class="small text-center text-muted">Copyright © 포도원감리교회</div>
                     </div>
-                    
-                    
-          
 
-                    <div class="small text-center text-muted">Copyright © 포도원교회</div>
+
+
+
+
                 </div>
-
-
-
-
-
             </div>
-        </div>
     </section>
 
 
@@ -122,6 +136,41 @@
     <!-- uikit-->
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
+
+    <!-- swiper.js -->
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            loop: true,
+            centeredSlides: true,
+            loop: false,   // 슬라이드 반복 여부
+            loopAdditionalSlides: 1,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            effect: 'fade',
+            speed: 1900,
+            fadeEffect: { crossFade: true },
+
+
+        });
+
+        function test() {
+            const day = new Date().getDate();
+            console.log(day);
+            swiper.slideTo(day, 1000, false)
+        }
+
+
+
+    </script>
+
+
+
 
 
 
