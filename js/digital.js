@@ -148,9 +148,9 @@
         }
 
       var dd = document.createElement("div");
-        for (var i = 1; i <=11; i++) {
-            var img_src = 'asset/image/digital/미얀마-' + i + '.webp';
-              $("#M1").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        for (var i = 1; i <=6; i++) {
+            var img_src = 'asset/image/digital_pre/기_고3-' + i + '.webp';
+              $("#vision").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
 
