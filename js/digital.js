@@ -107,6 +107,10 @@
         //event.target.playVideo();//자동재생
     }
 
+    function account(){
+        alert('농협 351-1180-2705-13');
+    }
+
     
 
     var done = false;
