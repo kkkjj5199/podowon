@@ -1,5 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Serif+KR&display=swap'); */
-@media only screen and (max-width : 320px) {}
+@media only screen and (max-width : 320px) {
+
+}
 
 @font-face {
     font-family: 'cfont';
@@ -229,6 +231,12 @@
     /* 세로로 4개의 행 */
     gap: 50px;
     /* 버튼 사이의 간격 조절 */
+}
+
+@media only screen and (max-width : 400px) {
+    .button-container{
+        width: 78%;
+    }
 }
 
            /* 버튼에 대한 스타일 */
