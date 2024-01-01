@@ -157,6 +157,36 @@
               $("#vision").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
+    $(function () {
+        $('#onDisplay').click(function () {
+            if ($("#noneDiv").css("display") == "none") {
+            $('#noneDiv').show();
+            }
+               else {
+                  $('#noneDiv').hide();
+            }
+        });
+    });
+
+        $(function () {
+        $('#onDisplay2').click(function () {
+            if ($("#noneDiv2").css("display") == "none") {
+            $('#noneDiv2').show();
+            }
+            else {
+                  $('#noneDiv2').hide();
+            }
+        });
+    });
+
+    $(function () {
+            $('#offDisplay').click(function () {
+                if ($("#noneDiv").css("display") != "none") {
+                    $('#noneDiv').hide();
+                }
+            });
+        });
+
 
     
       

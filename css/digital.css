@@ -1,7 +1,10 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Serif+KR&display=swap'); */
 @media only screen and (max-width : 320px) {}
 
-
+@font-face {
+    font-family: 'cfont';
+    src: url('cfont.ttf');
+} 
 
 .sa.show {
     opacity: 1;
@@ -193,8 +196,116 @@
     height: 40px;
 }
 
+.btn_container {
+    position: relative;
+    width: 100%;
+    /* 전체 컨테이너의 폭 조절 */
+    /* margin: 0px; */
+}
 
+/* 이미지에 대한 스타일 */
+.image {
+    width: auto;
+    height: auto;
+    /* 이미지의 높이를 자동으로 조절하여 비율 유지 */
+    display: block;
+    
+}
 
+/* 버튼 컨테이너에 대한 스타일 */
+.button-container {
+    position: absolute;
+    bottom: 100px;
+    /* 아래 여백 조절 */
+    left: 50%;
+    /* 가운데 정렬을 위해 왼쪽 위치 조절 */
+    transform: translateX(-50%);
+    /* 가운데 정렬을 위한 가로 이동 */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 55%;
+    /* 가로로 2개의 열 */
+    grid-template-rows: repeat(4, 1fr);
+    /* 세로로 4개의 행 */
+    gap: 50px;
+    /* 버튼 사이의 간격 조절 */
+}
+
+           /* 버튼에 대한 스타일 */
+.button1 {
+padding: 10px 20px;
+background-color: #C32E61;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-family: cfont;
+}
+.button2 {
+padding: 10px 20px;
+background-color: #60BD89;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-family: cfont;
+}
+.button3 {
+    padding: 10px 20px;
+    background-color: #4c77af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: cfont;
+}
+.button4 {
+padding: 10px 20px;
+background-color: #87CEFA;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-family: cfont;
+}
+.button5 {
+padding: 10px 20px;
+background-color: #DC6093;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-family: cfont;
+}
+.button6 {
+    padding: 10px 20px;
+    background-color: #FFC81E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: cfont;
+
+}
+.button7 {
+    padding: 10px 20px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: cfont;
+}
+.button8 {
+    padding: 10px 20px;
+    background-color: #3C3C8C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: cfont;
+   
+}
 
 
 
