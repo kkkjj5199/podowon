@@ -151,45 +151,70 @@
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
-      var dd = document.createElement("div");
-        for (var i = 1; i <=6; i++) {
-            var img_src = 'asset/image/digital_pre/기_고3-' + i + '.webp';
-              $("#vision").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
-
-    $(function () {
-        $('#onDisplay').click(function () {
-            if ($("#noneDiv").css("display") == "none") {
-            $('#noneDiv').show();
-            }
-               else {
-                  $('#noneDiv').hide();
-            }
-        });
-    });
-
-        $(function () {
-        $('#onDisplay2').click(function () {
-            if ($("#noneDiv2").css("display") == "none") {
-            $('#noneDiv2').show();
-            }
-            else {
-                  $('#noneDiv2').hide();
-            }
-        });
-    });
-
-    $(function () {
-            $('#offDisplay').click(function () {
-                if ($("#noneDiv").css("display") != "none") {
-                    $('#noneDiv').hide();
-                }
-            });
-        });
-
-
     
-      
+// 기관별 버튼 클릭 시 div 화면에  이미지 추가 
+
+//     const kids1 = document.getElementById('kids1');
+//     const kids2 = document.getElementById('kids2');
+//     const kids3 = document.getElementById('kids3');
+//     const middle = document.getElementById('middle');
+//     const high = document.getElementById('high');
+//     const youth = document.getElementById('youth');
+//     const wpo = document.getElementById('wpo');
+//     const mpo = document.getElementById('mpo');
+
+//     kids1.addEventListener("click", handleClick);
+//     kids2.addEventListener("click", handleClick);
+//     kids3.addEventListener("click", handleClick);
+//     middle.addEventListener("click", handleClick);
+//     high.addEventListener("click", handleClick);
+//     youth.addEventListener("click", handleClick);
+//     wpo.addEventListener("click", handleClick);
+//     mpo.addEventListener("click", handleClick);
+
+
+//     function handleClick(event) {
+//        if ($("#hiddenElement").css("display") == "none") {
+//             if (event.target === kids1) {
+//             let ii= $('#hiddenElement').append('<img src="' + imagePaths[0] + '"class="mainImage">');
+//             ii.show();
+//             // 버튼 1에 대한 동작 수행
+//             } else if (event.target === kids2) {
+//             let ii= $('#hiddenElement').append('<img src="' + imagePaths[1] + '"class="mainImage">');
+//             ii.show();
+//             // 버튼 2에 대한 동작 수행
+//             } else if (event.target === kids3) {
+
+//             } else if (event.target === middle) {
+                
+//             } else if (event.target === high) {
+
+//             }else if (event.target === youth) {
+                
+//             }else if (event.target === wpo) {
+
+//             }else if (event.target === mpo) {
+
+//             }
+//        }
+    
+// }
+
+
+function showImage(imagePath) {
+    console.log(imagePath);
+    const imageContainer = document.getElementById("imageContainer");
+
+    if(imagePath != null) {
+        imageContainer.innerHTML = '<img src="' + imagePath + '" class="mainImage" >';
+    }
+
+   
+}
 
 
 
+          
+
+        
+    
