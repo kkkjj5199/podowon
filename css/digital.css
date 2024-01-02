@@ -217,7 +217,7 @@
 /* 버튼 컨테이너에 대한 스타일 */
 .button-container {
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     /* 아래 여백 조절 */
     left: 50%;
     /* 가운데 정렬을 위해 왼쪽 위치 조절 */
@@ -235,12 +235,12 @@
 
 @media only screen and (max-width : 400px) {
     .button-container{
-        width: 78%;
+        width: 65%;
     }
 }
 
            /* 버튼에 대한 스타일 */
-.button1 {
+#kids1 {
 padding: 10px 20px;
 background-color: #C32E61;
 color: white;
@@ -249,7 +249,7 @@ border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
 }
-.button2 {
+#kids2 {
 padding: 10px 20px;
 background-color: #60BD89;
 color: white;
@@ -258,16 +258,16 @@ border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
 }
-.button3 {
-    padding: 10px 20px;
-    background-color: #4c77af;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: cfont;
+#kids3 {
+padding: 10px 20px;
+background-color: #4c77af;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-family: cfont;
 }
-.button4 {
+#middle {
 padding: 10px 20px;
 background-color: #87CEFA;
 color: white;
@@ -276,7 +276,7 @@ border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
 }
-.button5 {
+#high {
 padding: 10px 20px;
 background-color: #DC6093;
 color: white;
@@ -285,7 +285,7 @@ border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
 }
-.button6 {
+#youth {
     padding: 10px 20px;
     background-color: #FFC81E;
     color: white;
@@ -295,7 +295,7 @@ font-family: cfont;
     font-family: cfont;
 
 }
-.button7 {
+#wpo {
     padding: 10px 20px;
     background-color: #800000;
     color: white;
@@ -304,7 +304,7 @@ font-family: cfont;
     cursor: pointer;
     font-family: cfont;
 }
-.button8 {
+#mpo {
     padding: 10px 20px;
     background-color: #3C3C8C;
     color: white;
