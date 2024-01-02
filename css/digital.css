@@ -217,7 +217,7 @@
 /* 버튼 컨테이너에 대한 스타일 */
 .button-container {
     position: absolute;
-    bottom: 120px;
+    bottom: 100px;
     /* 아래 여백 조절 */
     left: 50%;
     /* 가운데 정렬을 위해 왼쪽 위치 조절 */
@@ -226,7 +226,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
-    height: 50%;
+    
     /* 가로로 2개의 열 */
     grid-template-rows: repeat(4, 1fr);
     /* 세로로 4개의 행 */
@@ -236,9 +236,9 @@
 
 @media only screen and (max-width : 400px) {
     .button-container{
-        bottom: 120px;
-        width:70%;
-        height: 60%;
+        bottom: 100px;
+        width:90%;
+        /* height: 60%; */
     }
 }
 
@@ -251,7 +251,7 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
-font-size: 20px;
+font-size: 22px;
 }
 #kids2 {
 padding: 10px 20px;
@@ -261,7 +261,7 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
-font-size: 20px;
+font-size: 22px;
 }
 #kids3 {
 padding: 10px 20px;
@@ -271,7 +271,7 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
-font-size: 20px;
+font-size: 22px;
 }
 #middle {
 padding: 10px 20px;
@@ -281,7 +281,7 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
-font-size: 20px;
+font-size: 22px;
 }
 #high {
 padding: 10px 20px;
@@ -291,7 +291,7 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
-font-size: 20px;
+font-size: 22px;
 }
 #youth {
     padding: 10px 20px;
@@ -301,7 +301,7 @@ font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
     font-family: cfont;
-    font-size: 20px;
+    font-size: 22px;
 
 }
 #wpo {
@@ -312,7 +312,7 @@ font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
     font-family: cfont;
-    font-size: 20px;
+    font-size: 22px;
 }
 #mpo {
     padding: 10px 20px;
@@ -322,7 +322,7 @@ font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
     font-family: cfont;
-    font-size: 20px;
+    font-size: 22px;
    
 }
 
