@@ -145,76 +145,77 @@
               $("#newMember").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
-         var pre = document.createElement("div");
+       
         for (var i = 1; i <=5; i++) {
             var img_src = 'asset/image/digital_pre/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
-    
-// 기관별 버튼 클릭 시 div 화면에  이미지 추가 
-
-//     const kids1 = document.getElementById('kids1');
-//     const kids2 = document.getElementById('kids2');
-//     const kids3 = document.getElementById('kids3');
-//     const middle = document.getElementById('middle');
-//     const high = document.getElementById('high');
-//     const youth = document.getElementById('youth');
-//     const wpo = document.getElementById('wpo');
-//     const mpo = document.getElementById('mpo');
-
-//     kids1.addEventListener("click", handleClick);
-//     kids2.addEventListener("click", handleClick);
-//     kids3.addEventListener("click", handleClick);
-//     middle.addEventListener("click", handleClick);
-//     high.addEventListener("click", handleClick);
-//     youth.addEventListener("click", handleClick);
-//     wpo.addEventListener("click", handleClick);
-//     mpo.addEventListener("click", handleClick);
-
-
-//     function handleClick(event) {
-//        if ($("#hiddenElement").css("display") == "none") {
-//             if (event.target === kids1) {
-//             let ii= $('#hiddenElement').append('<img src="' + imagePaths[0] + '"class="mainImage">');
-//             ii.show();
-//             // 버튼 1에 대한 동작 수행
-//             } else if (event.target === kids2) {
-//             let ii= $('#hiddenElement').append('<img src="' + imagePaths[1] + '"class="mainImage">');
-//             ii.show();
-//             // 버튼 2에 대한 동작 수행
-//             } else if (event.target === kids3) {
-
-//             } else if (event.target === middle) {
                 
-//             } else if (event.target === high) {
+        // for (var i = 1; i <=4; i++) {
+        //     var img_src = 'asset/image/digital_pre/기_청년회의밤_' + i + '.webp';
+        //       $("#caryouth").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        // }
 
-//             }else if (event.target === youth) {
-                
-//             }else if (event.target === wpo) {
-
-//             }else if (event.target === mpo) {
-
-//             }
-//        }
     
-// }
+ // Sample list of image URLs
+        const advertises = [
+            'asset/image/digital_pre/ad__p.webp',
+            'asset/image/digital_pre/송년주일.webp',
+            'asset/image/digital_pre/송구영신예배.webp',
+            'asset/image/digital_pre/신년축복성회.webp',
+            'asset/image/digital_pre/신년축복특새.webp',
+            'asset/image/digital_pre/신년주일.webp',
+            'asset/image/digital_pre/당역구역회.webp',
+            // Add more image URLs as needed
+        ];
 
+        const news = [
+        'asset/image/digital_pre/포도원스토리.webp',
+           'asset/image/digital_pre/기_성탄전야제.webp',
+           'asset/image/digital_pre/기_성탄전야제_1.webp',
+           'asset/image/digital_pre/기_성탄전야제_2.webp',
+           'asset/image/digital_pre/기_성탄전야제_3.webp',
+           'asset/image/digital_pre/기_성탄전야제_0.webp',
+           'asset/image/digital_pre/기_미얀마선교바자회.webp',
+           'asset/image/digital_pre/기_미얀마선교바자회_1.webp'
+            // Add more image URLs as needed
+        ];
 
-function showImage(imagePath) {
-    console.log(imagePath);
-    const imageContainer = document.getElementById("imageContainer");
+        // Function to dynamically populate the carousel
+        function populateCarousel() {
+            const carouselInner = document.querySelector('#dynamicCarousel .carousel-inner');
+            const carouselInner2 = document.querySelector('#dynamicCarousel2 .carousel-inner');
 
-    if(imagePath != null) {
-        imageContainer.innerHTML = '<img src="' + imagePath + '" class="mainImage" >';
-    }
+            advertises.forEach((imageUrl, index) => {
+                const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
 
-   
-}
+                const carouselItem = document.createElement('div');
+                carouselItem.className = itemClass;
 
+                const imgElement = document.createElement('img');
+                imgElement.src = imageUrl;
+                imgElement.className = 'd-block w-100';
 
+                carouselItem.appendChild(imgElement);
+                carouselInner.appendChild(carouselItem);
+               
+            });
 
-          
+             news.forEach((imageUrl, index) => {
+                const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
 
-        
-    
+                const carouselItem = document.createElement('div');
+                carouselItem.className = itemClass;
+
+                const imgElement = document.createElement('img');
+                imgElement.src = imageUrl;
+                imgElement.className = 'd-block w-100';
+
+                carouselItem.appendChild(imgElement);
+                carouselInner2.appendChild(carouselItem);
+            });
+        }
+
+        // Call the function to populate the carousel
+        populateCarousel();
