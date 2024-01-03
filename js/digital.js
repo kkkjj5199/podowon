@@ -182,6 +182,11 @@
             // Add more image URLs as needed
         ];
 
+          $('[id^="imageCarouselModal"]').on('hidden.bs.modal', function () {
+        // Remove 'modal-open' class from the body to prevent scrolling to the top
+        $('body').removeClass('modal-open');
+        });     
+
         // Function to dynamically populate the carousel
         function populateCarousel() {
             const carouselInner = document.querySelector('#dynamicCarousel .carousel-inner');
