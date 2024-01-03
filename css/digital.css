@@ -242,6 +242,14 @@
     }
 }
 
+@media only screen and (max-width : 360px) {
+    .button-container {
+            bottom: 20px;
+            width: 90%;
+            /* height: 60%; */
+        }
+}
+
            /* 버튼에 대한 스타일 */
 #kids1 {
 padding: 10px 20px;
