@@ -161,24 +161,25 @@
  // Sample list of image URLs
         const advertises = [
             'asset/image/digital_pre/ad__p.webp',
-            'asset/image/digital_pre/송년주일.webp',
-            'asset/image/digital_pre/송구영신예배.webp',
-            'asset/image/digital_pre/신년축복성회.webp',
-            'asset/image/digital_pre/신년축복특새.webp',
-            'asset/image/digital_pre/신년주일.webp',
-            'asset/image/digital_pre/당역구역회.webp',
+            
             // Add more image URLs as needed
         ];
 
-        const news = [
+        const story = [
         'asset/image/digital_pre/포도원스토리.webp',
-           'asset/image/digital_pre/기_성탄전야제.webp',
-           'asset/image/digital_pre/기_성탄전야제_1.webp',
-           'asset/image/digital_pre/기_성탄전야제_2.webp',
-           'asset/image/digital_pre/기_성탄전야제_3.webp',
-           'asset/image/digital_pre/기_성탄전야제_0.webp',
-           'asset/image/digital_pre/기_미얀마선교바자회.webp',
-           'asset/image/digital_pre/기_미얀마선교바자회_1.webp'
+        'asset/image/digital_pre/송구영신예배_1.webp',
+        'asset/image/digital_pre/송구영신예배_2.webp',
+        'asset/image/digital_pre/송구영신예배_3.webp',
+        'asset/image/digital_pre/송구영신예배_4.webp',
+        'asset/image/digital_pre/송구영신예배_5.webp',
+        'asset/image/digital_pre/송구영신예배_6.webp',
+        'asset/image/digital_pre/신년축복성회_1.webp',
+        'asset/image/digital_pre/신년축복성회_2.webp',
+        'asset/image/digital_pre/신년축복성회_3.webp',
+        'asset/image/digital_pre/신년축복성회_4.webp',
+        'asset/image/digital_pre/신년축복성회_5.webp',
+        'asset/image/digital_pre/신년축복성회_6.webp',
+
             // Add more image URLs as needed
         ];
 
@@ -207,7 +208,7 @@
                
             });
 
-             news.forEach((imageUrl, index) => {
+             story.forEach((imageUrl, index) => {
                 const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
 
                 const carouselItem = document.createElement('div');
