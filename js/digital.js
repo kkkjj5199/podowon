@@ -151,6 +151,11 @@
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
+        for (var i = 1; i <=12; i++) {
+            var img_src = 'asset/image/digital_pre/아동3_' + i + '.webp';
+              $("#kids3Images").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        }
+
                 
         // for (var i = 1; i <=4; i++) {
         //     var img_src = 'asset/image/digital_pre/기_청년회의밤_' + i + '.webp';
@@ -161,6 +166,11 @@
  // Sample list of image URLs
         const advertises = [
             'asset/image/digital_pre/ad__p.webp',
+            'asset/image/digital_pre/신년주일.webp',
+            'asset/image/digital_pre/당역구역회.webp',
+            'asset/image/digital_pre/2024헌신예배.webp',
+             'asset/image/digital_pre/교역자회의.webp',
+              'asset/image/digital_pre/기부금.webp',
             
             // Add more image URLs as needed
         ];
@@ -179,6 +189,7 @@
         'asset/image/digital_pre/신년축복성회_4.webp',
         'asset/image/digital_pre/신년축복성회_5.webp',
         'asset/image/digital_pre/신년축복성회_6.webp',
+        'asset/image/digital_pre/신년축복성회_7.webp',
 
             // Add more image URLs as needed
         ];

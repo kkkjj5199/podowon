@@ -260,6 +260,8 @@ border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
 font-size: 22px;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ transition: box-shadow 0.3s ease-in-out;
 }
 #kids2 {
 padding: 10px 20px;
@@ -270,6 +272,8 @@ border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
 font-size: 22px;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ transition: box-shadow 0.3s ease-in-out;
 }
 #kids3 {
 padding: 10px 20px;
@@ -280,6 +284,8 @@ border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
 font-size: 22px;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ transition: box-shadow 0.3s ease-in-out;
 }
 #middle {
 padding: 10px 20px;
@@ -290,6 +296,8 @@ border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
 font-size: 22px;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ transition: box-shadow 0.3s ease-in-out;
 }
 #high {
 padding: 10px 20px;
@@ -300,6 +308,8 @@ border-radius: 5px;
 cursor: pointer;
 font-family: cfont;
 font-size: 22px;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ transition: box-shadow 0.3s ease-in-out;
 }
 #youth {
     padding: 10px 20px;
@@ -310,6 +320,8 @@ font-size: 22px;
     cursor: pointer;
     font-family: cfont;
     font-size: 22px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ transition: box-shadow 0.3s ease-in-out;
 
 }
 #wpo {
@@ -321,6 +333,8 @@ font-size: 22px;
     cursor: pointer;
     font-family: cfont;
     font-size: 22px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ transition: box-shadow 0.3s ease-in-out;
 }
 #mpo {
     padding: 10px 20px;
@@ -331,12 +345,16 @@ font-size: 22px;
     cursor: pointer;
     font-family: cfont;
     font-size: 22px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ transition: box-shadow 0.3s ease-in-out;
    
 }
 
 #imageList {
     padding: 0;
 }
+
+
 
 
 
