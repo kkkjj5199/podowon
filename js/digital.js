@@ -146,7 +146,7 @@
         }
 
        
-        for (var i = 1; i <=5; i++) {
+        for (var i = 1; i <=4; i++) {
             var img_src = 'asset/image/digital_pre/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -168,7 +168,9 @@
             'asset/image/digital_pre/ad__p.webp',
             'asset/image/digital_pre/신년주일.webp',
             'asset/image/digital_pre/당역구역회.webp',
+            'asset/image/digital_pre/주일저녁예배.webp',
             'asset/image/digital_pre/2024헌신예배.webp',
+            'asset/image/digital_pre/임원세미나.webp',
              'asset/image/digital_pre/교역자회의.webp',
               'asset/image/digital_pre/기부금.webp',
             
