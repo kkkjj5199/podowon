@@ -229,24 +229,31 @@
                 carouselItem.className = itemClass;
 
                 const anchorTag = document.createElement('a');
-                if(index === 7) 
-                {
-                
-                anchorTag.href = 'https://youtu.be/c9yABwrYZqs';
-                const imgElement = document.createElement('img');
-                 imgElement.src = imageUrl;
-                imgElement.className = 'd-block w-100';
-                 anchorTag.appendChild(imgElement);
-                 carouselItem.appendChild(anchorTag);
-                }
+               
 
                 const imgElement = document.createElement('img');
                 imgElement.src = imageUrl;
                 imgElement.className = 'd-block w-100';
 
-               
+                 if(index === 7)  {
+                
+                anchorTag.href = 'https://youtu.be/c9yABwrYZqs';
+                const imgElement = document.createElement('img');
+                 imgElement.src = imageUrl;
+                 imgElement.className = 'd-block w-100';
+                anchorTag.appendChild(imgElement);
+                 carouselItem.appendChild(anchorTag);
+                } else{
+                       const imgElement = document.createElement('img');
+                imgElement.src = imageUrl;
+                imgElement.className = 'd-block w-100';
+
                 carouselItem.appendChild(imgElement);
+                }
+
+              
                 carouselInner2.appendChild(carouselItem);
+              
             });
         }
 
