@@ -234,20 +234,21 @@
     /* 버튼 사이의 간격 조절 */
 }
 
-@media only screen and (max-width : 400px) {
-    .button-container{
-        bottom: 100px;
-        width:90%;
-        /* height: 60%; */
-    }
-}
 
-@media only screen and (max-width : 375px) {
+
+@media only screen and (min-width : 341px) {
     .button-container {
             bottom: 20px;
             width: 90%;
             /* height: 60%; */
         }
+}
+
+@media only screen and (max-width: 340px ){
+    .button-container {
+        width: 90%;
+        bottom: 10px;
+    }
 }
 
 .allbutton {
