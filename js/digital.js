@@ -185,6 +185,7 @@
         'asset/image/digital_pre/송구영신예배_4.webp',
         'asset/image/digital_pre/송구영신예배_5.webp',
         'asset/image/digital_pre/송구영신예배_6.webp',
+        'asset/image/digital_pre/송구영신리멤버.webp', 
         'asset/image/digital_pre/신년축복성회_1.webp',
         'asset/image/digital_pre/신년축복성회_2.webp',
         'asset/image/digital_pre/신년축복성회_3.webp',
@@ -227,10 +228,23 @@
                 const carouselItem = document.createElement('div');
                 carouselItem.className = itemClass;
 
+                const anchorTag = document.createElement('a');
+                if(index === 7) 
+                {
+                
+                anchorTag.href = 'https://youtu.be/c9yABwrYZqs';
+                const imgElement = document.createElement('img');
+                 imgElement.src = imageUrl;
+                imgElement.className = 'd-block w-100';
+                 anchorTag.appendChild(imgElement);
+                 carouselItem.appendChild(anchorTag);
+                }
+
                 const imgElement = document.createElement('img');
                 imgElement.src = imageUrl;
                 imgElement.className = 'd-block w-100';
 
+               
                 carouselItem.appendChild(imgElement);
                 carouselInner2.appendChild(carouselItem);
             });
