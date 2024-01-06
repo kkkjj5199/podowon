@@ -242,7 +242,7 @@
     }
 }
 
-@media only screen and (max-width : 360px) {
+@media only screen and (max-width : 375px) {
     .button-container {
             bottom: 20px;
             width: 90%;
