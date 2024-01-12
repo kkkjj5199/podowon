@@ -144,7 +144,7 @@
 
        
         for (var i = 1; i <=5; i++) {
-            var img_src = 'asset/image/digital/pre_' + i + '.webp';
+            var img_src = 'asset/image/common/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
@@ -183,7 +183,7 @@
 
     
         //  청년회
-       for (var i = 2; i <=13; i++) {
+       for (var i = 2; i <=15; i++) {
             var img_src = 'asset/image/digital_pre/caryouth/' + i + '.webp';
               $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -200,7 +200,9 @@
     
  // Sample list of image URLs
         const advertises = [
+
         'asset/image/digital/ad__p.webp',
+        'asset/image/digital_pre/작은자가.webp',
         'asset/image/digital_pre/임원임명.webp',
         'asset/image/digital_pre/임원헌신예배.webp',
         'asset/image/digital_pre/임원세미나.webp',
