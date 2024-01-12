@@ -143,7 +143,7 @@
 
 
        
-        for (var i = 1; i <=4; i++) {
+        for (var i = 1; i <=5; i++) {
             var img_src = 'asset/image/digital/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -186,6 +186,11 @@
        for (var i = 2; i <=13; i++) {
             var img_src = 'asset/image/digital_pre/caryouth/' + i + '.webp';
               $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        }
+
+             for (var i = 2; i <=2; i++) {
+            var img_src = 'asset/image/digital_pre/man/' + i + '.webp';
+              $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
 
