@@ -195,13 +195,14 @@
     
  // Sample list of image URLs
         const advertises = [
-            'asset/image/digital/ad__p.webp',
-            'asset/image/digital/2024헌신예배.webp',
-            'asset/image/digital/임원세미나.webp',
-           
-              'asset/image/digital/기부금.webp',
-            
-            
+        'asset/image/digital/ad__p.webp',
+        'asset/image/digital_pre/임원임명.webp',
+        'asset/image/digital_pre/임원헌신예배.webp',
+        'asset/image/digital/임원세미나.webp',
+        'asset/image/digital_pre/middlepart/7.webp',
+        'asset/image/digital_pre/highpart/2.webp',
+        'asset/image/digital_pre/청년회수련회.webp',
+        'asset/image/digital/기부금.webp',
         ];
 
         const story = [
