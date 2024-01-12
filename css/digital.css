@@ -246,10 +246,29 @@
 
 @media only screen and (max-width: 340px ){
     .button-container {
-        width: 90%;
-        bottom: 10px;
+        width: 95%;
+      
+        bottom: 5px;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    .allbutton{
+        font-size: small;
+    }
+    .button-container {
+        width: 90%;
+        bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .allbutton {
+        font-size: small;
+    }
+}
+
+
 
 .allbutton {
     padding: 10px 20px;
@@ -259,7 +278,7 @@
         border-radius: 5px;
         cursor: pointer;
         font-family: cfont;
-        font-size: 20px;
+        font-size: 19px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         transition: box-shadow 0.3s ease-in-out;
 }
