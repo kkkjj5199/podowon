@@ -201,7 +201,7 @@
  // Sample list of image URLs
         const advertises = [
 
-        'asset/image/digital/ad__p.webp',
+        'asset/image/common/ad__p.webp',
         'asset/image/digital_pre/작은자가.webp',
         'asset/image/digital_pre/임원임명.webp',
         'asset/image/digital_pre/임원헌신예배.webp',
