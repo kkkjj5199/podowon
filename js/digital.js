@@ -202,13 +202,13 @@
         const advertises = [
 
         'asset/image/common/ad__p.webp',
-        'asset/image/digital_pre/작은자가.webp',
-        'asset/image/digital_pre/임원임명.webp',
-        'asset/image/digital_pre/임원헌신예배.webp',
-        'asset/image/digital_pre/임원세미나.webp',
-        'asset/image/digital_pre/middlepart/7.webp',
-        'asset/image/digital_pre/highpart/2.webp',
-        'asset/image/digital_pre/청년회수련회.webp',
+        'asset/image/digital/작은자가.webp',
+        'asset/image/digital/임원임명.webp',
+        'asset/image/digital/임원헌신예배.webp',
+        'asset/image/digital/임원세미나.webp',
+        'asset/image/digital/middlepart/7.webp',
+        'asset/image/digital/highpart/2.webp',
+        'asset/image/digital/청년회수련회.webp',
         'asset/image/digital/기부금.webp',
         ];
 
