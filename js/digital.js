@@ -150,7 +150,7 @@
 
 
         // 아동1
-         for (var i = 1; i <=8; i++) {
+         for (var i = 2; i <=11; i++) {
             var img_src = 'asset/image/digital_pre/adong1/' + i + '.webp';
               $("#1part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -170,20 +170,20 @@
         }
 
     //  중등부
-       for (var i = 2; i <=8; i++) {
+       for (var i = 2; i <=13; i++) {
             var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
               $("#mpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
      //  고등부
-       for (var i = 2; i <=13; i++) {
+       for (var i = 2; i <=5; i++) {
             var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
               $("#hpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
     
         //  청년회
-       for (var i = 2; i <=15; i++) {
+       for (var i = 1; i <=13; i++) {
             var img_src = 'asset/image/digital_pre/caryouth/' + i + '.webp';
               $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -203,8 +203,6 @@
 
         'asset/image/common/ad__p.webp',
         'asset/image/digital/작은자가.webp',
-        'asset/image/digital/임원임명.webp',
-        'asset/image/digital/임원헌신예배.webp',
         'asset/image/digital/임원세미나.webp',
         'asset/image/digital/middlepart/7.webp',
         'asset/image/digital/highpart/2.webp',
@@ -213,7 +211,11 @@
         ];
 
         const story = [
-        'asset/image/digital/포도원스토리.webp',
+        'asset/image/digital_pre/포도원스토리.webp',
+        'asset/image/digital_pre/p1.webp',
+        'asset/image/digital_pre/p2.webp',
+        'asset/image/digital_pre/p3.webp',
+
 
 
           
@@ -244,39 +246,22 @@
                
             });
 
-             story.forEach((imageUrl, index) => {
+                story.forEach((imageUrl, index) => {
                 const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
 
                 const carouselItem = document.createElement('div');
                 carouselItem.className = itemClass;
 
-                const anchorTag = document.createElement('a');
-               
-
                 const imgElement = document.createElement('img');
-                imgElement.src = imageUrl;
-                imgElement.className = 'd-block w-100';
-
-                 if(index === 7)  {
-                
-                anchorTag.href = 'https://youtu.be/c9yABwrYZqs';
-                const imgElement = document.createElement('img');
-                 imgElement.src = imageUrl;
-                 imgElement.className = 'd-block w-100';
-                anchorTag.appendChild(imgElement);
-                 carouselItem.appendChild(anchorTag);
-                } else{
-                       const imgElement = document.createElement('img');
                 imgElement.src = imageUrl;
                 imgElement.className = 'd-block w-100';
 
                 carouselItem.appendChild(imgElement);
-                }
-
-              
                 carouselInner2.appendChild(carouselItem);
-              
+               
             });
+
+   
         }
 
         // Call the function to populate the carousel
