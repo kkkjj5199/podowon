@@ -202,10 +202,12 @@
         const advertises = [
 
         'asset/image/common/ad__p.webp',
-        'asset/image/digital/작은자가.webp',
-        'asset/image/digital/임원세미나.webp',
-        'asset/image/digital/middlepart/7.webp',
-        'asset/image/digital/highpart/2.webp',
+        'asset/image/digital_pre/작은자가.webp',
+        'asset/image/digital_pre/일일성회.webp',
+        'asset/image/digital_pre/middlepart/6.webp',
+        'asset/image/digital_pre/highpart/2.webp',
+        'asset/image/digital_pre/교사세미나.webp',
+        'asset/image/digital_pre/선교바자회.webp',
         'asset/image/digital/청년회수련회.webp',
         'asset/image/digital/기부금.webp',
         ];
@@ -286,7 +288,7 @@
             document.body.removeChild(textArea);
 
             // 복사 완료 메시지 (원하는 경우 알림창이나 다른 피드백을 사용할 수 있습니다.)
-            alert("Text copied to clipboard!");
+            alert("복사 완료");
         }
 
         function copyText2() {
@@ -308,6 +310,6 @@
             document.body.removeChild(textArea);
 
             // 복사 완료 메시지 (원하는 경우 알림창이나 다른 피드백을 사용할 수 있습니다.)
-            alert("Text copied to clipboard!");
+            alert("복사 완료");
         }
 
