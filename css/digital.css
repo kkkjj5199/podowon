@@ -318,6 +318,46 @@ background-color: #DC6093;
 
 
 
+.hg {
+    position: relative;
+    display: inline-block;
+    /* 이미지와 텍스트를 인라인으로 표시 */
+}
+
+.text-overlay {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    color:#505050;
+    font-size: 20px;
+    font-family: cfont;
+    text-align: center;
+}
+
+#b1 {
+    top: 42%;
+    transform: translate(-50%, -50%);
+}
+
+#b2 {
+    top: 70%;
+    transform: translate(-50%, -50%);
+
+}
+
+  .copy-button {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translate(-50%,130%);
+      background-color: #4CAF50;
+      color: white;
+      font-size: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+  }
 
 
 

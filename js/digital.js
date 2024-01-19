@@ -266,3 +266,48 @@
 
         // Call the function to populate the carousel
         populateCarousel();
+
+        function copyText() {
+            // "-"를 제외한 텍스트를 가져오기
+          
+            // var accountNumberText = document.getElementById(accountId).innerText.replace(/-/g, "");
+
+            var textToCopy = document.getElementById("accountId");
+            var currentContent = textToCopy.innerText;
+            var updateContent = currentContent.replace(/-/g,"");
+            textToCopy.innerText = updateContent;
+
+            // 텍스트를 클립보드에 복사
+            var textArea = document.createElement("textarea");
+            textArea.value = textToCopy.innerText;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+
+            // 복사 완료 메시지 (원하는 경우 알림창이나 다른 피드백을 사용할 수 있습니다.)
+            alert("Text copied to clipboard!");
+        }
+
+        function copyText2() {
+            // "-"를 제외한 텍스트를 가져오기
+          
+            // var accountNumberText = document.getElementById(accountId).innerText.replace(/-/g, "");
+
+            var textToCopy = document.getElementById("accountId2");
+            var currentContent = textToCopy.innerText;
+            var updateContent = currentContent.replace(/-/g,"");
+            textToCopy.innerText = updateContent;
+
+            // 텍스트를 클립보드에 복사
+            var textArea = document.createElement("textarea");
+            textArea.value = textToCopy.innerText;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+
+            // 복사 완료 메시지 (원하는 경우 알림창이나 다른 피드백을 사용할 수 있습니다.)
+            alert("Text copied to clipboard!");
+        }
+
