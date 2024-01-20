@@ -183,7 +183,7 @@
 
     
         //  청년회
-       for (var i = 1; i <=17; i++) {
+       for (var i = 1; i <=18; i++) {
             var img_src = 'asset/image/digital/caryouth/' + i + '.webp';
               $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
