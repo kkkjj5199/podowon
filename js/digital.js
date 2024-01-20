@@ -151,45 +151,45 @@
 
         // 아동1
          for (var i = 2; i <=11; i++) {
-            var img_src = 'asset/image/digital_pre/adong1/' + i + '.webp';
+            var img_src = 'asset/image/digital/adong1/' + i + '.webp';
               $("#1part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         
         // 아동2
          for (var i = 2; i <=17; i++) {
-            var img_src = 'asset/image/digital_pre/adong2/' + i + '.webp';
+            var img_src = 'asset/image/digital/adong2/' + i + '.webp';
               $("#2part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
 
         // 아동3
        for (var i = 1; i <=18; i++) {
-            var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
+            var img_src = 'asset/image/digital/adong3/' + i + '.webp';
               $("#3part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
     //  중등부
        for (var i = 2; i <=13; i++) {
-            var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
+            var img_src = 'asset/image/digital/middlepart/' + i + '.webp';
               $("#mpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
      //  고등부
        for (var i = 2; i <=5; i++) {
-            var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
+            var img_src = 'asset/image/digital/highpart/' + i + '.webp';
               $("#hpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
     
         //  청년회
        for (var i = 1; i <=13; i++) {
-            var img_src = 'asset/image/digital_pre/caryouth/' + i + '.webp';
+            var img_src = 'asset/image/digital/caryouth/' + i + '.webp';
               $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
              for (var i = 2; i <=2; i++) {
-            var img_src = 'asset/image/digital_pre/man/' + i + '.webp';
+            var img_src = 'asset/image/digital/man/' + i + '.webp';
               $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
@@ -202,21 +202,21 @@
         const advertises = [
 
         'asset/image/common/ad__p.webp',
-        'asset/image/digital_pre/작은자가.webp',
-        'asset/image/digital_pre/일일성회.webp',
-        'asset/image/digital_pre/middlepart/6.webp',
-        'asset/image/digital_pre/highpart/2.webp',
-        'asset/image/digital_pre/교사세미나.webp',
-        'asset/image/digital_pre/선교바자회.webp',
+        'asset/image/digital/작은자가.webp',
+        'asset/image/digital/일일성회.webp',
+        'asset/image/digital/middlepart/6.webp',
+        'asset/image/digital/highpart/2.webp',
+        'asset/image/digital/교사세미나.webp',
+        'asset/image/digital/선교바자회.webp',
         'asset/image/digital/청년회수련회.webp',
         'asset/image/digital/기부금.webp',
         ];
 
         const story = [
-        'asset/image/digital_pre/포도원스토리.webp',
-        'asset/image/digital_pre/p1.webp',
-        'asset/image/digital_pre/p2.webp',
-        'asset/image/digital_pre/p3.webp',
+        'asset/image/digital/포도원스토리.webp',
+        'asset/image/digital/p1.webp',
+        'asset/image/digital/p2.webp',
+        'asset/image/digital/p3.webp',
 
 
 
