@@ -1,5 +1,5 @@
-    let sound = document.querySelector('audio');
-    sound.currentTime= 18;
+    // let sound = document.querySelector('audio');
+    // sound.currentTime= 18;
 
 
         const btnPrev = document.querySelector('.carousel-control-prev');
@@ -92,15 +92,12 @@
         // }
 
                     
-        for (var i = 2; i <=26; i++) {
-            var img_src = 'asset/image/all/묵상집/' + i + '.webp';
-              $("#M2").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        for (var i = 8; i >=1; i--) {
+            var img_src = 'asset/image/all/청년회/' + i + '.webp';
+              $("#MM").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
-           for (var i = 0; i <=25; i++) {
-            var img_src = 'asset/image/all/묵상집/' + i + '.webp';
-              $("#MM").append('<img class="swiper-slide"  src=' + img_src + '></img>');
-        }
+     
 
 
 
