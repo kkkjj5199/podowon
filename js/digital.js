@@ -293,7 +293,7 @@
         const advertises = [
 
         'asset/image/common/ad__p.webp',
-        'asset/image/digital/작은자가.webp',
+        'asset/image/common/2024표어.webp',
         'asset/image/digital/일일성회.webp',
         'asset/image/digital/middlepart/6.webp',
         'asset/image/digital/highpart/2.webp',
