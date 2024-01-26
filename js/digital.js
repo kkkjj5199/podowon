@@ -272,6 +272,12 @@
               $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
+        // 여선교회
+             for (var i = 2; i <=7; i++) {
+            var img_src = 'asset/image/digital_pre/woman/' + i + '.webp';
+              $("#womanpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        }
+
         // 남선교회
              for (var i = 2; i <=2; i++) {
             var img_src = 'asset/image/digital_pre/man/' + i + '.webp';
