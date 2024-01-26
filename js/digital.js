@@ -7,7 +7,7 @@
             level: 2
         };
         var map = new kakao.maps.Map(container, options);
-        // 마커가 표시될 위치입니다 
+        // 마커가 표시될 위치입니다
         var markerPosition = new kakao.maps.LatLng(37.367729, 126.965929);
 
         // 마커를 생성합니다
@@ -46,22 +46,9 @@
         const btnPrev = document.querySelector('.carousel-control-prev');
         const btnNext = document.querySelector('.carousel-control-next');
 
-       
+
         let slides = document.querySelectorAll('.carousel-item');
         let currentIdx = 0;
-
-
-        // function goToSlide() {
-        //     updateNav();
-        // }
-
-        // goToSlide(0);
-
-        // function updateNav() {
-        //     btnPrev.classList.add('disabled');
-          
-        // }
-   
 
 
     //youtube API 불러오는 부분
@@ -77,10 +64,10 @@
         idAry.push("player" + i); // 아이디 값 배열에 넣기
         urlAry.push($(this).data("url")); // 동영상 url 배열에 넣기
     });
-
+    var player;
     function onYouTubeIframeAPIReady() { // 이 함수가 동영상 iframe을 만들어주는 함수이다.
             for (var i = 0; i < $(".youtube").length; i++) { // 동영상을 원하는만큼 만들어주기 위해.
-                var player;
+
                 var playerId = idAry[i];
                 player = new YT.Player(playerId, {
                     videoId: urlAry[i],
@@ -89,29 +76,26 @@
                     },
                     events: {
                     'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
-                    'onStateChange': onPlayerStateChange,//플레이어 상태 변화 시 이벤트를 실행한다.
-                   
+                    'onStateChange': onPlayerStateChange,
 
+                    //플레이어 상태 변화 시 이벤트를 실행한다.
                 }
                 });
+
+
                 objAry.push(player);
-           
+
                 // 가장 중요한 대목! 변수 player에 각 동영상 마다 만들어진 객체를 objAry 배열에 넣어준다.
                 // 그래야 후에 원하는 동영상 제어를 할 수 있다.
-            }
+
         }
 
-    
-
     function onPlayerReady(event) {
-        //event.target.playVideo();//자동재생
-    }
 
-    function account(){
-        alert('농협 351-1180-2705-13');
-    }
+     }
 
-    
+
+
 
     var done = false;
     function onPlayerStateChange(event) {
@@ -127,22 +111,20 @@
         else if( event.data ===0 ){
         myaudio.play();
         }
-     
+
+
     }
 
-   
+
     //인스타로 들어갔을때 배경음악 잠시 멈춤.
-    function instaOn(event) {
+    function instaOn(_event) {
         myaudio.pause();
         console.log('instaON');
-         
+
     }
 
     // <div>태그 반복문
-       
 
-
-       
         for (var i = 1; i <=5; i++) {
             var img_src = 'asset/image/common/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
@@ -150,54 +132,88 @@
 
 
         // 아동1
-         for (var i = 2; i <=11; i++) {
-            var img_src = 'asset/image/digital/adong1/' + i + '.webp';
+         for (var i = 2; i <=9; i++) {
+            var img_src = 'asset/image/digital_pre/adong1/' + i + '.webp';
               $("#1part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         
         // 아동2
          for (var i = 2; i <=6; i++) {
-            var img_src = 'asset/image/digital/adong2/' + i + '.webp';
+            var img_src = 'asset/image/digital_pre/adong2/' + i + '.webp';
               $("#2part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
 
         // 아동3
-       for (var i = 1; i <=18; i++) {
-            var img_src = 'asset/image/digital/adong3/' + i + '.webp';
+       for (var i = 1; i <=16; i++) {
+            var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
               $("#3part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
-    //  중등부
-       for (var i = 2; i <=13; i++) {
-            var img_src = 'asset/image/digital/middlepart/' + i + '.webp';
-              $("#mpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+ 
+
+
+        // 중등부
+        for (var i = 2; i <= 14; i++) {
+             var carouselInner = $("#mpart");  
+            var itemContent;
+
+            if (i === 8) {
+                // Insert YouTube link
+                var youtube_video_id = 'IS03wIpD4U4'; // Replace with the actual video ID
+                var iframe_id = 'youtube_iframe_' + i;
+                var youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
+                itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
+            } else {
+                // Insert image
+                var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
+                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+            }
+
+            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+            carouselInner.append(carouselItem);
         }
 
+
+
+       
      //  고등부
-       for (var i = 2; i <=5; i++) {
-            var img_src = 'asset/image/digital/highpart/' + i + '.webp';
-              $("#hpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+       for (var i = 2; i <=13; i++) {
+        var h = $("#hpart");
+           var itemContent;
+
+            if (i === 6) {
+                // Insert YouTube link
+                var youtube_video_id = 'orAr3mLJ0AE'; // Replace with the actual video ID
+                var iframe_id = 'youtube_iframe_' + i;
+                var youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
+                itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
+            } else {
+                // Insert image
+                var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
+                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+            }
+
+            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+            h.append(carouselItem);
         }
 
-    
+
         //  청년회
        for (var i = 1; i <=18; i++) {
-            var img_src = 'asset/image/digital/caryouth/' + i + '.webp';
-              $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+            var img_src = 'asset/image/digital_pre/caryouth/' + i + '.webp';
+            $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
+        // 남선교회
              for (var i = 2; i <=2; i++) {
-            var img_src = 'asset/image/digital/man/' + i + '.webp';
+            var img_src = 'asset/image/digital_pre/man/' + i + '.webp';
               $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
 
-                
-  
 
-    
  // Sample list of image URLs
         const advertises = [
 
@@ -217,16 +233,12 @@
         'asset/image/digital/p1.webp',
         'asset/image/digital/p2.webp',
         'asset/image/digital/p3.webp',
-
-
-
-          
         ];
 
           $('[id^="imageCarouselModal"]').on('hidden.bs.modal', function () {
         // Remove 'modal-open' class from the body to prevent scrolling to the top
         $('body').removeClass('modal-open');
-        });     
+        });
 
         // Function to dynamically populate the carousel
         function populateCarousel() {
@@ -245,7 +257,7 @@
 
                 carouselItem.appendChild(imgElement);
                 carouselInner.appendChild(carouselItem);
-               
+
             });
 
                 story.forEach((imageUrl, index) => {
@@ -260,10 +272,10 @@
 
                 carouselItem.appendChild(imgElement);
                 carouselInner2.appendChild(carouselItem);
-               
+
             });
 
-   
+
         }
 
         // Call the function to populate the carousel
@@ -271,7 +283,7 @@
 
         function copyText() {
             // "-"를 제외한 텍스트를 가져오기
-          
+
             // var accountNumberText = document.getElementById(accountId).innerText.replace(/-/g, "");
 
             var textToCopy = document.getElementById("accountId");
@@ -293,7 +305,7 @@
 
         function copyText2() {
             // "-"를 제외한 텍스트를 가져오기
-          
+
             // var accountNumberText = document.getElementById(accountId).innerText.replace(/-/g, "");
 
             var textToCopy = document.getElementById("accountId2");
@@ -313,3 +325,12 @@
             alert("복사 완료");
         }
 
+        function stopYoutube(number) {
+            var name = 'youtube_iframe_' + number;
+            var iframe = document.getElementById(name);
+            var src = iframe.src;
+            src = src.replace("autoplay=1","autoplay=0");
+            iframe.src= src;
+        }
+
+}
