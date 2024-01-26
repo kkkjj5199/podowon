@@ -294,7 +294,10 @@
 
         'asset/image/common/ad__p.webp',
         'asset/image/common/2024표어.webp',
+        'asset/image/digital/caryouth/2.webp',
+        'asset/image/digital/새벽기도.webp',
         'asset/image/digital/선교바자회.webp',
+        'asset/image/digital/주일중식.webp',
         'asset/image/digital/기부금.webp',
         ];
 
