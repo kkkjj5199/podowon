@@ -294,12 +294,7 @@
 
         'asset/image/common/ad__p.webp',
         'asset/image/common/2024표어.webp',
-        'asset/image/digital/일일성회.webp',
-        'asset/image/digital/middlepart/6.webp',
-        'asset/image/digital/highpart/2.webp',
-        'asset/image/digital/교사세미나.webp',
         'asset/image/digital/선교바자회.webp',
-        'asset/image/digital/청년회수련회.webp',
         'asset/image/digital/기부금.webp',
         ];
 
