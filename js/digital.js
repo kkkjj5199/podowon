@@ -7,7 +7,7 @@
             level: 2
         };
         var map = new kakao.maps.Map(container, options);
-        // 마커가 표시될 위치입니다
+        // 마커가 표시될 위치입니다 
         var markerPosition = new kakao.maps.LatLng(37.367729, 126.965929);
 
         // 마커를 생성합니다
@@ -46,9 +46,22 @@
         const btnPrev = document.querySelector('.carousel-control-prev');
         const btnNext = document.querySelector('.carousel-control-next');
 
-
+       
         let slides = document.querySelectorAll('.carousel-item');
         let currentIdx = 0;
+
+
+        // function goToSlide() {
+        //     updateNav();
+        // }
+
+        // goToSlide(0);
+
+        // function updateNav() {
+        //     btnPrev.classList.add('disabled');
+          
+        // }
+   
 
 
     //youtube API 불러오는 부분
@@ -67,7 +80,7 @@
     var player;
     function onYouTubeIframeAPIReady() { // 이 함수가 동영상 iframe을 만들어주는 함수이다.
             for (var i = 0; i < $(".youtube").length; i++) { // 동영상을 원하는만큼 만들어주기 위해.
-
+               
                 var playerId = idAry[i];
                 player = new YT.Player(playerId, {
                     videoId: urlAry[i],
@@ -77,25 +90,29 @@
                     events: {
                     'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
                     'onStateChange': onPlayerStateChange,
-
+                 
                     //플레이어 상태 변화 시 이벤트를 실행한다.
                 }
                 });
 
-
+           
                 objAry.push(player);
-
+           
                 // 가장 중요한 대목! 변수 player에 각 동영상 마다 만들어진 객체를 objAry 배열에 넣어준다.
                 // 그래야 후에 원하는 동영상 제어를 할 수 있다.
-
+            }
+           
         }
 
     function onPlayerReady(event) {
-
+     
      }
 
 
 
+
+ 
+    
 
     var done = false;
     function onPlayerStateChange(event) {
@@ -112,19 +129,36 @@
         myaudio.play();
         }
 
+  
 
+
+     
     }
 
+    
 
+
+
+  
+        
+ 
+    
+ 
+
+ 
+   
     //인스타로 들어갔을때 배경음악 잠시 멈춤.
     function instaOn(_event) {
         myaudio.pause();
         console.log('instaON');
-
+         
     }
 
     // <div>태그 반복문
+       
 
+
+       
         for (var i = 1; i <=5; i++) {
             var img_src = 'asset/image/common/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
@@ -151,10 +185,30 @@
               $("#3part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
- 
+    //  중등부
+    //    for (var i = 2; i <=14; i++) {
+    //     var id='IS03wIpD4U4';
+    //     if(i!=8){
+    //         var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
+    //        $("#mpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + 
+    //        img_src + '></div>');
+    //     }
+    //        else{
+          
+    //          $("#mpart").append('<div class="carousel-item"><div class="youtube" data-url="'+id+'"></div></div>');
+           
+          
+    //        }
+       
+           
+       
+    //     }
+
+       // Assuming hpart is the ID of your carousel-inner container
 
 
-        // 중등부
+
+
         for (var i = 2; i <= 14; i++) {
              var carouselInner = $("#mpart");  
             var itemContent;
@@ -180,7 +234,7 @@
        
      //  고등부
        for (var i = 2; i <=13; i++) {
-        var h = $("#hpart");
+        var h = $("#hpart"); 
            var itemContent;
 
             if (i === 6) {
@@ -197,13 +251,25 @@
 
             var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
             h.append(carouselItem);
+
+
+
+
+
+
+
+
+
+
+            // var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
+            //   $("#hpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
-
+    
         //  청년회
        for (var i = 1; i <=18; i++) {
             var img_src = 'asset/image/digital_pre/caryouth/' + i + '.webp';
-            $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+              $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         // 남선교회
@@ -213,7 +279,10 @@
         }
 
 
+                
+  
 
+    
  // Sample list of image URLs
         const advertises = [
 
@@ -233,12 +302,16 @@
         'asset/image/digital/p1.webp',
         'asset/image/digital/p2.webp',
         'asset/image/digital/p3.webp',
+
+
+
+          
         ];
 
           $('[id^="imageCarouselModal"]').on('hidden.bs.modal', function () {
         // Remove 'modal-open' class from the body to prevent scrolling to the top
         $('body').removeClass('modal-open');
-        });
+        });     
 
         // Function to dynamically populate the carousel
         function populateCarousel() {
@@ -257,7 +330,7 @@
 
                 carouselItem.appendChild(imgElement);
                 carouselInner.appendChild(carouselItem);
-
+               
             });
 
                 story.forEach((imageUrl, index) => {
@@ -272,10 +345,10 @@
 
                 carouselItem.appendChild(imgElement);
                 carouselInner2.appendChild(carouselItem);
-
+               
             });
 
-
+   
         }
 
         // Call the function to populate the carousel
@@ -283,7 +356,7 @@
 
         function copyText() {
             // "-"를 제외한 텍스트를 가져오기
-
+          
             // var accountNumberText = document.getElementById(accountId).innerText.replace(/-/g, "");
 
             var textToCopy = document.getElementById("accountId");
@@ -305,7 +378,7 @@
 
         function copyText2() {
             // "-"를 제외한 텍스트를 가져오기
-
+          
             // var accountNumberText = document.getElementById(accountId).innerText.replace(/-/g, "");
 
             var textToCopy = document.getElementById("accountId2");
@@ -333,4 +406,3 @@
             iframe.src= src;
         }
 
-}
