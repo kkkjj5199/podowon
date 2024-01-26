@@ -304,10 +304,8 @@
         ];
 
         const story = [
-        'asset/image/digital/포도원스토리.webp',
-        'asset/image/digital/p1.webp',
-        'asset/image/digital/p2.webp',
-        'asset/image/digital/p3.webp',
+        'asset/image/digital_pre/포도원스토리.webp'
+   
 
 
 
