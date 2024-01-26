@@ -1,5 +1,5 @@
     let sound = document.querySelector('audio');
-    sound.currentTime= 13;
+    sound.currentTime= 1;
 /* Google map*/
         var container = document.getElementById('map');
         var options = {
@@ -267,7 +267,7 @@
 
     
         //  청년회
-       for (var i = 1; i <=18; i++) {
+       for (var i = 1; i <=16; i++) {
             var img_src = 'asset/image/digital_pre/caryouth/' + i + '.webp';
               $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
