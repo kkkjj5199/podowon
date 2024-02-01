@@ -180,7 +180,7 @@
 
 
         // 아동3
-       for (var i = 1; i <=16; i++) {
+       for (var i = 2; i <=25; i++) {
             var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
               $("#3part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -209,21 +209,21 @@
 
 
 
-        for (var i = 2; i <= 14; i++) {
+        for (var i = 2; i <= 9; i++) {
              var carouselInner = $("#mpart");  
             var itemContent;
 
-            if (i === 8) {
-                // Insert YouTube link
-                var youtube_video_id = 'IS03wIpD4U4'; // Replace with the actual video ID
-                var iframe_id = 'youtube_iframe_' + i;
-                var youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
-                itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
-            } else {
+            // if (i === 8) {
+            //     // Insert YouTube link
+            //     var youtube_video_id = 'IS03wIpD4U4'; // Replace with the actual video ID
+            //     var iframe_id = 'youtube_iframe_' + i;
+            //     var youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
+            //     itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
+            // } else {
                 // Insert image
                 var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            }
+            // }
 
             var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
             carouselInner.append(carouselItem);
@@ -233,21 +233,21 @@
 
        
      //  고등부
-       for (var i = 2; i <=13; i++) {
+       for (var i = 2; i <=10; i++) {
         var h = $("#hpart"); 
            var itemContent;
 
-            if (i === 6) {
-                // Insert YouTube link
-                var youtube_video_id = 'orAr3mLJ0AE'; // Replace with the actual video ID
-                var iframe_id = 'youtube_iframe_' + i;
-                var youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
-                itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
-            } else {
+            // if (i === 6) {
+            //     // Insert YouTube link
+            //     var youtube_video_id = 'orAr3mLJ0AE'; // Replace with the actual video ID
+            //     var iframe_id = 'youtube_iframe_' + i;
+            //     var youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
+            //     itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
+            // } else {
                 // Insert image
                 var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            }
+            // }
 
             var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
             h.append(carouselItem);
@@ -273,7 +273,7 @@
         }
 
         // 여선교회
-             for (var i = 2; i <=7; i++) {
+             for (var i = 2; i <=10; i++) {
             var img_src = 'asset/image/digital_pre/woman/' + i + '.webp';
               $("#womanpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
