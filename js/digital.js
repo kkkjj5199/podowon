@@ -166,7 +166,7 @@
 
 
         // 아동1
-         for (var i = 2; i <=9; i++) {
+         for (var i = 2; i <=15; i++) {
             var img_src = 'asset/image/digital_pre/adong1/' + i + '.webp';
               $("#1part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -279,7 +279,7 @@
         }
 
         // 남선교회
-             for (var i = 1; i <=2; i++) {
+             for (var i = 2; i <=4; i++) {
             var img_src = 'asset/image/digital_pre/man/' + i + '.webp';
               $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
