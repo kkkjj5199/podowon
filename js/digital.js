@@ -291,22 +291,22 @@
     
  // Sample list of image URLs
         const advertises = [
-
         'asset/image/common/ad__p.webp',
         'asset/image/common/2024표어.webp',
-        'asset/image/digital/caryouth/2.webp',
-        'asset/image/digital/새벽기도.webp',
         'asset/image/digital/선교바자회.webp',
-        'asset/image/digital/주일중식.webp',
+        'asset/image/digital/설명절.webp',
+        'asset/image/digital/꿈나무OT.webp',
+        'asset/image/digital/청년해외문화.webp',
         'asset/image/digital/기부금.webp',
+        'asset/image/digital/스카.webp',
+        'asset/image/digital/스카_2.webp',
+
         ];
 
         const story = [
         'asset/image/common/포도원스토리.webp',
-        'asset/image/digital_pre/임원세미나.webp',
-        'asset/image/digital_pre/임원_1.webp',
-        'asset/image/digital_pre/임원_2.webp',
-        'asset/image/digital_pre/임원_3.webp'
+      
+
    
 
 
