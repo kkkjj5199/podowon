@@ -297,9 +297,8 @@
         'asset/image/digital/설명절.webp',
         'asset/image/digital/꿈나무OT.webp',
         'asset/image/digital/청년해외문화.webp',
-        'asset/image/digital/기부금.webp',
-        'asset/image/digital/스카.webp',
-        'asset/image/digital/스카_2.webp',
+        'asset/image/digital/기부금.webp'
+       
 
         ];
 
