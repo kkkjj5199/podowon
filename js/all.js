@@ -92,8 +92,8 @@
         // }
 
                     
-        for (var i = 8; i >=1; i--) {
-            var img_src = 'asset/image/all/청년회/' + i + '.webp';
+        for (var i = 2; i <=7; i++) {
+            var img_src = 'asset/image/all/smj/' + i + '.webp';
               $("#MM").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
