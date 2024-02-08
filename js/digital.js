@@ -166,22 +166,22 @@
 
 
         // 아동1
-         for (var i = 2; i <=15; i++) {
-            var img_src = 'asset/image/digital/adong1/' + i + '.webp';
+         for (var i = 2; i <=8; i++) {
+            var img_src = 'asset/image/digital_pre/adong1/' + i + '.webp';
               $("#1part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         
         // 아동2
-         for (var i = 2; i <=8; i++) {
-            var img_src = 'asset/image/digital/adong2/' + i + '.webp';
+         for (var i = 2; i <=9; i++) {
+            var img_src = 'asset/image/digital_pre/adong2/' + i + '.webp';
               $("#2part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
 
         // 아동3
-       for (var i = 2; i <=25; i++) {
-            var img_src = 'asset/image/digital/adong3/' + i + '.webp';
+       for (var i = 2; i <=15; i++) {
+            var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
               $("#3part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
@@ -209,7 +209,7 @@
 
 
 
-        for (var i = 2; i <= 9; i++) {
+        for (var i = 2; i <= 14; i++) {
              var carouselInner = $("#mpart");  
             var itemContent;
 
@@ -221,7 +221,7 @@
             //     itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
             // } else {
                 // Insert image
-                var img_src = 'asset/image/digital/middlepart/' + i + '.webp';
+                var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
             // }
 
@@ -233,7 +233,7 @@
 
        
      //  고등부
-       for (var i = 2; i <=10; i++) {
+       for (var i = 2; i <=13; i++) {
         var h = $("#hpart"); 
            var itemContent;
 
@@ -245,7 +245,7 @@
             //     itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
             // } else {
                 // Insert image
-                var img_src = 'asset/image/digital/highpart/' + i + '.webp';
+                var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
             // }
 
