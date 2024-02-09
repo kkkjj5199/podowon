@@ -313,6 +313,14 @@
           
         ];
 
+        const smj = [
+        'asset/image/all/smj/4.webp',
+        'asset/image/all/smj/5.webp',
+        'asset/image/all/smj/6.webp',
+        'asset/image/all/smj/7.webp',
+
+        ];
+
           $('[id^="imageCarouselModal"]').on('hidden.bs.modal', function () {
         // Remove 'modal-open' class from the body to prevent scrolling to the top
         $('body').removeClass('modal-open');
@@ -321,8 +329,8 @@
         // Function to dynamically populate the carousel
         function populateCarousel() {
             const carouselInner = document.querySelector('#dynamicCarousel .carousel-inner');
-            const carouselInner2 = document.querySelector('#dynamicCarousel2 .carousel-inner');
-
+            // const carouselInner2 = document.querySelector('#dynamicCarousel2 .carousel-inner');
+            const carouselInner3 = document.querySelector('#dynamicCarouse3 .carousel-inner');
             advertises.forEach((imageUrl, index) => {
                 const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
 
@@ -338,7 +346,22 @@
                
             });
 
-                story.forEach((imageUrl, index) => {
+            //     story.forEach((imageUrl, index) => {
+            //     const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
+
+            //     const carouselItem = document.createElement('div');
+            //     carouselItem.className = itemClass;
+
+            //     const imgElement = document.createElement('img');
+            //     imgElement.src = imageUrl;
+            //     imgElement.className = 'd-block w-100';
+
+            //     carouselItem.appendChild(imgElement);
+            //     carouselInner2.appendChild(carouselItem);
+               
+            // });
+
+                smj.forEach((imageUrl, index) => {
                 const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
 
                 const carouselItem = document.createElement('div');
@@ -349,7 +372,7 @@
                 imgElement.className = 'd-block w-100';
 
                 carouselItem.appendChild(imgElement);
-                carouselInner2.appendChild(carouselItem);
+                carouselInner3.appendChild(carouselItem);
                
             });
 
