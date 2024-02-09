@@ -267,14 +267,14 @@
 
     
         //  청년회
-       for (var i = 1; i <=10; i++) {
-            var img_src = 'asset/image/digital/caryouth/' + i + '.webp';
+       for (var i = 2; i <=8; i++) {
+            var img_src = 'asset/image/digital_pre/caryouth/' + i + '.webp';
               $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         // 여선교회
              for (var i = 2; i <=10; i++) {
-            var img_src = 'asset/image/digital/woman/' + i + '.webp';
+            var img_src = 'asset/image/digital_pre/woman/' + i + '.webp';
               $("#womanpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
