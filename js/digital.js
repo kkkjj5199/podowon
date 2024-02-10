@@ -167,21 +167,21 @@
 
         // 아동1
          for (var i = 2; i <=13; i++) {
-            var img_src = 'asset/image/digital_pre/adong1/' + i + '.webp';
+            var img_src = 'asset/image/digital_pre_pre/adong1/' + i + '.webp';
               $("#1part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         
         // 아동2
          for (var i = 2; i <=9; i++) {
-            var img_src = 'asset/image/digital_pre/adong2/' + i + '.webp';
+            var img_src = 'asset/image/digital_pre_pre/adong2/' + i + '.webp';
               $("#2part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
 
         // 아동3
        for (var i = 2; i <=15; i++) {
-            var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
+            var img_src = 'asset/image/digital_pre_pre/adong3/' + i + '.webp';
               $("#3part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
@@ -189,7 +189,7 @@
     //    for (var i = 2; i <=14; i++) {
     //     var id='IS03wIpD4U4';
     //     if(i!=8){
-    //         var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
+    //         var img_src = 'asset/image/digital_pre_pre/middlepart/' + i + '.webp';
     //        $("#mpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + 
     //        img_src + '></div>');
     //     }
@@ -221,7 +221,7 @@
             //     itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
             // } else {
                 // Insert image
-                var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
+                var img_src = 'asset/image/digital_pre_pre/middlepart/' + i + '.webp';
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
             // }
 
@@ -245,7 +245,7 @@
             //     itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
             // } else {
                 // Insert image
-                var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
+                var img_src = 'asset/image/digital_pre_pre/highpart/' + i + '.webp';
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
             // }
 
@@ -261,26 +261,26 @@
 
 
 
-            // var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
+            // var img_src = 'asset/image/digital_pre_pre/highpart/' + i + '.webp';
             //   $("#hpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
     
         //  청년회
        for (var i = 2; i <=12; i++) {
-            var img_src = 'asset/image/digital_pre/caryouth/' + i + '.webp';
+            var img_src = 'asset/image/digital_pre_pre/caryouth/' + i + '.webp';
               $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         // 여선교회
              for (var i = 2; i <=10; i++) {
-            var img_src = 'asset/image/digital_pre/woman/' + i + '.webp';
+            var img_src = 'asset/image/digital_pre_pre/woman/' + i + '.webp';
               $("#womanpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         // 남선교회
              for (var i = 2; i <=4; i++) {
-            var img_src = 'asset/image/digital_pre/man/' + i + '.webp';
+            var img_src = 'asset/image/digital_pre_pre/man/' + i + '.webp';
               $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
@@ -293,11 +293,12 @@
         const advertises = [
         'asset/image/common/ad__p.webp',
         'asset/image/common/2024표어.webp',
-        'asset/image/digital/선교바자회.webp',
-        'asset/image/digital/설명절.webp',
-        'asset/image/digital/꿈나무OT.webp',
-        'asset/image/digital/청년해외문화.webp',
-        'asset/image/digital/기부금.webp'
+         'asset/image/digital_pre/사순절.webp',
+        'asset/image/digital_pre/해외선교.webp',
+        'asset/image/digital_pre/여선교회성전기도.webp',
+        'asset/image/digital_pre/군포지방회.webp',
+        'asset/image/digital_pre/졸업예배.webp'
+     
        
 
         ];
