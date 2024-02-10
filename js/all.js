@@ -97,7 +97,7 @@
               $("#MM").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
-        for (var i = 1; i <=42; i++) {
+        for (var i = 0; i <=41; i++) {
             var img_src = 'asset/image/묵상집/' + i + '.webp';
               $("#MSJ").append('<div class="swiper-slide" > <img   src=' + img_src + '></div>');
         }

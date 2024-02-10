@@ -35,6 +35,9 @@
             background-image: url("../asset/image/arrow.png");
 
         }
+        #today {
+            margin:10px;
+        }
     </style>
 
     <!-- Third party plugin CSS-->
@@ -73,23 +76,23 @@
                 <div class="col-lg-8 text-center">
 
                     <!-- <button type="button" class="btn btn-outline-warning" onclick="test()">오늘 날짜 묵상집 보기</button> -->
-
+<button type="button" class="btn btn-outline-warning" id="today" onclick="test()">오늘의
+    묵상집 보기</button>
                     <div class="swiper-container">
                         <div class="swiper-wrapper" id="MSJ">
                         
                                 
                                 
-                                    <button type="button" class="btn btn-outline-warning" id="today" onclick="test()">오늘의
-                                        묵상집 보기</button>
+                       
                               
-                            </div>
+                        </div>
 
-                            <div class="swiper-button-next">
-                                <img src="asset/image/arrow.png" class="mainImage">
-                            </div>
-                            <div class="swiper-button-prev">
-                                <img src="asset/image/back-arrow.png" class="mainImage">
-                            </div>
+                        <div class="swiper-button-next">
+                            <img src="asset/image/arrow.png" class="mainImage">
+                        </div>
+                        <div class="swiper-button-prev">
+                            <img src="asset/image/back-arrow.png" class="mainImage">
+                        </div>
                             <!-- <div class="swiper-pagination"></div> -->
                         </div>
 
@@ -155,7 +158,7 @@
         function test() {
             const day = new Date().getDate();
             console.log(day);
-            swiper.slideTo(day, 1000, false)
+            swiper.slideTo(day-12, 1000, false)
         }
 
 
