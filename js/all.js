@@ -96,11 +96,44 @@
             var img_src = 'asset/image/all/smj/' + i + '.webp';
               $("#MM").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
-
-        for (var i = 0; i <=41; i++) {
+        
+        
+        for (var i = 1; i <=41; i++) {
             var img_src = 'asset/image/묵상집/' + i + '.webp';
               $("#MSJ").append('<div class="swiper-slide" > <img   src=' + img_src + '></div>');
         }
+
+        function getISOWeekNumber(date) {
+            // Copy the date so we don't modify the original
+            date = new Date(date);
+
+            // Set to the first day of the year
+            date.setHours(0, 0, 0, 0);
+            date.setDate(1);
+
+            // ISO weeks start on Monday, so find the first Monday of the year
+            while (date.getDay() !== 1) {
+                date.setDate(date.getDate() + 1);
+            }
+
+            // Calculate the week number
+            var weekNumber = Math.ceil((((date - new Date(date.getFullYear(), 0, 1)) / 86400000) + 1) / 7);
+
+            return weekNumber;
+            }
+
+        function test() {
+            const day = new Date().getDate();
+            // const week = 2;
+            // getISOWeekNumber(day);
+            console.log(day);
+            console.log(week);
+           
+            swiper.slideTo(day-12, 1000, false)
+            
+           
+        }
+
 
      
 
