@@ -173,14 +173,14 @@
 
         
         // 아동2
-         for (var i = 2; i <=12; i++) {
+         for (var i = 2; i <=11; i++) {
             var img_src = 'asset/image/digital_pre/adong2/' + i + '.webp';
               $("#2part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
 
         // 아동3
-       for (var i = 2; i <=16; i++) {
+       for (var i = 2; i <=17; i++) {
             var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
               $("#3part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
