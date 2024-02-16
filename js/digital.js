@@ -166,7 +166,7 @@
 
 
         // 아동1
-         for (var i = 2; i <=13; i++) {
+         for (var i = 2; i <=12; i++) {
             var img_src = 'asset/image/digital_pre/adong1/' + i + '.webp';
               $("#1part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
