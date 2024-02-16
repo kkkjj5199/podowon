@@ -279,10 +279,10 @@
         }
 
         // 남선교회
-             for (var i = 2; i <=2; i++) {
-            var img_src = 'asset/image/digital_pre/man/' + i + '.webp';
-              $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
+        //      for (var i = 2; i <=2; i++) {
+        //     var img_src = 'asset/image/digital_pre/man/' + i + '.webp';
+        //       $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        // }
 
 
                 
