@@ -173,14 +173,14 @@
 
         
         // 아동2
-         for (var i = 2; i <=9; i++) {
+         for (var i = 2; i <=12; i++) {
             var img_src = 'asset/image/digital/adong2/' + i + '.webp';
               $("#2part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
 
         // 아동3
-       for (var i = 2; i <=15; i++) {
+       for (var i = 2; i <=16; i++) {
             var img_src = 'asset/image/digital/adong3/' + i + '.webp';
               $("#3part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -209,7 +209,7 @@
 
 
 
-        for (var i = 2; i <= 14; i++) {
+        for (var i = 2; i <= 10; i++) {
              var carouselInner = $("#mpart");  
             var itemContent;
 
@@ -233,7 +233,7 @@
 
        
      //  고등부
-       for (var i = 2; i <=13; i++) {
+       for (var i = 2; i <=9; i++) {
         var h = $("#hpart"); 
            var itemContent;
 
@@ -273,13 +273,13 @@
         }
 
         // 여선교회
-             for (var i = 2; i <=10; i++) {
+             for (var i = 2; i <=7; i++) {
             var img_src = 'asset/image/digital/woman/' + i + '.webp';
               $("#womanpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         // 남선교회
-             for (var i = 2; i <=4; i++) {
+             for (var i = 2; i <=2; i++) {
             var img_src = 'asset/image/digital/man/' + i + '.webp';
               $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -293,11 +293,11 @@
         const advertises = [
         'asset/image/common/ad__p.webp',
         'asset/image/common/2024표어.webp',
-         'asset/image/digital/사순절.webp',
-        'asset/image/digital/해외선교.webp',
-        'asset/image/digital/여선교회성전기도.webp',
-        'asset/image/digital/군포지방회.webp',
-        'asset/image/digital/졸업예배.webp'
+         'asset/image/digital_pre/사순절.webp',
+        'asset/image/digital_pre/군포지방회.webp',
+        'asset/image/digital_pre/독거어르신.webp',
+        'asset/image/digital_pre/졸업예배.webp',
+         'asset/image/digital_pre/서울소년원.webp'
      
        
 
