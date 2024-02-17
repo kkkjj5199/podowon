@@ -126,10 +126,10 @@
             const day = new Date().getDate();
             // const week = 2;
             // getISOWeekNumber(day);
-            console.log(day);
-            console.log(week);
+            // console.log(day-14);
+            
            
-            swiper.slideTo(day-12, 1000, false)
+            swiper.slideTo(day-14, 1000, false)
             
            
         }
