@@ -155,7 +155,7 @@
     }
 
     // <div>태그 반복문
-       
+
 
 
        
@@ -166,21 +166,21 @@
 
 
         // 아동1
-         for (var i = 2; i <=12; i++) {
+         for (var i = 2; i <=17; i++) {
             var img_src = 'asset/image/digital/adong1/' + i + '.webp';
               $("#1part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         
         // 아동2
-         for (var i = 2; i <=11; i++) {
+         for (var i = 2; i <=12; i++) {
             var img_src = 'asset/image/digital/adong2/' + i + '.webp';
               $("#2part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
 
         // 아동3
-       for (var i = 2; i <=17; i++) {
+       for (var i = 2; i <=18; i++) {
             var img_src = 'asset/image/digital/adong3/' + i + '.webp';
               $("#3part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -209,7 +209,7 @@
 
 
 
-        for (var i = 2; i <= 10; i++) {
+        for (var i = 2; i <= 13; i++) {
              var carouselInner = $("#mpart");  
             var itemContent;
 
@@ -233,7 +233,7 @@
 
        
      //  고등부
-       for (var i = 2; i <=9; i++) {
+       for (var i = 2; i <=15; i++) {
         var h = $("#hpart"); 
            var itemContent;
 
@@ -273,7 +273,7 @@
         }
 
         // 여선교회
-             for (var i = 2; i <=7; i++) {
+             for (var i = 2; i <=8; i++) {
             var img_src = 'asset/image/digital/woman/' + i + '.webp';
               $("#womanpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
