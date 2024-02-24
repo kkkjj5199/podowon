@@ -292,7 +292,7 @@
  // Sample list of image URLs
         const advertises = [
         'asset/image/common/ad__p.webp',
-        'asset/image/common/2024표어.webp',
+      
          'asset/image/digital_pre/사순절.webp',
         'asset/image/digital_pre/졸업예배.webp',
         'asset/image/digital_pre/서울소년원.webp',
@@ -316,6 +316,12 @@
         'asset/image/digital_pre/미1.webp',
         'asset/image/digital_pre/미2.webp',
         'asset/image/digital_pre/미3.webp',
+        'asset/image/digital_pre/미4.webp',
+        'asset/image/digital_pre/미5.webp',
+        'asset/image/digital_pre/미6.webp',
+        'asset/image/digital_pre/미7.webp',
+        'asset/image/digital_pre/미8.webp',
+        'asset/image/digital_pre/미9.webp'
         
   
 
