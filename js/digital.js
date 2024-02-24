@@ -313,6 +313,11 @@
         'asset/image/digital_pre/옥타묘띳-4.webp',
         'asset/image/digital_pre/옥타묘띳-5.webp',
         'asset/image/digital_pre/옥타묘띳-6.webp',
+        'asset/image/digital_pre/미1.webp',
+        'asset/image/digital_pre/미2.webp',
+        'asset/image/digital_pre/미3.webp',
+        
+  
 
    
 
