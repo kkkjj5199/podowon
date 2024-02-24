@@ -294,10 +294,9 @@
         'asset/image/common/ad__p.webp',
         'asset/image/common/2024표어.webp',
          'asset/image/digital/사순절.webp',
-        'asset/image/digital/군포지방회.webp',
-        'asset/image/digital/독거어르신.webp',
+  
         'asset/image/digital/졸업예배.webp',
-         'asset/image/digital/서울소년원.webp'
+   
      
        
 
