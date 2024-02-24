@@ -279,10 +279,10 @@
         }
 
         // 남선교회
-        //      for (var i = 2; i <=2; i++) {
-        //     var img_src = 'asset/image/digital_pre/man/' + i + '.webp';
-        //       $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        // }
+             for (var i = 2; i <=5; i++) {
+            var img_src = 'asset/image/digital_pre/man/' + i + '.webp';
+              $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        }
 
 
                 
@@ -293,9 +293,9 @@
         const advertises = [
         'asset/image/common/ad__p.webp',
         'asset/image/common/2024표어.webp',
-         'asset/image/digital/사순절.webp',
+         'asset/image/digital_pre/사순절.webp',
   
-        'asset/image/digital/졸업예배.webp',
+        'asset/image/digital_pre/졸업예배.webp',
    
      
        
