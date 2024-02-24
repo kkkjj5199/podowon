@@ -307,7 +307,12 @@
 
         const story = [
         'asset/image/common/포도원스토리.webp',
-      
+        'asset/image/digital_pre/옥타묘띳-1.webp',
+        'asset/image/digital_pre/옥타묘띳-2.webp',
+        'asset/image/digital_pre/옥타묘띳-3.webp',
+        'asset/image/digital_pre/옥타묘띳-4.webp',
+        'asset/image/digital_pre/옥타묘띳-5.webp',
+        'asset/image/digital_pre/옥타묘띳-6.webp',
 
    
 
