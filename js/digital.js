@@ -294,8 +294,11 @@
         'asset/image/common/ad__p.webp',
         'asset/image/common/2024표어.webp',
          'asset/image/digital_pre/사순절.webp',
-  
         'asset/image/digital_pre/졸업예배.webp',
+        'asset/image/digital_pre/서울소년원.webp',
+        'asset/image/digital_pre/새달새.webp',
+        'asset/image/digital_pre/새학기부흥성회.webp',
+        'asset/image/digital_pre/여선교회축복성회.webp',
    
      
        
