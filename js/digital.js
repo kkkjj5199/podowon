@@ -166,22 +166,22 @@
 
 
         // 아동1
-         for (var i = 2; i <=17; i++) {
-            var img_src = 'asset/image/digital/adong1/' + i + '.webp';
+         for (var i = 2; i <=22; i++) {
+            var img_src = 'asset/image/digital_pre/adong1/' + i + '.webp';
               $("#1part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         
         // 아동2
-         for (var i = 2; i <=12; i++) {
-            var img_src = 'asset/image/digital/adong2/' + i + '.webp';
+         for (var i = 2; i <=17; i++) {
+            var img_src = 'asset/image/digital_pre/adong2/' + i + '.webp';
               $("#2part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
 
         // 아동3
        for (var i = 2; i <=18; i++) {
-            var img_src = 'asset/image/digital/adong3/' + i + '.webp';
+            var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
               $("#3part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
@@ -208,22 +208,27 @@
 
 
 
-
+        //중등부
         for (var i = 2; i <= 13; i++) {
              var carouselInner = $("#mpart");  
             var itemContent;
+            var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
+            
 
-            // if (i === 8) {
+            
+            if (i == 6) {
+                itemContent = '<a href="https://youtu.be/5_l3pSeiqUg?si=s3HOho08_fa6tf5J"><img class="d-block w-100" src="' + img_src + '></a>';
             //     // Insert YouTube link
             //     var youtube_video_id = 'IS03wIpD4U4'; // Replace with the actual video ID
             //     var iframe_id = 'youtube_iframe_' + i;
             //     var youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
             //     itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
-            // } else {
+            } else {
                 // Insert image
-                var img_src = 'asset/image/digital/middlepart/' + i + '.webp';
+               
+
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            // }
+            }
 
             var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
             carouselInner.append(carouselItem);
@@ -233,7 +238,7 @@
 
        
      //  고등부
-       for (var i = 2; i <=15; i++) {
+       for (var i = 2; i <=8; i++) {
         var h = $("#hpart"); 
            var itemContent;
 
@@ -245,7 +250,7 @@
             //     itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
             // } else {
                 // Insert image
-                var img_src = 'asset/image/digital/highpart/' + i + '.webp';
+                var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
             // }
 
@@ -267,22 +272,22 @@
 
     
         //  청년회
-       for (var i = 2; i <=18; i++) {
-            var img_src = 'asset/image/digital/caryouth/' + i + '.webp';
+       for (var i = 2; i <=7; i++) {
+            var img_src = 'asset/image/digital_pre/caryouth/' + i + '.webp';
               $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         // 여선교회
-             for (var i = 2; i <=8; i++) {
-            var img_src = 'asset/image/digital/woman/' + i + '.webp';
+             for (var i = 2; i <=10; i++) {
+            var img_src = 'asset/image/digital_pre/woman/' + i + '.webp';
               $("#womanpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         // 남선교회
-             for (var i = 2; i <=5; i++) {
-            var img_src = 'asset/image/digital/man/' + i + '.webp';
-              $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
+        //      for (var i = 2; i <=2; i++) {
+        //     var img_src = 'asset/image/digital_pre/man/' + i + '.webp';
+        //       $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        // }
 
 
                 
