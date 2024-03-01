@@ -46,22 +46,11 @@
         const btnPrev = document.querySelector('.carousel-control-prev');
         const btnNext = document.querySelector('.carousel-control-next');
 
-       
+
         let slides = document.querySelectorAll('.carousel-item');
         let currentIdx = 0;
 
 
-        // function goToSlide() {
-        //     updateNav();
-        // }
-
-        // goToSlide(0);
-
-        // function updateNav() {
-        //     btnPrev.classList.add('disabled');
-          
-        // }
-   
 
 
     //youtube API 불러오는 부분
@@ -80,7 +69,7 @@
     var player;
     function onYouTubeIframeAPIReady() { // 이 함수가 동영상 iframe을 만들어주는 함수이다.
             for (var i = 0; i < $(".youtube").length; i++) { // 동영상을 원하는만큼 만들어주기 위해.
-               
+
                 var playerId = idAry[i];
                 player = new YT.Player(playerId, {
                     videoId: urlAry[i],
@@ -90,63 +79,49 @@
                     events: {
                     'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
                     'onStateChange': onPlayerStateChange,
-                 
+
                     //플레이어 상태 변화 시 이벤트를 실행한다.
                 }
                 });
 
-           
+
                 objAry.push(player);
-           
+
                 // 가장 중요한 대목! 변수 player에 각 동영상 마다 만들어진 객체를 objAry 배열에 넣어준다.
                 // 그래야 후에 원하는 동영상 제어를 할 수 있다.
             }
-           
+
         }
 
     function onPlayerReady(event) {
-     
+
      }
 
 
 
 
- 
-    
 
     var done = false;
     function onPlayerStateChange(event) {
        // const myaudio = document.getElementById('myaudio');
         myaudio.pause();
         console.log('오디오 잠시멈춤 성공');
-        
-       
+
         if (event.data == YT.PlayerState.PLAYING && !done) {
-            
+
             done = true;
-        } 
+        }
         else if( event.data ===0 ){
         myaudio.play();
         }
 
-  
 
-
-     
     }
 
-    
 
 
 
-  
-        
- 
-    
- 
 
- 
-   
     //인스타로 들어갔을때 배경음악 잠시 멈춤.
     function instaOn(_event) {
         myaudio.pause();
@@ -156,61 +131,26 @@
 
     // <div>태그 반복문
 
-
-
-       
+        //말씀
+         frame2(21,'adong1','#1part');
         for (var i = 1; i <=5; i++) {
             var img_src = 'asset/image/common/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
-
         // 아동1
-         for (var i = 2; i <=21; i++) {
-            var img_src = 'asset/image/digital_pre/adong1/' + i + '.webp';
-              $("#1part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
+        frame2(21,'adong1','#1part');
 
-        
         // 아동2
-         for (var i = 2; i <=17; i++) {
-            var img_src = 'asset/image/digital_pre/adong2/' + i + '.webp';
-              $("#2part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
-
+        frame2(17,'adong2','#2part');
 
         // 아동3
-       for (var i = 2; i <=18; i++) {
-            var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
-              $("#3part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
-
-    //  중등부
-    //    for (var i = 2; i <=12; i++) {
-    //     var id='5_l3pSeiqUg';
-    //     if(i!=6){
-    //         var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
-    //        $("#mpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + 
-    //        img_src + '></div>');
-    //     }
-    //        else{
-          
-    //          $("#mpart").append('<div class="carousel-item"><div class="youtube" data-url="'+id+'"></div></div>');
-           
-          
-    //        }
-       
-           
-       
-    //     }
-
-       
-
+        frame2(18,'adong3','#3part');
 
 
         //중등부
         for (var i = 2; i <= 13; i++) {
-             var carouselInner = $("#mpart");  
+            var carouselInner = $("#mpart");  
             var itemContent;
             var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
 
@@ -232,41 +172,23 @@
             //     var youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
             //     itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
             // } else {
-               
-               
-
-               
-            
 
             var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
             carouselInner.append(carouselItem);
         }
 
-
-
-       
      //  고등부
        for (var i = 2; i <=14; i++) {
         var h = $("#hpart"); 
            var itemContent;
-           var youtube_video_id;
-           var iframe_id;
-           var youtube_link;
 
             if (i === 9) {
-          
-                youtube_video_id = '7scmJT8JWNc'; // Replace with the actual video ID
-                iframe_id = 'youtube_iframe_' + i;
-                youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
-                itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
+                frame1('7scmJT8JWNc',9);
+
             } else if(i===10){
-                youtube_video_id = '5Nuzf0BijqQ'; // Replace with the actual video ID
-                iframe_id = 'youtube_iframe_' + i;
-                youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
-                itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';    
+                frame1('5Nuzf0BijqQ',10);
             }
             else {
-             
                 var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
             }
@@ -274,57 +196,31 @@
             var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
             h.append(carouselItem);
 
-
-
-
-
-
-
-
-
-
             // var img_src = 'asset/image/digital/highpart/' + i + '.webp';
             //   $("#hpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
-    
         //  청년회
-       for (var i = 2; i <=7; i++) {
-            var img_src = 'asset/image/digital_pre/caryouth/' + i + '.webp';
-              $("#youthpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
+        frame2(7,'caryouth','#youthpart');
 
         // 여선교회
-             for (var i = 2; i <=10; i++) {
-            var img_src = 'asset/image/digital_pre/woman/' + i + '.webp';
-              $("#womanpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
+        frame2(10,'woman','#womanpart');
+
 
         // 남선교회
-        //      for (var i = 2; i <=2; i++) {
-        //     var img_src = 'asset/image/digital_pre/man/' + i + '.webp';
-        //       $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        // }
+        // frame2(2,'man','#manpart');
 
 
-                
-  
 
-    
  // Sample list of image URLs
         const advertises = [
         'asset/image/common/ad__p.webp',
-      
-         'asset/image/digital/사순절.webp',
+        'asset/image/digital/사순절.webp',
         'asset/image/digital/졸업예배.webp',
         'asset/image/digital/서울소년원.webp',
         'asset/image/digital/새달새.webp',
         'asset/image/digital/새학기부흥성회.webp',
         'asset/image/digital/여선교회축복성회.webp',
-   
-     
-       
-
         ];
 
         const story = [
@@ -334,23 +230,14 @@
         'asset/image/digital_pre/새학기_3.webp',
         'asset/image/digital_pre/새학기_4.webp',
         'asset/image/digital_pre/새학기_5.webp',
-
-        
-  
-
-   
-
-
-
-          
         ];
 
-       
 
-          $('[id^="imageCarouselModal"]').on('hidden.bs.modal', function () {
+
+        $('[id^="imageCarouselModal"]').on('hidden.bs.modal', function () {
         // Remove 'modal-open' class from the body to prevent scrolling to the top
         $('body').removeClass('modal-open');
-        });     
+        });
 
         // Function to dynamically populate the carousel
         function populateCarousel() {
@@ -390,6 +277,22 @@
 
 
    
+        }
+
+        // youtube in 슬라이드
+        function frame1(youtube_video_id,i){
+            iframe_id = 'youtube_iframe_' + i;
+            youtube_link= 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
+            itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';  
+        }
+
+        // 이미지 슬라이드
+        function frame2(length,partName,idName){
+            for(var i =2; i<= length; i++){
+              var img_src = 'asset/image/digital_pre/' + partName+ '/' + i + '.webp';
+               $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+            }
+            
         }
 
         // Call the function to populate the carousel
