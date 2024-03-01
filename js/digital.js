@@ -246,21 +246,30 @@
 
        
      //  고등부
-       for (var i = 2; i <=13; i++) {
+       for (var i = 2; i <=14; i++) {
         var h = $("#hpart"); 
            var itemContent;
+           var youtube_video_id;
+           var iframe_id;
+           var youtube_link;
 
-            // if (i === 6) {
-            //     // Insert YouTube link
-            //     var youtube_video_id = 'orAr3mLJ0AE'; // Replace with the actual video ID
-            //     var iframe_id = 'youtube_iframe_' + i;
-            //     var youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
-            //     itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
-            // } else {
-                // Insert image
+            if (i === 9) {
+          
+                youtube_video_id = '7scmJT8JWNc'; // Replace with the actual video ID
+                iframe_id = 'youtube_iframe_' + i;
+                youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
+                itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
+            } else if(i===10){
+                youtube_video_id = '5Nuzf0BijqQ'; // Replace with the actual video ID
+                iframe_id = 'youtube_iframe_' + i;
+                youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
+                itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';    
+            }
+            else {
+             
                 var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            // }
+            }
 
             var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
             h.append(carouselItem);
