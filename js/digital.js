@@ -186,10 +186,10 @@
         }
 
     //  중등부
-    //    for (var i = 2; i <=14; i++) {
-    //     var id='IS03wIpD4U4';
-    //     if(i!=8){
-    //         var img_src = 'asset/image/digital/middlepart/' + i + '.webp';
+    //    for (var i = 2; i <=12; i++) {
+    //     var id='5_l3pSeiqUg';
+    //     if(i!=6){
+    //         var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
     //        $("#mpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + 
     //        img_src + '></div>');
     //     }
@@ -204,7 +204,7 @@
        
     //     }
 
-       // Assuming hpart is the ID of your carousel-inner container
+       
 
 
 
@@ -213,22 +213,30 @@
              var carouselInner = $("#mpart");  
             var itemContent;
             var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
+
+            if(i ===6){
+                var itemContent = '<a href="https://youtu.be/5_l3pSeiqUg?si=wM-TX62b75KEuR2i">' +
+                '<img class="d-block w-100" src="' + img_src + '">' +
+                '</a>'
+            }else{
+                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+            }
             
 
             
-            if (i == 6) {
-                itemContent = '<a href="https://youtu.be/5_l3pSeiqUg?si=s3HOho08_fa6tf5J"><img class="d-block w-100" src="' + img_src + '></a>';
+            // if (i == 6) {
+            //     itemContent = '<a href="https://youtu.be/5_l3pSeiqUg?si=s3HOho08_fa6tf5J"><img class="d-block w-100" src="' + img_src + '></a>';
             //     // Insert YouTube link
             //     var youtube_video_id = 'IS03wIpD4U4'; // Replace with the actual video ID
             //     var iframe_id = 'youtube_iframe_' + i;
             //     var youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
             //     itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
-            } else {
-                // Insert image
+            // } else {
+               
                
 
-                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            }
+               
+            
 
             var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
             carouselInner.append(carouselItem);
@@ -312,22 +320,12 @@
 
         const story = [
         'asset/image/common/포도원스토리.webp',
-        'asset/image/digital/옥타묘띳-1.webp',
-        'asset/image/digital/옥타묘띳-2.webp',
-        'asset/image/digital/옥타묘띳-3.webp',
-        'asset/image/digital/옥타묘띳-4.webp',
-        'asset/image/digital/옥타묘띳-5.webp',
-        'asset/image/digital/옥타묘띳-6.webp',
-        'asset/image/digital/미미.webp',
-        'asset/image/digital/미1.webp',
-        'asset/image/digital/미2.webp',
-        'asset/image/digital/미3.webp',
-        'asset/image/digital/미4.webp',
-        'asset/image/digital/미5.webp',
-        'asset/image/digital/미6.webp',
-        'asset/image/digital/미7.webp',
-        'asset/image/digital/미8.webp',
-        'asset/image/digital/미9.webp'
+        'asset/image/digital_pre/새학기_1.webp',
+        'asset/image/digital_pre/새학기_2.webp',
+        'asset/image/digital_pre/새학기_3.webp',
+        'asset/image/digital_pre/새학기_4.webp',
+        'asset/image/digital_pre/새학기_5.webp',
+
         
   
 
@@ -338,13 +336,7 @@
           
         ];
 
-        const smj = [
-        'asset/image/all/smj/4.webp',
-        'asset/image/all/smj/5.webp',
-        'asset/image/all/smj/6.webp',
-        'asset/image/all/smj/7.webp',
-
-        ];
+       
 
           $('[id^="imageCarouselModal"]').on('hidden.bs.modal', function () {
         // Remove 'modal-open' class from the body to prevent scrolling to the top
