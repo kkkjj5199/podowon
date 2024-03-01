@@ -238,7 +238,7 @@
 
        
      //  고등부
-       for (var i = 2; i <=8; i++) {
+       for (var i = 2; i <=13; i++) {
         var h = $("#hpart"); 
            var itemContent;
 
