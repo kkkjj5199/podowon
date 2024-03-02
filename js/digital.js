@@ -208,7 +208,7 @@
 
 
         // 남선교회
-        // frame2(2,'man','#manpart');
+        frame2(5,'man','#manpart');
 
 
 
