@@ -224,6 +224,10 @@
 
         const story = [
         'asset/image/common/포도원스토리.webp',
+        'asset/image/digital_pre/졸업예배_1.webp',
+        'asset/image/digital_pre/졸업예배_2.webp',
+        'asset/image/digital_pre/졸업예배_3.webp',
+        'asset/image/digital_pre/졸업예배_4.webp',
         'asset/image/digital_pre/새학기_1.webp',
         'asset/image/digital_pre/새학기_2.webp',
         'asset/image/digital_pre/새학기_3.webp',
