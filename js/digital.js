@@ -257,6 +257,13 @@
         ];
 
 
+        const mym = [
+            'asset/image/digital/미얀마_1.webp',
+            'asset/image/digital/미얀마_2.webp',
+            'asset/image/digital/미얀마_3.webp',
+        ]
+
+
 
         $('[id^="imageCarouselModal"]').on('hidden.bs.modal', function () {
         // Remove 'modal-open' class from the body to prevent scrolling to the top
