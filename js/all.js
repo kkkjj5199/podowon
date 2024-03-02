@@ -129,7 +129,7 @@
             // console.log(day-14);
             
            
-            swiper.slideTo(day-14, 1000, false)
+            swiper.slideTo(day+15, 1000, false)
             
            
         }
