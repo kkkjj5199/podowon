@@ -48,7 +48,7 @@
 
 <body id="page-top">
 
-    <audio src="asset/audio/아브라함의 노래.mp3" autoplay id="myaudio"></audio>
+    <!-- <audio src="asset/audio/아브라함의 노래.mp3" autoplay id="myaudio"></audio> -->
 
     <section class="page-section bg-primary" id="about">
         <div class="container">
@@ -327,7 +327,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalCenterTitle">중등부교구</h5>
-                                    <button type="button" class="close" data-dismiss="modal"  onclick="stopYoutube('8')" aria-label="Close">
+                                    <button type="button" class="close" data-dismiss="modal"   aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
@@ -365,7 +365,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalCenterTitle">고등부교구</h5>
-                                    <button type="button" class="close" data-dismiss="modal" onclick="stopYoutube('6')" aria-label="Close">
+                                    <button type="button" class="close" data-dismiss="modal" onclick="stopYoutube()" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
@@ -391,7 +391,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" onclick="stopYoutube('6')" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" onclick="stopYoutube()" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -594,6 +594,8 @@
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 
+    <!--Include the YouTube Iframe API   -->
+    <script src="https://www.youtube.com/iframe_api"></script>
 
 
 

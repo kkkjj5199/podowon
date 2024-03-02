@@ -1,5 +1,5 @@
-    let sound = document.querySelector('audio');
-    sound.currentTime= 1;
+    // let sound = document.querySelector('audio');
+    // sound.currentTime= 1;
 
 
 
@@ -57,50 +57,80 @@
 
 
     //youtube API 불러오는 부분
-    // var tag = document.createElement('script');
-    // tag.src = "https://www.youtube.com/iframe_api";
-    // var firstScriptTag = document.getElementsByTagName('script')[0];
-    // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    // var idAry = [] , objAry=[]; urlAry = [];
+    var idAry = [] , objAry=[]; urlAry = [];
 
-    // $(".youtube").each(function (i) {
-    //     $(this).attr("id", "player" + i); // 아이디 값 추가
-    //     idAry.push("player" + i); // 아이디 값 배열에 넣기
-    //     urlAry.push($(this).data("url")); // 동영상 url 배열에 넣기
-    // });
-    // 
-    // function onYouTubeIframeAPIReady() { // 이 함수가 동영상 iframe을 만들어주는 함수이다.
-    //         for (var i = 0; i < $(".youtube").length; i++) { // 동영상을 원하는만큼 만들어주기 위해.
+    $(".youtube").each(function (i) {
+        $(this).attr("id", "player" + i); // 아이디 값 추가
+        idAry.push("player" + i); // 아이디 값 배열에 넣기
+        urlAry.push($(this).data("url")); // 동영상 url 배열에 넣기
+        console.log(urlAry);
+    });
+   
+    function onYouTubeIframeAPIReady() { // 이 함수가 동영상 iframe을 만들어주는 함수이다.
+            for (var i = 0; i < $(".youtube").length; i++) { // 동영상을 원하는만큼 만들어주기 위해.
 
-    //             var playerId = idAry[i];
-    //             player = new YT.Player(playerId, {
-    //                 videoId: urlAry[i],
-    //                 playerVars: {
-    //                     rel: 0
-    //                 },
-    //                 events: {
-    //                 'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
-    //                 'onStateChange': onPlayerStateChange,
+                var playerId = idAry[i];
+                player = new YT.Player(playerId, {
+                    videoId: urlAry[i],
+                    playerVars: {
+                        rel: 0
+                    },
+                    events: {
+                    'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
+                    'onStateChange': onPlayerStateChange,
 
-    //                 //플레이어 상태 변화 시 이벤트를 실행한다.
-    //             }
-    //             });
+                    //플레이어 상태 변화 시 이벤트를 실행한다.
+                }
+                });
 
 
-    //             objAry.push(player);
+                objAry.push(player);
 
-    //             // 가장 중요한 대목! 변수 player에 각 동영상 마다 만들어진 객체를 objAry 배열에 넣어준다.
-    //             // 그래야 후에 원하는 동영상 제어를 할 수 있다.
-    //         }
+                // 가장 중요한 대목! 변수 player에 각 동영상 마다 만들어진 객체를 objAry 배열에 넣어준다.
+                // 그래야 후에 원하는 동영상 제어를 할 수 있다.
+            }
 
-    //     }
+        }
+
+
+     var player;
+     function onPlayerReady() {
+        console.log('dddddddsssss');
+        player = new YT.Player('youtube_iframe_9',{
+            events:{
+                'onStageChange': onPlayerStateChange
+                
+            }
+        });
+
+     }
+      const myaudio = document.getElementById('myaudio');
+      function onPlayerStateChange(event) {
+        
+    
+        myaudio.pause();
+        console.log('오디오 잠시멈춤 성공');
+
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+
+            done = true;
+        }
+        else if( event.data ===0 ){
+        myaudio.play();
+        }
+    }
 
    
 
-    function stopYoutube(number) {
-        var name = 'youtube_iframe_' + number;
-        var iframe = document.getElementById(name);
+    function stopYoutube() {
+
+        // var name = 'youtube_iframe_' + number;
+        var iframe = document.querySelectorAll('[id^="youtube_iframe_"]');
         var src = iframe.src;
         src = src.replace("autoplay=1","autoplay=0");
         iframe.src= src;
@@ -172,13 +202,9 @@
            var itemContent;
 
             if (i === 9) {
-
                 frame1('7scmJT8JWNc',9);
 
-                //  itemContent = '<div class="youtube" data-url="7scmJT8JWNc"></div> ';
-
-
-
+                //  itemContent = '<div data-url="7scmJT8JWNc" class="youtube"></div> ';
             } else if(i===10){
                 frame1('5Nuzf0BijqQ',10);
             }
@@ -281,7 +307,7 @@
         function frame1(youtube_video_id,i){
             iframe_id = 'youtube_iframe_' + i;
             youtube_link= 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
-            itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';  
+            itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;" ></iframe>';  
         }
 
         // 이미지 슬라이드
@@ -340,35 +366,34 @@
             alert("복사 완료");
         }
 
-     var player;
-     function onYouTubeIframeAPIReady() {
-        console.log('dddddddsssss');
-        player = new YT.Player('youtube_iframe_9',{
-            events:{
-                'onStageChange': onPlayerStateChange
-            }
-        });
+     
 
-     }
+  
 
 
-    var done = false;
-    function onPlayerStateChange(event) {
+    // var done = false;
+    // function onPlayerStateChange(event) {
+    //     console.log('stopsotp');
+    //    const myaudio = document.getElementById('myaudio');
+    //     myaudio.pause();
+    //     console.log('오디오 잠시멈춤 성공');
 
-       const myaudio = document.getElementById('myaudio');
-        myaudio.pause();
-        console.log('오디오 잠시멈춤 성공');
+    //     if (event.data == YT.PlayerState.PLAYING && !done) {
 
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-
-            done = true;
-        }
-        else if( event.data ===0 ){
-        myaudio.play();
-        }
+    //         done = true;
+    //     }
+    //     else if( event.data ===0 ){
+    //     myaudio.play();
+    //     }
 
 
-    }
+    // }
+
+    //    document.body.addEventListener('click', function() {
+    //     if (player.getPlayerState() === YT.PlayerState.PLAYING) {
+    //         player.pauseVideo();
+    //     }
+    // });
 
    
 
