@@ -274,7 +274,8 @@
         function populateCarousel() {
             const carouselInner = document.querySelector('#dynamicCarousel .carousel-inner');
             const carouselInner2 = document.querySelector('#dynamicCarousel2 .carousel-inner');
-         
+            const carouselInner3 = document.querySelector('#dynamicCarousel9 .carousel-inner');
+
             advertises.forEach((imageUrl, index) => {
                 const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
 
@@ -304,6 +305,23 @@
                 carouselInner2.appendChild(carouselItem);
                
             });
+
+            mym.forEach((imageUrl, index) => {
+                const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
+
+                const carouselItem = document.createElement('div');
+                carouselItem.className = itemClass;
+
+                const imgElement = document.createElement('img');
+                imgElement.src = imageUrl;
+                imgElement.className = 'd-block w-100';
+
+                carouselItem.appendChild(imgElement);
+                carouselInner3.appendChild(carouselItem);
+               
+            });
+
+
 
 
 
