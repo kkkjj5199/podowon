@@ -170,7 +170,7 @@
         for (var i = 2; i <= 12; i++) {
             var carouselInner = $("#mpart");  
             var itemContent;
-            var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
+            var img_src = 'asset/image/digital/middlepart/' + i + '.webp';
 
             if(i ===6){
                
@@ -209,7 +209,7 @@
                 frame1('5Nuzf0BijqQ',10);
             }
             else {
-                var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
+                var img_src = 'asset/image/digital/highpart/' + i + '.webp';
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
             }
 
@@ -236,24 +236,24 @@
  // Sample list of image URLs
         const advertises = [
         'asset/image/common/ad__p.webp',
-        'asset/image/digital_pre/사순절.webp',
-        'asset/image/digital_pre/봄태신자.webp',
-        'asset/image/digital_pre/여선교회축복성회.webp',
-        'asset/image/digital_pre/군포지방교역자회의.webp',
+        'asset/image/digital/사순절.webp',
+        'asset/image/digital/봄태신자.webp',
+        'asset/image/digital/여선교회축복성회.webp',
+        'asset/image/digital/군포지방교역자회의.webp',
 
         ];
 
         const story = [
         'asset/image/common/포도원스토리.webp',
-        'asset/image/digital_pre/졸업예배_1.webp',
-        'asset/image/digital_pre/졸업예배_2.webp',
-        'asset/image/digital_pre/졸업예배_3.webp',
-        'asset/image/digital_pre/졸업예배_4.webp',
-        'asset/image/digital_pre/새학기_1.webp',
-        'asset/image/digital_pre/새학기_2.webp',
-        'asset/image/digital_pre/새학기_3.webp',
-        'asset/image/digital_pre/새학기_4.webp',
-        'asset/image/digital_pre/새학기_5.webp',
+        'asset/image/digital/졸업예배_1.webp',
+        'asset/image/digital/졸업예배_2.webp',
+        'asset/image/digital/졸업예배_3.webp',
+        'asset/image/digital/졸업예배_4.webp',
+        'asset/image/digital/새학기_1.webp',
+        'asset/image/digital/새학기_2.webp',
+        'asset/image/digital/새학기_3.webp',
+        'asset/image/digital/새학기_4.webp',
+        'asset/image/digital/새학기_5.webp',
         ];
 
 
@@ -313,7 +313,7 @@
         // 이미지 슬라이드
         function frame2(length,partName,idName){
             for(var i =2; i<= length; i++){
-              var img_src = 'asset/image/digital_pre/' + partName+ '/' + i + '.webp';
+              var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
                $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
             }
             
@@ -371,29 +371,7 @@
   
 
 
-    // var done = false;
-    // function onPlayerStateChange(event) {
-    //     console.log('stopsotp');
-    //    const myaudio = document.getElementById('myaudio');
-    //     myaudio.pause();
-    //     console.log('오디오 잠시멈춤 성공');
-
-    //     if (event.data == YT.PlayerState.PLAYING && !done) {
-
-    //         done = true;
-    //     }
-    //     else if( event.data ===0 ){
-    //     myaudio.play();
-    //     }
-
-
-    // }
-
-    //    document.body.addEventListener('click', function() {
-    //     if (player.getPlayerState() === YT.PlayerState.PLAYING) {
-    //         player.pauseVideo();
-    //     }
-    // });
+    
 
    
 
