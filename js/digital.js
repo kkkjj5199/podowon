@@ -1,5 +1,14 @@
     let sound = document.querySelector('audio');
     sound.currentTime= 1;
+
+    function stopYoutube(number) {
+    var name = 'youtube_iframe_' + number;
+    var iframe = document.getElementById(name);
+    var src = iframe.src;
+    src = src.replace("autoplay=1","autoplay=0");
+    iframe.src= src;
+}
+
 /* Google map*/
         var container = document.getElementById('map');
         var options = {
@@ -149,7 +158,7 @@
 
 
         //중등부
-        for (var i = 2; i <= 13; i++) {
+        for (var i = 2; i <= 12; i++) {
             var carouselInner = $("#mpart");  
             var itemContent;
             var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
@@ -345,11 +354,4 @@
             alert("복사 완료");
         }
 
-        function stopYoutube(number) {
-            var name = 'youtube_iframe_' + number;
-            var iframe = document.getElementById(name);
-            var src = iframe.src;
-            src = src.replace("autoplay=1","autoplay=0");
-            iframe.src= src;
-        }
 
