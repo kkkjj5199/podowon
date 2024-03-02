@@ -215,12 +215,11 @@
  // Sample list of image URLs
         const advertises = [
         'asset/image/common/ad__p.webp',
-        'asset/image/digital/사순절.webp',
-        'asset/image/digital/졸업예배.webp',
-        'asset/image/digital/서울소년원.webp',
-        'asset/image/digital/새달새.webp',
-        'asset/image/digital/새학기부흥성회.webp',
-        'asset/image/digital/여선교회축복성회.webp',
+        'asset/image/digital_pre/사순절.webp',
+        'asset/image/digital_pre/봄태신자.webp',
+        'asset/image/digital_pre/여선교회축복성회.webp',
+        'asset/image/digital_pre/군포지방교역자회의.webp',
+
         ];
 
         const story = [
