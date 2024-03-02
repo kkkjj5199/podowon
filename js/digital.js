@@ -145,7 +145,7 @@
         frame2(17,'adong2','#2part');
 
         // 아동3
-        frame2(18,'adong3','#3part');
+        frame2(25,'adong3','#3part');
 
 
         //중등부
