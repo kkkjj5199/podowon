@@ -132,8 +132,8 @@
     // <div>태그 반복문
 
         //말씀
-         frame2(21,'adong1','#1part');
-        for (var i = 1; i <=5; i++) {
+       
+        for (var i = 1; i <=4; i++) {
             var img_src = 'asset/image/common/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
