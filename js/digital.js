@@ -1,13 +1,7 @@
     let sound = document.querySelector('audio');
     sound.currentTime= 1;
 
-    function stopYoutube(number) {
-    var name = 'youtube_iframe_' + number;
-    var iframe = document.getElementById(name);
-    var src = iframe.src;
-    src = src.replace("autoplay=1","autoplay=0");
-    iframe.src= src;
-}
+
 
 /* Google map*/
         var container = document.getElementById('map');
@@ -63,68 +57,53 @@
 
 
     //youtube API 불러오는 부분
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    // var tag = document.createElement('script');
+    // tag.src = "https://www.youtube.com/iframe_api";
+    // var firstScriptTag = document.getElementsByTagName('script')[0];
+    // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    var idAry = [] , objAry=[]; urlAry = [];
+    // var idAry = [] , objAry=[]; urlAry = [];
 
-    $(".youtube").each(function (i) {
-        $(this).attr("id", "player" + i); // 아이디 값 추가
-        idAry.push("player" + i); // 아이디 값 배열에 넣기
-        urlAry.push($(this).data("url")); // 동영상 url 배열에 넣기
-    });
-    var player;
-    function onYouTubeIframeAPIReady() { // 이 함수가 동영상 iframe을 만들어주는 함수이다.
-            for (var i = 0; i < $(".youtube").length; i++) { // 동영상을 원하는만큼 만들어주기 위해.
+    // $(".youtube").each(function (i) {
+    //     $(this).attr("id", "player" + i); // 아이디 값 추가
+    //     idAry.push("player" + i); // 아이디 값 배열에 넣기
+    //     urlAry.push($(this).data("url")); // 동영상 url 배열에 넣기
+    // });
+    // 
+    // function onYouTubeIframeAPIReady() { // 이 함수가 동영상 iframe을 만들어주는 함수이다.
+    //         for (var i = 0; i < $(".youtube").length; i++) { // 동영상을 원하는만큼 만들어주기 위해.
 
-                var playerId = idAry[i];
-                player = new YT.Player(playerId, {
-                    videoId: urlAry[i],
-                    playerVars: {
-                        rel: 0
-                    },
-                    events: {
-                    'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
-                    'onStateChange': onPlayerStateChange,
+    //             var playerId = idAry[i];
+    //             player = new YT.Player(playerId, {
+    //                 videoId: urlAry[i],
+    //                 playerVars: {
+    //                     rel: 0
+    //                 },
+    //                 events: {
+    //                 'onReady': onPlayerReady,//로딩중에 이벤트 실행한다
+    //                 'onStateChange': onPlayerStateChange,
 
-                    //플레이어 상태 변화 시 이벤트를 실행한다.
-                }
-                });
-
-
-                objAry.push(player);
-
-                // 가장 중요한 대목! 변수 player에 각 동영상 마다 만들어진 객체를 objAry 배열에 넣어준다.
-                // 그래야 후에 원하는 동영상 제어를 할 수 있다.
-            }
-
-        }
-
-    function onPlayerReady(event) {
-
-     }
+    //                 //플레이어 상태 변화 시 이벤트를 실행한다.
+    //             }
+    //             });
 
 
+    //             objAry.push(player);
 
+    //             // 가장 중요한 대목! 변수 player에 각 동영상 마다 만들어진 객체를 objAry 배열에 넣어준다.
+    //             // 그래야 후에 원하는 동영상 제어를 할 수 있다.
+    //         }
 
+    //     }
 
-    var done = false;
-    function onPlayerStateChange(event) {
-       // const myaudio = document.getElementById('myaudio');
-        myaudio.pause();
-        console.log('오디오 잠시멈춤 성공');
+   
 
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-
-            done = true;
-        }
-        else if( event.data ===0 ){
-        myaudio.play();
-        }
-
-
+    function stopYoutube(number) {
+        var name = 'youtube_iframe_' + number;
+        var iframe = document.getElementById(name);
+        var src = iframe.src;
+        src = src.replace("autoplay=1","autoplay=0");
+        iframe.src= src;
     }
 
 
@@ -164,6 +143,7 @@
             var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
 
             if(i ===6){
+               
                 var itemContent = '<a href="https://youtu.be/5_l3pSeiqUg?si=wM-TX62b75KEuR2i">' +
                 '<img class="d-block w-100" src="' + img_src + '">' +
                 '</a>'
@@ -192,7 +172,12 @@
            var itemContent;
 
             if (i === 9) {
+
                 frame1('7scmJT8JWNc',9);
+
+                //  itemContent = '<div class="youtube" data-url="7scmJT8JWNc"></div> ';
+
+
 
             } else if(i===10){
                 frame1('5Nuzf0BijqQ',10);
@@ -209,6 +194,7 @@
             //   $("#hpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
+       
         //  청년회
         frame2(7,'caryouth','#youthpart');
 
@@ -217,7 +203,7 @@
 
 
         // 남선교회
-        frame2(5,'man','#manpart');
+        frame2(3,'man','#manpart');
 
 
 
@@ -354,4 +340,35 @@
             alert("복사 완료");
         }
 
+     var player;
+     function onYouTubeIframeAPIReady() {
+        console.log('dddddddsssss');
+        player = new YT.Player('youtube_iframe_9',{
+            events:{
+                'onStageChange': onPlayerStateChange
+            }
+        });
+
+     }
+
+
+    var done = false;
+    function onPlayerStateChange(event) {
+
+       const myaudio = document.getElementById('myaudio');
+        myaudio.pause();
+        console.log('오디오 잠시멈춤 성공');
+
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+
+            done = true;
+        }
+        else if( event.data ===0 ){
+        myaudio.play();
+        }
+
+
+    }
+
+   
 
