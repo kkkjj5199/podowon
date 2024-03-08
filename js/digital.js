@@ -162,8 +162,28 @@
         // 아동2
         frame2(14,'adong2','#2part');
 
+
+
         // 아동3
-        frame2(28,'adong3','#3part');
+        // frame2(28,'adong3','#3part');
+        for (var i = 2; i <= 28; i++) {
+            var carouselInner = $("#3part");  
+            var itemContent;
+            var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
+
+            if(i ==3){
+               
+                var itemContent = '<a href="https://youtu.be/uw8XvJEulb0?si=rC2He48tT17Kuye5">' +
+                '<img class="d-block w-100" src="' + img_src + '">' +
+                '</a>'
+            }else{
+                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+            }
+
+            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+            carouselInner.append(carouselItem);
+        }
+        
 
 
         //중등부
