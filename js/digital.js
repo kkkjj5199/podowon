@@ -169,7 +169,7 @@
         for (var i = 2; i <= 28; i++) {
             var carouselInner = $("#3part");  
             var itemContent;
-            var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
+            var img_src = 'asset/image/digital/adong3/' + i + '.webp';
 
             if(i ==3){
                
@@ -190,7 +190,7 @@
         for (var i = 2; i <= 12; i++) {
             var carouselInner = $("#mpart");  
             var itemContent;
-            var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
+            var img_src = 'asset/image/digital/middlepart/' + i + '.webp';
 
             // if(i ===6){
                
@@ -229,7 +229,7 @@
             //     frame1('5Nuzf0BijqQ',10);
             // }
             // else {
-                var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
+                var img_src = 'asset/image/digital/highpart/' + i + '.webp';
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
             // }
 
@@ -258,23 +258,21 @@
         'asset/image/common/ad__p.webp',
         'asset/image/digital/사순절.webp',
         'asset/image/digital/봄태신자.webp',
-        'asset/image/digital/여선교회축복성회.webp',
-        'asset/image/digital/군포지방교역자회의.webp',
-
+       
         ];
 
         const story = [
         'asset/image/common/포도원스토리.webp',
-        'asset/image/digital_pre/성만찬-1.webp',
-        'asset/image/digital_pre/성만찬-2.webp',
-        'asset/image/digital_pre/성만찬-3.webp',
+        'asset/image/digital/성만찬-1.webp',
+        'asset/image/digital/성만찬-2.webp',
+        'asset/image/digital/성만찬-3.webp',
         ];
 
 
         const prey = [
-            'asset/image/digital_pre/태국-2.webp',
-            'asset/image/digital_pre/태국-3.webp',
-            'asset/image/digital_pre/태국-1.webp',
+            'asset/image/digital/태국-2.webp',
+            'asset/image/digital/태국-3.webp',
+            'asset/image/digital/태국-1.webp',
            
         ]
 
@@ -289,7 +287,7 @@
         function populateCarousel() {
             const carouselInner = document.querySelector('#dynamicCarousel .carousel-inner');
             const carouselInner2 = document.querySelector('#dynamicCarousel2 .carousel-inner');
-            const carouselInner3 = document.querySelector('#dynamicCarousel3 .carousel-inner');
+            const carouselInner3 = document.querySelector('#dynamicCarousel4 .carousel-inner');
 
             advertises.forEach((imageUrl, index) => {
                 const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
@@ -353,7 +351,7 @@
         // 이미지 슬라이드
         function frame2(length,partName,idName){
             for(var i =2; i<= length; i++){
-              var img_src = 'asset/image/digital_pre/' + partName+ '/' + i + '.webp';
+              var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
                $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
             }
             
