@@ -157,29 +157,29 @@
         }
 
         // 아동1
-        frame2(21,'adong1','#1part');
+        frame2(19,'adong1','#1part');
 
         // 아동2
-        frame2(17,'adong2','#2part');
+        frame2(14,'adong2','#2part');
 
         // 아동3
-        frame2(25,'adong3','#3part');
+        frame2(28,'adong3','#3part');
 
 
         //중등부
         for (var i = 2; i <= 12; i++) {
             var carouselInner = $("#mpart");  
             var itemContent;
-            var img_src = 'asset/image/digital/middlepart/' + i + '.webp';
+            var img_src = 'asset/image/digital_pre/middlepart/' + i + '.webp';
 
-            if(i ===6){
+            // if(i ===6){
                
-                var itemContent = '<a href="https://youtu.be/5_l3pSeiqUg?si=wM-TX62b75KEuR2i">' +
-                '<img class="d-block w-100" src="' + img_src + '">' +
-                '</a>'
-            }else{
+            //     var itemContent = '<a href="https://youtu.be/5_l3pSeiqUg?si=wM-TX62b75KEuR2i">' +
+            //     '<img class="d-block w-100" src="' + img_src + '">' +
+            //     '</a>'
+            // }else{
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            }
+            // }
             
 
             
@@ -197,21 +197,21 @@
         }
 
      //  고등부
-       for (var i = 2; i <=14; i++) {
+       for (var i = 2; i <=15; i++) {
         var h = $("#hpart"); 
            var itemContent;
 
-            if (i === 9) {
-                frame1('7scmJT8JWNc',9);
+            // if (i === 9) {
+            //     frame1('7scmJT8JWNc',9);
 
                 //  itemContent = '<div data-url="7scmJT8JWNc" class="youtube"></div> ';
-            } else if(i===10){
-                frame1('5Nuzf0BijqQ',10);
-            }
-            else {
-                var img_src = 'asset/image/digital/highpart/' + i + '.webp';
+            // } else if(i===10){
+            //     frame1('5Nuzf0BijqQ',10);
+            // }
+            // else {
+                var img_src = 'asset/image/digital_pre/highpart/' + i + '.webp';
                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            }
+            // }
 
             var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
             h.append(carouselItem);
@@ -225,7 +225,7 @@
         frame2(7,'caryouth','#youthpart');
 
         // 여선교회
-        frame2(10,'woman','#womanpart');
+        frame2(8,'woman','#womanpart');
 
 
         // 남선교회
@@ -338,7 +338,7 @@
         // 이미지 슬라이드
         function frame2(length,partName,idName){
             for(var i =2; i<= length; i++){
-              var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
+              var img_src = 'asset/image/digital_pre/' + partName+ '/' + i + '.webp';
                $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
             }
             
