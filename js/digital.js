@@ -245,22 +245,17 @@
 
         const story = [
         'asset/image/common/포도원스토리.webp',
-        'asset/image/digital/졸업예배_1.webp',
-        'asset/image/digital/졸업예배_2.webp',
-        'asset/image/digital/졸업예배_3.webp',
-        'asset/image/digital/졸업예배_4.webp',
-        'asset/image/digital/새학기_1.webp',
-        'asset/image/digital/새학기_2.webp',
-        'asset/image/digital/새학기_3.webp',
-        'asset/image/digital/새학기_4.webp',
-        'asset/image/digital/새학기_5.webp',
+        'asset/image/digital_pre/성만찬-1.webp',
+        'asset/image/digital_pre/성만찬-2.webp',
+        'asset/image/digital_pre/성만찬-3.webp',
         ];
 
 
-        const mym = [
-            'asset/image/digital/미얀마_1.webp',
-            'asset/image/digital/미얀마_2.webp',
-            'asset/image/digital/미얀마_3.webp',
+        const prey = [
+            'asset/image/digital_pre/태국-2.webp',
+            'asset/image/digital_pre/태국-3.webp',
+            'asset/image/digital_pre/태국-1.webp',
+           
         ]
 
 
@@ -274,7 +269,7 @@
         function populateCarousel() {
             const carouselInner = document.querySelector('#dynamicCarousel .carousel-inner');
             const carouselInner2 = document.querySelector('#dynamicCarousel2 .carousel-inner');
-            const carouselInner3 = document.querySelector('#dynamicCarousel9 .carousel-inner');
+            const carouselInner3 = document.querySelector('#dynamicCarousel3 .carousel-inner');
 
             advertises.forEach((imageUrl, index) => {
                 const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
@@ -306,7 +301,7 @@
                
             });
 
-            mym.forEach((imageUrl, index) => {
+                prey.forEach((imageUrl, index) => {
                 const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
 
                 const carouselItem = document.createElement('div');
