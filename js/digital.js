@@ -258,6 +258,7 @@
         'asset/image/common/ad__p.webp',
         'asset/image/digital/사순절.webp',
         'asset/image/digital/봄태신자.webp',
+        'asset/image/digital/독거노인.webp',
         'asset/image/digital/헌신예배.webp',
         'asset/image/digital/속장예비속장.webp',
        
