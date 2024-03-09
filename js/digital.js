@@ -249,7 +249,7 @@
 
 
         // 남선교회
-        frame2(3,'man','#manpart');
+        frame2(4,'man','#manpart');
 
 
 
