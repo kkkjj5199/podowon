@@ -260,7 +260,6 @@
         'asset/image/common/ad__p.webp',
         'asset/image/digital/사순절.webp',
         'asset/image/digital/봄태신자.webp',
-        'asset/image/digital/독거노인.webp',
         'asset/image/digital/헌신예배.webp',
         'asset/image/digital/속장예비속장.webp',
        
@@ -268,18 +267,13 @@
 
         const story = [
         'asset/image/common/포도원스토리.webp',
-        'asset/image/digital/성만찬-1.webp',
-        'asset/image/digital/성만찬-2.webp',
-        'asset/image/digital/성만찬-3.webp',
+       
         ];
 
 
-        const prey = [
-            'asset/image/digital/태국-2.webp',
-            'asset/image/digital/태국-3.webp',
-            'asset/image/digital/태국-1.webp',
+        // const prey = [
            
-        ]
+        // ]
 
 
 
