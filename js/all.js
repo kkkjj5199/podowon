@@ -92,8 +92,8 @@
         // }
 
                     
-        for (var i = 5; i <=7; i++) {
-            var img_src = 'asset/image/all/smj/' + i + '.webp';
+        for (var i = 2; i <=14; i++) {
+            var img_src = 'asset/image/all/tsj/' + i + '.webp';
               $("#MM").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
         
