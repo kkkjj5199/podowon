@@ -157,10 +157,10 @@
         }
 
         // 아동1
-        frame2(19,'adong1','#1part');
+        frame2(16,'adong1','#1part');
 
         // 아동2
-        frame2(14,'adong2','#2part');
+        frame2(20,'adong2','#2part');
 
 
 
@@ -173,7 +173,7 @@
 
             if(i ==3){
                
-                var itemContent = '<a href="https://youtu.be/uw8XvJEulb0?si=rC2He48tT17Kuye5">' +
+                var itemContent = '<a href="https://youtu.be/uw8XvJEulb0?si=eMAr347QLaoxzZmm">' +
                 '<img class="d-block w-100" src="' + img_src + '">' +
                 '</a>'
             }else{
@@ -187,10 +187,11 @@
 
 
         //중등부
-        for (var i = 2; i <= 12; i++) {
-            var carouselInner = $("#mpart");  
-            var itemContent;
-            var img_src = 'asset/image/digital/middlepart/' + i + '.webp';
+         frame2(20,'middlepart','#mpart');
+        // for (var i = 2; i <= 12; i++) {
+        //     var carouselInner = $("#mpart");  
+        //     var itemContent;
+        //     var img_src = 'asset/image/digital/middlepart/' + i + '.webp';
 
             // if(i ===6){
                
@@ -198,7 +199,7 @@
             //     '<img class="d-block w-100" src="' + img_src + '">' +
             //     '</a>'
             // }else{
-                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+                // itemContent = '<img class="d-block w-100" src="' + img_src + '">';
             // }
             
 
@@ -212,14 +213,15 @@
             //     itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
             // } else {
 
-            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-            carouselInner.append(carouselItem);
-        }
+            // var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+            // carouselInner.append(carouselItem);
+        // }
 
      //  고등부
-       for (var i = 2; i <=15; i++) {
-        var h = $("#hpart"); 
-           var itemContent;
+      frame2(14,'highpart','#hpart');
+    //    for (var i = 2; i <=15; i++) {
+    //     var h = $("#hpart"); 
+    //        var itemContent;
 
             // if (i === 9) {
             //     frame1('7scmJT8JWNc',9);
@@ -229,16 +231,16 @@
             //     frame1('5Nuzf0BijqQ',10);
             // }
             // else {
-                var img_src = 'asset/image/digital/highpart/' + i + '.webp';
-                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+                // var img_src = 'asset/image/digital/highpart/' + i + '.webp';
+                // itemContent = '<img class="d-block w-100" src="' + img_src + '">';
             // }
 
-            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-            h.append(carouselItem);
+            // var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+            // h.append(carouselItem);
 
             // var img_src = 'asset/image/digital/highpart/' + i + '.webp';
             //   $("#hpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
+        // }
 
        
         //  청년회
