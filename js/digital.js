@@ -258,10 +258,14 @@
  // Sample list of image URLs
         const advertises = [
         'asset/image/common/ad__p.webp',
-        'asset/image/digital/사순절.webp',
-        'asset/image/digital/봄태신자.webp',
-        'asset/image/digital/헌신예배.webp',
-        'asset/image/digital/속장예비속장.webp',
+        'asset/image/digital_pre/사순절.webp',
+        'asset/image/digital_pre/봄태신자.webp',
+        'asset/image/digital_pre/종려주일.webp',
+        'asset/image/digital_pre/1교구헌신예배.webp',
+        'asset/image/digital_pre/세미나.webp',
+        'asset/image/digital_pre/7교구헌신예배.webp',
+        'asset/image/digital_pre/새벽기도.webp',
+        'asset/image/digital_pre/굿모닝전도.webp',
        
         ];
 
