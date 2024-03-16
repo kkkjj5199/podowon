@@ -169,7 +169,7 @@
         for (var i = 2; i <= 28; i++) {
             var carouselInner = $("#3part");  
             var itemContent;
-            var img_src = 'asset/image/digital/adong3/' + i + '.webp';
+            var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
 
             if(i ==3){
                
@@ -244,7 +244,7 @@
 
        
         //  청년회
-        frame2(10,'caryouth','#youthpart');
+        frame2(8,'caryouth','#youthpart');
 
         // 여선교회
         frame2(8,'woman','#womanpart');
