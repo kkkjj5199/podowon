@@ -251,8 +251,29 @@
 
 
         // 남선교회
-        frame2(4,'man','#manpart');
+        // frame2(4,'man','#manpart');
+        for (var i = 2; i <=4; i++) {
+        var h = $("#manpart"); 
+           var itemContent;
 
+            if (i === 4) {
+                frame1('Crmi85WBTmU',4);
+            //  itemContent = '<div class="youtube" data-url="Crmi85WBTmU" ></div> ';
+            }
+            else {
+                var img_src = 'asset/image/digital/man/' + i + '.webp';
+                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+            }
+
+            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+            h.append(carouselItem);
+
+            // var img_src = 'asset/image/digital/man/' + i + '.webp';
+            //   $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        }
+        
+          
+   
 
 
  // Sample list of image URLs
