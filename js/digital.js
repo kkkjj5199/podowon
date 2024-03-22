@@ -151,7 +151,7 @@
 
         //말씀
        
-        for (var i = 1; i <=5; i++) {
+        for (var i = 1; i <=4; i++) {
             var img_src = 'asset/image/common/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -258,14 +258,15 @@
  // Sample list of image URLs
         const advertises = [
         'asset/image/common/ad__p.webp',
-        'asset/image/digital_pre/사순절.webp',
-        'asset/image/digital_pre/봄태신자.webp',
-        'asset/image/digital_pre/종려주일.webp',
-        'asset/image/digital_pre/1교구헌신예배.webp',
-        'asset/image/digital_pre/세미나.webp',
-        'asset/image/digital_pre/7교구헌신예배.webp',
-        'asset/image/digital_pre/새벽기도.webp',
-        'asset/image/digital_pre/굿모닝전도.webp',
+        'asset/image/digital/사순절.webp',
+        'asset/image/digital/종려주일.webp',
+        'asset/image/digital/새벽기도.webp',
+        'asset/image/digital/성금요일.webp',
+        'asset/image/digital/굿모닝전도.webp',
+        'asset/image/digital/부활절연합.webp',
+        'asset/image/digital/7교구헌신예배.webp',
+        
+     
        
         ];
 
