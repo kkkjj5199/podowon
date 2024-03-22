@@ -157,37 +157,37 @@
         }
 
         // 아동1
-        frame2(16,'adong1','#1part');
+        frame2(15,'adong1','#1part');
 
         // 아동2
-        frame2(20,'adong2','#2part');
+        frame2(25,'adong2','#2part');
 
 
 
         // 아동3
-        // frame2(28,'adong3','#3part');
-        for (var i = 2; i <= 28; i++) {
-            var carouselInner = $("#3part");  
-            var itemContent;
-            var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
+        frame2(39,'adong3','#3part');
+        // for (var i = 2; i <= 28; i++) {
+        //     var carouselInner = $("#3part");  
+        //     var itemContent;
+        //     var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
 
-            if(i ==3){
+        //     if(i ==3){
                
-                var itemContent = '<a href="https://youtu.be/uw8XvJEulb0?si=eMAr347QLaoxzZmm">' +
-                '<img class="d-block w-100" src="' + img_src + '">' +
-                '</a>'
-            }else{
-                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            }
+        //         var itemContent = '<a href="https://youtu.be/uw8XvJEulb0?si=eMAr347QLaoxzZmm">' +
+        //         '<img class="d-block w-100" src="' + img_src + '">' +
+        //         '</a>'
+        //     }else{
+        //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+        //     }
 
-            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-            carouselInner.append(carouselItem);
-        }
+        //     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+        //     carouselInner.append(carouselItem);
+        // }
         
 
 
         //중등부
-         frame2(20,'middlepart','#mpart');
+         frame2(19,'middlepart','#mpart');
         // for (var i = 2; i <= 12; i++) {
         //     var carouselInner = $("#mpart");  
         //     var itemContent;
@@ -218,7 +218,7 @@
         // }
 
      //  고등부
-      frame2(14,'highpart','#hpart');
+      frame2(16,'highpart','#hpart');
     //    for (var i = 2; i <=15; i++) {
     //     var h = $("#hpart"); 
     //        var itemContent;
@@ -354,7 +354,7 @@
         // 이미지 슬라이드
         function frame2(length,partName,idName){
             for(var i =2; i<= length; i++){
-              var img_src = 'asset/image/digital_pre/' + partName+ '/' + i + '.webp';
+              var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
                $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
             }
             
