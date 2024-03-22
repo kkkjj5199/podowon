@@ -258,7 +258,7 @@
 
             if (i === 4) {
                 frame1('Crmi85WBTmU',4);
-            //  itemContent = '<div class="youtube" data-url="Crmi85WBTmU" ></div> ';
+           
             }
             else {
                 var img_src = 'asset/image/digital/man/' + i + '.webp';
