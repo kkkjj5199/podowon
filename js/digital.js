@@ -157,10 +157,10 @@
         }
 
         // 아동1
-        frame2(15,'adong1','#1part');
+        frame2(16,'adong1','#1part');
 
         // 아동2
-        frame2(25,'adong2','#2part');
+        frame2(20,'adong2','#2part');
 
 
 
@@ -187,7 +187,7 @@
 
 
         //중등부
-         frame2(19,'middlepart','#mpart');
+         frame2(17,'middlepart','#mpart');
         // for (var i = 2; i <= 12; i++) {
         //     var carouselInner = $("#mpart");  
         //     var itemContent;
@@ -218,7 +218,7 @@
         // }
 
      //  고등부
-      frame2(16,'highpart','#hpart');
+      frame2(10,'highpart','#hpart');
     //    for (var i = 2; i <=15; i++) {
     //     var h = $("#hpart"); 
     //        var itemContent;
@@ -247,7 +247,7 @@
         frame2(13,'caryouth','#youthpart');
 
         // 여선교회
-        frame2(9,'woman','#womanpart');
+        frame2(21,'woman','#womanpart');
 
 
         // 남선교회
@@ -376,7 +376,7 @@
         // 이미지 슬라이드
         function frame2(length,partName,idName){
             for(var i =2; i<= length; i++){
-              var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
+              var img_src = 'asset/image/digital_pre/' + partName+ '/' + i + '.webp';
                $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
             }
             
