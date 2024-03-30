@@ -165,24 +165,24 @@
 
 
         // 아동3
-        frame2(39,'adong3','#3part');
-        // for (var i = 2; i <= 28; i++) {
-        //     var carouselInner = $("#3part");  
-        //     var itemContent;
-        //     var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
+        // frame2(39,'adong3','#3part');
+        for (var i = 2; i <= 36; i++) {
+            var carouselInner = $("#3part");  
+            var itemContent;
+            var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
 
-        //     if(i ==3){
+            if(i ==5){
                
-        //         var itemContent = '<a href="https://youtu.be/uw8XvJEulb0?si=eMAr347QLaoxzZmm">' +
-        //         '<img class="d-block w-100" src="' + img_src + '">' +
-        //         '</a>'
-        //     }else{
-        //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-        //     }
+                var itemContent = '<a href="https://youtu.be/0XCxNk_8TcA?si=VNakO5StugR6GQoW">' +
+                '<img class="d-block w-100" src="' + img_src + '">' +
+                '</a>'
+            }else{
+                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+            }
 
-        //     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-        //     carouselInner.append(carouselItem);
-        // }
+            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+            carouselInner.append(carouselItem);
+        }
         
 
 
@@ -218,7 +218,7 @@
         // }
 
      //  고등부
-      frame2(10,'highpart','#hpart');
+      frame2(15,'highpart','#hpart');
     //    for (var i = 2; i <=15; i++) {
     //     var h = $("#hpart"); 
     //        var itemContent;
@@ -251,26 +251,26 @@
 
 
         // 남선교회
-        // frame2(4,'man','#manpart');
-        for (var i = 2; i <=4; i++) {
-        var h = $("#manpart"); 
-           var itemContent;
+        frame2(4,'man','#manpart');
+        // for (var i = 2; i <=4; i++) {
+        // var h = $("#manpart"); 
+        //    var itemContent;
 
-            if (i === 4) {
-                frame1('Crmi85WBTmU',4);
+        //     if (i === 4) {
+        //         frame1('Crmi85WBTmU',4);
            
-            }
-            else {
-                var img_src = 'asset/image/digital/man/' + i + '.webp';
-                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            }
+        //     }
+        //     else {
+        //         var img_src = 'asset/image/digital/man/' + i + '.webp';
+        //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+        //     }
 
-            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-            h.append(carouselItem);
+        //     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+        //     h.append(carouselItem);
 
             // var img_src = 'asset/image/digital/man/' + i + '.webp';
             //   $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
+        // }
         
           
    
@@ -279,7 +279,6 @@
  // Sample list of image URLs
         const advertises = [
         'asset/image/common/ad__p.webp',
-        'asset/image/digital/사순절.webp',
         'asset/image/digital/종려주일.webp',
         'asset/image/digital/새벽기도.webp',
         'asset/image/digital/성금요일.webp',
