@@ -291,7 +291,7 @@
         ];
 
         const story = [
-        'asset/image/common/포도원스토리.webp',
+        // 'asset/image/common/포도원스토리.webp',
         'asset/image/digital_pre/세미나-1.webp',
          'asset/image/digital_pre/세미나-2.webp',
           'asset/image/digital_pre/세미나-3.webp',
