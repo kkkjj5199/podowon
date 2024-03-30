@@ -244,7 +244,7 @@
 
        
         //  청년회
-        frame2(6,'caryouth','#youthpart');
+        frame2(8,'caryouth','#youthpart');
 
         // 여선교회
         frame2(21,'woman','#womanpart');
@@ -297,8 +297,11 @@
           'asset/image/digital_pre/세미나-3.webp',
            'asset/image/digital_pre/특새-1.webp',
             'asset/image/digital_pre/특새-2.webp',
-             'asset/image/digital_pre/호두과자-1.webp',
-              'asset/image/digital_pre/호두과자-2.webp',
+             'asset/image/digital/굿모닝전도-1.webp',
+              'asset/image/digital/굿모닝전도-2.webp',
+              'asset/image/digital/굿모닝전도-3.webp',
+              'asset/image/digital/굿모닝전도-4.webp',
+              'asset/image/digital/굿모닝전도-5.webp',
 
        
         ];
