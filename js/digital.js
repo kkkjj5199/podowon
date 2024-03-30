@@ -386,7 +386,7 @@
         // 이미지 슬라이드
         function frame2(length,partName,idName){
             for(var i =2; i<= length; i++){
-              var img_src = 'asset/image/digital_pre/' + partName+ '/' + i + '.webp';
+              var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
                $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
             }
             
