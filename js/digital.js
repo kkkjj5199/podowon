@@ -292,6 +292,14 @@
 
         const story = [
         'asset/image/common/포도원스토리.webp',
+        'asset/image/digital_pre/세미나-1.webp',
+         'asset/image/digital_pre/세미나-2.webp',
+          'asset/image/digital_pre/세미나-3.webp',
+           'asset/image/digital_pre/특새-1.webp',
+            'asset/image/digital_pre/특새-2.webp',
+             'asset/image/digital_pre/호두과자-1.webp',
+              'asset/image/digital_pre/호두과자-2.webp',
+
        
         ];
 
