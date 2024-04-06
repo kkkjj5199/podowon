@@ -296,6 +296,10 @@
         'asset/image/common/포도원스토리.webp',
         'asset/image/digital_pre/연합예배-1.webp',
          'asset/image/digital_pre/연합예배-2.webp',
+          'asset/image/digital_pre/미얀마-1.webp',
+           'asset/image/digital_pre/미얀마-2.webp',
+            'asset/image/digital_pre/미얀마-3.webp',
+             'asset/image/digital_pre/미얀마-4.webp',
 
        
         ];
