@@ -244,14 +244,14 @@
 
        
         //  청년회
-        frame2(5,'caryouth','#youthpart');
+        frame2(8,'caryouth','#youthpart');
 
         // 여선교회
         frame2(7,'woman','#womanpart');
 
 
         // 남선교회
-        frame2(1,'man','#manpart');
+        frame2(2,'man','#manpart');
         // for (var i = 2; i <=4; i++) {
         // var h = $("#manpart"); 
         //    var itemContent;
