@@ -304,6 +304,7 @@
                    'asset/image/digital_pre/미얀마-6.webp',
                       'asset/image/digital_pre/미얀마-7.webp',
                          'asset/image/digital_pre/미얀마-8.webp',
+                         'asset/image/digital_pre/미얀마-9.webp',
 
        
         ];
