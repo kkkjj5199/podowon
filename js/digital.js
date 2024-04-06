@@ -294,16 +294,8 @@
 
         const story = [
         'asset/image/common/포도원스토리.webp',
-        'asset/image/digital_pre/세미나-1.webp',
-         'asset/image/digital_pre/세미나-2.webp',
-          'asset/image/digital_pre/세미나-3.webp',
-           'asset/image/digital_pre/특새-1.webp',
-            'asset/image/digital_pre/특새-2.webp',
-             'asset/image/digital/굿모닝전도-1.webp',
-              'asset/image/digital/굿모닝전도-2.webp',
-              'asset/image/digital/굿모닝전도-3.webp',
-              'asset/image/digital/굿모닝전도-4.webp',
-              'asset/image/digital/굿모닝전도-5.webp',
+        'asset/image/digital_pre/연합예배-1.webp',
+         'asset/image/digital_pre/연합예배-2.webp',
 
        
         ];
