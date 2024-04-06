@@ -279,13 +279,13 @@
  // Sample list of image URLs
         const advertises = [
         'asset/image/common/ad__p.webp',
-        'asset/image/digital_pre/부활생명으로복음을',
-         'asset/image/digital_pre/여선교회8교구헌신예배',
-          'asset/image/digital_pre/여선교회5교구헌신예배',
-           'asset/image/digital_pre/청년회단합모임',
-            'asset/image/digital_pre/경기연회',
-             'asset/image/digital_pre/독거어르신반찬봉사',
-              'asset/image/digital_pre/선거'
+        'asset/image/digital_pre/부활생명으로복음을.webp',
+         'asset/image/digital_pre/여선교회8교구헌신예배.webp',
+          'asset/image/digital_pre/여선교회5교구헌신예배.webp',
+           'asset/image/digital_pre/청년회단합모임.webp',
+            'asset/image/digital_pre/경기연회.webp',
+             'asset/image/digital_pre/독거어르신반찬봉사.webp',
+              'asset/image/digital_pre/선거.webp'
 
         
      
