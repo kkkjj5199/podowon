@@ -261,32 +261,17 @@
         const advertises = [
         'asset/image/common/ad__p.webp',
         'asset/image/digital_pre/부활생명으로복음을.webp',
-        'asset/image/digital_pre/여선교회8교구헌신예배.webp',
-        'asset/image/digital_pre/여선교회5교구헌신예배.webp',
-        'asset/image/digital_pre/청년회단합모임.webp',
-        'asset/image/digital_pre/경기연회.webp',
-        'asset/image/digital_pre/독거어르신반찬봉사.webp',
-        'asset/image/digital_pre/선거.webp'
+        'asset/image/digital_pre/헌신예배.webp',
+        'asset/image/digital_pre/남선교회헌신예배.webp',
+        'asset/image/digital_pre/호두과자전도.webp',
         ];
+
+
 
         const story = [
         'asset/image/common/포도원스토리.webp',
-        'asset/image/digital_pre/연합예배-1.webp',
-        'asset/image/digital_pre/연합예배-2.webp',
-        'asset/image/digital_pre/미얀마-1.webp',
-        'asset/image/digital_pre/미얀마-2.webp',
-        'asset/image/digital_pre/미얀마-5.webp',
-        'asset/image/digital_pre/미얀마-6.webp',
-        'asset/image/digital_pre/미얀마-7.webp',
-        'asset/image/digital_pre/미얀마-8.webp',
-        'asset/image/digital_pre/미얀마-9.webp',
-        'asset/image/digital_pre/미얀마-10.webp'
         ];
 
-
-        // const prey = [
-           
-        // ]
 
 
 
