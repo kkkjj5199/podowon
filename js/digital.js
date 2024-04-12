@@ -279,13 +279,13 @@
  // Sample list of image URLs
         const advertises = [
         'asset/image/common/ad__p.webp',
-        'asset/image/digital_pre/부활생명으로복음을.webp',
-         'asset/image/digital_pre/여선교회8교구헌신예배.webp',
-          'asset/image/digital_pre/여선교회5교구헌신예배.webp',
-           'asset/image/digital_pre/청년회단합모임.webp',
-            'asset/image/digital_pre/경기연회.webp',
-             'asset/image/digital_pre/독거어르신반찬봉사.webp',
-              'asset/image/digital_pre/선거.webp'
+        'asset/image/digital/부활생명으로복음을.webp',
+         'asset/image/digital/여선교회8교구헌신예배.webp',
+          'asset/image/digital/여선교회5교구헌신예배.webp',
+           'asset/image/digital/청년회단합모임.webp',
+            'asset/image/digital/경기연회.webp',
+             'asset/image/digital/독거어르신반찬봉사.webp',
+              'asset/image/digital/선거.webp'
 
         
      
@@ -294,17 +294,17 @@
 
         const story = [
         'asset/image/common/포도원스토리.webp',
-        'asset/image/digital_pre/연합예배-1.webp',
-         'asset/image/digital_pre/연합예배-2.webp',
-          'asset/image/digital_pre/미얀마-1.webp',
-           'asset/image/digital_pre/미얀마-2.webp',
+        'asset/image/digital/연합예배-1.webp',
+         'asset/image/digital/연합예배-2.webp',
+          'asset/image/digital/미얀마-1.webp',
+           'asset/image/digital/미얀마-2.webp',
         
-                'asset/image/digital_pre/미얀마-5.webp',
-                   'asset/image/digital_pre/미얀마-6.webp',
-                      'asset/image/digital_pre/미얀마-7.webp',
-                         'asset/image/digital_pre/미얀마-8.webp',
-                         'asset/image/digital_pre/미얀마-9.webp',
-                             'asset/image/digital_pre/미얀마-10.webp',
+                'asset/image/digital/미얀마-5.webp',
+                   'asset/image/digital/미얀마-6.webp',
+                      'asset/image/digital/미얀마-7.webp',
+                         'asset/image/digital/미얀마-8.webp',
+                         'asset/image/digital/미얀마-9.webp',
+                             'asset/image/digital/미얀마-10.webp',
 
        
         ];
@@ -386,10 +386,18 @@
             itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;" ></iframe>';  
         }
 
-        // 이미지 슬라이드
+        // 이미지 슬라이드-preVer.
         function frame2(length,partName,idName){
             for(var i =2; i<= length; i++){
-              var img_src = 'asset/image/digital_pre/' + partName+ '/' + i + '.webp';
+              var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
+               $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+            }
+            
+        }
+        //이미지 슬라이드 realVer. 
+             function frame3(length,partName,idName){
+            for(var i =2; i<= length; i++){
+              var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
                $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
             }
             
