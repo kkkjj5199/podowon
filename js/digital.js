@@ -151,13 +151,13 @@
 
         //말씀
        
-        for (var i = 1; i <=4; i++) {
+        for (var i = 1; i <=5; i++) {
             var img_src = 'asset/image/common/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         // 아동1
-        frame2(19,'adong1','#1part');
+        frame2(15,'adong1','#1part');
 
         // 아동2
         frame2(20,'adong2','#2part');
@@ -165,11 +165,11 @@
 
 
         // 아동3
-        frame2(41,'adong3','#3part');
+        frame2(38,'adong3','#3part');
         // for (var i = 2; i <= 36; i++) {
         //     var carouselInner = $("#3part");  
         //     var itemContent;
-        //     var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
+        //     var img_src = 'asset/image/digital/adong3/' + i + '.webp';
 
         //     if(i ==5){
                
@@ -187,7 +187,7 @@
 
 
         //중등부
-         frame2(23,'middlepart','#mpart');
+         frame2(21,'middlepart','#mpart');
         // for (var i = 2; i <= 12; i++) {
         //     var carouselInner = $("#mpart");  
         //     var itemContent;
@@ -201,57 +201,38 @@
             // }else{
                 // itemContent = '<img class="d-block w-100" src="' + img_src + '">';
             // }
-            
 
-            
-            // if (i == 6) {
-            //     itemContent = '<a href="https://youtu.be/5_l3pSeiqUg?si=s3HOho08_fa6tf5J"><img class="d-block w-100" src="' + img_src + '></a>';
-            //     // Insert YouTube link
-            //     var youtube_video_id = 'IS03wIpD4U4'; // Replace with the actual video ID
-            //     var iframe_id = 'youtube_iframe_' + i;
-            //     var youtube_link = 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
-            //     itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;"></iframe>';
-            // } else {
-
-            // var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-            // carouselInner.append(carouselItem);
-        // }
 
      //  고등부
-      frame2(9,'highpart','#hpart');
-    //    for (var i = 2; i <=15; i++) {
-    //     var h = $("#hpart"); 
-    //        var itemContent;
+    //   frame2(5,'highpart','#hpart');
+        for (var i = 2; i <= 10; i++) {
+            var carouselInner = $("#hpart");  
+            var itemContent;
+            var img_src = 'asset/image/digital/highpart/' + i + '.webp';
 
-            // if (i === 9) {
-            //     frame1('7scmJT8JWNc',9);
+            if(i ==5){
+               
+                var itemContent = '<a href="https://youtu.be/1_T_3xklnPg?si=1oCmqAh3yGwvji5H">' +
+                '<img class="d-block w-100" src="' + img_src + '">' +
+                '</a>'
+            }else{
+                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+            }
 
-                //  itemContent = '<div data-url="7scmJT8JWNc" class="youtube"></div> ';
-            // } else if(i===10){
-            //     frame1('5Nuzf0BijqQ',10);
-            // }
-            // else {
-                // var img_src = 'asset/image/digital/highpart/' + i + '.webp';
-                // itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            // }
+            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+            carouselInner.append(carouselItem);
+        }
 
-            // var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-            // h.append(carouselItem);
 
-            // var img_src = 'asset/image/digital/highpart/' + i + '.webp';
-            //   $("#hpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        // }
-
-       
         //  청년회
-        frame2(8,'caryouth','#youthpart');
+        frame2(16,'caryouth','#youthpart');
 
         // 여선교회
-        frame2(7,'woman','#womanpart');
+        frame2(16,'woman','#womanpart');
 
 
         // 남선교회
-        frame2(2,'man','#manpart');
+        frame2(6,'man','#manpart');
         // for (var i = 2; i <=4; i++) {
         // var h = $("#manpart"); 
         //    var itemContent;
@@ -280,39 +261,17 @@
         const advertises = [
         'asset/image/common/ad__p.webp',
         'asset/image/digital/부활생명으로복음을.webp',
-         'asset/image/digital/여선교회8교구헌신예배.webp',
-          'asset/image/digital/여선교회5교구헌신예배.webp',
-           'asset/image/digital/청년회단합모임.webp',
-            'asset/image/digital/경기연회.webp',
-             'asset/image/digital/독거어르신반찬봉사.webp',
-              'asset/image/digital/선거.webp'
-
-        
-     
-       
+        'asset/image/digital/헌신예배.webp',
+        'asset/image/digital/남선교회헌신예배.webp',
+        'asset/image/digital/호두과자전도.webp',
         ];
+
+
 
         const story = [
         'asset/image/common/포도원스토리.webp',
-        'asset/image/digital/연합예배-1.webp',
-         'asset/image/digital/연합예배-2.webp',
-          'asset/image/digital/미얀마-1.webp',
-           'asset/image/digital/미얀마-2.webp',
-        
-                'asset/image/digital/미얀마-5.webp',
-                   'asset/image/digital/미얀마-6.webp',
-                      'asset/image/digital/미얀마-7.webp',
-                         'asset/image/digital/미얀마-8.webp',
-                         'asset/image/digital/미얀마-9.webp',
-                             'asset/image/digital/미얀마-10.webp',
-
-       
         ];
 
-
-        // const prey = [
-           
-        // ]
 
 
 
@@ -394,14 +353,7 @@
             }
             
         }
-        //이미지 슬라이드 realVer. 
-             function frame3(length,partName,idName){
-            for(var i =2; i<= length; i++){
-              var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
-               $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-            }
-            
-        }
+     
 
         // Call the function to populate the carousel
         populateCarousel();
