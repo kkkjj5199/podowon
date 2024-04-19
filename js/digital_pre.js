@@ -160,12 +160,12 @@
         frame2(16,'adong1','#1part');
 
         // 아동2
-        frame2(20,'adong2','#2part');
+        frame2(26,'adong2','#2part');
 
 
 
         // 아동3
-        frame2(38,'adong3','#3part');
+        frame2(40,'adong3','#3part');
         // for (var i = 2; i <= 36; i++) {
         //     var carouselInner = $("#3part");  
         //     var itemContent;
@@ -187,7 +187,7 @@
 
 
         //중등부
-         frame2(21,'middlepart','#mpart');
+         frame2(20,'middlepart','#mpart');
         // for (var i = 2; i <= 12; i++) {
         //     var carouselInner = $("#mpart");  
         //     var itemContent;
@@ -204,7 +204,7 @@
 
 
      //  고등부
-      frame2(5,'highpart','#hpart');
+      frame2(7,'highpart','#hpart');
         // for (var i = 2; i <= 10; i++) {
         //     var carouselInner = $("#hpart");  
         //     var itemContent;
@@ -261,9 +261,13 @@
         const advertises = [
         'asset/image/common/ad__p.webp',
         'asset/image/digital_pre/부활생명으로복음을.webp',
-        'asset/image/digital_pre/헌신예배.webp',
-        'asset/image/digital_pre/남선교회헌신예배.webp',
-        'asset/image/digital_pre/호두과자전도.webp',
+        'asset/image/digital_pre/남선교회2교구헌신예배',
+        'asset/image/digital_pre/여선교회1교구헌신예배.webp',
+        'asset/image/digital_pre/속장세미나.webp',
+        'asset/image/digital_pre/아동1교구.webp',
+        'asset/image/digital_pre/아동2교구.webp',
+        'asset/image/digital_pre/아동3교구.webp',
+        'asset/image/digital_pre/고등부특별예배.webp',
         ];
 
 
