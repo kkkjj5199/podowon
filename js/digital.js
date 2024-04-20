@@ -225,7 +225,7 @@
 
 
         //  청년회
-        frame2(14,'caryouth','#youthpart');
+        frame2(13,'caryouth','#youthpart');
 
         // 여선교회
         frame2(14,'woman','#womanpart');
