@@ -151,21 +151,21 @@
 
         //말씀
        
-        for (var i = 1; i <=5; i++) {
+        for (var i = 1; i <=4; i++) {
             var img_src = 'asset/image/common/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         // 아동1
-        frame2(15,'adong1','#1part');
+        frame2(16,'adong1','#1part');
 
         // 아동2
-        frame2(20,'adong2','#2part');
+        frame2(26,'adong2','#2part');
 
 
 
         // 아동3
-        frame2(38,'adong3','#3part');
+        frame2(40,'adong3','#3part');
         // for (var i = 2; i <= 36; i++) {
         //     var carouselInner = $("#3part");  
         //     var itemContent;
@@ -187,7 +187,7 @@
 
 
         //중등부
-         frame2(21,'middlepart','#mpart');
+         frame2(20,'middlepart','#mpart');
         // for (var i = 2; i <= 12; i++) {
         //     var carouselInner = $("#mpart");  
         //     var itemContent;
@@ -204,35 +204,35 @@
 
 
      //  고등부
-    //   frame2(5,'highpart','#hpart');
-        for (var i = 2; i <= 10; i++) {
-            var carouselInner = $("#hpart");  
-            var itemContent;
-            var img_src = 'asset/image/digital/highpart/' + i + '.webp';
+      frame2(7,'highpart','#hpart');
+        // for (var i = 2; i <= 10; i++) {
+        //     var carouselInner = $("#hpart");  
+        //     var itemContent;
+        //     var img_src = 'asset/image/digital/highpart/' + i + '.webp';
 
-            if(i ==5){
+        //     if(i ==5){
                
-                var itemContent = '<a href="https://youtu.be/1_T_3xklnPg?si=1oCmqAh3yGwvji5H">' +
-                '<img class="d-block w-100" src="' + img_src + '">' +
-                '</a>'
-            }else{
-                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            }
+        //         var itemContent = '<a href="https://youtu.be/1_T_3xklnPg?si=1oCmqAh3yGwvji5H">' +
+        //         '<img class="d-block w-100" src="' + img_src + '">' +
+        //         '</a>'
+        //     }else{
+        //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+        //     }
 
-            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-            carouselInner.append(carouselItem);
-        }
+        //     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+        //     carouselInner.append(carouselItem);
+        // }
 
 
         //  청년회
-        frame2(16,'caryouth','#youthpart');
+        frame2(13,'caryouth','#youthpart');
 
         // 여선교회
         frame2(16,'woman','#womanpart');
 
 
         // 남선교회
-        frame2(6,'man','#manpart');
+        frame2(2,'man','#manpart');
         // for (var i = 2; i <=4; i++) {
         // var h = $("#manpart"); 
         //    var itemContent;
@@ -261,9 +261,13 @@
         const advertises = [
         'asset/image/common/ad__p.webp',
         'asset/image/digital/부활생명으로복음을.webp',
-        'asset/image/digital/헌신예배.webp',
-        'asset/image/digital/남선교회헌신예배.webp',
-        'asset/image/digital/호두과자전도.webp',
+        'asset/image/digital/남선교회2교구헌신예배.webp',
+        'asset/image/digital/여선교회1교구헌신예배.webp',
+        'asset/image/digital/속장세미나.webp',
+        'asset/image/digital/아동1교구.webp',
+        'asset/image/digital/아동2교구.webp',
+        'asset/image/digital/아동3교구.webp',
+        'asset/image/digital/고등부특별예배.webp',
         ];
 
 
