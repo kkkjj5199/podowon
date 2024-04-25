@@ -204,7 +204,7 @@
 
 
      //  고등부
-      frame2(7,'highpart','#hpart');
+      frame2(2,'highpart','#hpart');
         // for (var i = 2; i <= 10; i++) {
         //     var carouselInner = $("#hpart");  
         //     var itemContent;
