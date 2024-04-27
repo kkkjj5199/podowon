@@ -261,13 +261,9 @@
         const advertises = [
         'asset/image/common/ad__p.webp',
         'asset/image/digital/부활생명으로복음을.webp',
-        'asset/image/digital/남선교회2교구헌신예배.webp',
         'asset/image/digital/여선교회1교구헌신예배.webp',
-        'asset/image/digital/속장세미나.webp',
-        'asset/image/digital/아동1교구.webp',
-        'asset/image/digital/아동2교구.webp',
-        'asset/image/digital/아동3교구.webp',
-        'asset/image/digital/고등부특별예배.webp',
+         'asset/image/digital/어버이어린이주일.webp',
+         'asset/image/digital/새벽기도.webp',
         ];
 
 
