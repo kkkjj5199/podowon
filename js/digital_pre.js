@@ -165,7 +165,7 @@
 
 
         // 아동3
-        frame2(40,'adong3','#3part');
+        frame2(34,'adong3','#3part');
         // for (var i = 2; i <= 36; i++) {
         //     var carouselInner = $("#3part");  
         //     var itemContent;
@@ -225,7 +225,7 @@
 
 
         //  청년회
-        frame2(3,'caryouth','#youthpart');
+        frame2(7,'caryouth','#youthpart');
 
         // 여선교회
         frame2(7,'woman','#womanpart');
