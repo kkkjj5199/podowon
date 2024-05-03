@@ -165,7 +165,7 @@
 
 
         // 아동3
-        frame2(37,'adong3','#3part');
+        frame2(19,'adong3','#3part');
         // for (var i = 2; i <= 36; i++) {
         //     var carouselInner = $("#3part");  
         //     var itemContent;
