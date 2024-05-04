@@ -225,7 +225,7 @@
 
 
         //  청년회
-        frame2(14,'caryouth','#youthpart');
+        frame2(6,'caryouth','#youthpart');
 
         // 여선교회
         frame2(8,'woman','#womanpart');
@@ -265,7 +265,7 @@
          'asset/image/digital/중등교구.webp',
          'asset/image/digital/고등교구.webp',
          'asset/image/digital/독거어르신.webp',
-         'asset/image/digital/지도자세미나.webp',
+         'asset/image/digital/지도자세미나.webp'
         ];
 
 
@@ -276,16 +276,9 @@
         'asset/image/digital/2.webp',
         'asset/image/digital/3.webp',
         'asset/image/digital/4.webp',
-        'asset/image/digital/5.webp',
-        'asset/image/digital/6.webp',
-        'asset/image/digital/7.webp',
-        'asset/image/digital/8.webp',
-        'asset/image/digital/9.webp',
-        'asset/image/digital/10.webp',
-        'asset/image/digital/11.webp',
-        'asset/image/digital/12.webp',
-        ];
-
+      
+        
+        ]
 
 
 
