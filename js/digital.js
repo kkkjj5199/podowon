@@ -280,6 +280,7 @@
         'asset/image/digital/5.webp',
         'asset/image/digital/6.webp',
         'asset/image/digital/7.webp',
+        'asset/image/digital/17.webp',
         'asset/image/digital/10.webp',
         'asset/image/digital/11.webp',
         'asset/image/digital/12.webp',
