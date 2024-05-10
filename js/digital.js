@@ -260,13 +260,13 @@
  // Sample list of image URLs
         const advertises = [
         'asset/image/common/ad__p.webp',
-         'asset/image/digital/어버이어린이주일.webp',
-        'asset/image/digital/청년회단합모임.webp',
-        'asset/image/digital/여선교회연합전도.webp',
-         'asset/image/digital/중등교구.webp',
-         'asset/image/digital/고등교구.webp',
-         'asset/image/digital/독거어르신.webp',
-         'asset/image/digital/지도자세미나.webp'
+         'asset/image/digital/',
+         'asset/image/digital/',
+         'asset/image/digital/',
+         'asset/image/digital/',
+         'asset/image/digital/',
+         'asset/image/digital/',
+
         ];
 
 
