@@ -201,7 +201,7 @@
         //    for (var i = 2; i <= 36; i++) {
         //     var carouselInner = $("#mpart");  
         //     var itemContent;
-        //     var img_src = 'asset/image/digital/adong3/' + i + '.webp';
+        //     var img_src = 'asset/image/digital/middlepart/' + i + '.webp';
 
         //     if(i ==5){ 
                
