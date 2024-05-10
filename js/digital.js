@@ -200,8 +200,8 @@
         youtube 링크 추가방법.
         1. 기존   frame2(8,'highpart','#hpart'); 주석 추가 "앞에 // 붙이면 됩니다. -> 코드 비활성화"
         2. 209 라인부터 225라인 주석 풀기 // 없애기 -> 코드 활성화
-        3. youtube 링크 추가할 이미지 번호를 if == 5 에 넣기. ex)  5번 이미지이면 5 , 2번이면 if ==2 
-        img_src 기관별 이미지 경로 링크 확인하기  'asset/image/digital/highpart/' 
+         img_src 기관별 이미지 경로 링크 확인하기  'asset/image/digital/highpart/'  기관이름 확인
+        3. youtube 링크 추가할 이미지 번호를 if == ? 에 넣기.<214 line> ex)  5번 이미지이면 5 , 2번이면 if ==2 
         5. '<a href="https://youtu.be/0XCxNk_8TcA?si=VNakO5StugR6GQoW">' 해당 youtube 링크 넣기
             링크 가져올때는 youtube 에 들어가서 공유 버튼 클릭 후 링크 복사 . 그냥 주소창 링크 복사는 안됩니다.
         */
