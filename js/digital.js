@@ -213,7 +213,7 @@
 
             if(i ==5){
                
-                var itemContent = '<a href="https://youtu.be/8s_EaTXbreM?si=gz1M3BFLrYdjr-Az">' +
+                var itemContent = '<a href="https://youtu.be/8s_EaTXbreM?si=Pw4TIgyBinna7-wk">' +
                 '<img class="d-block w-100" src="' + img_src + '">' +
                 '</a>'
             }else{
