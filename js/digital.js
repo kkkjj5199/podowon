@@ -187,32 +187,25 @@
 
 
         //중등부
+        /*
+        youtube 링크 추가방법.
+        1. 기존 frame2(24,'middlepart','#mpart'); 주석 추가 "앞에 // 붙이면 됩니다. -> 코드 비활성화"
+        2. 208 라인부터 219 주석 풀기 // 없애기 
+        3. youtube 링크 추가할 이미지 번호를 if == 5 에 넣기. ex)  5번이면 5 , 2번이면 if ==2 
+        4. '<a href="https://youtu.be/0XCxNk_8TcA?si=VNakO5StugR6GQoW">' 해당 youtube 링크 넣기
+            링크 가져올때는 youtube 에 들어가서 공유 버튼 클릭 후 링크 복사 그냥 주소창 링크 복사는 안됩니다.
+        */
+
          frame2(24,'middlepart','#mpart');
-        // for (var i = 2; i <= 12; i++) {
+
+        //    for (var i = 2; i <= 36; i++) {
         //     var carouselInner = $("#mpart");  
         //     var itemContent;
-        //     var img_src = 'asset/image/digital/middlepart/' + i + '.webp';
+        //     var img_src = 'asset/image/digital/adong3/' + i + '.webp';
 
-            // if(i ===6){
+        //     if(i ==5){ 
                
-            //     var itemContent = '<a href="https://youtu.be/5_l3pSeiqUg?si=wM-TX62b75KEuR2i">' +
-            //     '<img class="d-block w-100" src="' + img_src + '">' +
-            //     '</a>'
-            // }else{
-                // itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            // }
-
-
-     //  고등부
-      frame2(8,'highpart','#hpart');
-        // for (var i = 2; i <= 10; i++) {
-        //     var carouselInner = $("#hpart");  
-        //     var itemContent;
-        //     var img_src = 'asset/image/digital/highpart/' + i + '.webp';
-
-        //     if(i ==5){
-               
-        //         var itemContent = '<a href="https://youtu.be/1_T_3xklnPg?si=1oCmqAh3yGwvji5H">' +
+        //         var itemContent = '<a href="https://youtu.be/0XCxNk_8TcA?si=VNakO5StugR6GQoW">' +
         //         '<img class="d-block w-100" src="' + img_src + '">' +
         //         '</a>'
         //     }else{
@@ -223,6 +216,26 @@
         //     carouselInner.append(carouselItem);
         // }
 
+
+     //  고등부
+      frame2(8,'highpart','#hpart');
+           for (var i = 2; i <= 36; i++) {
+            var carouselInner = $("#3part");  
+            var itemContent;
+            var img_src = 'asset/image/digital/adong3/' + i + '.webp';
+
+            if(i ==5){
+               
+                var itemContent = '<a href="https://youtu.be/0XCxNk_8TcA?si=VNakO5StugR6GQoW">' +
+                '<img class="d-block w-100" src="' + img_src + '">' +
+                '</a>'
+            }else{
+                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+            }
+
+            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+            carouselInner.append(carouselItem);
+        }
 
         //  청년회
         frame2(10,'caryouth','#youthpart');
