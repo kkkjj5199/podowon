@@ -277,11 +277,18 @@
         'asset/image/digital/2.webp',
         'asset/image/digital/3.webp',
         'asset/image/digital/4.webp',
-         'asset/image/digital/5.webp',
-          'asset/image/digital/6.webp',
-           'asset/image/digital/7.webp',
-            'asset/image/digital/8.webp',
-             'asset/image/digital/9.webp',
+        'asset/image/digital/5.webp',
+        'asset/image/digital/6.webp',
+        'asset/image/digital/7.webp',
+        'asset/image/digital/10.webp',
+        'asset/image/digital/11.webp',
+        'asset/image/digital/12.webp',
+        'asset/image/digital/13.webp',
+        'asset/image/digital/14.webp',
+        'asset/image/digital/15.webp',
+        'asset/image/digital/16.webp',
+        'asset/image/digital/8.webp',
+        'asset/image/digital/9.webp',
 
       
         
