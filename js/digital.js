@@ -190,7 +190,7 @@
         /*
         youtube 링크 추가방법.
         1. 기존 frame2(24,'middlepart','#mpart'); 주석 추가 "앞에 // 붙이면 됩니다. -> 코드 비활성화"
-        2. 208 라인부터 219 주석 풀기 // 없애기 
+        2. 201 라인부터 217라인 주석 풀기 // 없애기 
         3. youtube 링크 추가할 이미지 번호를 if == 5 에 넣기. ex)  5번이면 5 , 2번이면 if ==2 
         4. '<a href="https://youtu.be/0XCxNk_8TcA?si=VNakO5StugR6GQoW">' 해당 youtube 링크 넣기
             링크 가져올때는 youtube 에 들어가서 공유 버튼 클릭 후 링크 복사 그냥 주소창 링크 복사는 안됩니다.
