@@ -329,18 +329,18 @@ background-color: #DC6093;
     position: absolute;
     left: 50%;
     color:#505050;
-    font-size: 20px;
+    font-size: 15px;
     font-family: cfont;
     text-align: center;
 }
 
 #b1 {
-    top: 42%;
+    top: 35%;
     transform: translate(-50%, -50%);
 }
 
 #b2 {
-    top: 70%;
+    top: 54%;
     transform: translate(-50%, -50%);
 
 }
