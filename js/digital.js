@@ -195,7 +195,7 @@
 
 
      //  고등부
-    //   frame2(7,'highpart','#hpart');
+      frame2(7,'highpart','#hpart');
         /*
         youtube 링크 추가방법.
         1. 기존   frame2(8,'highpart','#hpart'); 주석 추가 "앞에 // 붙이면 됩니다. -> 코드 비활성화"
@@ -206,23 +206,23 @@
             링크 가져올때는 youtube 에 들어가서 공유 버튼 클릭 후 링크 복사 . 그냥 주소창 링크 복사는 안됩니다.
         */
 
-           for (var i = 2; i <= 8; i++) {
-            var carouselInner = $("#hpart");  
-            var itemContent;
-            var img_src = 'asset/image/digital/highpart/' + i + '.webp'; 
+        //    for (var i = 2; i <= 8; i++) {
+        //     var carouselInner = $("#hpart");  
+        //     var itemContent;
+        //     var img_src = 'asset/image/digital/highpart/' + i + '.webp'; 
 
-            if(i ==5){
+        //     if(i ==5){
                
-                var itemContent = '<a href="https://youtu.be/8s_EaTXbreM?si=Pw4TIgyBinna7-wk">' +
-                '<img class="d-block w-100" src="' + img_src + '">' +
-                '</a>'
-            }else{
-                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            }
+        //         var itemContent = '<a href="https://youtu.be/8s_EaTXbreM?si=Pw4TIgyBinna7-wk">' +
+        //         '<img class="d-block w-100" src="' + img_src + '">' +
+        //         '</a>'
+        //     }else{
+        //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+        //     }
 
-            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-            carouselInner.append(carouselItem);
-        }
+        //     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+        //     carouselInner.append(carouselItem);
+        // }
 
         //  청년회
         frame2(8,'caryouth','#youthpart');
