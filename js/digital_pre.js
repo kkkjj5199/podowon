@@ -166,15 +166,15 @@
 
         // 아동3
         frame2(10,'adong3','#3part');
-        // for (var i = 201; i <= 214; i++) {
-        // var carouselInner = $("#3part");  
-        // var itemContent;
-        // var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
+        for (var i = 201; i <= 214; i++) {
+        var carouselInner = $("#3part");  
+        var itemContent;
+        var img_src = 'asset/image/digital_pre/adong3/' + i + '.webp';
 
-        // itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-        // var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-        // carouselInner.append(carouselItem);
-        // }
+        itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+        var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+        carouselInner.append(carouselItem);
+        }
 
         
 
