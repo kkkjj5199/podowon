@@ -232,7 +232,7 @@
 
 
         // 남선교회
-        frame2(2,'man','#manpart');
+        frame2(4,'man','#manpart');
         // for (var i = 2; i <=4; i++) {
         // var h = $("#manpart"); 
         //    var itemContent;
