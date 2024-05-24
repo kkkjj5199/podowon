@@ -157,7 +157,7 @@
         }
 
         // 아동1
-        frame2(17,'adong1','#1part');
+        frame2(21,'adong1','#1part');
 
         // 아동2
         frame2(20,'adong2','#2part');
@@ -173,6 +173,8 @@
     
 
         //  frame2(24,'middlepart','#mpart');
+
+
             for (var i = 2; i <= 24; i++) {
             var carouselInner = $("#mpart");  
             var itemContent;
