@@ -172,7 +172,7 @@
         //중등부
     
 
-        //  frame2(24,'middlepart','#mpart');
+        //  frame2(17,'middlepart','#mpart');
 
 
             for (var i = 2; i <= 24; i++) {
