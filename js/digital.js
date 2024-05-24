@@ -172,26 +172,26 @@
         //중등부
     
 
-        //  frame2(17,'middlepart','#mpart');
+         frame2(17,'middlepart','#mpart');
 
 
-            for (var i = 2; i <= 24; i++) {
-            var carouselInner = $("#mpart");  
-            var itemContent;
-            var img_src = 'asset/image/digital/middlepart/' + i + '.webp'; 
+        //     for (var i = 2; i <= 24; i++) {
+        //     var carouselInner = $("#mpart");  
+        //     var itemContent;
+        //     var img_src = 'asset/image/digital/middlepart/' + i + '.webp'; 
 
-            if(i ==5){
+        //     if(i ==5){
                
-                var itemContent = '<a href="https://youtu.be/b9sGBDbaQBA?si=j3AstaQzx03r-ZjG">' +
-                '<img class="d-block w-100" src="' + img_src + '">' +
-                '</a>'
-            }else{
-                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            }
+        //         var itemContent = '<a href="https://youtu.be/b9sGBDbaQBA?si=j3AstaQzx03r-ZjG">' +
+        //         '<img class="d-block w-100" src="' + img_src + '">' +
+        //         '</a>'
+        //     }else{
+        //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+        //     }
 
-            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-            carouselInner.append(carouselItem);
-        }
+        //     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+        //     carouselInner.append(carouselItem);
+        // }
 
            
 
