@@ -157,7 +157,7 @@
         }
 
         // 아동1
-        frame2(21,'adong1','#1part');
+        frame2(22,'adong1','#1part');
 
         // 아동2
         frame2(20,'adong2','#2part');
@@ -262,11 +262,11 @@
  // Sample list of image URLs
         const advertises = [
         'asset/image/common/ad__p.webp',
-         'asset/image/digital/성령강림주일.webp',
-         'asset/image/digital/여선교회연합.webp',
          'asset/image/digital/웨슬리.webp',
-         'asset/image/digital/남선교회4교구.webp',
+         'asset/image/digital/남선교회.webp',
          'asset/image/digital/미션하우스.webp',
+         'asset/image/digital/새달새.webp',
+
          
 
         ];
@@ -275,6 +275,10 @@
 
         const story = [
         'asset/image/digital/포도원스토리.webp',
+        'asset/image/digital/1.webp',
+        'asset/image/digital/2.webp',
+        'asset/image/digital/3.webp',
+        'asset/image/digital/4.webp',
         'asset/image/digital/5.webp',
         'asset/image/digital/6.webp',
         'asset/image/digital/7.webp',
@@ -283,10 +287,9 @@
         'asset/image/digital/10.webp',
         'asset/image/digital/11.webp',
         'asset/image/digital/12.webp',
-        'asset/image/digital/1.webp',
-        'asset/image/digital/2.webp',
-        'asset/image/digital/3.webp',
-        'asset/image/digital/4.webp',
+        'asset/image/digital/13.webp',
+        'asset/image/digital/14.webp',
+
         
 
       
