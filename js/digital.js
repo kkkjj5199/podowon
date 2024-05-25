@@ -257,9 +257,6 @@
             // var img_src = 'asset/image/digital/man/' + i + '.webp';
             //   $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         // }
-        
-          
-   
 
 
  // Sample list of image URLs
@@ -269,9 +266,7 @@
          'asset/image/digital/남선교회.webp',
          'asset/image/digital/미션하우스.webp',
          'asset/image/digital/새달새.webp',
-
-         
-
+          'asset/image/digital/교우소식.webp'
         ];
 
 
@@ -292,6 +287,9 @@
         'asset/image/digital/12.webp',
         'asset/image/digital/13.webp',
         'asset/image/digital/14.webp',
+        'asset/image/digital/15.webp',
+        'asset/image/digital/16.webp',
+        'asset/image/digital/17.webp',
 
         
 
