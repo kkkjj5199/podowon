@@ -226,7 +226,7 @@
             h.append(carouselItem);
 
             var img_src = 'asset/image/digital/highpart/' + i + '.webp';
-              $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+              $("#hpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
         //  청년회
