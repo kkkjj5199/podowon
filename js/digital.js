@@ -132,6 +132,7 @@
         // var name = 'youtube_iframe_' + number;
         var iframe = document.querySelectorAll('[id^="youtube_iframe_"]');
         var src = iframe.src;
+       
         src = src.replace("autoplay=1","autoplay=0");
         iframe.src= src;
     }
@@ -197,7 +198,7 @@
 
 
      //  고등부
-      frame2(8,'highpart','#hpart');
+    //   frame2(8,'highpart','#hpart');
         /*
         youtube 링크 추가방법.
         1. 기존   frame2(8,'highpart','#hpart'); 주석 추가 "앞에 // 붙이면 됩니다. -> 코드 비활성화"
@@ -208,23 +209,25 @@
             링크 가져올때는 youtube 에 들어가서 공유 버튼 클릭 후 링크 복사 . 그냥 주소창 링크 복사는 안됩니다.
         */
 
-        //    for (var i = 2; i <= 8; i++) {
-        //     var carouselInner = $("#hpart");  
-        //     var itemContent;
-        //     var img_src = 'asset/image/digital/highpart/' + i + '.webp'; 
+        for (var i = 2; i <=9; i++) {
+        var h = $("#hpart"); 
+           var itemContent;
 
-        //     if(i ==5){
-               
-        //         var itemContent = '<a href="https://youtu.be/8s_EaTXbreM?si=Pw4TIgyBinna7-wk">' +
-        //         '<img class="d-block w-100" src="' + img_src + '">' +
-        //         '</a>'
-        //     }else{
-        //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-        //     }
+            if (i == 3) {
+                frame1('8s_EaTXbreM',3);
+           
+            }
+            else {
+                var img_src = 'asset/image/digital/highpart/' + i + '.webp';
+                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+            }
 
-        //     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-        //     carouselInner.append(carouselItem);
-        // }
+            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+            h.append(carouselItem);
+
+            var img_src = 'asset/image/digital/highpart/' + i + '.webp';
+              $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        }
 
         //  청년회
         frame2(14,'caryouth','#youthpart');
@@ -339,20 +342,20 @@
                
             });
 
-                prey.forEach((imageUrl, index) => {
-                const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
+            //     prey.forEach((imageUrl, index) => {
+            //     const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
 
-                const carouselItem = document.createElement('div');
-                carouselItem.className = itemClass;
+            //     const carouselItem = document.createElement('div');
+            //     carouselItem.className = itemClass;
 
-                const imgElement = document.createElement('img');
-                imgElement.src = imageUrl;
-                imgElement.className = 'd-block w-100';
+            //     const imgElement = document.createElement('img');
+            //     imgElement.src = imageUrl;
+            //     imgElement.className = 'd-block w-100';
 
-                carouselItem.appendChild(imgElement);
-                carouselInner3.appendChild(carouselItem);
+            //     carouselItem.appendChild(imgElement);
+            //     carouselInner3.appendChild(carouselItem);
                
-            });
+            // });
 
 
 
