@@ -181,6 +181,12 @@
            
         }
 
+             function frame1(youtube_video_id,i){
+            iframe_id = 'youtube_iframe_' + i;
+            youtube_link= 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
+            itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;" ></iframe>';  
+        }
+
 
      
 
