@@ -262,34 +262,23 @@
  // Sample list of image URLs
         const advertises = [
         'asset/image/common/ad__p.webp',
-         'asset/image/digital/웨슬리.webp',
-         'asset/image/digital/남선교회.webp',
-         'asset/image/digital/미션하우스.webp',
-         'asset/image/digital/새달새.webp',
-          'asset/image/digital/교우소식.webp'
+         'asset/image/digital/청년회단합.webp',
+         'asset/image/digital/여름김장.webp',
+         'asset/image/digital/군포지방.webp',
+         'asset/image/digital/고등부단합글램핑.webp',
+         'asset/image/digital/여선교회.webp',
         ];
 
 
 
         const story = [
-        'asset/image/digital/포도원스토리.webp',
-        'asset/image/digital/1.webp',
-        'asset/image/digital/2.webp',
-        'asset/image/digital/3.webp',
-        'asset/image/digital/4.webp',
-        'asset/image/digital/5.webp',
-        'asset/image/digital/6.webp',
-        'asset/image/digital/7.webp',
-        'asset/image/digital/8.webp',
-        'asset/image/digital/9.webp',
-        'asset/image/digital/10.webp',
-        'asset/image/digital/11.webp',
-        'asset/image/digital/12.webp',
-        'asset/image/digital/13.webp',
-        'asset/image/digital/14.webp',
-        'asset/image/digital/15.webp',
-        'asset/image/digital/16.webp',
-        'asset/image/digital/17.webp',
+       
+        'asset/image/digital/h1.webp',
+        'asset/image/digital/h2.webp',
+        'asset/image/digital/h3.webp',
+        'asset/image/digital/h4.webp',
+
+       
 
         
 
