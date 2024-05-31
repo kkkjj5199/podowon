@@ -166,7 +166,7 @@
 
 
         // 아동3
-        frame2(9,'adong3','#3part');
+        frame2(10,'adong3','#3part');
         frame3(214,'adong3','#3part');
 
 
