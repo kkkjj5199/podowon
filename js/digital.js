@@ -198,7 +198,7 @@
 
 
      //  고등부
-    //   frame2(8,'highpart','#hpart');
+      frame2(9,'highpart','#hpart');
         /*
         youtube 링크 추가방법.
         1. 기존   frame2(8,'highpart','#hpart'); 주석 추가 "앞에 // 붙이면 됩니다. -> 코드 비활성화"
@@ -209,25 +209,25 @@
             링크 가져올때는 youtube 에 들어가서 공유 버튼 클릭 후 링크 복사 . 그냥 주소창 링크 복사는 안됩니다.
         */
 
-        for (var i = 2; i <=9; i++) {
-        var h = $("#hpart"); 
-           var itemContent;
+        // for (var i = 2; i <=9; i++) {
+        // var h = $("#hpart"); 
+        //    var itemContent;
 
-            if (i == 3) {
-                frame1('8s_EaTXbreM',3);
+        //     if (i == 3) {
+        //         frame1('8s_EaTXbreM',3);
            
-            }
-            else {
-                var img_src = 'asset/image/digital/highpart/' + i + '.webp';
-                itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-            }
+        //     }
+        //     else {
+        //         var img_src = 'asset/image/digital/highpart/' + i + '.webp';
+        //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+        //     }
 
-            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-            h.append(carouselItem);
+        //     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+        //     h.append(carouselItem);
 
-            var img_src = 'asset/image/digital/highpart/' + i + '.webp';
-              $("#hpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
+        //     var img_src = 'asset/image/digital/highpart/' + i + '.webp';
+        //       $("#hpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        // }
 
         //  청년회
         frame2(14,'caryouth','#youthpart');
