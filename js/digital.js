@@ -268,16 +268,14 @@
          'asset/image/digital/남선교회헌신예배.webp',
          'asset/image/digital/교사강습회.webp',
          'asset/image/digital/속장세미사.webp',
+          'asset/image/digital/교우소식.webp',
         ];
 
 
 
         const story = [
        
-        'asset/image/digital/h1.webp',
-        'asset/image/digital/h2.webp',
-        'asset/image/digital/h3.webp',
-        'asset/image/digital/h4.webp',
+        'asset/image/digital/포도원스토리.webp'
 
        
 
