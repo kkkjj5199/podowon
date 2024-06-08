@@ -301,6 +301,7 @@
         'asset/image/digital/23.webp',
         'asset/image/digital/24.webp',
          'asset/image/digital/25.webp',
+         'asset/image/digital/26.webp',
       
 
 
