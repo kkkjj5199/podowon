@@ -295,6 +295,12 @@
         'asset/image/digital/16.webp',
         'asset/image/digital/17.webp',
         'asset/image/digital/18.webp',
+        'asset/image/digital/20.webp',
+        'asset/image/digital/21.webp',
+        'asset/image/digital/22.webp',
+        'asset/image/digital/23.webp',
+        'asset/image/digital/24.webp',
+         'asset/image/digital/25.webp',
       
 
 
