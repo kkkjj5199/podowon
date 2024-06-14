@@ -263,13 +263,11 @@
  // Sample list of image URLs
         const advertises = [
         'asset/image/common/ad__p.webp',
-        'asset/image/digital/영혼전도.webp',
-         'asset/image/digital/여선교회연합전도.webp',
-         'asset/image/digital/독거어르신반찬봉사.webp',
-         'asset/image/digital/남선교회헌신예배.webp',
-         'asset/image/digital/교사강습회.webp',
-         'asset/image/digital/속장세미사.webp',
-          'asset/image/digital/교우소식.webp',
+        'asset/image/digital/전도.webp',
+        'asset/image/digital/남선교회3교구.webp',
+        'asset/image/digital/군포지방수련회.webp',
+        'asset/image/digital/속장세미나.webp',
+        'asset/image/digital/여선교회3교구.webp',
         ];
 
 
