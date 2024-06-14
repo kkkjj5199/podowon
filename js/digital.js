@@ -386,13 +386,13 @@
                 var itemContent;
                 
                 if (i === 4) {
-                    var itemContent = '<a href="https://www.youtube.com/watch?si=MQJD3CndJWP3S8Pa&v=ozSrF8n9fWs&feature=youtu.be">' +
+                    var itemContent = '<div class="carousel-item"><a href="https://www.youtube.com/watch?si=MQJD3CndJWP3S8Pa&v=ozSrF8n9fWs&feature=youtu.be">' +
                     '<img class="d-block w-100" src="' + img_src + '">' +
-                    '</a>'
+                    '</a>'</div>';
                 } else if (i === 5) {
-                    var itemContent = '<a href="https://www.youtube.com/watch?si=MQJD3CndJWP3S8Pa&v=ozSrF8n9fWs&feature=youtu.be">' +
+                    var itemContent = '<div class="carousel-item"><a href="https://www.youtube.com/watch?si=MQJD3CndJWP3S8Pa&v=ozSrF8n9fWs&feature=youtu.be">' +
                     '<img class="d-block w-100" src="' + img_src + '">' +
-                    '</a>'
+                    '</a>'</div>';
                 } else {
                     $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
                 }
