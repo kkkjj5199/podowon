@@ -166,7 +166,8 @@
 
 
         // 아동3
-        frame2(6,'adong3','#3part');
+        //frame2(6,'adong3','#3part');
+        frame4(9,'adong3','#3part');
         frame3(214,'adong3','#3part');
 
 
@@ -407,12 +408,16 @@
         function frame4(length, partName, idName) {
             for (var i = 1; i <= length; i++) {
                 var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
-                var htmlContent = '<div class="carousel-item"><img id="i' + i + '" class="d-block w-100" src="' + img_src + '"></div>';
+                var itemContent;
                 
                 if (i === 4) {
-                    itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+                    var itemContent = '<a href="https://www.youtube.com/watch?si=MQJD3CndJWP3S8Pa&v=ozSrF8n9fWs&feature=youtu.be">' +
+                    '<img class="d-block w-100" src="' + img_src + '">' +
+                    '</a>'
                 } else if (i === 5) {
-                    itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+                    var itemContent = '<a href="https://www.youtube.com/watch?si=MQJD3CndJWP3S8Pa&v=ozSrF8n9fWs&feature=youtu.be">' +
+                    '<img class="d-block w-100" src="' + img_src + '">' +
+                    '</a>'
                 }
 
                 $(idName + ' .carousel-inner').append(htmlContent);
