@@ -407,6 +407,7 @@
         // 아동3 유튜브
         function frame4(length, partName, idName) {
             for (var i = 1; i <= length; i++) {
+                var carouselInner = $("#3part");
                 var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
                 var itemContent;
                 
@@ -419,12 +420,9 @@
                     '<img class="d-block w-100" src="' + img_src + '">' +
                     '</a>'
                 } else {
-                    itemContent = '<div class="carousel-item"><img class="d-block w-100" src="' + img_src + '"></div>';
+                    $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
                 }
-
-                $(idName + ' .carousel-inner').append(itemContent);
             }
-            $(idName + ' .carousel-item').first().addClass('active'); // 첫번째 이미지를 활성화
         }
 
         // Call the function to populate the carousel
