@@ -167,7 +167,7 @@
 
         // 아동3
         //frame2(6,'adong3','#3part');
-        frame5(9,'adong3','#3part');
+        frame4(10,'adong3','#3part');
         frame3(214,'adong3','#3part');
 
 
@@ -380,36 +380,16 @@
 
         // 아동3 유튜브
         function frame4(length, partName, idName) {
-            for (var i = 1; i <= length; i++) {
+            for (var i = 2; i <= length; i++) {
                 var carouselInner = $("#3part");
                 var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
                 var itemContent;
                 
-                if (i === 4) {
-                    $(idName).append('<div class="carousel-item"><a href="https://www.youtube.com/watch?si=MQJD3CndJWP3S8Pa&v=ozSrF8n9fWs&feature=youtu.be">') +
-                    '<img class="d-block w-100" src="' + img_src + '">' +
-                    '</a>'+ '</div>';
-                } else if (i === 5) {
-                    $(idName).append('<div class="carousel-item"><a href="https://www.youtube.com/watch?si=MQJD3CndJWP3S8Pa&v=ozSrF8n9fWs&feature=youtu.be">') +
-                    '<img class="d-block w-100" src="' + img_src + '">' +
-                    '</a>' + '</div>';
-                } else {
-                    $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-                }
-            }
-        }
-
-        function frame5(length, partName, idName) {
-            for (var i = 1; i <= length; i++) {
-                var carouselInner = $("#3part");
-                var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
-                var itemContent;
-                
-                if (i === 4) {
+                if (i === 5) {
                     var itemContent = '<a href="https://www.youtube.com/watch?v=ozSrF8n9fWs">' +
                    '<img class="d-block w-100" src="' + img_src + '">' +
                    '</a>'
-                } else if (i === 5) {
+                } else if (i === 4) {
                     var itemContent = '<a href="https://www.youtube.com/watch?v=uI4NGwVusyg">' +
                    '<img class="d-block w-100" src="' + img_src + '">' +
                    '</a>'
@@ -421,25 +401,6 @@
                 carouselInner.append(carouselItem);
             }
         }
-
-
-                //     for (var i = 2; i <= 24; i++) {
-        //     var carouselInner = $("#mpart");  
-        //     var itemContent;
-        //     var img_src = 'asset/image/digital/middlepart/' + i + '.webp'; 
-
-        //     if(i ==5){
-               
-        //         var itemContent = '<a href="https://youtu.be/b9sGBDbaQBA?si=j3AstaQzx03r-ZjG">' +
-        //         '<img class="d-block w-100" src="' + img_src + '">' +
-        //         '</a>'
-        //     }else{
-        //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-        //     }
-
-        //     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-        //     carouselInner.append(carouselItem);
-        // }
 
         // Call the function to populate the carousel
         populateCarousel();
