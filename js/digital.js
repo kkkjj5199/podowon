@@ -403,6 +403,23 @@
             
         }
 
+        // 아동3 유튜브
+        function frame4(length, partName, idName) {
+            for (var i = 1; i <= length; i++) {
+                var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
+                var htmlContent = '<div class="carousel-item"><img id="i' + i + '" class="d-block w-100" src="' + img_src + '"></div>';
+                
+                if (i === 4) {
+                    itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+                } else if (i === 5) {
+                    itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+                }
+
+                $(idName + ' .carousel-inner').append(htmlContent);
+            }
+            $(idName + ' .carousel-item').first().addClass('active'); // 첫번째 이미지를 활성화
+        }
+
         // Call the function to populate the carousel
         populateCarousel();
 
