@@ -167,7 +167,7 @@
 
         // 아동3
         //frame2(6,'adong3','#3part');
-        frame4(9,'adong3','#3part');
+        frame5(9,'adong3','#3part');
         frame3(214,'adong3','#3part');
 
 
@@ -424,6 +424,24 @@
             }
             $(idName + ' .carousel-item').first().addClass('active'); // 첫번째 이미지를 활성화
         }
+
+        // 아동3 유튜브 v2
+        function frame5(length, partName, idName) {
+            for (var i = 1; i <= length; i++) {
+                var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
+                var htmlContent = '<div class="carousel-item"><img id="i' + i + '" class="d-block w-100" src="' + img_src + '"></div>';
+                
+                if (i === 4) {
+                    htmlContent = '<div class="carousel-item"><a href="https://www.youtube.com/watch?v=ozSrF8n9fWs" target="_blank"><img id="i' + i + '" class="d-block w-100" src="' + img_src + '"></a></div>';
+                } else if (i === 5) {
+                    htmlContent = '<div class="carousel-item"><a href="https://www.youtube.com/watch?v=ozSrF8n9fWs" target="_blank"><img id="i' + i + '" class="d-block w-100" src="' + img_src + '"></a></div>';
+                }
+
+                $(idName + ' .carousel-inner').append(htmlContent);
+            }
+            $(idName + ' .carousel-item').first().addClass('active'); // 첫번째 이미지를 활성화
+        }
+
 
         // Call the function to populate the carousel
         populateCarousel();
