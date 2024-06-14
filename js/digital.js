@@ -167,7 +167,7 @@
 
         // 아동3
         //frame2(6,'adong3','#3part');
-        frame4(9,'adong3','#3part');
+        frame5(9,'adong3','#3part');
         frame3(214,'adong3','#3part');
 
 
@@ -399,18 +399,47 @@
             }
         }
 
-        function frame5(num, partName, idName) {
-            for (var i = 1; i <= num; i++) {
-                if (i % 2 === 0) { // Even index: YouTube video
-                    var youtube_video_id = 'video_id_' + i; // Replace with actual video IDs
-                    var youtube_iframe = frame1(youtube_video_id, i);
-                    $(idName).append('<div class="carousel-item">' + youtube_iframe + '</div>');
-                } else { // Odd index: Image
-                    var img_src = 'asset/image/' + partName + '/' + i + '.webp';
-                    $(idName).append('<div class="carousel-item"><img id="i3" class="d-block w-100" src=' + img_src + '></div>');
+        function frame5(length, partName, idName) {
+            for (var i = 1; i <= length; i++) {
+                var carouselInner = $("#3part");
+                var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
+                var itemContent;
+                
+                if (i === 4) {
+                    var itemContent = '<a href="https://www.youtube.com/watch?v=ozSrF8n9fWs">' +
+                   '<img class="d-block w-100" src="' + img_src + '">' +
+                   '</a>'
+                } else if (i === 5) {
+                    var itemContent = '<a href="https://www.youtube.com/watch?v=uI4NGwVusyg">' +
+                   '<img class="d-block w-100" src="' + img_src + '">' +
+                   '</a>'
+                } else {
+                    itemContent = '<img class="d-block w-100" src="' + img_src + '">';
                 }
+
+                var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+                carouselInner.append(carouselItem);
             }
         }
+
+
+                //     for (var i = 2; i <= 24; i++) {
+        //     var carouselInner = $("#mpart");  
+        //     var itemContent;
+        //     var img_src = 'asset/image/digital/middlepart/' + i + '.webp'; 
+
+        //     if(i ==5){
+               
+        //         var itemContent = '<a href="https://youtu.be/b9sGBDbaQBA?si=j3AstaQzx03r-ZjG">' +
+        //         '<img class="d-block w-100" src="' + img_src + '">' +
+        //         '</a>'
+        //     }else{
+        //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+        //     }
+
+        //     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+        //     carouselInner.append(carouselItem);
+        // }
 
         // Call the function to populate the carousel
         populateCarousel();
