@@ -274,7 +274,7 @@
 
         const story = [
        
-        'asset/image/digital/포도원스토리.webp',
+        // 'asset/image/digital/포도원스토리.webp',
      
    
       
