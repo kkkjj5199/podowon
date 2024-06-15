@@ -328,6 +328,7 @@ background-color: #DC6093;
     width: 100%;
     position: absolute;
     left: 50%;
+
     color:#505050;
     font-size: 15px;
     font-family: cfont;
@@ -343,6 +344,10 @@ background-color: #DC6093;
     top: 59%;
     transform: translate(-50%, -50%);
 
+}
+
+ .text-overlay {
+    color: #fff;
 }
 
   .copy-button {
