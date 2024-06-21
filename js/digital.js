@@ -290,9 +290,9 @@
 
         // Function to dynamically populate the carousel
         function populateCarousel() {
-            const carouselInner = document.querySelector('#dynamicCarousel .carousel-inner');
-            const carouselInner2 = document.querySelector('#dynamicCarousel2 .carousel-inner');
-            const carouselInner3 = document.querySelector('#dynamicCarousel4 .carousel-inner');
+            const carouselInner = document.querySelector('#dynamicCarousel2 .carousel-inner');
+            const carouselInner2 = document.querySelector('#dynamicCarousel3 .carousel-inner'); //podowon-story
+            // const carouselInner3 = document.querySelector('#dynamicCarousel4 .carousel-inner');
 
             advertises.forEach((imageUrl, index) => {
                 const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
@@ -312,14 +312,14 @@
                 story.forEach((imageUrl, index) => {
                 const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
 
-                const carouselItem = document.createElement('div');
+                const carouselItem2 = document.createElement('div');
                 carouselItem.className = itemClass;
 
                 const imgElement = document.createElement('img');
                 imgElement.src = imageUrl;
                 imgElement.className = 'd-block w-100';
 
-                carouselItem.appendChild(imgElement);
+                carouselItem2.appendChild(imgElement);
                 carouselInner2.appendChild(carouselItem);
                
             });
