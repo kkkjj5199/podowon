@@ -264,10 +264,13 @@
         const advertises = [
         'asset/image/common/ad__p.webp',
         'asset/image/digital/전도.webp',
-        'asset/image/digital/남선교회3교구.webp',
-        'asset/image/digital/군포지방수련회.webp',
-        'asset/image/digital/속장세미나.webp',
         'asset/image/digital/여선교회3교구.webp',
+        'asset/image/digital/연합전도.webp',
+        'asset/image/digital/자체강습회.webp',
+        'asset/image/digital/여선교회4교구.webp',
+        'asset/image/digital/청년수련회.webp',
+        'asset/image/digital/맥추감사주일.webp',
+
         ];
 
 
