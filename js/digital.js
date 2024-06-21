@@ -275,21 +275,11 @@
 
 
 
-        const story = [
+        // const story = [
        
         // 'asset/image/digital/포도원스토리.webp',
-     
-   
-      
-
-
-       
-
         
-
-      
-        
-        ]
+        // ]
 
 
 
