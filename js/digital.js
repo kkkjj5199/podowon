@@ -270,6 +270,7 @@
         'asset/image/digital/여선교회4교구.webp',
         'asset/image/digital/청년수련회.webp',
         'asset/image/digital/맥추감사주일.webp',
+        'asset/image/digital/장례소식.webp',
 
         ];
 
