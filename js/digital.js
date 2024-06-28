@@ -264,23 +264,25 @@
         const advertises = [
         'asset/image/common/ad__p.webp',
         'asset/image/digital/전도.webp',
-        'asset/image/digital/여선교회3교구.webp',
-        'asset/image/digital/연합전도.webp',
-        'asset/image/digital/자체강습회.webp',
         'asset/image/digital/여선교회4교구.webp',
+        'asset/image/digital/새벽기도.webp',
         'asset/image/digital/청년수련회.webp',
         'asset/image/digital/맥추감사주일.webp',
-        'asset/image/digital/장례소식.webp',
+        'asset/image/digital/여선교회2교구.webp',
+        'asset/image/digital/여선교회5교구.webp',
 
         ];
 
 
 
-        // const story = [
-       
-        // 'asset/image/digital/포도원스토리.webp',
+        const story = [
+        'asset/image/digital/포도원스토리.webp',
+        'asset/image/digital/1.webp',
+        'asset/image/digital/2.webp',
+        'asset/image/digital/3.webp',
+        'asset/image/digital/4.webp',
         
-        // ]
+        ]
 
 
 
@@ -310,20 +312,20 @@
                
             });
 
-                story.forEach((imageUrl, index) => {
-                const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
+            story.forEach((imageUrl, index) => {
+            const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
 
-                const carouselItem2 = document.createElement('div');
-                carouselItem.className = itemClass;
+            const carouselItem2 = document.createElement('div');
+            carouselItem2.className = itemClass;
 
-                const imgElement = document.createElement('img');
-                imgElement.src = imageUrl;
-                imgElement.className = 'd-block w-100';
+            const imgElement = document.createElement('img');
+            imgElement.src = imageUrl;
+            imgElement.className = 'd-block w-100';
 
-                carouselItem2.appendChild(imgElement);
-                carouselInner2.appendChild(carouselItem);
-               
-            });
+            carouselItem2.appendChild(imgElement);
+            carouselInner2.appendChild(carouselItem2);
+            
+        });
 
             //     prey.forEach((imageUrl, index) => {
             //     const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
