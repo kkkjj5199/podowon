@@ -161,7 +161,7 @@
         frame2(17,'adong1','#1part');
 
         // 아동2
-        frame2(28,'adong2','#2part');
+        frame2(24,'adong2','#2part');
 
 
 
