@@ -166,8 +166,8 @@
 
 
         // 아동3
-        frame2(5,'adong3','#3part');
-        //frame4(10,'adong3','#3part');
+        //frame2(5,'adong3','#3part');
+        frame4(5,'adong3','#3part');
         frame3(214,'adong3','#3part');
 
 
@@ -382,14 +382,14 @@
                 var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
                 var itemContent;
                 
-                if (i === 5) {
-                    var itemContent = '<a href="https://www.youtube.com/watch?v=ozSrF8n9fWs">' +
+                if (i === 4) {
+                    var itemContent = '<a href="https://youtu.be/C0sGEoGgwXQ?si=ynzYzJvHuzTUZBOv">' +
                    '<img class="d-block w-100" src="' + img_src + '">' +
                    '</a>'
-                } else if (i === 4) {
-                    var itemContent = '<a href="https://www.youtube.com/watch?v=uI4NGwVusyg">' +
-                   '<img class="d-block w-100" src="' + img_src + '">' +
-                   '</a>'
+                // } else if (i === 4) {
+                //     var itemContent = '<a href="https://www.youtube.com/watch?v=uI4NGwVusyg">' +
+                //    '<img class="d-block w-100" src="' + img_src + '">' +
+                //    '</a>'
                 } else {
                     itemContent = '<img class="d-block w-100" src="' + img_src + '">';
                 }
