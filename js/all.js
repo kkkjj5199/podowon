@@ -139,9 +139,9 @@
         // }
 
              for (var i = 2; i <=3; i++) {
-            var img_src = 'asset/image/camp/adnog1/' + i + '.webp';
+            var img_src = 'asset/image/camp/adong1/' + i + '.webp';
               $("#adnog1Camp").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        }
+                }
 
                     
         for (var i = 2; i <=14; i++) {
