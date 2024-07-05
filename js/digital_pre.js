@@ -172,7 +172,7 @@
 
 
         //중등부
-         frame2(28,'middlepart','#mpart');
+         frame2(14,'middlepart','#mpart');
         // for (var i = 2; i <= 12; i++) {
         //     var carouselInner = $("#mpart");  
         //     var itemContent;
