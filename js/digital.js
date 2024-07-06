@@ -166,8 +166,8 @@
 
 
         // 아동3
-        //frame2(5,'adong3','#3part');
-        frame4(5,'adong3','#3part');
+        frame2(9,'adong3','#3part');
+        // frame4(5,'adong3','#3part');
         frame3(214,'adong3','#3part');
 
 
