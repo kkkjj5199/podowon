@@ -152,7 +152,7 @@
 
         //말씀
        
-        for (var i = 1; i <=4; i++) {
+        for (var i = 1; i <=5; i++) {
             var img_src = 'asset/image/common/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -279,9 +279,7 @@
         'asset/image/digital/포도원스토리.webp',
         'asset/image/digital/1.webp',
         'asset/image/digital/2.webp',
-        'asset/image/digital/5.webp',
-        'asset/image/digital/3.webp',
-        'asset/image/digital/4.webp',
+        'asset/image/digital/3.webp'
         
         ]
 
