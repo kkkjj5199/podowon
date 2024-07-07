@@ -40,13 +40,25 @@
     <!-- uikit    -->
     <link rel="stylesheet" href="css/uikit.min.css" />
 
-
-
-
-
 </head>
 
 <body id="page-top">
+    <style>
+@-webkit-keyframes blink-image {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+.carousel-control-next-icon {
+        -webkit-animation-direction: normal;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-name: blink-image;
+        -webkit-animation-timing-function: ease;
+    }
+    </style>
 
     <audio src="asset/audio/기도할래요.mp3" autoplay id="myaudio"></audio>
 
@@ -73,7 +85,7 @@
                         </div>
                         <a id="last" class="carousel-control-prev" href="#last" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon"
-                                aria-hidden="true""></span>
+                                aria-hidden="true""> </span>
                                                                                                                                                                             <span class="
                                 sr-only">Previous</span>
                         </a>
