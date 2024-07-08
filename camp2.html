@@ -44,6 +44,7 @@
 
 <body id="page-top">
     <style>
+        
 @-webkit-keyframes blink-image {
     0% { opacity: 0; }
     50% { opacity: 1; }
@@ -59,24 +60,31 @@
         -webkit-animation-timing-function: ease;
     }
     </style>
-// 배경음악 바꾸는거 
+ <!-- 배경음악 바꾸는법 
+1. 바꿀 mp3음원파일 준비
+2. asset/audio/ 경로에 넣기.
+3. 밑에 src 에 파일있는 경로 작성하기
+-->
     <audio src="asset/audio/기도할래요.mp3" autoplay id="myaudio"></audio>
 
     <section class="page-section bg-primary" id="about">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <img id="i1" class="d-block w-100" src="asset/image/camp/adong1/1.webp" >
-                    <img id="i1" class="d-block w-100" src="asset/image/camp/adong1/2.webp" >
+
+                    <!-- 슬라이드 없는 이미지 넣기 -->
+                    <img id="i1" class="d-block w-100" src="asset/image/camp/adong2/1.webp" >
+                    <!-- <img id="i1" class="d-block w-100" src="asset/image/camp/adong1/2.webp" > -->
 
 
 
-                  
+                  <!-- 슬라이드 있는 이미지 넣기  all.js for 문 확인하기.-->
                     <div id="last" class="carousel slide" data-wrap="false" data-interval="false" data-ride="carousel">
-
+                <!--  id="adnog2Camp" 아이디 확인하기 -->
                         <div class="carousel-inner" id="adnog2Camp">
                             <div class="carousel-item active">
-                                <img id="i1" class="d-block w-100" src="asset/image/camp/adong1/3.webp" alt="First slide">
+                               
+                                <img id="i1" class="d-block w-100" src="asset/image/camp/adong2/1.webp" alt="First slide">
                             </div>
                             
                          
