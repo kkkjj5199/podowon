@@ -174,7 +174,7 @@
         //중등부
     
 
-         frame2(14,'middlepart','#mpart');
+         frame2(15,'middlepart','#mpart');
 
 
         //     for (var i = 2; i <= 24; i++) {
