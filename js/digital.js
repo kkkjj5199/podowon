@@ -158,7 +158,7 @@
         }
 
         // 아동1
-        frame2(15,'adong1','#1part');
+        frame2(25,'adong1','#1part');
 
         // 아동2
         frame2(16,'adong2','#2part');
@@ -231,7 +231,7 @@
         // }
 
         //  청년회
-        frame2(17,'caryouth','#youthpart');
+        frame2(10,'caryouth','#youthpart');
 
         // 여선교회
         frame2(11,'woman','#womanpart');
@@ -264,12 +264,9 @@
         const advertises = [
         'asset/image/common/ad__p.webp',
         'asset/image/digital/전도.webp',
-        'asset/image/digital/맥추감사주일.webp',
-        'asset/image/digital/여선교회2교구.webp',
-        'asset/image/digital/교사헌신예배.webp',
+        'asset/image/digital/독거어르신.webp',
         'asset/image/digital/여름성경학교.webp',
-        'asset/image/digital/군포지방교역자회의.webp',
-        'asset/image/digital/장례.webp',
+        'asset/image/digital/아동1,2교구.webp',
 
         ];
 
