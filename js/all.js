@@ -143,10 +143,6 @@
               $("#adnog1Camp").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
                 }
 
-            for (var i = 4; i <=9; i++) {
-            var img_src = 'asset/image/camp/adong2/' + i + '.webp';
-              $("#adnog2Camp").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-                }
 
                     
         for (var i = 2; i <=14; i++) {
