@@ -199,7 +199,7 @@
 
 
      //  고등부
-      frame2(10,'highpart','#hpart');
+      frame2(11,'highpart','#hpart');
         /*
         youtube 링크 추가방법.
         1. 기존   frame2(8,'highpart','#hpart'); 주석 추가 "앞에 // 붙이면 됩니다. -> 코드 비활성화"
