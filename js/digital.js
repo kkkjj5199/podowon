@@ -264,9 +264,10 @@
         const advertises = [
         'asset/image/common/ad__p.webp',
         'asset/image/digital/전도.webp',
-        'asset/image/digital/독거어르신.webp',
-        'asset/image/digital/여름성경학교.webp',
-        'asset/image/digital/아동1,2교구.webp',
+        'asset/image/digital/일본문화체험.webp',
+      
+              'asset/image/digital/남여선교회중보기도.webp',
+                   'asset/image/digital/청년회.webp',
 
         ];
 
@@ -277,21 +278,8 @@
         'asset/image/digital/1.webp',
         'asset/image/digital/2.webp',
         'asset/image/digital/3.webp',
-        'asset/image/digital/17.webp',
         'asset/image/digital/4.webp',
-        'asset/image/digital/5.webp',
-         'asset/image/digital/6.webp',
-        'asset/image/digital/7.webp',
-         'asset/image/digital/caryouth/6.webp',
-        'asset/image/digital/8.webp',
-        'asset/image/digital/9.webp',
-        'asset/image/digital/10.webp',
-         'asset/image/digital/11.webp',
-        'asset/image/digital/12.webp',
-        'asset/image/digital/13.webp',
-        'asset/image/digital/14.webp',
-        'asset/image/digital/15.webp',
-          'asset/image/digital/16.webp',
+                'asset/image/digital/5.webp',
         
         ]
 
