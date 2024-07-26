@@ -162,7 +162,7 @@
         // 아동2
         frame2(25,'adong2','#2part');
                  for (var i = 2; i <= 25; i++) {
-                     var img_src = 'asset/image/camp/adong2/' + i + '.webp';
+                     var img_src = 'asset/image/adong2/digital_pre/adong2/' + i + '.webp';
                      var itemContent;
                      var carouselInner = $("2part"); // id명 위에 선언한거랑 똑같은지 확인하기
 
