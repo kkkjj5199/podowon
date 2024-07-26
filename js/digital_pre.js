@@ -164,7 +164,7 @@
                  for (var i = 2; i <= 25; i++) {
                      var img_src = 'asset/image/adong2/digital_pre/adong2/' + i + '.webp';
                      var itemContent;
-                     var carouselInner = $("2part"); // id명 위에 선언한거랑 똑같은지 확인하기
+                     var carouselInner = $("#2part"); // id명 위에 선언한거랑 똑같은지 확인하기
 
                      if(i ==2){
                      
