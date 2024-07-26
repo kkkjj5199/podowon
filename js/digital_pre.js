@@ -178,7 +178,7 @@
 
                     //  $("#2part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
                      var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-                     carouselInner.append(carouselItem);
+                     carouselInner.append(carouselItem); }
 
 
 
