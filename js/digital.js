@@ -253,6 +253,14 @@
 
         // 남선교회
         frame2(6,'man','#manpart');
+
+        //포도원마을소식
+        frame2(4,'notice','#notice');
+
+        //포도원스토리
+        frame2(28,'pdwstory','#pwdstory');
+
+
         // for (var i = 2; i <=4; i++) {
         // var h = $("#manpart"); 
         //    var itemContent;
@@ -276,25 +284,16 @@
 
  // Sample list of image URLs
 
-        const advertises = [
-        'asset/image/common/ad__p.webp',
-        'asset/image/digital/전도.webp',
-        'asset/image/digital/일본문화체험.webp',
-        'asset/image/digital/남여선교회중보기도.webp',
-        'asset/image/digital/청년회.webp',
-        ];
 
-
-
-        const story = [
-        'asset/image/digital/포도원스토리.webp',
-        'asset/image/digital/1.webp',
-        'asset/image/digital/2.webp',
-        'asset/image/digital/3.webp',
-        'asset/image/digital/4.webp',
-                'asset/image/digital/5.webp',
+        // const story = [
+        // 'asset/image/digital/포도원스토리.webp',
+        // 'asset/image/digital/1.webp',
+        // 'asset/image/digital/2.webp',
+        // 'asset/image/digital/3.webp',
+        // 'asset/image/digital/4.webp',
+        //         'asset/image/digital/5.webp',
         
-        ]
+        // ]
 
 
 
