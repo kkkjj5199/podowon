@@ -167,27 +167,6 @@
         //frame2(16,'adong2','#2part');
         youtubeFrame(24,2,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong2','#2part');
 
-                //  for (var i = 2; i <= 24; i++) {
-                //      var img_src = 'asset/image/digital/adong2/' + i + '.webp';
-                //      var itemContent;
-                //      var carouselInner = $("#2part"); 
-
-                //      if(i ==2){
-
-                //      var itemContent = '<a href="https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL">' +
-                //          '<img class="d-block w-100" src="' + img_src + '">' + '</a>'
-                //         }
-
-                //      else{
-                //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-                //     }
-
-    
-                //      var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-                //      carouselInner.append(carouselItem); }
-
-
-
         // 아동3교구
         frame2(15,'adong3','#3part');
         // frame4(5,'adong3','#3part');
