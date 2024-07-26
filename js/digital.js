@@ -3,7 +3,7 @@
 
 
 
-/* Google map*/
+/* Google map 지도 */ 
         var container = document.getElementById('map');
         var options = {
             center: new kakao.maps.LatLng(37.367729, 126.965929),
@@ -99,6 +99,7 @@
 
 
      var player;
+
      function onPlayerReady() {
         console.log('dddddddsssss');
         player = new YT.Player('youtube_iframe_9',{
@@ -126,10 +127,8 @@
     }
 
    
-
+    // 유튜브 자동 멈춤 기능
     function stopYoutube() {
-
-        // var name = 'youtube_iframe_' + number;
         var iframe = document.querySelectorAll('[id^="youtube_iframe_"]');
         var src = iframe.src;
        
@@ -153,18 +152,27 @@
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
+            /**
+         * 특정 이미지에 Youtube 링크 넣는 방법 ! 
+         * 사용하고 있는 frame2 에 주석으로 막기. 주석은    ( // ) <- 표시 입니다.
+         * youtubeFrame(총이미지 수 , 링크넣을 이미지 번호, '유튜브 링크' , 'adong1' , '#1part');
+         * 
+         * 예시: youtubeFrame(28,3,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong1','#1part');
+         */ 
+
         // 아동1
         frame2(28,'adong1','#1part');
+    
 
         // 아동2
         //frame2(16,'adong2','#2part');
                  for (var i = 2; i <= 24; i++) {
                      var img_src = 'asset/image/digital/adong2/' + i + '.webp';
                      var itemContent;
-                     var carouselInner = $("#2part"); // id명 위에 선언한거랑 똑같은지 확인하기
+                     var carouselInner = $("#2part"); 
 
                      if(i ==2){
-                     
+
                      var itemContent = '<a href="https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL">' +
                          '<img class="d-block w-100" src="' + img_src + '">' + '</a>'
                         }
@@ -173,7 +181,7 @@
                         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
                     }
 
-                    //  $("#2part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+    
                      var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
                      carouselInner.append(carouselItem); }
 
@@ -182,74 +190,20 @@
         // 아동3
         frame2(15,'adong3','#3part');
         // frame4(5,'adong3','#3part');
+
         frame3(214,'adong3','#3part');
 
-
         //중등부
-    
-
          frame2(18,'middlepart','#mpart');
 
-
-        //     for (var i = 2; i <= 24; i++) {
-        //     var carouselInner = $("#mpart");  
-        //     var itemContent;
-        //     var img_src = 'asset/image/digital/middlepart/' + i + '.webp'; 
-
-        //     if(i ==5){
-               
-        //         var itemContent = '<a href="https://youtu.be/b9sGBDbaQBA?si=j3AstaQzx03r-ZjG">' +
-        //         '<img class="d-block w-100" src="' + img_src + '">' +
-        //         '</a>'
-        //     }else{
-        //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-        //     }
-
-        //     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-        //     carouselInner.append(carouselItem);
-        // }
-
-           
-
-
-     //  고등부
-      frame2(11,'highpart','#hpart');
-        /*
-        youtube 링크 추가방법.
-        1. 기존   frame2(8,'highpart','#hpart'); 주석 추가 "앞에 // 붙이면 됩니다. -> 코드 비활성화"
-        2. 209 라인부터 225라인 주석 풀기 // 없애기 -> 코드 활성화
-         img_src 기관별 이미지 경로 링크 확인하기  'asset/image/digital/highpart/'  기관이름 확인
-        3. youtube 링크 추가할 이미지 번호를 if == ? 에 넣기.<214 line> ex)  5번 이미지이면 5 , 2번이면 if ==2 
-        5. '<a href="https://youtu.be/0XCxNk_8TcA?si=VNakO5StugR6GQoW">' 해당 youtube 링크 넣기
-            링크 가져올때는 youtube 에 들어가서 공유 버튼 클릭 후 링크 복사 . 그냥 주소창 링크 복사는 안됩니다.
-        */
-
-        // for (var i = 2; i <=9; i++) {
-        // var h = $("#hpart"); 
-        //    var itemContent;
-
-        //     if (i == 3) {
-        //         youtube('8s_EaTXbreM',3);
-           
-        //     }
-        //     else {
-        //         var img_src = 'asset/image/digital/highpart/' + i + '.webp';
-        //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-        //     }
-
-        //     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-        //     h.append(carouselItem);
-
-        //     var img_src = 'asset/image/digital/highpart/' + i + '.webp';
-        //       $("#hpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        // }
+      //  고등부
+        frame2(11,'highpart','#hpart');
 
         //  청년회
         frame2(14,'caryouth','#youthpart');
 
         // 여선교회
         frame2(8,'woman','#womanpart');
-
 
         // 남선교회
         frame2(6,'man','#manpart');
@@ -261,105 +215,6 @@
         frame2(28,'pdwstory','#pwdstory');
 
 
-        // for (var i = 2; i <=4; i++) {
-        // var h = $("#manpart"); 
-        //    var itemContent;
-
-        //     if (i === 4) {
-        //         youtube('Crmi85WBTmU',4);
-           
-        //     }
-        //     else {
-        //         var img_src = 'asset/image/digital/man/' + i + '.webp';
-        //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-        //     }
-
-        //     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-        //     h.append(carouselItem);
-
-            // var img_src = 'asset/image/digital/man/' + i + '.webp';
-            //   $("#manpart").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-        // }
-
-
- // Sample list of image URLs
-
-
-        // const story = [
-        // 'asset/image/digital/포도원스토리.webp',
-        // 'asset/image/digital/1.webp',
-        // 'asset/image/digital/2.webp',
-        // 'asset/image/digital/3.webp',
-        // 'asset/image/digital/4.webp',
-        //         'asset/image/digital/5.webp',
-        
-        // ]
-
-
-
-        $('[id^="imageCarouselModal"]').on('hidden.bs.modal', function () {
-        // Remove 'modal-open' class from the body to prevent scrolling to the top
-        $('body').removeClass('modal-open');
-        });
-
-        // Function to dynamically populate the carousel
-        function populateCarousel() {
-            const carouselInner = document.querySelector('#dynamicCarousel2 .carousel-inner');
-            const carouselInner2 = document.querySelector('#dynamicCarousel3 .carousel-inner'); //podowon-story
-            // const carouselInner3 = document.querySelector('#dynamicCarousel4 .carousel-inner');
-
-            advertises.forEach((imageUrl, index) => {
-                const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
-
-                const carouselItem = document.createElement('div');
-                carouselItem.className = itemClass;
-
-                const imgElement = document.createElement('img');
-                imgElement.src = imageUrl;
-                imgElement.className = 'd-block w-100';
-
-                carouselItem.appendChild(imgElement);
-                carouselInner.appendChild(carouselItem);
-               
-            });
-
-            story.forEach((imageUrl, index) => {
-            const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
-
-            const carouselItem2 = document.createElement('div');
-            carouselItem2.className = itemClass;
-
-            const imgElement = document.createElement('img');
-            imgElement.src = imageUrl;
-            imgElement.className = 'd-block w-100';
-
-            carouselItem2.appendChild(imgElement);
-            carouselInner2.appendChild(carouselItem2);
-            
-        });
-
-            //     prey.forEach((imageUrl, index) => {
-            //     const itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
-
-            //     const carouselItem = document.createElement('div');
-            //     carouselItem.className = itemClass;
-
-            //     const imgElement = document.createElement('img');
-            //     imgElement.src = imageUrl;
-            //     imgElement.className = 'd-block w-100';
-
-            //     carouselItem.appendChild(imgElement);
-            //     carouselInner3.appendChild(carouselItem);
-               
-            // });
-
-
-
-
-
-   
-        }
-
         // youtube in 슬라이드
         function gotoYoutube(youtube_video_id,i){
             iframe_id = 'youtube_iframe_' + i;
@@ -367,7 +222,7 @@
             itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;" ></iframe>';  
         }
 
-        // 이미지 슬라이드-preVer.
+        // 이미지 슬라이드 생성 프레임
         function frame2(length,partName,idName){
             for(var i =2; i<= length; i++){
               var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
@@ -376,7 +231,52 @@
             
         }
 
-         // 아동3 슬라이드-preVer.
+        // 특정 이미지에 유튜브 링크 삽입 한 후 슬라이드 생성 프레임
+        function youtubeFrame(length,youtubeImageNumber,link, partName,idName){
+             for (var i = 2; i <= length; i++) {
+                     var img_src = 'asset/image/digital/'+partName+ '/'  + i + '.webp';
+                     var itemContent;
+                     var carouselInner = $(idName); // id명 위에 선언한거랑 똑같은지 확인하기
+
+                     if(i ==youtubeImageNumber){
+                     
+                     var itemContent = '<a href="'+ link +'">' +
+                         '<img class="d-block w-100" src="' + img_src + '">' + '</a>'
+                        }
+
+                     else{
+                        itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+                    }
+                     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+                     carouselInner.append(carouselItem);
+                     }
+                 }   
+
+
+        // Call the function to populate the carousel
+        populateCarousel();
+        
+        // 헌금 계좌번호 복사하는 함수
+        function copyText(IdValue) {
+            // "-"를 제외한 텍스트를 가져오기
+            var currentContent = IdValue;
+            var updateContent = currentContent.replace(/-/g,"");
+
+            // 텍스트를 클립보드에 복사
+            var textArea = document.createElement("textarea");
+            textArea.value = updateContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+
+            // 복사 완료 메시지 (원하는 경우 알림창이나 다른 피드백을 사용할 수 있습니다.)
+            alert("복사 완료");
+        }
+
+        /** ------------------------------------ 아동3교구 함수 --------------------------------- */
+
+                 // 아동3 슬라이드-preVer.
         function frame3(length,partName,idName){
             for(var i =201; i<= length; i++){
               var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
@@ -408,34 +308,3 @@
                 carouselInner.append(carouselItem);
             }
         }
-
-        // Call the function to populate the carousel
-        populateCarousel();
-
-        function copyText(IdValue) {
-            // "-"를 제외한 텍스트를 가져오기
-            var currentContent = IdValue;
-            var updateContent = currentContent.replace(/-/g,"");
-
-            // 텍스트를 클립보드에 복사
-            var textArea = document.createElement("textarea");
-            textArea.value = updateContent;
-            document.body.appendChild(textArea);
-            textArea.select();
-            document.execCommand("copy");
-            document.body.removeChild(textArea);
-
-            // 복사 완료 메시지 (원하는 경우 알림창이나 다른 피드백을 사용할 수 있습니다.)
-            alert("복사 완료");
-        }
-
-       
-     
-
-  
-
-
-    
-
-   
-
