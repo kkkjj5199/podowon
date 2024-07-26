@@ -154,7 +154,7 @@
         }
 
         // 아동1
-        frame2(27,'adong1','#1part');
+        frame2(28,'adong1','#1part');
 
         // 아동2
         //frame2(16,'adong2','#2part');
