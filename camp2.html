@@ -134,6 +134,7 @@
                  for (var i = 2; i <= 9; i++) {
                      var img_src = 'asset/image/camp/adong2/' + i + '.webp';
                      var itemContent;
+                     var carouselInner = $("#adong2camppart");
 
                      if(i ==2){
                      var itemContent = '<a href="https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL">' +
@@ -141,6 +142,8 @@
                      else{itemContent = '<img class="d-block w-100" src="' + img_src + '">';}
 
                      $("#adnog2Camp").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+                     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+                     carouselInner.append(carouselItem);
                  }
 
 
