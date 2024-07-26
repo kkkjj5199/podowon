@@ -160,7 +160,7 @@
         frame2(16,'adong1','#1part');
 
         // 아동2
-        frame2(25,'adong2','#2part');
+        //frame2(25,'adong2','#2part');
                  for (var i = 2; i <= 25; i++) {
                      var img_src = 'asset/image/digital_pre/adong2/' + i + '.webp';
                      var itemContent;
