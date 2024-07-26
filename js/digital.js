@@ -153,7 +153,7 @@
         }
 
             /**
-         * 특정 이미지에 Youtube 링크 넣는 방법 ! 
+         * 특정 이미지에 Youtube 링크 넣는 방법 ! 쉬워요 ^^ 필요하신분 참고하세요~! 꼭...
          * 사용하고 있는 frame2 에 주석으로 막기. 주석은    ( // ) <- 표시 입니다.
          * youtubeFrame(총이미지 수 , 링크넣을 이미지 번호, '유튜브 링크' , 'adong1' , '#1part');
          * 
@@ -176,16 +176,16 @@
         //중등부 교구
          frame2(18,'middlepart','#mpart');
 
-      //  고등부 교구
+        //고등부 교구
         frame2(11,'highpart','#hpart');
 
-        //  청년회 교구
+        //청년회 교구
         frame2(14,'caryouth','#youthpart');
 
-        // 여선교회
+        //여선교회
         frame2(8,'woman','#womanpart');
 
-        // 남선교회
+        //남선교회
         frame2(6,'man','#manpart');
 
         //포도원마을소식
