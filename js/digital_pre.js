@@ -160,15 +160,15 @@
         frame2(16,'adong1','#1part');
 
         // 아동2
-        frame2(21,'adong2','#2part');
-             for (var i = 2; i <= 9; i++) {
+        frame2(25,'adong2','#2part');
+             for (var i = 2; i <= 25; i++) {
              var carouselInner = $("#2part");  
              var itemContent;
              var img_src = 'asset/image/digital/adong2/' + i + '.webp'; 
 
              if(i ==2){
                
-                 var itemContent = '<a href="https://youtu.be/b9sGBDbaQBA?si=j3AstaQzx03r-ZjG">' +
+                 var itemContent = '<a href="https://youtu.be/-ndskXoVepE?si=mhFODP5R7tlM7JyT">' +
                  '<img class="d-block w-100" src="' + img_src + '">' +
                  '</a>'
              }else{
