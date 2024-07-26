@@ -138,9 +138,6 @@
     }
 
 
-
-
-
     //인스타로 들어갔을때 배경음악 잠시 멈춤.
     function instaOn(_event) {
         myaudio.pause();
@@ -151,7 +148,6 @@
     // <div>태그 반복문
 
         //말씀
-       
         for (var i = 1; i <=4; i++) {
             var img_src = 'asset/image/common/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
@@ -215,7 +211,7 @@
         //    var itemContent;
 
         //     if (i == 3) {
-        //         frame1('8s_EaTXbreM',3);
+        //         youtube('8s_EaTXbreM',3);
            
         //     }
         //     else {
@@ -244,7 +240,7 @@
         //    var itemContent;
 
         //     if (i === 4) {
-        //         frame1('Crmi85WBTmU',4);
+        //         youtube('Crmi85WBTmU',4);
            
         //     }
         //     else {
@@ -261,14 +257,13 @@
 
 
  // Sample list of image URLs
+
         const advertises = [
         'asset/image/common/ad__p.webp',
         'asset/image/digital/전도.webp',
         'asset/image/digital/일본문화체험.webp',
-      
-              'asset/image/digital/남여선교회중보기도.webp',
-                   'asset/image/digital/청년회.webp',
-
+        'asset/image/digital/남여선교회중보기도.webp',
+        'asset/image/digital/청년회.webp',
         ];
 
 
@@ -349,7 +344,7 @@
         }
 
         // youtube in 슬라이드
-        function frame1(youtube_video_id,i){
+        function gotoYoutube(youtube_video_id,i){
             iframe_id = 'youtube_iframe_' + i;
             youtube_link= 'https://www.youtube.com/embed/' + youtube_video_id + '?autoplay=0';
             itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;" ></iframe>';  
@@ -400,19 +395,14 @@
         // Call the function to populate the carousel
         populateCarousel();
 
-        function copyText() {
+        function copyText(IdValue) {
             // "-"를 제외한 텍스트를 가져오기
-          
-            // var accountNumberText = document.getElementById(accountId).innerText.replace(/-/g, "");
-
-            var textToCopy = document.getElementById("accountId");
-            var currentContent = textToCopy.innerText;
+            var currentContent = IdValue;
             var updateContent = currentContent.replace(/-/g,"");
-            textToCopy.innerText = updateContent;
 
             // 텍스트를 클립보드에 복사
             var textArea = document.createElement("textarea");
-            textArea.value = textToCopy.innerText;
+            textArea.value = updateContent;
             document.body.appendChild(textArea);
             textArea.select();
             document.execCommand("copy");
@@ -422,28 +412,7 @@
             alert("복사 완료");
         }
 
-        function copyText2() {
-            // "-"를 제외한 텍스트를 가져오기
-          
-            // var accountNumberText = document.getElementById(accountId).innerText.replace(/-/g, "");
-
-            var textToCopy = document.getElementById("accountId2");
-            var currentContent = textToCopy.innerText;
-            var updateContent = currentContent.replace(/-/g,"");
-            textToCopy.innerText = updateContent;
-
-            // 텍스트를 클립보드에 복사
-            var textArea = document.createElement("textarea");
-            textArea.value = textToCopy.innerText;
-            document.body.appendChild(textArea);
-            textArea.select();
-            document.execCommand("copy");
-            document.body.removeChild(textArea);
-
-            // 복사 완료 메시지 (원하는 경우 알림창이나 다른 피드백을 사용할 수 있습니다.)
-            alert("복사 완료");
-        }
-
+       
      
 
   

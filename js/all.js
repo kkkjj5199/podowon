@@ -177,14 +177,7 @@
 
         function test() {
             const day = new Date().getDate();
-            // const week = 2;
-            // getISOWeekNumber(day);
-            // console.log(day-14);
-            
-           
-            swiper.slideTo(day+15, 1000, false)
-            
-           
+        swiper.slideTo(day+15, 1000, false)
         }
 
              function frame1(youtube_video_id,i){
@@ -193,13 +186,4 @@
             itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;" ></iframe>';  
         }
 
-
-     
-
-
-
-
-
-
-  
 
