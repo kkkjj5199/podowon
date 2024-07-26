@@ -160,46 +160,47 @@
          * 예시: youtubeFrame(28,3,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong1','#1part');
          */ 
 
-        // 아동1
+        // 아동1교구
         frame2(28,'adong1','#1part');
-    
 
-        // 아동2
+        // 아동2교구
         //frame2(16,'adong2','#2part');
-                 for (var i = 2; i <= 24; i++) {
-                     var img_src = 'asset/image/digital/adong2/' + i + '.webp';
-                     var itemContent;
-                     var carouselInner = $("#2part"); 
+        youtubeFrame(24,2,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong2','#2part');
 
-                     if(i ==2){
+                //  for (var i = 2; i <= 24; i++) {
+                //      var img_src = 'asset/image/digital/adong2/' + i + '.webp';
+                //      var itemContent;
+                //      var carouselInner = $("#2part"); 
 
-                     var itemContent = '<a href="https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL">' +
-                         '<img class="d-block w-100" src="' + img_src + '">' + '</a>'
-                        }
+                //      if(i ==2){
 
-                     else{
-                        itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-                    }
+                //      var itemContent = '<a href="https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL">' +
+                //          '<img class="d-block w-100" src="' + img_src + '">' + '</a>'
+                //         }
+
+                //      else{
+                //         itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+                //     }
 
     
-                     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-                     carouselInner.append(carouselItem); }
+                //      var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+                //      carouselInner.append(carouselItem); }
 
 
 
-        // 아동3
+        // 아동3교구
         frame2(15,'adong3','#3part');
         // frame4(5,'adong3','#3part');
 
         frame3(214,'adong3','#3part');
 
-        //중등부
+        //중등부 교구
          frame2(18,'middlepart','#mpart');
 
-      //  고등부
+      //  고등부 교구
         frame2(11,'highpart','#hpart');
 
-        //  청년회
+        //  청년회 교구
         frame2(14,'caryouth','#youthpart');
 
         // 여선교회
