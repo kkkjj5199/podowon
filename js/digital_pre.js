@@ -161,6 +161,23 @@
 
         // 아동2
         frame2(21,'adong2','#2part');
+             for (var i = 2; i <= 9; i++) {
+             var carouselInner = $("#2part");  
+             var itemContent;
+             var img_src = 'asset/image/digital/adong2/' + i + '.webp'; 
+
+             if(i ==2){
+               
+                 var itemContent = '<a href="https://youtu.be/b9sGBDbaQBA?si=j3AstaQzx03r-ZjG">' +
+                 '<img class="d-block w-100" src="' + img_src + '">' +
+                 '</a>'
+             }else{
+                 itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+             }
+
+             var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+             carouselInner.append(carouselItem);
+         }
 
 
 
