@@ -157,7 +157,25 @@
         frame2(27,'adong1','#1part');
 
         // 아동2
-        frame2(16,'adong2','#2part');
+        //frame2(16,'adong2','#2part');
+                 for (var i = 2; i <= 24; i++) {
+                     var img_src = 'asset/image/digital/adong2/' + i + '.webp';
+                     var itemContent;
+                     var carouselInner = $("#2part"); // id명 위에 선언한거랑 똑같은지 확인하기
+
+                     if(i ==2){
+                     
+                     var itemContent = '<a href="https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL">' +
+                         '<img class="d-block w-100" src="' + img_src + '">' + '</a>'
+                        }
+
+                     else{
+                        itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+                    }
+
+                    //  $("#2part").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+                     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+                     carouselInner.append(carouselItem); }
 
 
 
