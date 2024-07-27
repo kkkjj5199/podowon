@@ -135,7 +135,7 @@
         frame2(11,'highpart','#hpart');
 
         //청년회 교구
-        frame2(14,'caryouth','#youthpart');
+        frame2(10,'caryouth','#youthpart');
 
         //여선교회
         frame2(8,'woman','#womanpart');
@@ -148,7 +148,7 @@
 
         //포도원스토리
         // frame2(28,'pdwstory','#pwdstory');
-        youtubeFrame(28,21,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','pdwstory','#pwdstory');
+        youtubeFrame(35,21,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','pdwstory','#pwdstory');
 
 
         // youtube in 슬라이드
