@@ -148,7 +148,7 @@
 
         //포도원스토리
         // frame2(28,'pdwstory','#pwdstory');
-        youtubeFrame(35,21,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','pdwstory','#pwdstory');
+        youtubeFrame(31,24,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','pdwstory','#pwdstory');
 
 
         // youtube in 슬라이드
