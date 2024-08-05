@@ -44,28 +44,35 @@
 
 <body id="page-top">
     <style>
-        
-@-webkit-keyframes blink-image {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-}
+        @-webkit-keyframes blink-image {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
 
 
-.carousel-control-next-icon {
-        -webkit-animation-direction: normal;
-        -webkit-animation-duration: 1s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-name: blink-image;
-        -webkit-animation-timing-function: ease;
-    }
+        .carousel-control-next-icon {
+            -webkit-animation-direction: normal;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-name: blink-image;
+            -webkit-animation-timing-function: ease;
+        }
     </style>
- <!-- 배경음악 바꾸는법 
+    <!-- 배경음악 바꾸는법 
 1. 바꿀 mp3음원파일 준비
 2. asset/audio/ 경로에 넣기.
 3. 밑에 src 에 파일있는 경로 작성하기
 -->
-    <audio src="asset/audio/기도할래요.mp3" autoplay id="myaudio"></audio>
+
 
     <section class="page-section bg-primary" id="about">
         <div class="container">
@@ -73,19 +80,20 @@
                 <div class="col-lg-8 text-center">
 
                     <!-- 슬라이드 없는 이미지 넣기 -->
-                    <img id="i1" class="d-block w-100" src="asset/image/camp/adong2/1.webp">
+                    <!-- <img id="i1" class="d-block w-100" src="asset/image/camp/adong2/1.webp"> -->
 
-<!-- 슬라이드 있는 이미지 넣기  133라인 for 문 확인하기.-->
+                    <!-- 슬라이드 있는 이미지 넣기  133라인 for 문 확인하기.-->
                     <div id="last" class="carousel slide" data-wrap="false" data-interval="false" data-ride="carousel">
-<!--  id="adnog2Camp" 아이디 확인하기 -->
-                        <div class="carousel-inner" id="adnog2Camp">
+                        <!--  id="adnog2Camp" 아이디 확인하기 -->
+                        <div class="carousel-inner" id="img815">
                             <div class="carousel-item active">
-                               
-                                <img id="i1" class="d-block w-100" src="asset/image/camp/adong2/2.webp" alt="First slide">
-                                
+
+                                <img id="i1" class="d-block w-100" src="asset/image/815/1.webp"
+                                    alt="First slide">
+
 
                             </div>
-        
+
 
                         </div>
                         <a id="last" class="carousel-control-prev" href="#last" role="button" data-slide="prev">
@@ -100,48 +108,32 @@
                                                                                                                                                         <span class="
                                 sr-only">Next</span>
                         </a>
-                    
+
                     </div>
-                    <img id="i1" class="d-block w-100" src="asset/image/camp/adong2/11.webp">
-                    <img id="i1" class="d-block w-100" src="asset/image/camp/adong2/12.webp">
-                    <img id="i1" class="d-block w-100" src="asset/image/camp/adong2/13.webp">
-                    <img id="i1" class="d-block w-100" src="asset/image/camp/adong2/14.webp">
-                    <img id="i1" class="d-block w-100" src="asset/image/camp/adong2/15.webp">
-                    <!-- <img id="i1" class="d-block w-100" src="asset/image/camp/adong2/7.webp"> -->
-                    <!-- <img id="i1" class="d-block w-100" src="asset/image/camp/adong2/8.webp"> -->                        
+                    
+
+                </div>
             </div>
+
+
+
+            <div class="small text-center text-muted">Copyright © 포도원감리교회</div>
         </div>
 
-
-    
-        <div class="small text-center text-muted">Copyright © 포도원감리교회</div>
-    </div>
-
-</section>
+    </section>
 
 
 
     <script>
         // 슬라이드 이미지 사용
-                 for (var i = 3; i <= 10; i++) {
-                     var img_src = 'asset/image/camp/adong2/' + i + '.webp';
-                     var itemContent;
-                     var carouselInner = $("#adnog2Camp"); // id명 위에 선언한거랑 똑같은지 확인하기
-
-                     if(i ==3){
-                     
-                     var itemContent = '<a href="https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL">' +
-                         '<img class="d-block w-100" src="' + img_src + '">' + '</a>'
-                        }
-
-                     else{
-                        itemContent = '<img class="d-block w-100" src="' + img_src + '">';
-                    }
-
-                    //  $("#adnog2Camp").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
-                     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
-                     carouselInner.append(carouselItem);
-                 }
+        for (var i = 2; i <= 20; i++) {
+            var img_src = 'asset/image/815/' + i + '.webp';
+            var itemContent;
+            var carouselInner = $("#img815"); // id명 위에 선언한거랑 똑같은지 확인하기
+            itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+            var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+            carouselInner.append(carouselItem);
+        }
 
 
 
