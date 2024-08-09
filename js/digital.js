@@ -144,7 +144,7 @@
         frame2(5,'man','#manpart');
 
         //포도원마을소식
-        frame2(7,'notice','#notice');
+        frame2(6,'notice','#notice');
 
         //포도원스토리
         // frame2(28,'pdwstory','#pwdstory');
