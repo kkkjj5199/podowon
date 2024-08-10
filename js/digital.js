@@ -124,7 +124,7 @@
 
         // 아동3교구
         // frame2(14,'adong3','#3part');
-        frame4(30,'adong3','#3part');
+        frame4(31,'adong3','#3part');
 
         frame3(214,'adong3','#3part');
 
