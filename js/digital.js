@@ -177,7 +177,7 @@
                      if(i ==youtubeImageNumber){
                      
                      var itemContent = '<a href="'+ link +'">' +
-                         '<img class="d-block w-100" src="' + img_src + '">' + '</a>'
+                         '<img class="d-block w-100" src="' + img_src + '" style="animation: blink 3s infinite;">' + '</a>'
                         }
 
                      else{
