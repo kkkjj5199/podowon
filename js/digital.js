@@ -133,7 +133,7 @@
          youtubeFrame(18,5,'https://youtu.be/QooOc7YYOlQ?si=7X0ucqNwybgE7WsU','adong2','#2part');
 
         //고등부 교구
-        frame2(18,'highpart','#hpart');
+        frame2(11,'highpart','#hpart');
 
         //청년회 교구
         frame2(20,'caryouth','#youthpart');
