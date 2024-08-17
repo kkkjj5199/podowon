@@ -129,7 +129,8 @@
         frame3(214,'adong3','#3part');
 
         //중등부 교구
-         frame2(18,'middlepart','#mpart');
+        // frame2(18,'middlepart','#mpart');
+         youtubeFrame(18,5,'https://youtu.be/QooOc7YYOlQ?si=7X0ucqNwybgE7WsU','adong2','#2part');
 
         //고등부 교구
         frame2(18,'highpart','#hpart');
