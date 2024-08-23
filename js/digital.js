@@ -116,7 +116,7 @@
          */ 
 
         // 아동1교구
-        frame2(17,'adong1','#1part');
+        frame2(15,'adong1','#1part');
 
         // 아동2교구
         //frame2(26,'adong2','#2part');
@@ -145,11 +145,11 @@
         frame2(4,'man','#manpart');
 
         //포도원마을소식
-        frame2(4,'notice','#notice');
+        frame2(7,'notice','#notice');
 
         //포도원스토리
         // frame2(35,'pdwstory','#pwdstory');
-        youtubeFrame(19,13,'https://youtu.be/QooOc7YYOlQ?si=7X0ucqNwybgE7WsU','pdwstory','#pwdstory');
+        youtubeFrame(9,4,'https://youtu.be/YPquqPUahFM?si=zKyz4aIwhJpzXhEL','pdwstory','#pwdstory');
 
 
         // youtube in 슬라이드
