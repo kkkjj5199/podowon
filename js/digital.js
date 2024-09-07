@@ -132,7 +132,7 @@
         frame2(13,'middlepart','#mpart');
         
         //고등부 교구
-        frame2(13,'highpart','#hpart');
+        frame2(11,'highpart','#hpart');
 
         //청년회 교구
         frame2(4,'caryouth','#youthpart');
