@@ -190,7 +190,7 @@
 
 
         // Call the function to populate the carousel
-        populateCarousel();
+        // populateCarousel();
         
         // 헌금 계좌번호 복사하는 함수
         function copyText(IdValue) {
