@@ -659,10 +659,31 @@
 
 
     <!-- kakao map js   -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+
     <script type="text/javascript"
         src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bcb5777161b2bdc709a97c931910b27c"></script>
     <script type="text/javascript"
         src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bcb5777161b2bdc709a97c931910b27c"></script>
+
+
+        <script>
+            window.onload = function () {
+                if (!Kakao.isInitialized()) {
+                    Kakao.init('cb5777161b2bdc709a97c931910b27c');
+                }
+
+                // Kakao API 호출 코드 작성
+                Kakao.Auth.login({
+                    success: function (authObj) {
+                        console.log(authObj);
+                    },
+                    fail: function (err) {
+                        console.error(err);
+                    }
+                });
+            };
+        </script>
 
     <!--  my js  -->
     <script src="js/digital.js"></script>
