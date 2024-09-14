@@ -102,7 +102,7 @@
 
 
         //말씀
-        for (var i = 1; i <=4; i++) {
+        for (var i = 1; i <=5; i++) {
             var img_src = 'asset/image/common/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -116,7 +116,7 @@
          */ 
 
         // 아동1교구
-        frame2(16,'adong1','#1part');
+        frame2(23,'adong1','#1part');
 
         // 아동2교구
         frame2(16,'adong2','#2part');
@@ -144,11 +144,11 @@
         frame2(4,'man','#manpart');
 
         //포도원마을소식
-        frame2(8,'notice','#notice');
+        frame2(6,'notice','#notice');
 
         //포도원스토리
-        // frame2(35,'pdwstory','#pwdstory');
-        youtubeFrame(9,4,'https://youtu.be/YPquqPUahFM?si=zKyz4aIwhJpzXhEL','pdwstory','#pwdstory');
+        frame2(34,'pdwstory','#pwdstory');
+        // youtubeFrame(9,4,'pdwstory','#pwdstory');
 
 
         // youtube in 슬라이드
