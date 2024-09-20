@@ -144,10 +144,10 @@
         frame2(4,'man','#manpart');
 
         //포도원마을소식
-        frame2(7,'notice','#notice');
+        frame2(5,'notice','#notice');
 
         //포도원스토리
-        frame2(34,'pdwstory','#pwdstory');
+        frame2(10,'pdwstory','#pwdstory');
         // youtubeFrame(9,4,'pdwstory','#pwdstory');
 
 
