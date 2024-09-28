@@ -129,7 +129,7 @@
         frame3(214,'adong3','#3part');
 
         //중등부 교구
-        frame2(23,'middlepart','#mpart');
+        frame2(20,'middlepart','#mpart');
         
         //고등부 교구
         frame2(12,'highpart','#hpart');
