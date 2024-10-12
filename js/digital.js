@@ -147,7 +147,7 @@
         frame2(8,'notice','#notice');
 
         //포도원스토리
-        frame2(29,'pdwstory','#pwdstory');
+        frame2(14,'pdwstory','#pwdstory');
         // youtubeFrame(9,4,'pdwstory','#pwdstory');
 
 
