@@ -123,8 +123,8 @@
         //youtubeFrame(29,7,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong2','#2part');
 
         // 아동3교구
-        frame2(12,'adong3','#3part');
-        // frame4(5,'adong3','#3part');
+        // frame2(12,'adong3','#3part');
+        frame4(12,'adong3','#3part');
 
         frame3(203,'adong3','#3part');
 
@@ -223,13 +223,13 @@
 
         // 아동3 유튜브
         function frame4(length, partName, idName) {
-            for (var i = 2; i <= length; i++) {
+            for (var i = 1; i <= length; i++) {
                 var carouselInner = $("#3part");
                 var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
                 var itemContent;
                 
-                if (i === 5) {
-                    var itemContent = '<a href="https://youtube.com/shorts/Xd0n6E89Ovw?si=YcLULaz0XUird7P4">' +
+                if (i === 1) {
+                    var itemContent = '<a href="https://youtu.be/gzqfucbPJGg?si=BAci2l3s9O50PGJ4">' +
                    '<img class="d-block w-100" src="' + img_src + '">' +
                    '</a>'
                 // } else if (i === 4) {
