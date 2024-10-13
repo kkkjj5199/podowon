@@ -223,7 +223,7 @@
 
         // 아동3 유튜브
         function frame4(length, partName, idName) {
-            for (var i = 1; i <= length; i++) {
+            for (var i = 0; i <= length; i++) {
                 var carouselInner = $("#3part");
                 var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
                 var itemContent;
