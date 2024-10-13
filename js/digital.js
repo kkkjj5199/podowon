@@ -124,7 +124,7 @@
 
         // 아동3교구
         // frame2(12,'adong3','#3part');
-        frame4(12,'adong3','#3part');
+        frame4(13,'adong3','#3part');
 
         frame3(203,'adong3','#3part');
 
@@ -223,7 +223,7 @@
 
         // 아동3 유튜브
         function frame4(length, partName, idName) {
-            for (var i = 0; i <= length; i++) {
+            for (var i = 2; i <= length; i++) {
                 var carouselInner = $("#3part");
                 var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
                 var itemContent;
