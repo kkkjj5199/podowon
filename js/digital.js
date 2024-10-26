@@ -116,7 +116,7 @@
          */ 
 
         // 아동1교구
-        frame2(30,'adong1','#1part');
+        frame2(24,'adong1','#1part');
 
         // 아동2교구
         frame2(22,'adong2','#2part');
@@ -145,10 +145,20 @@
 
         //포도원마을소식
         frame2(6,'notice','#notice');
+        
 
         //포도원스토리
-        frame2(16,'pdwstory','#pwdstory');
-        // youtubeFrame(9,4,'pdwstory','#pwdstory');
+
+        //  only 24.10.27 일 기준  10.11.12webp 에 각각 다른 링크 삽입. 
+        let numberList = [10,11,12];
+        let linkList =['https://youtu.be/qMs-QpbTKxg?si=RTIjKtAN2x6CMa4u',  //감사권면
+            'https://youtu.be/Q3Izgz7nRTs?si=pi6occUUIO16Jfmv', // 연혁,,
+            'https://youtu.be/62mekBR9Jj8?si=djquWyFtHZ_RaBp3' ,//37주년 감사영상
+
+        ]
+        // frame2(16,'pdwstory','#pwdstory');
+        youtubeFrameList(23,numberList,linkList,'pdwstory','#pdwstory'); //감사권면영상
+   // 연혁영상
 
 
         // youtube in 슬라이드
@@ -166,15 +176,16 @@
             }
             
         }
-
+       
         // 특정 이미지에 유튜브 링크 삽입 한 후 슬라이드 생성 프레임
         function youtubeFrame(length,youtubeImageNumber,link, partName,idName){
+
              for (var i = 2; i <= length; i++) {
                      var img_src = 'asset/image/digital/'+partName+ '/'  + i + '.webp';
                      var itemContent;
                      var carouselInner = $(idName); // id명 위에 선언한거랑 똑같은지 확인하기
 
-                     if(i ==youtubeImageNumber){
+                     if(i ==youtubeImageNumber || 11 || 12){
                      
                      var itemContent = '<a href="'+ link +'">' +
                          '<img class="d-block w-100" src="' + img_src + '" style="animation: blink 3s infinite;">' + '</a>'
@@ -187,6 +198,34 @@
                      carouselInner.append(carouselItem);
                      }
                  }   
+
+
+
+
+        //영상 1개이상 대입해야 할때 영상링크 List안에 담아서 받아오는 부분
+        function youtubeFrameList(length,numberList,linkList, partName,idName){
+            
+             for (var i = 2; i <= length; i++) {
+                     var img_src = 'asset/image/digital/'+partName+ '/'  + i + '.webp';
+                     var itemContent;
+                     var carouselInner = $(idName); // id명 위에 선언한거랑 똑같은지 확인하기
+
+                     var index = numberList.indexOf(i);
+                     if (index !== -1) {
+                            var link = linkList[index];
+                            itemContent = '<a href="' + link + '">' +
+                                '<img class="d-block w-100" src="' + img_src + '" style="animation: blink 3s infinite;">' + '</a>';
+                        } else {
+                            // 그 외의 경우 기본 이미지로 표시
+                            itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+                        }
+
+
+                     var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
+                     carouselInner.append(carouselItem);
+                     }
+                 }   
+         
 
 
         // Call the function to populate the carousel
