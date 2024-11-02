@@ -116,7 +116,7 @@
          */ 
 
         // 아동1교구
-        frame2(30,'adong1','#1part');
+        frame2(22,'adong1','#1part');
 
         // 아동2교구
         frame2(23,'adong2','#2part');
@@ -144,21 +144,20 @@
         frame2(5,'man','#manpart');
 
         //포도원마을소식
-        frame2(5,'notice','#notice');
+        frame2(8,'notice','#notice');
         
 
-        //포도원스토리
+      
 
-        //  only 24.10.27 일 기준  10.11.12webp 에 각각 다른 링크 삽입. 
-        let numberList = [10,11,12];
-        let linkList =['https://youtu.be/qMs-QpbTKxg?si=RTIjKtAN2x6CMa4u',  //감사권면
-            'https://youtu.be/Q3Izgz7nRTs?si=pi6occUUIO16Jfmv', // 연혁,,
-            'https://youtu.be/62mekBR9Jj8?si=djquWyFtHZ_RaBp3' ,//37주년 감사영상
+        //  영상이 1개이상일때 리스트에 담아서 보내기.
+        // let numberList = [];
+        // let linkList =[]
+        // youtubeFrameList(23,numberList,linkList,'pdwstory','#pdwstory'); 
 
-        ]
-        // frame2(16,'pdwstory','#pwdstory');
-        youtubeFrameList(23,numberList,linkList,'pdwstory','#pdwstory'); //감사권면영상
-   // 연혁영상
+     //포도원스토리
+        frame2(16,'pdwstory','#pwdstory');
+  
+
 
 
         // youtube in 슬라이드
