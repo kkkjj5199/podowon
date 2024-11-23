@@ -116,7 +116,7 @@
          */ 
 
         // 아동1교구
-        frame2(22,'adong1','#1part');
+        frame2(29,'adong1','#1part');
 
         // 아동2교구
         frame2(20,'adong2','#2part');
@@ -155,7 +155,7 @@
         // youtubeFrameList(23,numberList,linkList,'pdwstory','#pdwstory'); 
 
      //포도원스토리
-        frame2(9,'pdwstory','#pdwstory');
+        frame2(17,'pdwstory','#pdwstory');
   
 
 
