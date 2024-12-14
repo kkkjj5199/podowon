@@ -141,7 +141,7 @@
         frame2(5,'woman','#womanpart');
 
         //남선교회
-        frame2(7,'man','#manpart');
+        frame2(4,'man','#manpart');
 
         //포도원마을소식
         frame2(10,'notice','#notice');
