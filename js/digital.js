@@ -155,7 +155,7 @@
         // youtubeFrameList(23,numberList,linkList,'pdwstory','#pdwstory'); 
 
      //포도원스토리
-        frame2(4,'pdwstory','#pdwstory');
+        frame2(6,'pdwstory','#pdwstory');
   
 
 
