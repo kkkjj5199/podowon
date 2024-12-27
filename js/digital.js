@@ -135,7 +135,7 @@
         frame2(10,'highpart','#hpart');
 
         //청년회 교구
-        frame2(2,'caryouth','#youthpart');
+        frame2(1,'caryouth','#youthpart');
 
         //여선교회
         frame2(3,'woman','#womanpart');
