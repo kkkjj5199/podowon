@@ -141,9 +141,8 @@
         frame2(3,'woman','#womanpart');
 
         //남선교회
-        frame2(1,'man','#manpart');
+        frame2(2,'man','#manpart');
        
-      
             // gotoYoutube("CGBSXJGD5P8vQyr0")
         //포도원마을소식
         frame2(8,'notice','#notice');
