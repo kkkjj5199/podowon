@@ -116,7 +116,7 @@
          */ 
 
         // 아동1교구
-        frame2(21,'adong1','#1part');
+        frame2(2,'adong1','#1part');
 
         // 아동2교구
         frame2(20,'adong2','#2part');
@@ -132,7 +132,9 @@
         frame2(7,'middlepart','#mpart');
         
         //고등부 교구
-        frame2(20,'highpart','#hpart');
+        // frame2(20,'highpart','#hpart');
+        youtubeFrame(20,20,'https://youtu.be/RDD5PTb9acs?si=nQYs5KKvBtuJJbg2','highpart','#hpart');
+         
 
         //청년회 교구
         frame2(8,'caryouth','#youthpart');
@@ -144,7 +146,7 @@
         frame2(1,'man','#manpart');
 
       
-        gotoYoutube("CGBSXJGD5P8vQyr0")
+        // gotoYoutube("CGBSXJGD5P8vQyr0")
         //포도원마을소식
         frame2(9,'notice','#notice');
         
@@ -157,7 +159,7 @@
         // youtubeFrameList(23,numberList,linkList,'pdwstory','#pdwstory'); 
 
      //포도원스토리
-        frame2(14,'pdwstory','#pdwstory');
+        frame2(11,'pdwstory','#pdwstory');
   
 
 
@@ -186,7 +188,7 @@
                      var itemContent;
                      var carouselInner = $(idName); // id명 위에 선언한거랑 똑같은지 확인하기
 
-                     if(i ==youtubeImageNumber || 11 || 12){
+                     if(i ==youtubeImageNumber){
                      
                      var itemContent = '<a href="'+ link +'">' +
                          '<img class="d-block w-100" src="' + img_src + '" style="animation: blink 3s infinite;">' + '</a>'
