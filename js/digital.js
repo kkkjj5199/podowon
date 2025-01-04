@@ -135,7 +135,7 @@
         frame2(20,'highpart','#hpart');
 
         //청년회 교구
-        frame2(1,'caryouth','#youthpart');
+        frame2(8,'caryouth','#youthpart');
 
         //여선교회
         frame2(3,'woman','#womanpart');
@@ -144,9 +144,9 @@
         frame2(1,'man','#manpart');
 
       
-            gotoYoutube("CGBSXJGD5P8vQyr0")
+        gotoYoutube("CGBSXJGD5P8vQyr0")
         //포도원마을소식
-        frame2(8,'notice','#notice');
+        frame2(9,'notice','#notice');
         
 
       

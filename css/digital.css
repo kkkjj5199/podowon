@@ -291,7 +291,7 @@
 background-color: #60BD89;
 }
 #kids3 {
-background-color: #4c77af;
+background-color: #FF4500;
 }
 #middle {
 background-color: #87CEFA;
@@ -303,10 +303,10 @@ background-color: #DC6093;
     background-color: #FFC81E;
 }
 #wpo {
-    background-color: #800000;
+    background-color: #9932CC;
 }
 #mpo {
-    background-color: #3C3C8C;
+    background-color: #FF7F50;
    
 }
 
@@ -355,8 +355,8 @@ background-color: #DC6093;
       bottom: 10px;
       left: 50%;
       transform: translate(-50%,130%);
-      background-color: #4CAF50;
-      color: white;
+      background-color: #FFFFF0;
+      color: black;
       font-size: 15px;
       padding: 10px;
       border: none;
