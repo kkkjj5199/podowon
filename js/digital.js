@@ -133,7 +133,6 @@
         
         //고등부 교구
         // frame2(26,'highpart','#hpart');
-        youtubeFrame(20,20,'https://youtu.be/RDD5PTb9acs?si=nQYs5KKvBtuJJbg2','highpart','#hpart');
          
 
         //청년회 교구
