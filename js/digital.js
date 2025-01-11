@@ -132,7 +132,7 @@
         frame2(7,'middlepart','#mpart');
         
         //고등부 교구
-        // frame2(20,'highpart','#hpart');
+        // frame2(26,'highpart','#hpart');
         youtubeFrame(20,20,'https://youtu.be/RDD5PTb9acs?si=nQYs5KKvBtuJJbg2','highpart','#hpart');
          
 
