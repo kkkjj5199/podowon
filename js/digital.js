@@ -123,7 +123,7 @@
         //youtubeFrame(29,7,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong2','#2part');
 
         // 아동3교구
-        frame2(9,'adong3','#3part');
+        frame2(13,'adong3','#3part');
         // frame4(13,'adong3','#3part');
 
         frame3(209,'adong3','#3part');
@@ -256,7 +256,7 @@
 
                  // 아동3 슬라이드-preVer.
         function frame3(length,partName,idName){
-            for(var i =201; i<= length; i++){
+            for(var i =200; i<= length; i++){
               var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
                $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
             }
