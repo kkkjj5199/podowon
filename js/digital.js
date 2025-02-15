@@ -148,7 +148,7 @@
       
         // gotoYoutube("CGBSXJGD5P8vQyr0")
         //포도원마을소식
-        frame2(8,'notice','#notice');
+        frame2(6,'notice','#notice');
         
 
       
@@ -159,7 +159,9 @@
         // youtubeFrameList(23,numberList,linkList,'pdwstory','#pdwstory'); 
 
      //포도원스토리
-        frame2(15,'pdwstory','#pdwstory');
+        // frame2(15,'pdwstory','#pdwstory');
+          youtubeFrame(23,14,'https://youtu.be/kpW4y9cV1Gg?si=y4-kTXAxQ5aUco5V','pdwstory','#pdwstory');
+        
   
 
 
