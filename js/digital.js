@@ -140,7 +140,7 @@
         youtubeFrame(20,20,'https://youtu.be/kpW4y9cV1Gg?si=y4-kTXAxQ5aUco5V','middlepart','#mpart');
         
         //고등부 교구
-        frame2(20,'highpart','#hpart');
+        frame2(21,'highpart','#hpart');
          
 
         //청년회 교구
