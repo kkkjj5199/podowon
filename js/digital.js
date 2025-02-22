@@ -107,6 +107,11 @@
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
 
+          for (var i = 1; i <=4; i++) {
+            var img_src = 'asset/image/notice/' + i + '.webp';
+              $("#new").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
+        }
+
             /**
          * 특정 이미지에 Youtube 링크 넣는 방법 ! 쉬워요 ^^ 필요하신분 참고하세요~! 꼭...
          * 사용하고 있는 frame2 에 주석으로 막기. 주석은    ( // ) <- 표시 입니다.
@@ -151,7 +156,7 @@
         // gotoYoutube("CGBSXJGD5P8vQyr0")
         //포도원마을소식
         frame2(9,'notice','#notice');
-        
+        frame2(9,'notice','#new');
 
       
 
@@ -165,7 +170,7 @@
           youtubeFrame(23,14,'https://youtu.be/kpW4y9cV1Gg?si=y4-kTXAxQ5aUco5V','pdwstory','#pdwstory');
         
   
-
+     
 
 
         // youtube in 슬라이드
