@@ -152,7 +152,7 @@
         // gotoYoutube("CGBSXJGD5P8vQyr0")
         //포도원마을소식
         frame2(9,'notice','#notice');
-        frame2(4,'new','#new');
+        frame2(3,'new','#new');
    
 //  frame2(4,'notice','#new');
       

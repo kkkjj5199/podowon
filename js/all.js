@@ -151,7 +151,7 @@
         }
         
         
-        for (var i = 1; i <=29; i++) {
+        for (var i = 1; i <=41; i++) {
             var img_src = 'asset/image/묵상집/' + i + '.webp';
               $("#MSJ").append('<div class="swiper-slide" > <img   src=' + img_src + '></div>');
         }
