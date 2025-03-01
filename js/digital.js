@@ -140,7 +140,7 @@
          
 
         //청년회 교구
-        frame2(27,'caryouth','#youthpart');
+        frame2(29,'caryouth','#youthpart');
 
         //여선교회
         frame2(4,'woman','#womanpart');
@@ -163,7 +163,7 @@
         // youtubeFrameList(23,numberList,linkList,'pdwstory','#pdwstory'); 
 
      //포도원스토리
-        frame2(36,'pdwstory','#pdwstory');
+        frame2(38,'pdwstory','#pdwstory');
           
         
   
