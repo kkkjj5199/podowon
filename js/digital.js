@@ -146,7 +146,7 @@
         frame2(4,'woman','#womanpart');
 
         //남선교회
-        frame2(4,'man','#manpart');
+        frame2(5,'man','#manpart');
 
       
         // gotoYoutube("CGBSXJGD5P8vQyr0")
