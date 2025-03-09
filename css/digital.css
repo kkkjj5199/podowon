@@ -218,7 +218,6 @@
 .button-container {
     position: absolute;
     bottom: 100px;
-    margin-bottom: 200px;
     /* 아래 여백 조절 */
     left: 50%;
     /* 가운데 정렬을 위해 왼쪽 위치 조절 */
