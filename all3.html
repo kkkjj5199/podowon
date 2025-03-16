@@ -35,9 +35,8 @@
             background-image: url("../asset/image/arrow.png");
 
         }
-
         #today {
-            margin: 10px;
+            margin:10px;
         }
     </style>
 
@@ -78,8 +77,8 @@
                 <div class="col-lg-8 text-center">
 
                     <!-- <button type="button" class="btn btn-outline-warning" onclick="test()">오늘 날짜 묵상집 보기</button> -->
-                    <button type="button" class="btn btn-outline-warning" id="today" onclick="test()">오늘의
-                        묵상 보기</button>
+<button type="button" class="btn btn-outline-warning" id="today" onclick="test()">오늘의
+    묵상 보기</button>
                     <div class="swiper-container">
                         <div class="swiper-wrapper" id="MSJ">
 
@@ -91,63 +90,25 @@
                         <div class="swiper-button-prev">
                             <img src="asset/image/back-arrow.png" class="mainImage">
                         </div>
-                        <!-- <div class="swiper-pagination"></div> -->
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+
+
+
+
+
+                        <div class="small text-center text-muted">Copyright © 포도원감리교회</div>
                     </div>
 
 
 
 
 
-                    <div class="small text-center text-muted">Copyright © 포도원감리교회</div>
                 </div>
-
-
-
-
-
             </div>
-        </div>
     </section>
 
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // swiper를 전역 변수로 선언
-        window.swiper = new Swiper(".swiper-container", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            loop: true, // 슬라이드 반복 활성화
-            loopAdditionalSlides: 1,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            effect: 'fade',
-            speed: 1900,
-            fadeEffect: { crossFade: true },
-        });
-    });
-
-    // test 함수가 전역에서도 swiper 객체를 사용할 수 있도록 window.swiper 사용
-    function test() {
-        if (!window.swiper) {
-            console.error("Swiper가 아직 초기화되지 않았습니다!");
-            return;
-        }
-
-        const today = new Date().getDate();
-        const totalSlides = document.querySelectorAll('.swiper-slide').length;
-
-        // 슬라이드 인덱스가 0 이상인지 확인
-        let targetIndex = Math.max(0, today - 1);
-
-        // 슬라이드 범위를 초과하지 않도록 조정
-        targetIndex = Math.min(targetIndex, totalSlides - 1);
-
-        console.log("이동할 슬라이드 인덱스:", targetIndex);
-        window.swiper.slideTo(targetIndex, 1000, false);
-    }
-    </script>
 
 
     <!-- kakao map js   -->
@@ -166,12 +127,42 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <!-- uikit-->
-    <!-- <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script> -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
 
     <!-- swiper.js -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <script>
+
+        var swiper = new Swiper(".swiper-container", {
+            spaceBetween: 30,
+            loop: true,
+            centeredSlides: true,
+            loop: false,   // 슬라이드 반복 여부
+            loopAdditionalSlides: 1,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            effect: 'fade',
+            speed: 1900,
+            fadeEffect: { crossFade: true },
+
+
+        });
+
+        function test() {
+             const day = new Date().getDate();
+            console.log(day);
+            swiper.slideTo(day-5
+                , 1000, false)
+        
+        }
+
+
+
+    </script>
 
 
 
