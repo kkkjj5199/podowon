@@ -120,7 +120,7 @@
         frame2(28,'adong1','#1part');
 
         // 아동2교구
-        frame2(24,'adong2','#2part');
+        frame2(23,'adong2','#2part');
         //youtubeFrame(29,7,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong2','#2part');
 
         // 아동3교구
