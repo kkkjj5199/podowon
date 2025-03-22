@@ -124,8 +124,8 @@
         //youtubeFrame(29,7,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong2','#2part');
 
         // 아동3교구
-        frame2(19,'adong3','#3part');
-        // frame4(18,'adong3','#3part');
+        // frame2(19,'adong3','#3part');
+        frame4(20,'adong3','#3part');
 
         frame5(119,'adong3','#3part');
         frame3(209,'adong3','#3part');
@@ -287,7 +287,7 @@
                 var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
                 var itemContent;
                 
-                if (i === 18) {
+                if (i === 20) {
                     var itemContent = '<a href="https://youtu.be/EYsi7MPfyjY">' +
                    '<img class="d-block w-100" src="' + img_src + '">' +
                    '</a>'
