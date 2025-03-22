@@ -273,7 +273,7 @@
 
                  // 아동3 슬라이드-preVer.
         function frame5(length,partName,idName){
-            for(var i =100; i<= length; i++){
+            for(var i =101; i<= length; i++){
               var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
                $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
             }
