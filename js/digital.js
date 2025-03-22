@@ -132,8 +132,8 @@
 
 
         //중등부 교구
-        // frame2(14,'middlepart','#mpart');
-        youtubeFrame(14,6,'https://youtu.be/9miom8GceqE?si=fI2oKX78jw-PkPew','middlepart','#mpart');
+        frame2(24,'middlepart','#mpart');
+        //youtubeFrame(14,6,'https://youtu.be/9miom8GceqE?si=fI2oKX78jw-PkPew','middlepart','#mpart');
         
         //고등부 교구
         frame2(19,'highpart','#hpart');
