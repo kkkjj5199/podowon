@@ -143,7 +143,7 @@
         frame2(7,'caryouth','#youthpart');
 
         //여선교회
-        frame2(10,'woman','#womanpart');
+        frame2(15,'woman','#womanpart');
 
         //남선교회
         frame2(4,'man','#manpart');
