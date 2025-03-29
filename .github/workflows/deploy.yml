@@ -27,7 +27,7 @@ jobs:
       - name: Copy latest version to root   
         run: |
           cp dist/${{ env.DATE }}/index.html dist/index.html
-          cp -r dist/${{ env.DATE }}/assets dist/assets
+          cp -r dist/${{ env.DATE }}/asset dist/asset
           cp -r dist/${{ env.DATE }}/js dist/js
           cp -r dist/${{ env.DATE }}/css dist/css
           
