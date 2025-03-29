@@ -151,7 +151,7 @@
       
         // gotoYoutube("CGBSXJGD5P8vQyr0")
         //포도원마을소식
-        frame2(7,'notice','#notice');
+        frame2(6,'notice','#notice');
 
         // 새가족
         frame2(1,'new','#new');
@@ -165,7 +165,7 @@
         // youtubeFrameList(23,numberList,linkList,'pdwstory','#pdwstory'); 
 
      //포도원스토리
-        frame2(8,'pdwstory','#pdwstory');
+        frame2(6,'pdwstory','#pdwstory');
           
         
   
