@@ -20,7 +20,7 @@ jobs:
         run: |
           mkdir -p dist/${{ env.DATE }}
           cp digital.html dist/${{ env.DATE }}/index.html
-          cp -r assets dist/${{ env.DATE }}/assets
+          cp -r assets dist/${{ env.DATE }}/asset
           cp -r js dist/${{ env.DATE }}/js
           cp -r css dist/${{ env.DATE }}/css
 
