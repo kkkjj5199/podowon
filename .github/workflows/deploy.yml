@@ -1,0 +1,34 @@
+name: Weekly Deploy to Cloudflare Pages
+
+on:
+  schedule:
+    - cron: '0 6 * * 6'  # 매주 토요일 오후 3시 (KST)
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set current date (YYYY-MM-DD)
+        id: date
+        run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Prepare deployment folder
+        run: |
+          mkdir -p dist/${{ env.DATE }}
+          cp digital.html dist/${{ env.DATE }}/index.html
+          cp -r assets dist/${{ env.DATE }}/assets
+          cp -r js dist/${{ env.DATE }}/js
+          cp -r css dist/${{ env.DATE }}/css
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: podowon
+          directory: ./dist
+
