@@ -288,7 +288,7 @@
                 var itemContent;
                 
                 if (i === 12) {
-                    var itemContent = '<a href="https://youtu.be/EYsi7MPfyjY">' +
+                    var itemContent = '<a href="https://www.youtube.com/watch?v=_ed4d40zyno">' +
                    '<img class="d-block w-100" src="' + img_src + '">' +
                    '</a>'
                 // } else if (i === 4) {
