@@ -102,7 +102,7 @@
 
 
         //말씀
-        for (var i = 1; i <=3; i++) {
+        for (var i = 1; i <=4; i++) {
             var img_src = 'asset/image/common/pre_' + i + '.webp';
               $("#pres").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
@@ -140,7 +140,7 @@
          
 
         //청년회 교구
-        frame2(11,'caryouth','#youthpart');
+        frame2(20,'caryouth','#youthpart');
 
         //여선교회
         frame2(8,'woman','#womanpart');
@@ -154,7 +154,7 @@
         frame2(5,'notice','#notice');
 
         // 새가족
-        frame2(2,'new','#new');
+        frame2(1,'new','#new');
    
 //  frame2(4,'notice','#new');
       
@@ -165,7 +165,7 @@
         // youtubeFrameList(23,numberList,linkList,'pdwstory','#pdwstory'); 
 
      //포도원스토리
-        frame2(10,'pdwstory','#pdwstory');
+        frame2(17,'pdwstory','#pdwstory');
           
         
   
