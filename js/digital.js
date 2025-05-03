@@ -117,7 +117,7 @@
          */ 
 
         // 아동1교구
-        frame2(41,'adong1','#1part');
+        frame2(31,'adong1','#1part');
 
         // 아동2교구
         frame2(24,'adong2','#2part');
@@ -151,7 +151,7 @@
       
         // gotoYoutube("CGBSXJGD5P8vQyr0")
         //포도원마을소식
-        frame2(5,'notice','#notice');
+        frame2(6,'notice','#notice');
 
         // 새가족
         frame2(1,'new','#new');
