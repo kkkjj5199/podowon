@@ -124,8 +124,8 @@
         //youtubeFrame(29,7,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong2','#2part');
 
         // 아동3교구
-        // frame2(20,'adong3','#3part');
-        frame4(17,'adong3','#3part');
+        frame2(17,'adong3','#3part');
+        // frame4(17,'adong3','#3part');
 
         frame5(119,'adong3','#3part');
         frame3(209,'adong3','#3part');
