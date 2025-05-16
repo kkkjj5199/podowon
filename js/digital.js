@@ -112,50 +112,64 @@
          * 특정 이미지에 Youtube 링크 넣는 방법 ! 쉬워요 ^^ 필요하신분 참고하세요~! 꼭...
          * 사용하고 있는 frame2 에 주석으로 막기. 주석은    ( // ) <- 표시 입니다.
          * youtubeFrame(총이미지 수 , 링크넣을 이미지 번호, '유튜브 링크' , 'adong1' , '#1part');
-         *
+         * 
          * 예시: youtubeFrame(28,3,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong1','#1part');
-         */
+         */ 
 
-            // 아동1교구
-            frameAuto('adong1', '#1part');
+        // 아동1교구
+        frame2(30,'adong1','#1part');
 
-            // 아동2교구
-            frameAuto('adong2', '#2part');
+        // 아동2교구
+        frame2(23,'adong2','#2part');
+        //youtubeFrame(29,7,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong2','#2part');
 
-            // 아동3교구
-            frameAuto('adong3', '#3part');
+        // 아동3교구
+        frame2(10,'adong3','#3part');
+        // frame4(17,'adong3','#3part');
 
-            // 중등부
-            frameAuto('middlepart', '#mpart');
-
-            // 고등부
-            frameAuto('highpart', '#hpart');
-
-            // 청년부
-            frameAuto('caryouth', '#youthpart');
-
-            // 여선교회
-            frameAuto('woman', '#womanpart');
-
-            // 남선교회
-            frameAuto('man', '#manpart');
-
-            // 포도원마을소식
-            frameAuto('notice', '#notice');
-
-            // 새가족
-            frameAuto('new', '#new');
-
-            // 포도원스토리
-            frameAuto('pdwstory', '#pdwstory');
+        frame5(119,'adong3','#3part');
+        frame3(209,'adong3','#3part');
 
 
+        //중등부 교구
+        frame2(21,'middlepart','#mpart');
+        //youtubeFrame(14,6,'https://youtu.be/9miom8GceqE?si=fI2oKX78jw-PkPew','middlepart','#mpart');
+        
+        //고등부 교구
+        frame2(13,'highpart','#hpart');
+         
+
+        //청년회 교구
+        frame2(20,'caryouth','#youthpart');
+
+        //여선교회
+        frame2(8,'woman','#womanpart');
+
+        //남선교회
+        frame2(4,'man','#manpart');
+
+      
+        // gotoYoutube("CGBSXJGD5P8vQyr0")
+        //포도원마을소식
+        frame2(6,'notice','#notice');
+
+        // 새가족
+        frame2(1,'new','#new');
+   
+//  frame2(4,'notice','#new');
+      
 
         //  영상이 1개이상일때 리스트에 담아서 보내기.
         // let numberList = [];
         // let linkList =[]
         // youtubeFrameList(23,numberList,linkList,'pdwstory','#pdwstory'); 
 
+     //포도원스토리
+        frame2(27,'pdwstory','#pdwstory');
+          
+        
+  
+     
 
 
         // youtube in 슬라이드
@@ -165,38 +179,15 @@
             itemContent = '<iframe id="' + iframe_id + '" class="d-block w-100" src="' + youtube_link + '" frameborder="0" allowfullscreen style="width:100%; height:315px;" ></iframe>';  
         }
 
-        function frameAuto(partName, idName) {
-            let idx = 2;
-            const maxTry = 100; // 너무 많은 요청을 방지하기 위해 최대 시도 횟수 제한
-            const basePath = 'asset/image/digital/' + partName + '/';
-
-            function tryNext() {
-                if (idx > maxTry) return;
-
-                const img = new Image();
-                const img_src = basePath + idx + '.webp';
-
-                img.onload = function () {
-                    // 이미지가 존재하면 carousel에 추가
-                    const item = '<div class="carousel-item' + (idx === 1 ? ' active' : '') + '">' +
-                                '<img class="d-block w-100" src="' + img_src + '">' +
-                                '</div>';
-                    $(idName).append(item);
-                    idx++;
-                    tryNext(); // 다음 이미지 확인
-                };
-
-                img.onerror = function () {
-                    // 이미지가 없으면 중단
-                    // console.log(`✅ ${img_src} is last`);
-                };
-
-                img.src = img_src;
+        // 이미지 슬라이드 생성 프레임
+        function frame2(length,partName,idName){
+            for(var i =2; i<= length; i++){
+              var img_src = 'asset/image/digital/' + partName+ '/' + i + '.webp';
+               $(idName).append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
             }
-
-            tryNext(); // 시작
+            
         }
-
+       
         // 특정 이미지에 유튜브 링크 삽입 한 후 슬라이드 생성 프레임
         function youtubeFrame(length,youtubeImageNumber,link, partName,idName){
 
@@ -217,7 +208,7 @@
                      var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
                      carouselInner.append(carouselItem);
                      }
-                 }
+                 }   
 
 
 
