@@ -136,7 +136,7 @@
         //youtubeFrame(14,6,'https://youtu.be/9miom8GceqE?si=fI2oKX78jw-PkPew','middlepart','#mpart');
         
         //고등부 교구
-        frame2(13,'highpart','#hpart');
+        frame2(9,'highpart','#hpart');
          
 
         //청년회 교구
