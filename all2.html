@@ -7,12 +7,12 @@
         content="width=device-width, initial-scale=1,minimum-scale=1 user-scalable=yes,shrink-to-fit=no " />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <meta property="og:title" content="포도원교회 청년회 헌신예배" />
+    <meta property="og:title" content="포도원교회 행복한 동행" />
     <meta id="metaImage" property="og:image"
         content="https://kkkjj5199.github.io/podowon/asset/image/all/new/1.webp />
     <meta property="og:image:width" content="1500">
     <meta property="og:image:height" content="500">
-    <title> 포도원교회 청년회 헌신예배</title>
+    <title> 포도원교회 행복한 동행</title>
     <!-- jquery    -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- Favicon-->
@@ -115,21 +115,20 @@
 
     <script>
         // 슬라이드 이미지 사용
-        for (var i = 2; i <= 7; i++) {
+        for (var i = 2; i <= 5; i++) {
             var img_src = 'asset/image/all/' + i + '.webp';
             var itemContent;
             var carouselInner = $("#id1"); // id명 위에 선언한거랑 똑같은지 확인하기
 
-            // if (i == 3) {
+            if (i == 4) {
+                var itemContent = '<a href="https://kko.kakao.com/OsaWsjZEpj">' +
+                    '<img class="d-block w-100" src="' + img_src + '">' + '</a>'
+            }
 
-            //     var itemContent = '<a href="https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL">' +
-            //         '<img class="d-block w-100" src="' + img_src + '">' + '</a>'
-            // }
-
-            // else {
-                
-            // }
-            itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+            else {
+                      itemContent = '<img class="d-block w-100" src="' + img_src + '">';
+            }
+      
 
             //  $("#adnog2Camp").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
             var carouselItem = '<div class="carousel-item">' + itemContent + '</div>';
