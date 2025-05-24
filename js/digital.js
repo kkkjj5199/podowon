@@ -154,10 +154,8 @@
 
         // 새가족
         frame2(1,'new','#new');
-   
-//  frame2(4,'notice','#new');
-      
 
+      
         //  영상이 1개이상일때 리스트에 담아서 보내기.
         // let numberList = [];
         // let linkList =[]
