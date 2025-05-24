@@ -56,7 +56,6 @@
      var player;
 
      function onPlayerReady() {
-        console.log('dddddddsssss');
         player = new YT.Player('youtube_iframe_9',{
             events:{
                 'onStageChange': onPlayerStateChange
@@ -121,7 +120,8 @@
 
         // 아동2교구
         frame2(23,'adong2','#2part');
-        //youtubeFrame(29,7,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong2','#2part');
+        insertYoutubeSlideForAdong2(9);
+        // youtubeFrame(28,24,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong2','#2part');
 
         // 아동3교구
         frame2(17,'adong3','#3part');
@@ -148,8 +148,7 @@
         //남선교회
         frame2(7,'man','#manpart');
 
-      
-        // gotoYoutube("CGBSXJGD5P8vQyr0")
+    
         //포도원마을소식
         frame2(6,'notice','#notice');
 
@@ -163,12 +162,13 @@
         // let numberList = [];
         // let linkList =[]
         // youtubeFrameList(23,numberList,linkList,'pdwstory','#pdwstory'); 
+        
 
      //포도원스토리
         frame2(14,'pdwstory','#pdwstory');
           
         
-  
+       
      
 
 
@@ -303,3 +303,44 @@
                 carouselInner.append(carouselItem);
             }
         }
+
+
+    function insertYoutubeSlideForAdong2(position = 9) {
+    const target = $("#2part");
+
+    const videoIds = [
+        "53PSb36s5uI",
+        "1IjErbns-l4",
+        "USZfvwsS9z8",
+        "ZWd09chXPxU",
+        "ltHwL70fVzo"
+    ];
+
+    let iframeHtml = videoIds.map((id, idx) => {
+        return `
+            <iframe id="youtube_iframe_adong2_${idx}" 
+                    src="https://www.youtube.com/embed/${id}?autoplay=0&modestbranding=1&rel=0" 
+                    frameborder="0" 
+                    allowfullscreen 
+                    style="width:100%; height:315px; margin-bottom:12px;">
+            </iframe>
+        `;
+    }).join("");
+
+    const slide = $(`
+        <div class="carousel-item">
+            <div style="padding: 10px;">
+                ${iframeHtml}
+            </div>
+        </div>
+    `);
+
+    // 위치 삽입: 0-based index이므로 (position - 1)
+    const allSlides = target.children('.carousel-item');
+    if (position <= allSlides.length) {
+        $(allSlides[position - 1]).before(slide);
+    } else {
+        target.append(slide); // 범위 벗어나면 그냥 뒤에 추가
+    }
+    }
+
