@@ -163,7 +163,7 @@
         
 
      //포도원스토리
-        frame2(9,'pdwstory','#pdwstory');
+        frame2(10,'pdwstory','#pdwstory');
           
         
        
