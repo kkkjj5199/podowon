@@ -120,7 +120,7 @@
 
         // 아동2교구
         frame2(26,'adong2','#2part');
-        insertYoutubeSlideForAdong2(9);
+        // insertYoutubeSlideForAdong2(9);
         // youtubeFrame(28,24,'https://youtu.be/-ndskXoVepE?si=MW6-Ou4B2OUMkbQL','adong2','#2part');
 
         // 아동3교구
