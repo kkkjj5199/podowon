@@ -114,13 +114,21 @@
     </section>
 
     <script>
+        const myaudio = document.getElementById('myaudio');
+        const videoOff = () => {
+            myaudio.pause();
+        };
+
         // 슬라이드 이미지 사용
-        for (var i = 2; i <= 5; i++) {
+        for (var i = 2; i <= 7; i++) {
             var img_src = 'asset/image/all/' + i + '.webp';
             var itemContent;
             var carouselInner = $("#id1"); // id명 위에 선언한거랑 똑같은지 확인하기
-
-            if (i == 4) {
+            
+            if (i == 2) {
+                var itemContent = '<a href="https://youtu.be/y31sV-2Lh7U?si=Uni98ZGAFGgeqX4S">' +
+                    '<img class="d-block w-100" src="' + img_src + '" onclick="videoOff()">' + '</a>'
+            } else if (i == 5) {
                 var itemContent = '<a href="https://kko.kakao.com/OsaWsjZEpj">' +
                     '<img class="d-block w-100" src="' + img_src + '">' + '</a>'
             }
@@ -135,6 +143,10 @@
             carouselInner.append(carouselItem);
         }
 
+     
+
+
+       
 
 
     </script>
