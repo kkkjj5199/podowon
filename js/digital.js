@@ -125,7 +125,7 @@
 
         // 아동3교구
         // frame2(20,'adong3','#3part');
-        frame4(20,'adong3','#3part');
+        frame4(27,'adong3','#3part');
 
         frame5(119,'adong3','#3part');
         frame3(209,'adong3','#3part');
@@ -285,7 +285,7 @@
                 var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
                 var itemContent;
                 
-                if (i === 10) {
+                if (i === 11) {
                     var itemContent = '<a href="https://youtu.be/yBeKf6w_GoM">' +
                    '<img class="d-block w-100" src="' + img_src + '">' +
                    '</a>'
