@@ -285,7 +285,7 @@
                 var img_src = 'asset/image/digital/' + partName + '/' + i + '.webp';
                 var itemContent;
                 
-                if (i === 11) {
+                if (i === 3) {
                     var itemContent = '<a href="https://youtu.be/yBeKf6w_GoM">' +
                    '<img class="d-block w-100" src="' + img_src + '">' +
                    '</a>'
