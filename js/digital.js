@@ -116,7 +116,7 @@
          */ 
 
         // 아동1교구
-        frame2(34,'adong1','#1part');
+        frame2(35,'adong1','#1part');
 
         // 아동2교구
         frame2(21,'adong2','#2part');
