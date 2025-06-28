@@ -150,7 +150,7 @@
 
     
         //포도원마을소식
-        frame2(7,'notice','#notice');
+        frame2(5,'notice','#notice');
 
         // 새가족
         frame2(1,'new','#new');
