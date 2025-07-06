@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>찬양악보</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      margin: 20px auto;
+    }
+    .carousel-image {
+      display: none;
+      width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+    .carousel-image.active {
+      display: block;
+    }
+    .arrow {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border-radius: 50%;
+    }
+    .arrow.left { left: 0; }
+    .arrow.right { right: 0; }
+
+    .toc {
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .toc button {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .toc button:hover { background-color: #eee; }
+  </style>
+</head>
+<body>
+
+<h1>📖 찬양</h1>
+
+<div class="toc" id="toc"></div>
+
+<div class="carousel-container">
+  <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
+  <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
+  <div id="carousel"></div>
+</div>
+
+<script>
+  const songTitles = [
+    "내 사랑하는 그 이름 (복된 예수)",
+    "갈보리 십자가의 주님을",
+    "좋으신 하나님(God is So Good)",
+    "보내소서",
+    "밀알",
+    "신 사도행전",
+    "나를 부르신 주",
+    "나는 주를 섬기는 것에 후회가 없습니다",
+    "주 하나님 지으신 모든 세계",
+    "주만 바라볼지라",
+    "행복",
+    "함께 지어져 가네 (Being Built Together)",
+    "싹트네 싹터요",
+    "미얀마 시편 23편 찬양 (간자야 수제즈)",
+    "More, More, More",
+    "Deep Deep Down",
+    "주의 자비가 내려와 (Mercy is Falling)",
+    "영접송 (내 마음 엽니다) (Invitation)",
+    "선한 능력으로",
+    "하루의 은혜",
+    "주님 같은 반석은 없다",
+    "내 안에 부어주소서",
+    "내 삶에 들어온 주님의 말씀이"
+  ];
+
+  const tocContainer = document.getElementById("toc");
+  const carouselContainer = document.getElementById("carousel");
+
+  // 1, 2번 이미지: 커버 및 목차 이미지
+  const totalImages = songTitles.length + 2;
+
+  // 이미지 요소 생성
+  for (let i = 1; i <= totalImages; i++) {
+    const img = document.createElement("img");
+    img.src = `asset/image/myama/song/${i}.jpeg`;
+    img.className = "carousel-image";
+    if (i === 1) img.classList.add("active");  // 첫 이미지 활성화
+    carouselContainer.appendChild(img);
+  }
+
+  // 목차 버튼 생성
+  songTitles.forEach((title, idx) => {
+    const button = document.createElement("button");
+    button.textContent = `${idx + 3}. ${title}`;  // 페이지 번호 3부터
+    button.onclick = () => showSlide(idx + 2);    // 0,1번은 커버/목차이므로 +2
+    tocContainer.appendChild(button);
+  });
+
+  let currentIndex = 0;
+  const slides = document.querySelectorAll(".carousel-image");
+
+  function showSlide(index) {
+    if (index < 0) index = slides.length - 1;
+    if (index >= slides.length) index = 0;
+
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+    currentIndex = index;
+  }
+
+  function changeSlide(offset) {
+    showSlide(currentIndex + offset);
+  }
+</script>
+
+</body>
+</html>

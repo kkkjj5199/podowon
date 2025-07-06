@@ -164,10 +164,6 @@
 
      //포도원스토리
         frame2(5,'pdwstory','#pdwstory');
-          
-        
-       
-     
 
 
         // youtube in 슬라이드
