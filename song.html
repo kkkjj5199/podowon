@@ -1,167 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>찬양악보</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>찬양 목차 및 악보</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
 
-    h1 {
-      margin-top: 20px;
-    }
+      .hidden {
+        display: none;
+      }
 
-    .toc {
-      margin: 20px auto;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 👉 4열 고정 */
-      gap: 12px 24px;
-      max-width: 700px;
-    }
+      .toc {
+        margin: 20px auto;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px 24px;
+        max-width: 1100px;
+      }
+      #tocView {
+        background-image: url("asset/image/myama/song/background.jpeg");
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        padding-top: 300px; /* 상단 패딩만 적용 */
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-bottom: 0;
+        box-sizing: border-box;
+      }
 
-    .toc li {
-      font-size: 1.3rem;
-      text-align: left;
-    }
+      .toc li {
+        font-size: 1.3rem;
+        text-align: left;
+      }
+      .toc a {
+        display: inline-block;
+        padding: 6px 10px;
+        color: #333;
+        text-decoration: none;
+        border-left: 4px solid #ccc;
+        transition: all 0.2s;
+      }
+      .toc a:hover {
+        background-color: #f9f9f9;
+        border-left-color: #666;
+      }
 
-    .toc a {
-      display: inline-block;
-      padding: 6px 10px;
-      color: #333;
-      text-decoration: none;
-      border-left: 4px solid #ccc;
-      transition: all 0.2s;
-    }
+      .carousel-container {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .carousel-image {
+        display: none;
+        width: 100%;
+        max-height: 100vh;
+        object-fit: contain;
+      }
+      .carousel-image.active {
+        display: block;
+      }
 
-    .toc a:hover {
-      background-color: #f9f9f9;
-      border-left-color: #666;
-    }
+      .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border-radius: 50%;
+      }
+      .arrow.left {
+        left: 0;
+      }
+      .arrow.right {
+        right: 0;
+      }
 
-    .carousel-container {
-      position: relative;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
+      .back {
+        margin: 20px;
+        display: inline-block;
+        padding: 8px 16px;
+        background: #ffd600; /* 노랑 */
+        color: #43b02a; /* 초록 */
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
 
-    .carousel-image {
-      display: none;
-      width: 100%;
-      max-height: 80vh;
-      object-fit: contain;
-    }
+      .back:hover {
+        background: #ef3340; /* 호버 시 빨강으로 변경 */
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 목차 화면 -->
+    <div id="tocView">
+      <ul class="toc" id="toc"></ul>
+    </div>
 
-    .carousel-image.active {
-      display: block;
-    }
+    <!-- 이미지 화면 -->
+    <div id="carouselView" class="hidden">
+      <div class="carousel-container">
+        <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
+        <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
+        <div id="carousel"></div>
+      </div>
+      <div class="back" onclick="showToc()">← 목차로 돌아가기</div>
+    </div>
 
-    .arrow {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 30px;
-      padding: 10px;
-      background: rgba(0, 0, 0, 0.5);
-      color: white;
-      border-radius: 50%;
-    }
+    <script>
+      const songTitles = [
+        "내 사랑하는 그 이름 (복된 예수)",
+        "갈보리 십자가의 주님을",
+        "좋으신 하나님(God is So Good)",
+        "보내소서",
+        "밀알",
+        "신 사도행전",
+        "나를 부르신 주",
+        "나는 주를 섬기는 것에 후회가 없습니다",
+        "주 하나님 지으신 모든 세계",
+        "주만 바라볼지라",
+        "행복",
+        "함께 지어져 가네 (Being Built Together)",
+        "싹트네 싹터요",
+        "미얀마 시편 23편 찬양 (간자야 수제즈)",
+        "More, More, More",
+        "Deep Deep Down",
+        "주의 자비가 내려와 (Mercy is Falling)",
+        "영접송 (내 마음 엽니다) (Invitation)",
+        "선한 능력으로",
+        "하루의 은혜",
+        "주님 같은 반석은 없다",
+        "내 안에 부어주소서",
+        "내 삶에 들어온 주님의 말씀이",
+      ];
 
-    .arrow.left { left: 0; }
-    .arrow.right { right: 0; }
-  </style>
-</head>
-<body>
+      const tocContainer = document.getElementById("toc");
+      const carouselContainer = document.getElementById("carousel");
+      const tocView = document.getElementById("tocView");
+      const carouselView = document.getElementById("carouselView");
 
+      const totalImages = songTitles.length + 2; // 커버 + 목차 포함
+      let currentIndex = 0;
 
+      // 이미지 생성
+      for (let i = 1; i <= totalImages; i++) {
+        const img = document.createElement("img");
+        img.src = `asset/image/myama/song/${i}.jpeg`;
+        img.className = "carousel-image";
+        carouselContainer.appendChild(img);
+      }
 
+      const slides = document.querySelectorAll(".carousel-image");
 
-<div class="carousel-container">
-  <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
-  <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
-  <div id="carousel"></div>
-</div>
-<br><br>
-<ul class="toc" id="toc"></ul>
+      // 목차 생성
+      songTitles.forEach((title, idx) => {
+        const li = document.createElement("li");
+        const link = document.createElement("a");
+        link.textContent = `${idx + 3}. ${title}`;
+        link.href = "#";
+        link.onclick = (e) => {
+          e.preventDefault();
+          showCarousel(idx + 2);
+        };
+        li.appendChild(link);
+        tocContainer.appendChild(li);
+      });
 
-<script>
-  const songTitles = [
-    "내 사랑하는 그 이름 (복된 예수)",
-    "갈보리 십자가의 주님을",
-    "좋으신 하나님(God is So Good)",
-    "보내소서",
-    "밀알",
-    "신 사도행전",
-    "나를 부르신 주",
-    "나는 주를 섬기는 것에 후회가 없습니다",
-    "주 하나님 지으신 모든 세계",
-    "주만 바라볼지라",
-    "행복",
-    "함께 지어져 가네 (Being Built Together)",
-    "싹트네 싹터요",
-    "미얀마 시편 23편 찬양 (간자야 수제즈)",
-    "More, More, More",
-    "Deep Deep Down",
-    "주의 자비가 내려와 (Mercy is Falling)",
-    "영접송 (내 마음 엽니다) (Invitation)",
-    "선한 능력으로",
-    "하루의 은혜",
-    "주님 같은 반석은 없다",
-    "내 안에 부어주소서",
-    "내 삶에 들어온 주님의 말씀이"
-  ];
+      function showCarousel(startIndex) {
+        tocView.classList.add("hidden");
+        carouselView.classList.remove("hidden");
+        showSlide(startIndex);
+      }
 
-  const tocContainer = document.getElementById("toc");
-  const carouselContainer = document.getElementById("carousel");
+      function showToc() {
+        carouselView.classList.add("hidden");
+        tocView.classList.remove("hidden");
+      }
 
-  const totalImages = songTitles.length + 2; // 커버 + 목차 이미지 포함
+      function showSlide(index) {
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
 
-  // 이미지 요소 생성
-  for (let i = 1; i <= totalImages; i++) {
-    const img = document.createElement("img");
-    img.src = `asset/image/myama/song/${i}.jpeg`;
-    img.className = "carousel-image";
-    if (i === 1) img.classList.add("active");  // 첫 이미지 활성화
-    carouselContainer.appendChild(img);
-  }
+        slides.forEach((slide) => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+        currentIndex = index;
+      }
 
-  // 목차 생성
-  songTitles.forEach((title, idx) => {
-    const li = document.createElement("li");
-    const link = document.createElement("a");
-    link.textContent = `${idx + 3}. ${title}`;
-    link.href = "#";
-    link.onclick = (e) => {
-      e.preventDefault();
-      showSlide(idx + 2);  // 커버(1), 목차(2) 다음부터
-    };
-    li.appendChild(link);
-    tocContainer.appendChild(li);
-  });
-
-  let currentIndex = 0;
-  const slides = document.querySelectorAll(".carousel-image");
-
-  function showSlide(index) {
-    if (index < 0) index = slides.length - 1;
-    if (index >= slides.length) index = 0;
-
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[index].classList.add("active");
-    currentIndex = index;
-  }
-
-  function changeSlide(offset) {
-    showSlide(currentIndex + offset);
-  }
-</script>
-
-</body>
+      function changeSlide(offset) {
+        showSlide(currentIndex + offset);
+      }
+    </script>
+  </body>
 </html>
