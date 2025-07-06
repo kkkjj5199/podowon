@@ -2,66 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>찬양악보</title>
+  <title>미얀마 선교여행</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      text-align: center;
       margin: 0;
       padding: 0;
-      text-align: center;
     }
-
-    h1 {
-      margin-top: 20px;
-    }
-
-    .toc {
-      margin: 20px auto;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 👉 4열 고정 */
-      gap: 12px 24px;
-      max-width: 700px;
-    }
-
-    .toc li {
-      font-size: 1.3rem;
-      text-align: left;
-    }
-
-    .toc a {
-      display: inline-block;
-      padding: 6px 10px;
-      color: #333;
-      text-decoration: none;
-      border-left: 4px solid #ccc;
-      transition: all 0.2s;
-    }
-
-    .toc a:hover {
-      background-color: #f9f9f9;
-      border-left-color: #666;
-    }
-
     .carousel-container {
       position: relative;
       width: 100%;
-      margin: 0;
-      padding: 0;
+      margin: 20px auto;
     }
-
     .carousel-image {
       display: none;
       width: 100%;
       max-height: 80vh;
       object-fit: contain;
     }
-
     .carousel-image.active {
       display: block;
     }
-
     .arrow {
       cursor: pointer;
       position: absolute;
@@ -73,23 +35,38 @@
       color: white;
       border-radius: 50%;
     }
-
     .arrow.left { left: 0; }
     .arrow.right { right: 0; }
+
+    .toc {
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .toc button {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1.5rem;   /* 글자 크기 키움 */
+    }
+    .toc button:hover { background-color: #eee; }
   </style>
 </head>
 <body>
 
+<h1>📖 찬양</h1>
 
-
+<div class="toc" id="toc"></div>
 
 <div class="carousel-container">
   <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
   <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
   <div id="carousel"></div>
 </div>
-<br><br>
-<ul class="toc" id="toc"></ul>
 
 <script>
   const songTitles = [
@@ -121,7 +98,8 @@
   const tocContainer = document.getElementById("toc");
   const carouselContainer = document.getElementById("carousel");
 
-  const totalImages = songTitles.length + 2; // 커버 + 목차 이미지 포함
+  // 1, 2번 이미지: 커버 및 목차 이미지
+  const totalImages = songTitles.length + 2;
 
   // 이미지 요소 생성
   for (let i = 1; i <= totalImages; i++) {
@@ -132,18 +110,12 @@
     carouselContainer.appendChild(img);
   }
 
-  // 목차 생성
+  // 목차 버튼 생성
   songTitles.forEach((title, idx) => {
-    const li = document.createElement("li");
-    const link = document.createElement("a");
-    link.textContent = `${idx + 3}. ${title}`;
-    link.href = "#";
-    link.onclick = (e) => {
-      e.preventDefault();
-      showSlide(idx + 2);  // 커버(1), 목차(2) 다음부터
-    };
-    li.appendChild(link);
-    tocContainer.appendChild(li);
+    const button = document.createElement("button");
+    button.textContent = `${idx + 3}. ${title}`;  // 페이지 번호 3부터
+    button.onclick = () => showSlide(idx + 2);    // 0,1번은 커버/목차이므로 +2
+    tocContainer.appendChild(button);
   });
 
   let currentIndex = 0;

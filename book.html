@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>미얀마 선교여행</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .carousel-image {
+      display: none;
+      width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+    .carousel-image.active {
+      display: block;
+    }
+    .arrow {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border-radius: 50%;
+    }
+    .arrow.left { left: 0; }
+    .arrow.right { right: 0; }
+
+    .toc {
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .toc button {
+      padding: 12px 16px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1.5rem;
+    }
+    .toc button:hover { background-color: #eee; }
+  </style>
+</head>
+<body>
+
+<h1>📖 미얀마 선교여행</h1>
+
+<div class="toc" id="toc"></div>
+
+<div class="carousel-container">
+  <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
+  <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
+  <div id="carousel"></div>
+</div>
+
+<script>
+  const chapter = [
+    "미얀마 선교 조직표",
+    "요일별 차량탑승 명단",
+    "미얀마 단기 선교 일정표(안)",
+    "수,목 일정",
+    "기도담당표",
+    "미얀마어",
+    "공항 조(식당조)",
+    "영접기도문"
+  ];
+
+  const tocContainer = document.getElementById("toc");
+  const carouselContainer = document.getElementById("carousel");
+
+  const totalImages = 9;  // 총 이미지 수
+
+  // 이미지 요소 생성
+  for (let i = 1; i <= totalImages; i++) {
+    const img = document.createElement("img");
+    img.src = `asset/image/myama/song/${i}.jpeg`;
+    img.className = "carousel-image";
+    if (i === 1) img.classList.add("active");  // 첫 이미지 활성화
+    carouselContainer.appendChild(img);
+  }
+
+  // 목차 버튼 생성
+  chapter.forEach((title, idx) => {
+    const button = document.createElement("button");
+    button.textContent = `📖 ${idx + 2}. ${title}`;  // 이미지 번호 기준으로 2부터
+    button.onclick = () => showSlide(idx + 1);       // showSlide(index) → 1번이 이미지2
+    tocContainer.appendChild(button);
+  });
+
+  let currentIndex = 0;
+  const slides = document.querySelectorAll(".carousel-image");
+
+  function showSlide(index) {
+    if (index < 0) index = slides.length - 1;
+    if (index >= slides.length) index = 0;
+
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+    currentIndex = index;
+  }
+
+  function changeSlide(offset) {
+    showSlide(currentIndex + offset);
+  }
+</script>
+
+</body>
+</html>
