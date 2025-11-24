@@ -95,8 +95,12 @@
   </head>
 
   <body id="page-top">
-    <!-- <audio src="asset/audio/holy_night.mp3" autoplay id="myaudio"></audio> -->
-    <audio src="asset/audio/Silent Night.mp3" autoplay id="audio"></audio>
+
+    <audio
+      src="asset/audio/Hillsong Worship-14-Silent Night.mp3"
+      autoplay
+      id="audio"
+    ></audio>
 
     <section class="page-section bg-primary" id="thanks">
       <div class="container">
@@ -110,18 +114,6 @@
             >
               오늘의 묵상 보기
             </button>
-            <!-- 캘린더 아이콘 버튼 추가 -->
-            <!-- <button id="calendarBtn">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/747/747310.png"
-                alt="달력 아이콘"
-                width="32"
-                height="32"
-              />
-            </button> -->
-            <!-- flatpickr용 input (숨김) -->
-            <input type="text" id="calendarInput" style="display: none" />
-
             <div class="swiper-container">
               <div class="swiper-wrapper" id="MSJ"></div>
               <div class="swiper-button-next">
@@ -140,14 +132,14 @@
     </section>
 
     <!-- kakao map js   -->
-    <script
+    <!-- <script
       type="text/javascript"
       src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bcb5777161b2bdc709a97c931910b27c"
     ></script>
     <script
       type="text/javascript"
       src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bcb5777161b2bdc709a97c931910b27c"
-    ></script>
+    ></script> -->
 
     <!--  my js  -->
     <script src="js/all.js"></script>
@@ -155,13 +147,7 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <!-- uikit-->
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
-
+ 
     <!-- swiper.js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -227,9 +213,6 @@
         const idx = slides.indexOf(todayStr);
         if (idx >= 0) {
           swiper.slideTo(idx);
-        } else {
-          // 리스트에 오늘 날짜가 없으면 이동 안 함 (필요하면 메시지 출력 가능)
-          console.log("오늘 날짜 이미지가 slides 리스트에 없습니다.");
         }
       }
     </script>
