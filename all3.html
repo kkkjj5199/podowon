@@ -8,7 +8,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <meta property="og:title" content="포도원 교회" />
+    <meta property="og:title" content="2025 묵상집" />
     <meta
       id="metaImage"
       property="og:image"
@@ -16,7 +16,7 @@
     />
     <meta property="og:image:width" content="1500" />
     <meta property="og:image:height" content="500" />
-    <title>포도원 교회</title>
+    <title>2025 묵상집</title>
     <!-- jquery    -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- Favicon-->
@@ -26,6 +26,14 @@
       src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
       crossorigin="anonymous"
     ></script>
+    <!-- flatpickr CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <!-- flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ko.js"></script>
 
     <!-- Google fonts-->
     <link
@@ -46,12 +54,21 @@
       .carousel-control-prev-icon {
         background-image: url("../asset/image/back-arrow.png");
       }
-
       .carousel-control-next-icon {
         background-image: url("../asset/image/arrow.png");
       }
       #today {
         margin: 10px;
+      }
+      #calendarBtn {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 10px;
+        cursor: pointer;
+      }
+      #calendarBtn img {
+        vertical-align: middle;
       }
     </style>
 
@@ -79,33 +96,41 @@
 
   <body id="page-top">
     <!-- <audio src="asset/audio/holy_night.mp3" autoplay id="myaudio"></audio> -->
-    <!-- <audio src="asset/audio/Hillsong Worship-14-Silent Night.mp3" autoplay id="audio"></audio> -->
+    <audio src="asset/audio/Silent Night.mp3" autoplay id="audio"></audio>
 
     <section class="page-section bg-primary" id="thanks">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <!-- <button type="button" class="btn btn-outline-warning" onclick="test()">오늘 날짜 묵상집 보기</button> -->
             <button
               type="button"
               class="btn btn-outline-warning"
               id="today"
-              onclick="test()"
+              onclick="tests()"
             >
               오늘의 묵상 보기
             </button>
+            <!-- 캘린더 아이콘 버튼 추가 -->
+            <!-- <button id="calendarBtn">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/747/747310.png"
+                alt="달력 아이콘"
+                width="32"
+                height="32"
+              />
+            </button> -->
+            <!-- flatpickr용 input (숨김) -->
+            <input type="text" id="calendarInput" style="display: none" />
+
             <div class="swiper-container">
               <div class="swiper-wrapper" id="MSJ"></div>
-
               <div class="swiper-button-next">
                 <img src="asset/image/arrow.png" class="mainImage" />
               </div>
               <div class="swiper-button-prev">
                 <img src="asset/image/back-arrow.png" class="mainImage" />
               </div>
-              <!-- <div class="swiper-pagination"></div> -->
             </div>
-
             <div class="small text-center text-muted">
               Copyright © 포도원감리교회
             </div>
@@ -141,11 +166,27 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
+      // 1130~1225 구간 슬라이드 이미지 모두 추가
+      let slides = [
+        1130, 1201, 1202, 1203, 1204, 1205, 1206, 1207, 1208, 1209, 1210, 1211,
+        1212, 1213, 1214, 1215, 1216, 1217, 1218, 1219, 1220, 1221, 1222, 1223,
+        1224, 1225,
+      ];
+
+      for (let i = 0; i < slides.length; i++) {
+        const img_src = "asset/image/묵상집/" + slides[i] + ".webp";
+        $("#MSJ").append(
+          '<div class="swiper-slide"><img src="' +
+            img_src +
+            '" alt="묵상집 이미지" /></div>'
+        );
+      }
+
+      // 2. Swiper 초기화 (슬라이드들을 모두 로드한 후)
       var swiper = new Swiper(".swiper-container", {
         spaceBetween: 30,
-        loop: true,
+        loop: false,
         centeredSlides: true,
-        loop: false, // 슬라이드 반복 여부
         loopAdditionalSlides: 1,
         navigation: {
           nextEl: ".swiper-button-next",
@@ -156,10 +197,40 @@
         fadeEffect: { crossFade: true },
       });
 
-      function test() {
-        const day = new Date().getDate();
-        console.log(day);
-        swiper.slideTo(day + 28, 1000, false);
+      // 3. 날짜 선택 시 슬라이드 이동만 처리
+      flatpickr("#calendarInput", {
+        locale: "ko",
+        dateFormat: "Y-m-d",
+        allowInput: true,
+        onChange: function (selectedDates, dateStr, instance) {
+          if (!selectedDates.length) return;
+          const dateObj = selectedDates[0];
+          const month = String(dateObj.getMonth() + 1).padStart(2, "0");
+          const day = String(dateObj.getDate()).padStart(2, "0");
+          const fileName = month + day;
+
+          // 선택한 날짜 인덱스 찾아 슬라이드 이동
+          const idx = slides.indexOf(fileName);
+          if (idx >= 0) {
+            swiper.slideTo(idx);
+          } else {
+            alert("해당 날짜 이미지가 없습니다.");
+          }
+        },
+      });
+
+      function tests() {
+        const now = new Date();
+        const month = String(now.getMonth() + 1).padStart(2, "0");
+        const day = String(now.getDate()).padStart(2, "0");
+        const todayStr = parseInt(month + day, 10); // slides 배열 숫자 형태와 맞춤
+        const idx = slides.indexOf(todayStr);
+        if (idx >= 0) {
+          swiper.slideTo(idx);
+        } else {
+          // 리스트에 오늘 날짜가 없으면 이동 안 함 (필요하면 메시지 출력 가능)
+          console.log("오늘 날짜 이미지가 slides 리스트에 없습니다.");
+        }
       }
     </script>
   </body>

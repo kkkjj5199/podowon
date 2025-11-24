@@ -150,11 +150,11 @@
               $("#MM").append('<div class="carousel-item" > <img id="i3" class="d-block w-100"  src=' + img_src + '></div>');
         }
         
-        
-        for (var i = 1; i <=42; i++) {
-            var img_src = 'asset/image/묵상집/' + i + '.webp';
-              $("#MSJ").append('<div class="swiper-slide" > <img   src=' + img_src + '></div>');
-        }
+      
+        // for (var i = 0; i <=28; i++) {
+        //     var img_src = 'asset/image/묵상집/' + 1130 + '.webp';
+        //       $("#MSJ").append('<div class="swiper-slide" > <img   src=' + img_src + '></div>');
+        // }
 
         function getISOWeekNumber(date) {
             // Copy the date so we don't modify the original
@@ -175,9 +175,10 @@
             return weekNumber;
             }
 
-        function test() {
-            const day = new Date().getDate();
-        swiper.slideTo(day+15, 1000, false)
+        function test(list) {
+          
+        const day = new Date().getDate();
+        swiper.slideTo(day, 1000, false)
         }
 
              function frame1(youtube_video_id,i){
