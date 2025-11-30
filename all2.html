@@ -2,27 +2,40 @@
 <html lang="kor">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes, shrink-to-fit=no"
+    />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <meta property="og:title" content="포도원교회 청년 수련회" />
-    <meta id="metaImage" property="og:image" content="https://kkkjj5199.github.io/podowon/asset/image/all/message.webp" />
+    <meta property="og:title" content="포도원교회 청년의 밤" />
+    <meta
+      id="metaImage"
+      property="og:image"
+      content="https://kkkjj5199.github.io/podowon/asset/image/all/message.webp"
+    />
     <meta property="og:image:width" content="1500" />
     <meta property="og:image:height" content="500" />
-    <title>포도원교회 청년 수련회</title>
+    <title>포도원교회 청년의 밤</title>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <!-- Bootstrap CSS & JS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 
     <!-- 기타 -->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/digital.css" />
     <link rel="stylesheet" href="css/uikit.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbit&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
     <style>
@@ -58,12 +71,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-
             <!-- 세로 이미지 영역 -->
             <div id="imageList1"></div>
 
             <!-- 캐러셀 이미지 영역 -->
-            <div id="carouselContainer">
+            <!-- <div id="carouselContainer">
               <div id="imageList2" class="carousel slide" data-interval="false">
                 <div class="carousel-inner" id="carouselInner"></div>
                 <a class="carousel-control-prev" href="#imageList2" role="button" data-slide="prev">
@@ -75,12 +87,13 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-            </div>
+            </div> -->
 
-            
-            <img src="asset/image/all/16.webp" />
+            <!-- <img src="asset/image/all/16.webp" /> -->
 
+            <!-- 지도 -->
 
+            <div id="map" style="height: 400px "></div>
 
             <div class="small text-center text-muted">
               Copyright © 포도원감리교회
@@ -90,18 +103,51 @@
       </div>
     </section>
 
+    <!-- kakao map js   -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bda5a4218a6d4b2ca3914292739f393f"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bda5a4218a6d4b2ca3914292739f393f"
+    ></script>
+    <script src="js/map.js"></script>
+
     <script>
+       window.onload = function () {
+                if (!Kakao.isInitialized()) {
+                    Kakao.init('bda5a4218a6d4b2ca3914292739f393f');
+                }
+                
+
+            };
       const myaudio = document.getElementById("myaudio");
       const videoOff = () => {
         myaudio.pause();
       };
 
       // 세로 나열 이미지 (1~6)
-      const list1 = $("#imageList1");
-      for (let i = 1; i <= 6; i++) {
-        const src = `asset/image/all/${i}.webp`;
-        list1.append(`<img class="d-block w-100" src="${src}" alt="image${i}" />`);
-      }
+const list1 = $("#imageList1");
+for (let i = 1; i <= 8; i++) {
+  const src = `asset/image/all/${i}.webp`;
+
+  if (i === 3) {
+    // 3번째 이미지는 링크로 감싸기
+    list1.append(
+      `<a href="https://youtu.be/fGEpW0p5Kgo">
+         <img class="d-block w-100" src="${src}" alt="image${i}" />
+       </a>`
+    );
+  } else {
+    list1.append(
+      `<img class="d-block w-100" src="${src}" alt="image${i}" />`
+    );
+  }
+}
+
 
       // 슬라이드 캐러셀 이미지 (7~16)
       const carouselInner = $("#carouselInner");
