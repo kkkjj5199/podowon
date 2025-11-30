@@ -45,6 +45,13 @@
         margin-bottom: 0 !important;
       }
 
+      .container {
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
+      }
+
       #carouselContainer {
         margin-top: 0 !important;
         padding-top: 0 !important;
@@ -93,7 +100,7 @@
 
             <!-- 지도 -->
 
-            <div id="map" style="height: 400px "></div>
+            <div id="map" style="height: 400px"></div>
 
             <div class="small text-center text-muted">
               Copyright © 포도원감리교회
@@ -117,37 +124,34 @@
     <script src="js/map.js"></script>
 
     <script>
-       window.onload = function () {
-                if (!Kakao.isInitialized()) {
-                    Kakao.init('bda5a4218a6d4b2ca3914292739f393f');
-                }
-                
-
-            };
+      window.onload = function () {
+        if (!Kakao.isInitialized()) {
+          Kakao.init("bda5a4218a6d4b2ca3914292739f393f");
+        }
+      };
       const myaudio = document.getElementById("myaudio");
       const videoOff = () => {
         myaudio.pause();
       };
 
       // 세로 나열 이미지 (1~6)
-const list1 = $("#imageList1");
-for (let i = 1; i <= 8; i++) {
-  const src = `asset/image/all/${i}.webp`;
+      const list1 = $("#imageList1");
+      for (let i = 1; i <= 8; i++) {
+        const src = `asset/image/all/${i}.webp`;
 
-  if (i === 3) {
-    // 3번째 이미지는 링크로 감싸기
-    list1.append(
-      `<a href="https://youtu.be/fGEpW0p5Kgo">
-         <img class="d-block w-100" src="${src}" alt="image${i}" />
+        if (i === 3) {
+          // 3번째 이미지는 링크로 감싸기
+          list1.append(
+            `<a href="https://youtu.be/fGEpW0p5Kgo">
+         <img class="d-block w-full" src="${src}" alt="image${i}" />
        </a>`
-    );
-  } else {
-    list1.append(
-      `<img class="d-block w-100" src="${src}" alt="image${i}" />`
-    );
-  }
-}
-
+          );
+        } else {
+          list1.append(
+            `<img class="d-block  w-full" src="${src}" alt="image${i}" />`
+          );
+        }
+      }
 
       // 슬라이드 캐러셀 이미지 (7~16)
       const carouselInner = $("#carouselInner");
