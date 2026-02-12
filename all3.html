@@ -26,6 +26,19 @@
       src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      let audioInitialized = false;
+
+      function initAudio() {
+        if (audioInitialized) return;
+
+        const audio = document.getElementById("audio");
+        audio.muted = false;
+        audio.play().catch(() => {});
+        audioInitialized = true;
+      }
+    </script>
     <!-- flatpickr CSS -->
     <link
       rel="stylesheet"
@@ -94,7 +107,7 @@
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
   </head>
 
-  <body id="page-top">
+  <body id="page-top" onclick="initAudio()">
     <audio
       src="asset/audio/Broken Vessels Amazing Grace.mp3"
       autoplay
@@ -248,7 +261,7 @@
         const now = new Date();
         const month = String(now.getMonth() + 1).padStart(2, "0");
         const day = String(now.getDate()).padStart(2, "0");
-        const todayStr = month + day; // "0214"
+        const todayStr = month + day;
 
         const idx = slides.indexOf(todayStr);
         if (idx >= 0) {
