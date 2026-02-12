@@ -95,10 +95,10 @@
   </head>
 
   <body id="page-top">
-
     <audio
-      src="asset/audio/Silent Night.mp3"
+      src="asset/audio/Broken Vessels Amazing Grace.mp3"
       autoplay
+      muted
       id="audio"
     ></audio>
 
@@ -108,16 +108,15 @@
           <div class="col-lg-8 text-center">
             <button
               type="button"
-              class="btn btn-outline-success"
+              class="btn custom-btn"
               id="today"
               onclick="tests()"
             >
               오늘의 묵상 보기
             </button>
+
             <div class="swiper-container">
-              <div class="swiper-wrapper" id="MSJ">
-                
-              </div>
+              <div class="swiper-wrapper" id="MSJ"></div>
               <div class="swiper-button-next">
                 <img src="asset/image/arrow.png" class="mainImage" />
               </div>
@@ -149,20 +148,58 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
- 
+
     <!-- swiper.js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
       // 1130~1225 구간 슬라이드 이미지 모두 추가
       let slides = [
-        "first",1130, 1201, 1202, 1203, 1204, 1205, 1206, 1207, 1208, 1209, 1210, 1211,
-        1212, 1213, 1214, 1215, 1216, 1217, 1218, 1219, 1220, 1221, 1222, 1223,
-        1224, 1225, "final"
+        "first",
+        "0218",
+        "0219",
+        "0220",
+        "0221",
+        "0223",
+        "0224",
+        "0225",
+        "0226",
+        "0227",
+        "0228",
+        "0302",
+        "0303",
+        "0304",
+        "0305",
+        "0306",
+        "0307",
+        "0309",
+        "0310",
+        "0311",
+        "0312",
+        "0313",
+        "0314",
+        "0316",
+        "0317",
+        "0318",
+        "0319",
+        "0320",
+        "0321",
+        "0323",
+        "0324",
+        "0325",
+        "0326",
+        "0327",
+        "0328",
+        "0330",
+        "0331",
+        "0401",
+        "0402",
+        "0403",
+        "0404",
       ];
 
       for (let i = 0; i < slides.length; i++) {
-        const img_src = "asset/image/묵상집/" + slides[i] + ".webp";
+        const img_src = "asset/image/묵상집/" + slides[i] + ".png";
         $("#MSJ").append(
           '<div class="swiper-slide"><img src="' +
             img_src +
@@ -187,7 +224,6 @@
 
       // 3. 날짜 선택 시 슬라이드 이동만 처리
       flatpickr("#calendarInput", {
-
         locale: "ko",
         dateFormat: "Y-m-d",
         allowInput: true,
@@ -212,10 +248,13 @@
         const now = new Date();
         const month = String(now.getMonth() + 1).padStart(2, "0");
         const day = String(now.getDate()).padStart(2, "0");
-        const todayStr = parseInt(month + day, 10); // slides 배열 숫자 형태와 맞춤
+        const todayStr = month + day; // "0214"
+
         const idx = slides.indexOf(todayStr);
         if (idx >= 0) {
           swiper.slideTo(idx);
+        } else {
+          alert("오늘 묵상 이미지가 없습니다.");
         }
       }
     </script>

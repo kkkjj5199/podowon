@@ -6123,6 +6123,16 @@ a.badge-dark.focus {
     border-color: #1b1e21;
 }
 
+.custom-btn {
+  color: #46155B;
+  border-color: #46155B;
+}
+
+.custom-btn:hover {
+  background-color: #46155B;
+  color: #fff;
+}
+
 .close {
     float: right;
     font-size: 1.5rem;
@@ -6440,6 +6450,8 @@ a.close.disabled {
     word-wrap: break-word;
     opacity: 0;
 }
+
+
 
 .tooltip.show {
     opacity: 0.9;
