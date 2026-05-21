@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes, shrink-to-fit=no" />
+    <meta name="description" content="포도원과 함께 하는 행복한 동행 - 포도원교회" />
+    <meta name="author" content="포도원교회" />
+
+    <!-- 카카오톡/SNS 공유 미리보기 -->
+    <meta property="og:title" content="포도원과 함께 하는 행복한 동행" />
+    <meta property="og:description" content="포도원마을 설립4주년 감사예배 및 제5회 행복한동행 | 5/30(토) 오후 7:00" />
+    <meta id="metaImage" property="og:image"
+        content="https://kkkjj5199.github.io/podowon/asset/image/happy/1.png" />
+    <meta property="og:image:width" content="900">
+    <meta property="og:image:height" content="1600">
+
+    <title>행복한 동행 | 포도원교회</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="asset/image/logo.png" />
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            background: #2a2540;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #ffffff;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* 모바일 초청장 컨테이너 (세로형) */
+        .invitation {
+            max-width: 480px;
+            margin: 0 auto;
+            background: #ffffff;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* 세로 스크롤 이미지 */
+        .photo-scroll {
+            display: block;
+            width: 100%;
+        }
+
+        .photo-scroll img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+        }
+
+        /* 섹션 공통 */
+        .section {
+            padding: 32px 20px;
+            background: #ffffff;
+            color: #2a2540;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1b3a8a;
+            margin-bottom: 16px;
+        }
+
+        .section-title .accent {
+            color: #e2452f;
+        }
+
+        /* YouTube */
+        .video-wrap {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            background: #000;
+        }
+
+        .video-wrap iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* 지도 */
+        #map {
+            width: 100%;
+            height: 320px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .address {
+            background: #f4f4f7;
+            border-radius: 10px;
+            padding: 14px 16px;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        .address strong {
+            color: #1b3a8a;
+        }
+
+        /* 네비게이션 버튼 */
+        .nav-btn {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 12px 28px;
+            background: #1b3a8a;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 30px;
+            text-decoration: none;
+        }
+
+        .nav-btn:active {
+            background: #142a66;
+        }
+
+        /* 푸터 */
+        .footer {
+            background: #2a2540;
+            color: #cfc9e0;
+            text-align: center;
+            padding: 24px 20px;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #e3e3ea;
+            margin: 24px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+         배경음악 (요청에 따라 주석 처리 — 사용하려면 아래 주석 해제)
+         ============================================================ -->
+    <!--
+    <audio src="asset/audio/Broken Vessels Amazing Grace.mp3" autoplay loop id="myaudio"></audio>
+    -->
+
+    <div class="invitation">
+
+        <!-- ============================================================
+             1. 세로 스크롤 이미지 (6장, 순서대로)
+             ※ asset/image/happy/ 폴더에 1.png ~ 6.png 를 넣어주세요
+             ============================================================ -->
+        <div class="photo-scroll">
+            <img src="asset/image/happy/1.png" alt="행복한 동행 - 표지" />
+            <img src="asset/image/happy/2.png" alt="행복한 동행 - 안내" />
+            <img src="asset/image/happy/3.png" alt="행복한 동행 - 맛있는 시간" />
+            <img src="asset/image/happy/4.png" alt="행복한 동행 - 순서지" />
+            <img src="asset/image/happy/5.png" alt="행복한 동행 - 오시는 길" />
+            <img src="asset/image/happy/6.png" alt="행복한 동행 - 포도원마을 미션하우스" />
+        </div>
+
+        <!-- ============================================================
+             2. YouTube 영상
+             ※ 영상 ID는 나중에 받아서 아래 VIDEO_ID 부분을 교체하세요
+                예) https://youtu.be/abcd1234  →  abcd1234
+             ============================================================ -->
+        <!-- <div class="section">
+            <h3 class="section-title">행복한 <span class="accent">동행</span> 영상</h3>
+            <div class="video-wrap">
+                <iframe id="happyVideo"
+                    src="https://www.youtube.com/embed/VIDEO_ID?rel=0"
+                    title="행복한 동행"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div> -->
+
+        <hr class="divider" />
+
+        <!-- ============================================================
+             3. 오시는 길 (카카오 지도)
+             ============================================================ -->
+        <div class="section">
+            <h3 class="section-title">오시는 길</h3>
+
+            <div class="address">
+                <strong>지번</strong> &nbsp;경기도 이천시 장호원읍 풍계리 645-5<br />
+                <strong>도로명</strong> &nbsp;경기도 이천시 장호원읍 이풍로 359번길 98-27
+            </div>
+
+            <div id="map"></div>
+
+            <a class="nav-btn" href="https://kko.to/YejsjdNxgw" target="_blank" rel="noopener">
+                네비게이션 클릭
+            </a>
+        </div>
+
+        <!-- ============================================================
+             4. 푸터
+             ============================================================ -->
+        <div class="footer">
+            Copyright © 포도원감리교회
+        </div>
+
+    </div>
+
+    <!-- ============================================================
+         카카오 지도 SDK
+         ============================================================ -->
+    <script type="text/javascript"
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bcb5777161b2bdc709a97c931910b27c"></script>
+    <script type="text/javascript">
+        (function () {
+            // 포도원마을 미션하우스 좌표
+            var lat = 37.160456,
+                lng = 127.610730;
+
+            var container = document.getElementById('map');
+            var options = {
+                center: new kakao.maps.LatLng(lat, lng),
+                level: 3
+            };
+            var map = new kakao.maps.Map(container, options);
+
+            var markerPosition = new kakao.maps.LatLng(lat, lng);
+            var marker = new kakao.maps.Marker({ position: markerPosition });
+            marker.setMap(map);
+
+            // 장소명 오버레이
+            var content =
+                '<div style="padding:6px 10px;background:#1b3a8a;color:#fff;' +
+                'border-radius:6px;font-size:13px;font-weight:700;white-space:nowrap;">' +
+                '<a href="https://kko.to/YejsjdNxgw" target="_blank" ' +
+                'style="color:#fff;text-decoration:none;">포도원마을 미션하우스</a></div>';
+
+            var customOverlay = new kakao.maps.CustomOverlay({
+                map: map,
+                position: markerPosition,
+                content: content,
+                yAnchor: 2.2
+            });
+
+            // 마커 클릭 시 길찾기 이동
+            kakao.maps.event.addListener(marker, 'click', function () {
+                window.open('https://kko.to/YejsjdNxgw');
+            });
+        })();
+    </script>
+
+</body>
+
+</html>
