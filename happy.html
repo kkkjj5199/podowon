@@ -218,7 +218,7 @@
             <img src="asset/image/happy/3.png" alt="행복한 동행 - 맛있는 시간" />
             <img src="asset/image/happy/4.png" alt="행복한 동행 - 순서지" />
             <!-- 5번 이미지: 클릭 시 네비게이션(길찾기)으로 이동 -->
-            <a href="https://map.kakao.com/link/to/%ED%8F%AC%EB%8F%84%EC%9B%90%EB%A7%88%EC%9D%84%20%EB%AF%B8%EC%85%98%ED%95%98%EC%9A%B0%EC%8A%A4,37.160456,127.610730" target="_blank" rel="noopener">
+            <a class="js-nav" href="https://map.kakao.com/link/to/포도원마을미션하우스,37.160456,127.610730" target="_blank" rel="noopener">
                 <img src="asset/image/happy/5.png" alt="행복한 동행 - 오시는 길 (클릭 시 길찾기)" />
             </a>
             <img src="asset/image/happy/6.png" alt="행복한 동행 - 포도원마을 미션하우스" />
@@ -255,7 +255,7 @@
 
             <div id="map"></div>
 
-            <a class="nav-btn" href="https://map.kakao.com/link/to/%ED%8F%AC%EB%8F%84%EC%9B%90%EB%A7%88%EC%9D%84%20%EB%AF%B8%EC%85%98%ED%95%98%EC%9A%B0%EC%8A%A4,37.160456,127.610730" target="_blank" rel="noopener">
+            <a class="nav-btn js-nav" href="https://map.kakao.com/link/to/포도원마을미션하우스,37.160456,127.610730" target="_blank" rel="noopener">
                 네비게이션 클릭
             </a>
         </div>
@@ -268,6 +268,37 @@
         </div>
 
     </div>
+
+    <!-- ============================================================
+         네비게이션(길찾기) 링크 처리
+         · 모바일 : 카카오맵 앱을 직접 호출 → 카카오톡 인앱브라우저의
+                    'KakaoMap 연결중입니다' 멈춤 현상을 회피
+         · PC     : 카카오맵 웹 길찾기 페이지로 이동
+         ============================================================ -->
+    <script type="text/javascript">
+        var KAKAO_NAV = (function () {
+            var lat = 37.160456, lng = 127.610730;
+            var name = '포도원마을미션하우스';
+            var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent || '');
+            // PC: 웹 길찾기 / 모바일: 앱 직접 호출(목적지 자동차 길찾기)
+            var webUrl = 'https://map.kakao.com/link/to/' + encodeURIComponent(name) + ',' + lat + ',' + lng;
+            var appUrl = 'kakaomap://route?ep=' + lat + ',' + lng + '&by=CAR';
+            return {
+                isMobile: isMobile,
+                url: isMobile ? appUrl : webUrl,
+                go: function () { window.location.href = isMobile ? appUrl : webUrl; }
+            };
+        })();
+
+        // 길찾기 링크(.js-nav)에 기기에 맞는 주소를 적용
+        document.addEventListener('DOMContentLoaded', function () {
+            var links = document.querySelectorAll('.js-nav');
+            for (var i = 0; i < links.length; i++) {
+                links[i].setAttribute('href', KAKAO_NAV.url);
+                if (KAKAO_NAV.isMobile) links[i].removeAttribute('target');
+            }
+        });
+    </script>
 
     <!-- ============================================================
          카카오 지도 SDK
@@ -291,12 +322,12 @@
             var marker = new kakao.maps.Marker({ position: markerPosition });
             marker.setMap(map);
 
-            // 장소명 오버레이
+            // 장소명 오버레이 (클릭 시 길찾기)
             var content =
-                '<div style="padding:6px 10px;background:#1b3a8a;color:#fff;' +
+                '<div onclick="KAKAO_NAV.go()" style="cursor:pointer;' +
+                'padding:6px 10px;background:#1b3a8a;color:#fff;' +
                 'border-radius:6px;font-size:13px;font-weight:700;white-space:nowrap;">' +
-                '<a href="https://map.kakao.com/link/to/%ED%8F%AC%EB%8F%84%EC%9B%90%EB%A7%88%EC%9D%84%20%EB%AF%B8%EC%85%98%ED%95%98%EC%9A%B0%EC%8A%A4,37.160456,127.610730" target="_blank" ' +
-                'style="color:#fff;text-decoration:none;">포도원마을 미션하우스</a></div>';
+                '포도원마을 미션하우스</div>';
 
             var customOverlay = new kakao.maps.CustomOverlay({
                 map: map,
@@ -307,7 +338,7 @@
 
             // 마커 클릭 시 길찾기 이동
             kakao.maps.event.addListener(marker, 'click', function () {
-                window.open('https://map.kakao.com/link/to/%ED%8F%AC%EB%8F%84%EC%9B%90%EB%A7%88%EC%9D%84%20%EB%AF%B8%EC%85%98%ED%95%98%EC%9A%B0%EC%8A%A4,37.160456,127.610730');
+                KAKAO_NAV.go();
             });
         })();
     </script>
