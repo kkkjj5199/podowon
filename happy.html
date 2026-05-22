@@ -173,11 +173,38 @@
 <body>
 
     <!-- ============================================================
-         배경음악 (요청에 따라 주석 처리 — 사용하려면 아래 주석 해제)
+         배경음악 (50초 지점부터 재생)
          ============================================================ -->
-    <!--
-    <audio src="asset/audio/Broken Vessels Amazing Grace.mp3" autoplay loop id="myaudio"></audio>
-    -->
+    <audio id="myaudio" src="asset/audio/너는꽃이야.mp3" loop preload="auto"></audio>
+    <script type="text/javascript">
+        (function () {
+            var audio = document.getElementById('myaudio');
+            var START_AT = 50; // 재생 시작 지점(초)
+
+            // 메타데이터 로드 후 50초 지점으로 이동
+            audio.addEventListener('loadedmetadata', function () {
+                try { audio.currentTime = START_AT; } catch (e) { }
+            });
+
+            function startAudio() {
+                if (audio.currentTime < START_AT) {
+                    try { audio.currentTime = START_AT; } catch (e) { }
+                }
+                audio.play().catch(function () { });
+            }
+
+            // 자동재생 시도
+            window.addEventListener('load', startAudio);
+
+            // 브라우저가 자동재생을 막을 경우, 첫 사용자 동작에서 재생
+            ['click', 'touchstart'].forEach(function (ev) {
+                document.addEventListener(ev, function handler() {
+                    startAudio();
+                    document.removeEventListener(ev, handler);
+                }, { once: true });
+            });
+        })();
+    </script>
 
     <div class="invitation">
 
