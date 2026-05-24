@@ -152,6 +152,23 @@
             background: #142a66;
         }
 
+        /* 홍보영상보기 버튼 */
+        .promo-btn {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 12px 28px;
+            background: #e2452f;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 30px;
+            text-decoration: none;
+        }
+
+        .promo-btn:active {
+            background: #b83220;
+        }
+
         /* 푸터 */
         .footer {
             background: #2a2540;
@@ -190,19 +207,35 @@
                 if (audio.currentTime < START_AT) {
                     try { audio.currentTime = START_AT; } catch (e) { }
                 }
-                audio.play().catch(function () { });
+                // 1차: 소리 있는 채로 재생 시도
+                audio.muted = false;
+                audio.play().catch(function () {
+                    // 2차: 브라우저 차단 시 muted로 먼저 시작 후 즉시 음소거 해제
+                    audio.muted = true;
+                    audio.play().then(function () {
+                        audio.muted = false;
+                    }).catch(function () { });
+                });
             }
 
-            // 자동재생 시도
+            // 브라우저가 자동재생을 완전히 막을 경우, 첫 사용자 동작에서 재생
+            function onFirstInteraction() {
+                startAudio();
+                document.removeEventListener('click', onFirstInteraction);
+                document.removeEventListener('touchstart', onFirstInteraction);
+            }
+            document.addEventListener('click', onFirstInteraction);
+            document.addEventListener('touchstart', onFirstInteraction);
+
+            // 페이지 로드 즉시 재생 시도
             window.addEventListener('load', startAudio);
 
-            // 브라우저가 자동재생을 막을 경우, 첫 사용자 동작에서 재생
-            ['click', 'touchstart'].forEach(function (ev) {
-                document.addEventListener(ev, function handler() {
-                    startAudio();
-                    document.removeEventListener(ev, handler);
-                }, { once: true });
-            });
+            // 홍보영상 버튼 클릭 시 음악 멈춤
+            window.stopAudioForPromo = function () {
+                document.removeEventListener('click', onFirstInteraction);
+                document.removeEventListener('touchstart', onFirstInteraction);
+                audio.pause();
+            };
         })();
     </script>
 
@@ -255,6 +288,10 @@
 
             <div id="map"></div>
 
+            <a class="promo-btn" href="https://www.youtube.com/watch?v=AHIOayl84gc" target="_blank" rel="noopener"
+               onclick="stopAudioForPromo();">
+                📺 홍보영상보기
+            </a><br />
             <a class="nav-btn js-nav" href="https://map.kakao.com/link/to/포도원마을미션하우스,37.160456,127.610730" target="_blank" rel="noopener">
                 네비게이션 클릭
             </a>
